@@ -1,0 +1,16 @@
+{
+    "routes": [
+        {
+            "slug": "sports-rehab",
+            "type": "service"
+        },
+        {
+            "slug": "post-op-care",
+            "type": "service"
+        },
+        {
+            "slug": "geriatric-care",
+            "type": "service"
+        }
+    ]
+}

@@ -1,0 +1,86 @@
+{
+    "pageId": "courses",
+    "seo": {
+        "metaTitle": "Physio Chronicles & Webinars | AtreusPhysio Academy",
+        "metaDescription": "Join our webinars on Tendonopathy, Plantar Fasciitis, and Clinical Reasoning. Learn from Swatheeshwaran and Dr. Swathi.",
+        "canonical": "https://atreusphysio.in/courses",
+        "ogTitle": "AtreusPhysio Academy - Learn from Experts",
+        "ogDescription": "Upgrade your clinical reasoning skills.",
+        "ogImage": "/images/og-courses.jpg",
+        "robots": "index,follow"
+    },
+    "hero": {
+        "title": "Physio Chronicles",
+        "subtitle": "Deep dive into clinical reasoning, evidence-based practice, and modern rehabilitation protocols.",
+        "cta": "Explore Webinars",
+        "image": "/images/dummy/courses-hero-real.jpg"
+    },
+    "offer": {
+        "active": true,
+        "title": "New Webinar Series",
+        "description": "Mastering Tendonopathy: From Pathophysiology to Loading Programs.",
+        "code": "TENDON25",
+        "countdownTarget": "2025-12-31T23:59:59"
+    },
+    "features": [
+        {
+            "title": "Clinical Reasoning",
+            "desc": "Learn HOW to think, not just what to do."
+        },
+        {
+            "title": "Evidence Updates",
+            "desc": "Stay current with the latest research breakdowns."
+        },
+        {
+            "title": "Case Studies",
+            "desc": "Real-world patient scenarios and management."
+        }
+    ],
+    "courseList": [
+        {
+            "id": "w1",
+            "title": "Tendonopathy Rehab Masterclass",
+            "date": "Available On-Demand",
+            "price": "₹999",
+            "originalPrice": "₹1,999",
+            "description": "A complete guide to managing tendon pain, from isometric loading to return to sport.",
+            "tags": [
+                "Webinar",
+                "Best Seller"
+            ],
+            "seatsLeft": 100,
+            "location": "Online",
+            "image": "/images/dummy/course-tendon.jpg"
+        },
+        {
+            "id": "w2",
+            "title": "Plantar Fasciitis: Beyond the Foot",
+            "date": "Live: Oct 25, 2025",
+            "price": "₹499",
+            "originalPrice": "₹999",
+            "description": "Understanding the kinetic chain and differential diagnosis for heel pain.",
+            "tags": [
+                "Live Session",
+                "New"
+            ],
+            "seatsLeft": 45,
+            "location": "Zoom",
+            "image": "/images/dummy/course-plantar.jpg"
+        },
+        {
+            "id": "w3",
+            "title": "Clinical Reasoning in Spine Pain",
+            "date": "Nov 10, 2025",
+            "price": "₹1,499",
+            "originalPrice": "₹2,499",
+            "description": "Advanced assessment and triage for low back and neck pain.",
+            "tags": [
+                "Workshop",
+                "Advanced"
+            ],
+            "seatsLeft": 15,
+            "location": "Online",
+            "image": "/images/dummy/course-spine.jpg"
+        }
+    ]
+}

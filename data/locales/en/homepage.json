@@ -1,0 +1,214 @@
+{
+    "pageId": "home",
+    "locale": "en",
+    "domain": {
+        "preferred": "atreusphysio.in",
+        "alternate": [
+            "atreusphysio.com"
+        ]
+    },
+    "seo": {
+        "metaTitle": "AtreusPhysio | Advanced Sports Rehab & Education",
+        "metaDescription": "Founded by Swatheeshwaran (MPT Sports) & Dr. Swathi (MPT Ortho). Premier destination for musculoskeletal rehab and physiotherapy education.",
+        "canonical": "https://atreusphysio.in/",
+        "ogTitle": "AtreusPhysio - Clinical Excellence & Education",
+        "ogDescription": "Evidence-based rehabilitation and advanced physiotherapy training.",
+        "ogImage": "/images/og-home.jpg",
+        "twitterCard": "summary_large_image",
+        "robots": "index,follow",
+        "keywords": [
+            "Sports Physio",
+            "Musculoskeletal Rehab",
+            "Physio Education",
+            "Swatheeshwaran",
+            "Dr. Swathi",
+            "Atreus Physio"
+        ],
+        "structuredData": {
+            "@context": "https://schema.org",
+            "@type": "MedicalBusiness",
+            "name": "AtreusPhysio",
+            "founder": [
+                {
+                    "@type": "Person",
+                    "name": "Swatheeshwaran"
+                },
+                {
+                    "@type": "Person",
+                    "name": "Dr. Swathi"
+                }
+            ],
+            "url": "https://atreusphysio.in/",
+            "telephone": "+916379330661",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Tiruchirappalli",
+                "addressRegion": "Tamil Nadu",
+                "addressCountry": "IN"
+            }
+        }
+    },
+    "heroSlides": [
+        {
+            "id": "slide1",
+            "image": "https://i.ibb.co/Df4FM7vz/Lucid-Origin-create-a-physio-therepist-images-related-to-these-1.jpg",
+            "title": "Elite Sports Rehabilitation",
+            "subtitle": "Evidence-based care for athletes and active individuals. Recover stronger with our clinical reasoning approach.",
+            "cta": "Book Consultation"
+        },
+        {
+            "id": "slide2",
+            "image": "https://i.ibb.co/TqkHftwd/Lucid-Origin-create-a-physio-therepist-images-related-to-these-2.jpg",
+            "title": "Atreus Academy",
+            "subtitle": "Upskill with our advanced webinars and hands-on workshops. Join thousands of therapists learning with us.",
+            "cta": "View Courses"
+        },
+        {
+            "id": "slide3",
+            "image": "https://i.ibb.co/Z1Y8sM0H/gemini-2-5-flash-image-create-a-physio-therepist-clinic-images-related-to-these-captions-Elite-Sport.jpg",
+            "title": "Patient-Centred Care",
+            "subtitle": "Treating the person, not just the scan. Comprehensive musculoskeletal solutions.",
+            "cta": "Our Approach"
+        }
+    ],
+    "stats": [
+        {
+            "label": "Followers",
+            "value": "10k+"
+        },
+        {
+            "label": "Students Trained",
+            "value": "5000+"
+        },
+        {
+            "label": "Happy Patients",
+            "value": "2000+"
+        },
+        {
+            "label": "Webinars",
+            "value": "50+"
+        }
+    ],
+    "founders": [
+        {
+            "name": "Swatheeshwaran",
+            "role": "Founder & Sports Physiotherapist",
+            "qualifications": "MPT (Sports)",
+            "bio": "Specialist in sports rehabilitation and clinical reasoning. Passionate about bridging the gap between evidence and practice.",
+            "image": "/images/dummy/founder-swatheesh.jpg"
+        },
+        {
+            "name": "Dr. Swathi",
+            "role": "Co-Founder & Orthopedic Physiotherapist",
+            "qualifications": "MPT (Ortho)",
+            "bio": "Expert in musculoskeletal disorders and orthopedic rehabilitation. Dedicated to patient education and empowerment.",
+            "image": "/images/dummy/founder-swathi.jpg"
+        }
+    ],
+    "valueProps": [
+        {
+            "id": "reasoning",
+            "title": "Clinical Reasoning",
+            "desc": "We don't just treat symptoms; we solve the root cause using advanced clinical reasoning."
+        },
+        {
+            "id": "education",
+            "title": "Patient Education",
+            "desc": "Understanding your pain is the first step to recovery. We prioritize clear communication."
+        },
+        {
+            "id": "evidence",
+            "title": "Evidence-Based",
+            "desc": "Our protocols are grounded in the latest scientific research and international guidelines."
+        },
+        {
+            "id": "hybrid",
+            "title": "Hybrid Care",
+            "desc": "Seamlessly combine in-clinic sessions with tele-rehab for continuous support."
+        }
+    ],
+    "services": [
+        {
+            "id": "sports",
+            "title": "Sports Injury Rehab",
+            "excerpt": "ACL rehab, tendonopathy management, and return-to-sport testing.",
+            "image": {
+                "src": "https://i.ibb.co/nsyNL6Pn/Generated-Image-December-02-2025-12-14-AM.png",
+                "alt": "Sports Rehab"
+            }
+        },
+        {
+            "id": "msk",
+            "title": "Musculoskeletal Physio",
+            "excerpt": "Back pain, neck pain, and joint mobilization therapy.",
+            "image": {
+                "src": "https://i.ibb.co/60Mvh91C/Generated-Image-December-02-2025-12-14-AM-1.png",
+                "alt": "MSK Physio"
+            }
+        },
+        {
+            "id": "online",
+            "title": "Tele-Consultation",
+            "excerpt": "Expert advice from the comfort of your home.",
+            "image": {
+                "src": "https://i.ibb.co/Z1Y8sM0H/gemini-2-5-flash-image-create-a-physio-therepist-clinic-images-related-to-these-captions-Elite-Sport.jpg",
+                "alt": "Online Physio"
+            }
+        }
+    ],
+    "testimonials": [
+        {
+            "id": "t1",
+            "name": "Rahul S.",
+            "text": "The clinical reasoning approach changed my perspective on my back pain. Highly recommended!"
+        },
+        {
+            "id": "t2",
+            "name": "Dr. Anitha",
+            "text": "As a student, Atreus Academy's webinars have been a game changer for my career."
+        }
+    ],
+    "forms": {
+        "bookingForm": {
+            "title": "Start Your Recovery Journey",
+            "description": "Book a consultation with our experts. We offer both in-clinic and online sessions.",
+            "fields": [
+                {
+                    "name": "fullName",
+                    "label": "Full name",
+                    "type": "text",
+                    "required": true,
+                    "placeholder": "Your Name"
+                },
+                {
+                    "name": "phone",
+                    "label": "WhatsApp Number",
+                    "type": "tel",
+                    "required": true,
+                    "placeholder": "+91 63793 30661"
+                },
+                {
+                    "name": "type",
+                    "label": "Consultation Type",
+                    "type": "select",
+                    "options": [
+                        "In-Clinic (Trichy)",
+                        "Online / Tele-Rehab"
+                    ],
+                    "required": true
+                },
+                {
+                    "name": "notes",
+                    "label": "Describe your issue",
+                    "type": "textarea",
+                    "required": true,
+                    "placeholder": "E.g., Heel pain, Tennis elbow..."
+                }
+            ],
+            "submit": {
+                "text": "Request Appointment",
+                "successMessage": "Thank you. We will contact you via WhatsApp shortly."
+            }
+        }
+    }
+}

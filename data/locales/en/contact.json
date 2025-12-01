@@ -1,0 +1,61 @@
+{
+    "pageId": "contact",
+    "seo": {
+        "metaTitle": "Contact Us | AtreusPhysio Chennai",
+        "metaDescription": "Get in touch with AtreusPhysio. Call us, email us, or visit our clinic in Chennai.",
+        "canonical": "https://atreusphysio.in/contact",
+        "ogTitle": "Contact AtreusPhysio",
+        "ogDescription": "We are here to help. Reach out today.",
+        "ogImage": "/images/og-default.jpg",
+        "robots": "index,follow"
+    },
+    "info": {
+        "title": "Get in Touch",
+        "description": "We'd love to hear from you. Our friendly team is always here to chat.",
+        "details": [
+            {
+                "label": "Phone",
+                "value": "+91 98765 43210",
+                "href": "tel:+919876543210"
+            },
+            {
+                "label": "Email",
+                "value": "hello@atreusphysio.com",
+                "href": "mailto:hello@atreusphysio.com"
+            },
+            {
+                "label": "Address",
+                "value": "123 Health Street, Chennai, India",
+                "href": "https://maps.google.com"
+            }
+        ]
+    },
+    "form": {
+        "title": "Send us a message",
+        "description": "Fill out the form below and we'll get back to you as soon as possible.",
+        "fields": [
+            {
+                "name": "fullName",
+                "label": "Name",
+                "type": "text",
+                "required": true
+            },
+            {
+                "name": "email",
+                "label": "Email",
+                "type": "email",
+                "required": true
+            },
+            {
+                "name": "message",
+                "label": "Message",
+                "type": "textarea",
+                "required": true
+            }
+        ],
+        "submit": {
+            "text": "Send Message",
+            "successMessage": "Message sent successfully!"
+        }
+    }
+}

@@ -1,0 +1,54 @@
+{
+    "pageId": "about",
+    "seo": {
+        "metaTitle": "About AtreusPhysio | Founders Swatheeshwaran & Dr. Swathi",
+        "metaDescription": "Meet the team behind AtreusPhysio. We combine clinical expertise with a passion for education to elevate physiotherapy standards.",
+        "canonical": "https://atreusphysio.in/about",
+        "ogTitle": "About AtreusPhysio",
+        "ogDescription": "Leading the way in evidence-based rehab and education.",
+        "ogImage": "/images/og-about.jpg",
+        "robots": "index,follow"
+    },
+    "hero": {
+        "title": "Bridging Evidence & Practice",
+        "subtitle": "AtreusPhysio is more than a clinic; it's a movement towards better physiotherapy standards.",
+        "image": {
+            "src": "https://i.ibb.co/60Mvh91C/Generated-Image-December-02-2025-12-14-AM-1.png",
+            "alt": "Atreus Team"
+        }
+    },
+    "content": {
+        "intro": "Founded by Swatheeshwaran and Dr. Swathi, AtreusPhysio was born from a shared vision: to provide patient-centred care that is truly evidence-based, while simultaneously empowering the next generation of therapists through high-quality education.",
+        "mission": "To demystify complex rehabilitation concepts for patients and professionals alike.",
+        "stats": [
+            {
+                "label": "Years of Excellence",
+                "value": "8+"
+            },
+            {
+                "label": "Workshops Conducted",
+                "value": "100+"
+            },
+            {
+                "label": "Lives Touched",
+                "value": "10k+"
+            }
+        ]
+    },
+    "founders": [
+        {
+            "name": "Swatheeshwaran",
+            "role": "Founder",
+            "qualifications": "MPT (Sports)",
+            "bio": "A passionate Sports Physiotherapist with a deep interest in tendon rehabilitation and clinical reasoning. Swatheeshwaran is a well-known educator in the physio community, frequently lecturing on complex musculoskeletal conditions.",
+            "image": "/images/dummy/founder-swatheesh.jpg"
+        },
+        {
+            "name": "Dr. Swathi",
+            "role": "Co-Founder",
+            "qualifications": "MPT (Orthopaedics)",
+            "bio": "Specializing in orthopedic rehabilitation, Dr. Swathi brings a compassionate, patient-first approach to care. She is also an Assistant Professor, dedicated to academic excellence.",
+            "image": "/images/dummy/founder-swathi.jpg"
+        }
+    ]
+}
