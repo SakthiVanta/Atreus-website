@@ -1,0 +1,80 @@
+{
+    "about": [
+        {
+            "question": "What makes ATREUS PHYSIO different from other physiotherapy clinics in Trichy?",
+            "answer": "We focus on education as much as treatment. Every session includes clear explanations of what's happening in your body and why each exercise matters. Our approach combines evidence-based practice with personalized care—no cookie-cutter solutions. We also have experience working with both professional athletes and everyday people, so we understand recovery from multiple perspectives."
+        },
+        {
+            "question": "Do I need a doctor's referral to book an appointment?",
+            "answer": "No referral is needed. You can book directly with us for an initial assessment. However, if you're coming for post-surgical rehabilitation or have complex medical conditions, bringing any relevant medical reports or imaging results can help us create a more comprehensive treatment plan."
+        },
+        {
+            "question": "How long does each physiotherapy session typically last?",
+            "answer": "Initial assessments usually take 45-60 minutes as we conduct a thorough evaluation and explain our findings. Follow-up treatment sessions are typically 30-45 minutes, depending on your specific needs and treatment plan. We believe in quality over quantity—each session is focused and purposeful."
+        },
+        {
+            "question": "What conditions do you treat at ATREUS PHYSIO?",
+            "answer": "We treat a wide range of musculoskeletal conditions including sports injuries, chronic pain, post-surgical rehabilitation, back and neck pain, joint problems, movement disorders, and performance enhancement for athletes. Our experience spans from helping people recover from everyday aches to preparing athletes for competition."
+        },
+        {
+            "question": "How many sessions will I need?",
+            "answer": "It varies based on your condition, goals, and how your body responds to treatment. After your initial assessment, we'll give you an honest estimate and a clear roadmap. Some people feel significant improvement in 3-4 sessions, while complex conditions might need longer-term care. We'll adjust the plan as you progress and always keep you informed."
+        },
+        {
+            "question": "Do you provide home exercise programs?",
+            "answer": "Absolutely. A big part of our approach is giving you the tools to continue progress between sessions and after you've completed your treatment. We'll teach you exercises, explain why they work, and make sure you're confident doing them correctly at home. Recovery doesn't stop when you leave the clinic."
+        },
+        {
+            "question": "What should I wear to my physiotherapy appointment?",
+            "answer": "Wear comfortable, loose-fitting clothing that allows easy movement and access to the area being treated. For lower body issues, shorts are ideal. For shoulder or back problems, a tank top or t-shirt works well. If you're unsure, just bring a change of clothes and we'll let you know what works best."
+        },
+        {
+            "question": "Can you help with sports performance and injury prevention?",
+            "answer": "Yes, this is one of our specialties. Dr. Swatheeshwaran has worked with athletes at national, state, and university levels. We can assess movement patterns, identify weak links, and create strength and conditioning programs to improve performance and reduce injury risk. Prevention is just as important as rehabilitation."
+        }
+    ],
+    "contact": [
+        {
+            "question": "What are your clinic hours?",
+            "answer": "We're open Monday through Saturday from 9:00 AM to 7:00 PM. Sunday appointments can be arranged for urgent cases or athletes with competition schedules. We recommend booking in advance to secure your preferred time slot."
+        },
+        {
+            "question": "How do I book an appointment?",
+            "answer": "You can book through our website using the 'Book Now' button, call us directly,  or send us a message via WhatsApp. We'll get back to you within a few hours to confirm your appointment time. For urgent cases, calling is the fastest option."
+        },
+        {
+            "question": "Where is ATREUS PHYSIO located in Trichy?",
+            "answer": "We're located in a easily accessible area of Trichy with parking available. Once you book an appointment, we'll send you the exact address, directions, and a map link to help you find us easily. Feel free to call if you need any guidance getting here."
+        },
+        {
+            "question": "Do you offer home visit services?",
+            "answer": "Yes, we provide home visits for patients who are unable to travel to the clinic due to mobility limitations, post-surgical restrictions, or severe pain. Home visit availability and pricing can be discussed when you contact us. We want to make quality physiotherapy accessible to everyone who needs it."
+        },
+        {
+            "question": "What payment methods do you accept?",
+            "answer": "We accept cash, UPI, and all major digital payment methods. Payment is typically collected after each session. For longer treatment plans, we can discuss package options that may offer better value."
+        },
+        {
+            "question": "Can I cancel or reschedule my appointment?",
+            "answer": "Yes, absolutely. We understand that life happens. Just give us at least 24 hours notice if you need to reschedule or cancel, and we'll find a new time that works for you. This helps us accommodate other patients who might need that slot."
+        },
+        {
+            "question": "Do you accept insurance?",
+            "answer": "We can provide detailed invoices and treatment records that you can submit to your insurance provider for reimbursement. Requirements vary by insurance company, so we recommend checking with your provider about their physiotherapy coverage and documentation needs before your first visit."
+        }
+    ],
+    "homepage": [
+        {
+            "question": "What is physiotherapy and how can it help me?",
+            "answer": "Physiotherapy is a science-based healthcare profession focused on helping you move better, reduce pain, and prevent future injuries. It involves assessment, hands-on treatment, exercise prescription, and education. Whether you're recovering from an injury, managing chronic pain, or looking to improve athletic performance, physiotherapy can help you get back to doing what you love—safely and confidently."
+        },
+        {
+            "question": "Is physiotherapy painful?",
+            "answer": "Good physiotherapy should never be unnecessarily painful. Some discomfort during certain exercises or techniques is normal and expected, but it should always be within tolerable limits. We work with you to find the right balance between challenging your body and keeping you safe. Pain is information, not a punishment, and we'll always respect your limits."
+        },
+        {
+            "question": "How soon will I see results?",
+            "answer": "Most people notice some improvement within the first few sessions—whether that's reduced pain, better movement, or increased confidence. However, lasting change takes time. Your body needs consistent, progressive loading to adapt and heal. We'll track your progress together and celebrate the small wins along the way."
+        }
+    ]
+}

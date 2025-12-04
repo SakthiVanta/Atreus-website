@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import { Button } from "@/components/ui/Button";
 import { Clock, MapPin, Tag, Users } from "lucide-react";
 import { BookNowModal } from "@/components/courses/BookNowModal";
@@ -25,31 +26,75 @@ export default function CoursesPage() {
     if (!data) return <div>Loading...</div>;
 
     return (
-        <main className="min-h-screen bg-slate-50">
+        <main className="min-h-screen bg-slate-50 dark:bg-slate-900">
 
-            {/* Hero Section with Gradient & Pattern */}
-            <section className="relative py-24 bg-slate-900 overflow-hidden">
-                <div className="absolute inset-0 bg-[url('/images/grid-pattern.svg')] opacity-10"></div>
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-900/50 to-slate-900/50"></div>
-                <div className="relative max-w-7xl mx-auto px-4 md:px-8 text-center">
-                    <span className="inline-block py-1 px-3 rounded-full bg-blue-500/20 text-blue-300 text-sm font-medium mb-6 border border-blue-500/30">
-                        AtreusPhysio Academy
-                    </span>
-                    <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-                        {data.hero.title}
-                    </h1>
-                    <p className="text-xl text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
-                        {data.hero.subtitle}
-                    </p>
-                    <Button className="bg-white text-slate-900 hover:bg-blue-50 text-lg px-8 py-4 h-auto rounded-full">
-                        {data.hero.cta}
-                    </Button>
+            {/* Hero Section */}
+            <section className="relative bg-gradient-to-br from-[#06113d] via-[#06113d] to-[#0a1a5c] text-white py-24 overflow-hidden">
+                {/* Decorative Elements */}
+                <div className="absolute inset-0 overflow-hidden">
+                    <div className="absolute -top-40 -right-40 w-80 h-80 bg-[#e3171e]/20 rounded-full blur-3xl" />
+                    <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-[#e3171e]/10 rounded-full blur-3xl" />
+                </div>
+
+                <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
+                    <motion.div
+                        initial={{ opacity: 0, y: 30 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6 }}
+                        className="max-w-3xl mx-auto text-center"
+                    >
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.9 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.5, delay: 0.2 }}
+                            className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium mb-6"
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#e3171e]">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                            </svg>
+                            AtreusPhysio Academy
+                        </motion.div>
+
+                        <motion.h1
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6, delay: 0.3 }}
+                            className="text-4xl md:text-6xl font-bold mb-6"
+                        >
+                            {data.hero.title}
+                        </motion.h1>
+
+                        <motion.p
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6, delay: 0.4 }}
+                            className="text-xl text-slate-300 leading-relaxed mb-8"
+                        >
+                            {data.hero.subtitle}
+                        </motion.p>
+
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6, delay: 0.5 }}
+                        >
+                            <Button className="bg-white text-[#06113d] hover:bg-slate-100 text-lg px-8 py-4 h-auto rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all">
+                                {data.hero.cta}
+                            </Button>
+                        </motion.div>
+                    </motion.div>
                 </div>
             </section>
 
             {/* Offer Banner */}
             {data.offer?.active && (
-                <div className="bg-gradient-to-r from-yellow-400 to-orange-500 py-4 px-4 shadow-lg relative z-10 -mt-8 mx-4 md:mx-auto max-w-5xl rounded-xl transform -rotate-1">
+                <motion.div
+                    initial={{ opacity: 0, y: -20, rotate: -1 }}
+                    animate={{ opacity: 1, y: 0, rotate: -1 }}
+                    transition={{ duration: 0.5, delay: 0.3 }}
+                    className="bg-gradient-to-r from-yellow-400 to-orange-500 py-4 px-4 shadow-lg relative z-10 -mt-8 mx-4 md:mx-auto max-w-5xl rounded-xl"
+                >
                     <div className="flex flex-col md:flex-row items-center justify-between text-slate-900 font-medium">
                         <div className="flex items-center gap-3 mb-2 md:mb-0">
                             <Tag className="w-6 h-6" />
@@ -61,44 +106,65 @@ export default function CoursesPage() {
                             Code: {data.offer.code}
                         </div>
                     </div>
-                </div>
+                </motion.div>
             )}
 
             {/* Features Grid */}
             <section className="py-16 max-w-7xl mx-auto px-4 md:px-8">
                 <div className="grid md:grid-cols-3 gap-8">
                     {data.features.map((feature: any, i: number) => (
-                        <div key={i} className="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex items-start gap-4">
-                            <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center text-blue-600 shrink-0">
-                                <Users className="w-6 h-6" /> {/* Placeholder icon */}
+                        <motion.div
+                            key={i}
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true, margin: "-50px" }}
+                            transition={{ duration: 0.5, delay: i * 0.1 }}
+                            className="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 flex items-start gap-4"
+                        >
+                            <div className="w-12 h-12 bg-[#06113d]/10 dark:bg-[#06113d]/20 rounded-lg flex items-center justify-center text-[#06113d] dark:text-[#e3171e] shrink-0">
+                                <Users className="w-6 h-6" />
                             </div>
                             <div>
-                                <h3 className="font-bold text-slate-900 mb-1">{feature.title}</h3>
-                                <p className="text-sm text-slate-600">{feature.desc}</p>
+                                <h3 className="font-bold text-slate-900 dark:text-white mb-1">{feature.title}</h3>
+                                <p className="text-sm text-slate-600 dark:text-slate-300">{feature.desc}</p>
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             </section>
 
             {/* Course List */}
             <section className="pb-24 max-w-7xl mx-auto px-4 md:px-8">
-                <div className="flex justify-between items-end mb-12">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5 }}
+                    className="flex justify-between items-end mb-12"
+                >
                     <div>
-                        <h2 className="text-3xl font-bold text-slate-900 mb-2">Upcoming Workshops</h2>
-                        <p className="text-slate-600">Secure your spot in our next batch.</p>
+                        <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-2">Upcoming Workshops</h2>
+                        <p className="text-slate-600 dark:text-slate-300">Secure your spot in our next batch.</p>
                     </div>
-                </div>
+                </motion.div>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {data.courseList.map((course: any) => (
-                        <div key={course.id} className="group bg-white rounded-2xl overflow-hidden border border-slate-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    {data.courseList.map((course: any, index: number) => (
+                        <motion.div
+                            key={course.id}
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true, margin: "-50px" }}
+                            transition={{ duration: 0.5, delay: index * 0.1 }}
+                            whileHover={{ y: -8 }}
+                            className="group bg-white dark:bg-slate-800 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-all duration-300"
+                        >
                             {/* Image Placeholder */}
-                            <div className="h-48 bg-slate-200 relative">
-                                {/* In real app, use Image component here */}
+                            <div className="h-48 bg-gradient-to-br from-[#06113d] to-[#0a1a5c] relative">
+                                <div className="absolute inset-0 bg-[url('/images/grid-pattern.svg')] opacity-10"></div>
                                 <div className="absolute top-4 left-4 flex gap-2">
                                     {course.tags.map((tag: string) => (
-                                        <span key={tag} className="bg-white/90 backdrop-blur text-xs font-bold px-2 py-1 rounded text-slate-900">
+                                        <span key={tag} className="bg-white/90 dark:bg-slate-800/90 backdrop-blur text-xs font-bold px-2 py-1 rounded text-slate-900 dark:text-white">
                                             {tag}
                                         </span>
                                     ))}
@@ -108,39 +174,39 @@ export default function CoursesPage() {
                             <div className="p-6">
                                 <div className="flex justify-between items-start mb-4">
                                     <div>
-                                        <h3 className="text-xl font-bold text-slate-900 mb-1 group-hover:text-blue-600 transition-colors">
+                                        <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-1 group-hover:text-[#e3171e] transition-colors">
                                             {course.title}
                                         </h3>
-                                        <div className="flex items-center text-sm text-slate-500 gap-4">
+                                        <div className="flex items-center text-sm text-slate-500 dark:text-slate-400 gap-4">
                                             <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> {course.date}</span>
                                         </div>
                                     </div>
                                 </div>
 
-                                <p className="text-slate-600 text-sm mb-6 line-clamp-2">
+                                <p className="text-slate-600 dark:text-slate-300 text-sm mb-6 line-clamp-2">
                                     {course.description}
                                 </p>
 
-                                <div className="flex items-center gap-2 text-sm text-slate-500 mb-6">
+                                <div className="flex items-center gap-2 text-sm text-slate-500 dark:text-slate-400 mb-6">
                                     <MapPin className="w-4 h-4" /> {course.location}
-                                    <span className="w-1 h-1 bg-slate-300 rounded-full"></span>
-                                    <span className="text-orange-600 font-medium">{course.seatsLeft} seats left</span>
+                                    <span className="w-1 h-1 bg-slate-300 dark:bg-slate-600 rounded-full"></span>
+                                    <span className="text-[#e3171e] font-medium">{course.seatsLeft} seats left</span>
                                 </div>
 
-                                <div className="flex items-center justify-between pt-6 border-t border-slate-100">
+                                <div className="flex items-center justify-between pt-6 border-t border-slate-100 dark:border-slate-700">
                                     <div>
-                                        <span className="text-slate-400 text-sm line-through block">{course.originalPrice}</span>
-                                        <span className="text-2xl font-bold text-slate-900">{course.price}</span>
+                                        <span className="text-slate-400 dark:text-slate-500 text-sm line-through block">{course.originalPrice}</span>
+                                        <span className="text-2xl font-bold text-slate-900 dark:text-white">{course.price}</span>
                                     </div>
                                     <Button
                                         onClick={() => handleBookNow(course)}
-                                        className="bg-slate-900 text-white hover:bg-slate-800"
+                                        className="bg-[#06113d] hover:bg-[#e3171e] text-white transition-colors"
                                     >
                                         Book Now
                                     </Button>
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             </section>

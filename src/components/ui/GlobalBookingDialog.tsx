@@ -125,7 +125,7 @@ export function GlobalBookingDialog({ isOpen, onClose }: GlobalBookingDialogProp
                                             <label className="text-sm font-medium text-slate-700">Full Name</label>
                                             <input
                                                 {...register("name")}
-                                                className="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 outline-none transition-all"
+                                                className="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-[#06113d] focus:ring-2 focus:ring-[#06113d]/20 outline-none transition-all"
                                                 placeholder="John Doe"
                                             />
                                             {errors.name && <p className="text-xs text-red-500">{errors.name.message}</p>}
@@ -136,7 +136,7 @@ export function GlobalBookingDialog({ isOpen, onClose }: GlobalBookingDialogProp
                                             <input
                                                 {...register("email")}
                                                 type="email"
-                                                className="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 outline-none transition-all"
+                                                className="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-[#06113d] focus:ring-2 focus:ring-[#06113d]/20 outline-none transition-all"
                                                 placeholder="john@example.com"
                                             />
                                             {errors.email && <p className="text-xs text-red-500">{errors.email.message}</p>}
@@ -147,7 +147,7 @@ export function GlobalBookingDialog({ isOpen, onClose }: GlobalBookingDialogProp
                                             <input
                                                 {...register("phone")}
                                                 type="tel"
-                                                className="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 outline-none transition-all"
+                                                className="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-[#06113d] focus:ring-2 focus:ring-[#06113d]/20 outline-none transition-all"
                                                 placeholder="+91 98765 43210"
                                             />
                                             {errors.phone && <p className="text-xs text-red-500">{errors.phone.message}</p>}
@@ -157,7 +157,7 @@ export function GlobalBookingDialog({ isOpen, onClose }: GlobalBookingDialogProp
                                             <label className="text-sm font-medium text-slate-700">Message (Optional)</label>
                                             <textarea
                                                 {...register("message")}
-                                                className="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 outline-none transition-all min-h-[80px]"
+                                                className="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-[#06113d] focus:ring-2 focus:ring-[#06113d]/20 outline-none transition-all min-h-[80px]"
                                                 placeholder="Tell us about your condition..."
                                             />
                                         </div>

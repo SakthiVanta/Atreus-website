@@ -10,13 +10,13 @@
         ],
         "canonical": "https://atreusphysio.in/about",
         "ogTitle": "About Us - AtreusPhysio",
-        "ogDescription": "Reborn To Move Fearless. Science driven care for pain relief and performance.",
+        "ogDescription": "Your trusted partner in recovery and rehabilitation. Science-driven care for pain relief and performance.",
         "ogImage": "/images/og-about.jpg",
         "robots": "index,follow"
     },
     "hero": {
-        "title": "Reborn To Move Fearless",
-        "subtitle": "Recover with Clarity, move with Confidence and live without Fear.",
+        "title": "About ATREUS PHYSIO",
+        "subtitle": "Your trusted partner in recovery and rehabilitation. Science-driven care with a personal touch.",
         "image": {
             "src": "https://i.ibb.co/Df4FM7vz/Lucid-Origin-create-a-physio-therepist-images-related-to-these-1.jpg",
             "alt": "Atreus Physio Clinic"
@@ -26,53 +26,50 @@
         "name": "Dr. Swatheeshwaran",
         "role": "Founder & Sports Physiotherapist",
         "qualifications": "MPT Sports",
-        "bio": "Dr. Swatheeshwaran, MPT Sports, is the founder of ATREUS PHYSIO and a clinician who believes in science driven, movement centred rehabilitation. His practice focuses on helping people return to an active, confident and pain free life.",
-        "experience": "He has worked as an Assistant Professor for three years, trained institutional and professional athletes, and delivered rehabilitation for high performance sport environments. His on field experience includes serving as physiotherapist for multiple major national, state and inter university events.",
+        "bio": "I'm Swatheeshwaran, and I started ATREUS PHYSIO because I wanted to create something different—a clinic where patients don't just get treated, but truly understand what's happening in their bodies. My journey began in sports physiotherapy, where I learned that recovery is as much about mindset as it is about exercises. Over the years, I've had the privilege of working with everyone from professional athletes to people dealing with everyday aches and pains, and each person has taught me something new about resilience and healing.",
+        "experience": "I spent three years as an Assistant Professor, which shaped how I communicate complex medical concepts in ways that actually make sense. Teaching forced me to think from the student's perspective, and I carry that same approach into patient care today. I've also been fortunate to work on the sidelines of major sporting events—national championships, state tournaments, and university competitions—where split-second decisions and rapid recovery protocols are part of the job. Those high-pressure environments taught me to stay calm, think clearly, and always put the athlete's long-term health first.",
         "image": "/images/dummy/founder-swatheesh.jpg",
         "achievements": {
             "national": [
-                "All India Aquatics, Beach Volleyball, Badminton, Basketball Championships (2023 to 2024)"
+                "All India Aquatics, Beach Volleyball, Badminton, Basketball Championships (2023-2024)"
             ],
             "state": [
-                "SDAT CM Trophy (2021 to 2022)",
-                "TNBA Basketball Championships: Junior, Senior and State categories (2021 to 2022)"
+                "SDAT CM Trophy (2021-2022)",
+                "TNBA Basketball Championships: Junior, Senior and State categories (2021-2022)"
             ],
             "university": [
-                "South Zone Tournaments in Football",
-                "South Zone Volleyball",
-                "South Zone Tennis",
-                "South Zone Basketball (2021 to 2023)"
+                "South Zone Football, Volleyball, Tennis, Basketball Tournaments (2021-2023)"
             ]
         },
-        "approach": "His approach combines clear assessment, movement analysis and evidence based loading to guide both recovery and performance. Treatment is structured to help patients return to daily function, return to sport and train with confidence. Every session focuses on clear communication so progress feels predictable, safe and understood."
+        "approach": "I believe rehabilitation works best when it feels like a partnership, not a prescription. My approach starts with asking questions and really listening to your answers. From there, we build a plan that's grounded in evidence but flexible enough to adapt as you progress. I focus on movement quality, gradual strength building, and helping you understand why each exercise matters. The goal isn't just to make the pain go away—it's to give you the tools and confidence to prevent it from coming back. Every session, we're working together toward you being able to move, play, and live exactly how you want to."
     },
     "philosophy": {
         "title": "About Us",
-        "intro": "ATREUS PHYSIO was built from years of Clinical Experience, Teaching and On-Field Sports Practice. The focus has always been simple: help people Move Better, Recover Stronger and Feel Confident in their bodies again.",
+        "intro": "ATREUS PHYSIO started with a simple goal: to help people in Trichy move better, recover faster, and live without pain holding them back. We're a team that believes recovery shouldn't feel mysterious or overwhelming—it should make sense to you every step of the way.",
         "sections": [
             {
-                "title": "Why ATREUS PHYSIO Was Created",
-                "content": "It was created to bring Science Driven Assessment, Movement Based Rehabilitation and Structured Loading into everyday physiotherapy care, removing Guesswork and Uncertainty for patients."
+                "title": "Why We Started ATREUS PHYSIO",
+                "content": "After years of working with athletes, teaching students, and treating patients from all walks of life, we realized something was missing in traditional physiotherapy. People wanted to understand their pain, not just mask it. They wanted to be partners in their recovery, not passive recipients. That's why we built ATREUS PHYSIO—a place where evidence-based care meets clear communication, and where every treatment plan is designed around your life, not a textbook."
             },
             {
-                "title": "Philosophy: Movement First, Fear Out",
-                "content": "Movement is the foundation of recovery. Reducing Fear, improving Understanding and building Confidence are central to long term progress."
+                "title": "Our Treatment Philosophy",
+                "content": "We don't believe in quick fixes or cookie-cutter solutions. Instead, we start with a thorough assessment to understand what's really going on. Then we create a plan that actually makes sense—one that fits your schedule, your goals, and your body. Whether you're recovering from surgery, dealing with chronic pain, or training for your next marathon, we'll work with you to build strength, restore movement, and get you back to doing what you love."
             },
             {
-                "title": "Treatment Style",
-                "content": "Assessment Led, Biomechanics Informed and Exercise Centred. Every plan is Personalised, Progressive and built to improve Strength, Endurance and Cardiac Capacity through structured, evidence based loading."
+                "title": "Movement First, Fear Out",
+                "content": "Pain can be scary, and it's easy to start avoiding activities you once enjoyed. We're here to change that. Through careful progression, education, and honest conversations, we help you rebuild confidence in your body. Movement isn't just about physical recovery—it's about reclaiming your independence and living without fear of re-injury."
             },
             {
-                "title": "Qualifications and Background",
-                "content": "Led by Dr. Swatheeshwaran, MPT Sports, with experience as an Assistant Professor, Sports Physiotherapist and Performance Trainer for National, State and Inter-University Athletes."
+                "title": "Our Background and Experience",
+                "content": "Our team brings experience from competitive sports, academic teaching, and hands-on clinical practice. We've worked with professional athletes at national tournaments, helped everyday people overcome chronic pain, and trained the next generation of physiotherapists. This blend of classroom teaching and real-world experience means we can explain complex concepts in simple terms and apply the latest research to your specific situation."
             },
             {
-                "title": "Patient Centred Approach",
-                "content": "Care is designed around the Person, not just the Injury. Communication is Clear, Goals are Aligned and treatment evolves based on the Patient’s Response."
+                "title": "How We Work With You",
+                "content": "Every session is a conversation, not a monologue. We listen to your concerns, explain what we find, and involve you in decisions about your care. You'll always know what we're doing and why it matters. Progress might not be linear, and that's okay—we'll adjust your plan as your body responds and your goals evolve. Rehabilitation is a journey we take together."
             },
             {
-                "title": "Vision and Identity of ATREUS PHYSIO",
-                "content": "To create a space where Science, Clarity and Movement shape rehabilitation. A clinic where people feel Supported, Guided and Capable of returning to the activities they value."
+                "title": "Our Vision for ATREUS PHYSIO",
+                "content": "We want ATREUS PHYSIO to be more than just a clinic in Trichy. We want it to be a place where people feel heard, understood, and supported. A place where science meets empathy, and where every patient leaves not just feeling better, but understanding their body better too. That's what 'Reborn To Move Fearless' means to us—helping you rediscover the freedom to move, play, work, and live without limitations."
             }
         ]
     },

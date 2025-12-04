@@ -36,13 +36,13 @@ export function FloatingCTA() {
                             transition={{ type: "spring", stiffness: 300, damping: 25 }}
                             className="pointer-events-auto relative group"
                         >
-                            <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-full blur opacity-30 group-hover:opacity-75 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+                            <div className="absolute -inset-0.5 bg-gradient-to-r from-[#06113d] to-[#e3171e] rounded-full blur opacity-30 group-hover:opacity-75 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
                             <div className="relative flex items-center bg-white rounded-full p-1 pr-4 shadow-2xl border border-slate-100">
                                 <button
                                     onClick={() => setIsBookingOpen(true)}
                                     className="flex items-center gap-3 pl-1 pr-2 py-1"
                                 >
-                                    <div className="flex items-center justify-center w-10 h-10 bg-blue-600 text-white rounded-full">
+                                    <div className="flex items-center justify-center w-10 h-10 bg-[#e3171e] text-white rounded-full">
                                         <Calendar size={20} />
                                     </div>
                                     <div className="flex flex-col items-start">

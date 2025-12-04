@@ -3,7 +3,7 @@
 import { ImageOptim } from "@/components/ui/ImageOptim";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronRight } from "lucide-react";
+import { SectionHeader } from "@/components/ui/SectionHeader";
 
 type Service = {
     id: string;
@@ -19,18 +19,16 @@ export function ServicesGrid({ services }: { services: Service[] }) {
     const displayedServices = services.slice(0, 3);
 
     return (
-        <section className="py-20 bg-white">
+        <section className="py-20 bg-white dark:bg-slate-900">
             <div className="max-w-7xl mx-auto px-4 md:px-8">
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-                        Our Services
-                    </h2>
-                    <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                        Comprehensive care tailored to your specific recovery needs.
-                    </p>
-                </div>
+                <SectionHeader
+                    title="Our Services"
+                    description="Comprehensive care tailored to your specific recovery needs."
+                    linkText="View All Services"
+                    linkHref="/about"
+                />
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <AnimatePresence mode="popLayout">
                         {displayedServices.map((service) => (
                             <motion.div
@@ -43,7 +41,7 @@ export function ServicesGrid({ services }: { services: Service[] }) {
                             >
                                 <Link
                                     href={`/services/${service.id}`}
-                                    className="group block bg-slate-50 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow h-full"
+                                    className="group block bg-slate-50 dark:bg-slate-800 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow h-full border border-slate-200 dark:border-slate-700"
                                 >
                                     <div className="aspect-[4/3] relative">
                                         <ImageOptim
@@ -55,10 +53,10 @@ export function ServicesGrid({ services }: { services: Service[] }) {
                                         />
                                     </div>
                                     <div className="p-6">
-                                        <h3 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">
+                                        <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-2 group-hover:text-[#e3171e] transition-colors">
                                             {service.title}
                                         </h3>
-                                        <p className="text-slate-600">
+                                        <p className="text-slate-600 dark:text-slate-400">
                                             {service.excerpt}
                                         </p>
                                     </div>
@@ -66,16 +64,6 @@ export function ServicesGrid({ services }: { services: Service[] }) {
                             </motion.div>
                         ))}
                     </AnimatePresence>
-                </div>
-
-                <div className="text-center">
-                    <Link
-                        href="/about"
-                        className="inline-flex items-center justify-center px-8 py-3 bg-white text-slate-900 border border-slate-200 rounded-xl font-medium hover:bg-slate-50 hover:border-blue-300 transition-all group"
-                    >
-                        View All Services
-                        <ChevronRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                    </Link>
                 </div>
             </div>
         </section>
