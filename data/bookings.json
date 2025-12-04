@@ -1,0 +1,12 @@
+[
+  {
+    "id": "1764688171609",
+    "name": "Test",
+    "email": "test@test.com",
+    "phone": "1234567890",
+    "courseTitle": "Test Course",
+    "coursePrice": "$999",
+    "timestamp": "2025-12-02T15:09:31.609Z",
+    "status": "pending"
+  }
+]

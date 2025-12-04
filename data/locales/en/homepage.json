@@ -8,166 +8,329 @@
         ]
     },
     "seo": {
-        "metaTitle": "AtreusPhysio | Advanced Sports Rehab & Education",
-        "metaDescription": "Founded by Swatheeshwaran (MPT Sports) & Dr. Swathi (MPT Ortho). Premier destination for musculoskeletal rehab and physiotherapy education.",
+        "metaTitle": "AtreusPhysio | Reborn To Move Fearless",
+        "metaDescription": "Your path out of pain starts with science driven care. Assessment first approach, patient centred personalised treatment, and exercise science centred rehabilitation.",
         "canonical": "https://atreusphysio.in/",
-        "ogTitle": "AtreusPhysio - Clinical Excellence & Education",
-        "ogDescription": "Evidence-based rehabilitation and advanced physiotherapy training.",
+        "ogTitle": "AtreusPhysio - Reborn To Move Fearless",
+        "ogDescription": "Science driven care for pain relief and performance. Expert physiotherapy in Trichy.",
         "ogImage": "/images/og-home.jpg",
         "twitterCard": "summary_large_image",
         "robots": "index,follow",
         "keywords": [
-            "Sports Physio",
-            "Musculoskeletal Rehab",
-            "Physio Education",
-            "Swatheeshwaran",
-            "Dr. Swathi",
+            "Physiotherapy Trichy",
+            "Sports Rehab",
+            "Back Pain Treatment",
+            "Knee Pain Treatment",
+            "Dr. Swatheeshwaran",
             "Atreus Physio"
         ],
         "structuredData": {
             "@context": "https://schema.org",
             "@type": "MedicalBusiness",
             "name": "AtreusPhysio",
-            "founder": [
-                {
-                    "@type": "Person",
-                    "name": "Swatheeshwaran"
-                },
-                {
-                    "@type": "Person",
-                    "name": "Dr. Swathi"
-                }
-            ],
+            "founder": {
+                "@type": "Person",
+                "name": "Dr. Swatheeshwaran"
+            },
             "url": "https://atreusphysio.in/",
             "telephone": "+916379330661",
             "address": {
                 "@type": "PostalAddress",
+                "streetAddress": "46A, Mahalakshmi Nagar, EVR Road, Kamaraj Complex, KK Nagar",
                 "addressLocality": "Tiruchirappalli",
                 "addressRegion": "Tamil Nadu",
                 "addressCountry": "IN"
-            }
+            },
+            "openingHours": "Mo-Su 08:00-21:00"
         }
     },
     "heroSlides": [
         {
             "id": "slide1",
             "image": "https://i.ibb.co/Df4FM7vz/Lucid-Origin-create-a-physio-therepist-images-related-to-these-1.jpg",
-            "title": "Elite Sports Rehabilitation",
-            "subtitle": "Evidence-based care for athletes and active individuals. Recover stronger with our clinical reasoning approach.",
-            "cta": "Book Consultation"
+            "title": "Reborn To Move Fearless",
+            "subtitle": "Your path out of pain starts with science driven care.",
+            "cta": "Book Appointment"
         },
         {
             "id": "slide2",
             "image": "https://i.ibb.co/TqkHftwd/Lucid-Origin-create-a-physio-therepist-images-related-to-these-2.jpg",
-            "title": "Atreus Academy",
-            "subtitle": "Upskill with our advanced webinars and hands-on workshops. Join thousands of therapists learning with us.",
-            "cta": "View Courses"
+            "title": "Science Driven Care",
+            "subtitle": "Evidence-based reasoning and management for lasting recovery.",
+            "cta": "Our Services"
         },
         {
             "id": "slide3",
             "image": "https://i.ibb.co/Z1Y8sM0H/gemini-2-5-flash-image-create-a-physio-therepist-clinic-images-related-to-these-captions-Elite-Sport.jpg",
-            "title": "Patient-Centred Care",
-            "subtitle": "Treating the person, not just the scan. Comprehensive musculoskeletal solutions.",
-            "cta": "Our Approach"
-        }
-    ],
-    "stats": [
-        {
-            "label": "Followers",
-            "value": "10k+"
-        },
-        {
-            "label": "Students Trained",
-            "value": "5000+"
-        },
-        {
-            "label": "Happy Patients",
-            "value": "2000+"
-        },
-        {
-            "label": "Webinars",
-            "value": "50+"
-        }
-    ],
-    "founders": [
-        {
-            "name": "Swatheeshwaran",
-            "role": "Founder & Sports Physiotherapist",
-            "qualifications": "MPT (Sports)",
-            "bio": "Specialist in sports rehabilitation and clinical reasoning. Passionate about bridging the gap between evidence and practice.",
-            "image": "/images/dummy/founder-swatheesh.jpg"
-        },
-        {
-            "name": "Dr. Swathi",
-            "role": "Co-Founder & Orthopedic Physiotherapist",
-            "qualifications": "MPT (Ortho)",
-            "bio": "Expert in musculoskeletal disorders and orthopedic rehabilitation. Dedicated to patient education and empowerment.",
-            "image": "/images/dummy/founder-swathi.jpg"
+            "title": "Expert Rehabilitation",
+            "subtitle": "Helping you return to an active, confident, and pain-free life.",
+            "cta": "Meet The Team"
         }
     ],
     "valueProps": [
         {
-            "id": "reasoning",
-            "title": "Clinical Reasoning",
-            "desc": "We don't just treat symptoms; we solve the root cause using advanced clinical reasoning."
+            "id": "assessment",
+            "title": "Assessment First Approach",
+            "desc": "A structured evaluation to understand the real cause instead of chasing symptoms."
         },
         {
-            "id": "education",
-            "title": "Patient Education",
-            "desc": "Understanding your pain is the first step to recovery. We prioritize clear communication."
+            "id": "patient-centred",
+            "title": "Patient Centred Personalised Treatment",
+            "desc": "Treatment plans designed around your specific needs, goals, and lifestyle."
+        },
+        {
+            "id": "science",
+            "title": "Exercise Science Centred Rehabilitation",
+            "desc": "Rehabilitation grounded in exercise science for effective, long-term recovery."
         },
         {
             "id": "evidence",
-            "title": "Evidence-Based",
-            "desc": "Our protocols are grounded in the latest scientific research and international guidelines."
+            "title": "Evidence Based Reasoning and Management",
+            "desc": "Protocols based on the latest scientific research and international guidelines."
         },
         {
-            "id": "hybrid",
-            "title": "Hybrid Care",
-            "desc": "Seamlessly combine in-clinic sessions with tele-rehab for continuous support."
+            "id": "progressive",
+            "title": "Clear, Progressive Treatment Planning",
+            "desc": "A roadmap to recovery that is transparent, structured, and predictable."
+        },
+        {
+            "id": "biomechanics",
+            "title": "Movement and Biomechanics Based Reasoning",
+            "desc": "Using advanced movement analysis to guide clinical decisions and correct mechanics."
+        }
+    ],
+    "founders": [
+        {
+            "name": "Dr. Swatheeshwaran",
+            "role": "Founder & Sports Physiotherapist",
+            "qualifications": "MPT Sports",
+            "bio": "Dr. Swatheeshwaran, MPT Sports, is the founder of ATREUS PHYSIO and a clinician who believes in science driven, movement centred rehabilitation. His practice focuses on helping people return to an active, confident and pain free life.",
+            "shortBio": "Dr. Swatheeshwaran, MPT Sports, is the founder of ATREUS PHYSIO and a clinician who believes in science driven, movement centred rehabilitation. His practice focuses on helping people return to an active, confident and pain free life.",
+            "experience": "He has worked as an Assistant Professor for three years, trained institutional and professional athletes, and delivered rehabilitation for high performance sport environments. His on field experience includes serving as physiotherapist for multiple major national, state and inter university events.",
+            "image": "/images/dummy/founder-swatheesh.jpg",
+            "achievements": {
+                "national": [
+                    "All India Aquatics, Beach Volleyball, Badminton, Basketball Championships (2023 to 2024)"
+                ],
+                "state": [
+                    "SDAT CM Trophy (2021 to 2022)",
+                    "TNBA Basketball Championships: Junior, Senior and State categories (2021 to 2022)"
+                ],
+                "university": [
+                    "South Zone Tournaments in Football",
+                    "South Zone Volleyball",
+                    "South Zone Tennis",
+                    "South Zone Basketball (2021 to 2023)"
+                ]
+            },
+            "approach": "His approach combines clear assessment, movement analysis and evidence based loading to guide both recovery and performance. Treatment is structured to help patients return to daily function, return to sport and train with confidence. Every session focuses on clear communication so progress feels predictable, safe and understood."
         }
     ],
     "services": [
         {
-            "id": "sports",
-            "title": "Sports Injury Rehab",
-            "excerpt": "ACL rehab, tendonopathy management, and return-to-sport testing.",
+            "id": "pain-management",
+            "title": "Pain Management",
+            "excerpt": "Assessment first, movement correction, and progressive exercises to restore confidence.",
+            "details": {
+                "feels": "Localised pain, stiffness, reduced movement or recurring flare ups.",
+                "expect": "A clear explanation of why the pain is happening and a structured plan to reduce symptoms.",
+                "approach": "Assessment first, movement correction, progressive exercises and load planning to restore confidence."
+            },
+            "image": {
+                "src": "https://i.ibb.co/60Mvh91C/Generated-Image-December-02-2025-12-14-AM-1.png",
+                "alt": "Pain Management"
+            }
+        },
+        {
+            "id": "sports-rehab",
+            "title": "Sports Rehab",
+            "excerpt": "Biomechanics based rehab, sport specific loading, and return to sport steps.",
+            "details": {
+                "feels": "Injury during training, reduced performance, difficulty returning to sport or repeated setbacks.",
+                "expect": "A plan that matches the demands of their sport with clear return to sport steps.",
+                "approach": "Biomechanics based rehab, sport specific loading, movement retraining and strength progressions."
+            },
             "image": {
                 "src": "https://i.ibb.co/nsyNL6Pn/Generated-Image-December-02-2025-12-14-AM.png",
                 "alt": "Sports Rehab"
             }
         },
         {
-            "id": "msk",
-            "title": "Musculoskeletal Physio",
-            "excerpt": "Back pain, neck pain, and joint mobilization therapy.",
+            "id": "post-surgical",
+            "title": "Post Surgical Rehab",
+            "excerpt": "Guided recovery with structured milestones and safe progression.",
+            "details": {
+                "feels": "Weakness, restricted mobility, swelling or difficulty regaining function after surgery.",
+                "expect": "Guided recovery with structured milestones and safe progression.",
+                "approach": "Controlled mobility, gradual strengthening, gait and movement retraining, and long term function building."
+            },
+            "image": {
+                "src": "https://i.ibb.co/Z1Y8sM0H/gemini-2-5-flash-image-create-a-physio-therepist-clinic-images-related-to-these-captions-Elite-Sport.jpg",
+                "alt": "Post Surgical Rehab"
+            }
+        },
+        {
+            "id": "spine-care",
+            "title": "Spine Care",
+            "excerpt": "Movement analysis, spinal mechanics, targeted exercise and strength conditioning.",
+            "details": {
+                "feels": "Neck pain, low back pain, radiating symptoms or stiffness.",
+                "expect": "Understanding of triggers, relief strategies and long term movement confidence.",
+                "approach": "Movement analysis, spinal mechanics, targeted exercise and strength conditioning."
+            },
             "image": {
                 "src": "https://i.ibb.co/60Mvh91C/Generated-Image-December-02-2025-12-14-AM-1.png",
-                "alt": "MSK Physio"
+                "alt": "Spine Care"
+            }
+        },
+        {
+            "id": "knee-shoulder",
+            "title": "Knee & Shoulder",
+            "excerpt": "Joint loading strategies, mobility needs, strength profiling and functional progression.",
+            "details": {
+                "feels": "Pain with activity, instability, difficulty lifting, walking or playing sports.",
+                "expect": "A joint specific plan that focuses on mechanics, stability and performance.",
+                "approach": "Joint loading strategies, mobility needs, strength profiling and functional progression."
+            },
+            "image": {
+                "src": "https://i.ibb.co/nsyNL6Pn/Generated-Image-December-02-2025-12-14-AM.png",
+                "alt": "Knee & Shoulder"
+            }
+        },
+        {
+            "id": "performance",
+            "title": "Performance Training",
+            "excerpt": "Strength and conditioning, movement efficiency, load progression and performance metrics.",
+            "details": {
+                "feels": "Need for better strength, speed, endurance or sport specific performance.",
+                "expect": "A tailored program designed to enhance capacity, skill and resilience.",
+                "approach": "Strength and conditioning, movement efficiency, load progression and performance metrics."
+            },
+            "image": {
+                "src": "https://i.ibb.co/Z1Y8sM0H/gemini-2-5-flash-image-create-a-physio-therepist-clinic-images-related-to-these-captions-Elite-Sport.jpg",
+                "alt": "Performance Training"
             }
         },
         {
             "id": "online",
-            "title": "Tele-Consultation",
-            "excerpt": "Expert advice from the comfort of your home.",
+            "title": "Online Consultations",
+            "excerpt": "Movement review through video, personalised exercise plan and load management advice.",
+            "details": {
+                "feels": "Pain, movement issues or uncertainty without immediate access to a clinic.",
+                "expect": "A complete online assessment with clear exercises, guidance and follow up support.",
+                "approach": "Movement review through video, personalised exercise plan and load management advice."
+            },
             "image": {
                 "src": "https://i.ibb.co/Z1Y8sM0H/gemini-2-5-flash-image-create-a-physio-therepist-clinic-images-related-to-these-captions-Elite-Sport.jpg",
-                "alt": "Online Physio"
+                "alt": "Online Consultations"
             }
         }
     ],
-    "testimonials": [
+    "conditions": [
         {
-            "id": "t1",
-            "name": "Rahul S.",
-            "text": "The clinical reasoning approach changed my perspective on my back pain. Highly recommended!"
+            "id": "knee-pain",
+            "title": "Knee Pain",
+            "whatItIs": "Pain arising from the joint, soft tissues or loading mechanics around the knee.",
+            "symptoms": "Pain during walking, squatting, stairs or sport activities.",
+            "whenToSeekHelp": "If pain limits daily activity or keeps recurring."
         },
         {
-            "id": "t2",
-            "name": "Dr. Anitha",
-            "text": "As a student, Atreus Academy's webinars have been a game changer for my career."
+            "id": "back-pain",
+            "title": "Back Pain",
+            "whatItIs": "Pain from spinal joints, discs or soft tissue sensitivity influenced by load and movement.",
+            "symptoms": "Stiffness, tightness, sharp episodes or discomfort with bending and lifting.",
+            "whenToSeekHelp": "If pain affects work, sleep or daily function."
+        },
+        {
+            "id": "neck-pain",
+            "title": "Neck Pain",
+            "whatItIs": "Pain arising from cervical joints, muscles or load intolerance.",
+            "symptoms": "Difficulty turning, tightness, headaches or radiating discomfort.",
+            "whenToSeekHelp": "If symptoms persist or limit movement."
+        },
+        {
+            "id": "shoulder-pain",
+            "title": "Shoulder Pain",
+            "whatItIs": "Pain from rotator cuff tissues, joint structures or movement coordination issues.",
+            "symptoms": "Pain during lifting, reaching, overhead tasks or sleep.",
+            "whenToSeekHelp": "If arm use becomes limited."
+        },
+        {
+            "id": "ankle-injuries",
+            "title": "Ankle Injuries",
+            "whatItIs": "Sprains or load related issues affecting ankle stability and movement control.",
+            "symptoms": "Swelling, instability or pain during walking or sport.",
+            "whenToSeekHelp": "If weight bearing remains difficult."
+        },
+        {
+            "id": "ligament-injuries",
+            "title": "Ligament Injuries",
+            "whatItIs": "Injury to stabilising ligaments in joints like the knee or ankle.",
+            "symptoms": "Instability, swelling or difficulty with weight bearing and sport.",
+            "whenToSeekHelp": "If the joint feels unstable or recovery slows."
+        },
+        {
+            "id": "muscle-strains",
+            "title": "Muscle Strains",
+            "whatItIs": "Injury to muscle fibres due to sudden effort or excessive load.",
+            "symptoms": "Local pain, tightness, reduced strength or discomfort on stretch.",
+            "whenToSeekHelp": "If pain limits movement or sport performance."
+        },
+        {
+            "id": "sciatica",
+            "title": "Sciatica",
+            "whatItIs": "Radiating leg pain due to neural sensitivity or spinal mechanics.",
+            "symptoms": "Leg pain, numbness, tingling or difficulty with prolonged standing or walking.",
+            "whenToSeekHelp": "If symptoms persist or worsen over time."
         }
     ],
+    "successStories": {
+        "snapshots": [
+            {
+                "id": "s1",
+                "title": "ACL Rehab Success",
+                "description": "Return to football after 6 months of structured rehab.",
+                "image": "https://i.ibb.co/nsyNL6Pn/Generated-Image-December-02-2025-12-14-AM.png"
+            },
+            {
+                "id": "s2",
+                "title": "Chronic Back Pain",
+                "description": "Pain-free lifting after 4 years of struggle.",
+                "image": "https://i.ibb.co/60Mvh91C/Generated-Image-December-02-2025-12-14-AM-1.png"
+            },
+            {
+                "id": "s3",
+                "title": "Shoulder Mobility",
+                "description": "Full range of motion restored for competitive swimming.",
+                "image": "https://i.ibb.co/Z1Y8sM0H/gemini-2-5-flash-image-create-a-physio-therepist-clinic-images-related-to-these-captions-Elite-Sport.jpg"
+            }
+        ],
+        "testimonials": [
+            {
+                "id": "t1",
+                "name": "Rahul S.",
+                "text": "The clinical reasoning approach changed my perspective on my back pain. Highly recommended!",
+                "role": "Software Engineer"
+            },
+            {
+                "id": "t2",
+                "name": "Dr. Anitha",
+                "text": "As a student, Atreus Academy's webinars have been a game changer for my career.",
+                "role": "Physiotherapy Student"
+            },
+            {
+                "id": "t3",
+                "name": "Karthik R.",
+                "text": "I was told I couldn't run again. Dr. Swatheeshwaran proved them wrong with his science-based rehab.",
+                "role": "Marathon Runner"
+            }
+        ]
+    },
+    "location": {
+        "address": "46A, Mahalakshmi Nagar, EVR Road, Kamaraj Complex, KK Nagar, Tiruchirappalli",
+        "mapLink": "https://share.google/XBH1CYy5UxvoxrPkO",
+        "hours": "8 AM to 9 PM"
+    },
     "forms": {
         "bookingForm": {
             "title": "Start Your Recovery Journey",

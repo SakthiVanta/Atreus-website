@@ -1,32 +1,31 @@
-import { getPageContent } from "@/lib/content";
-import { Metadata } from "next";
-import { JsonLd } from "@/components/seo/JsonLd";
+"use client";
+
+import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/Button";
 import { Clock, MapPin, Tag, Users } from "lucide-react";
+import { BookNowModal } from "@/components/courses/BookNowModal";
 
-export async function generateMetadata(): Promise<Metadata> {
-    const data = await getPageContent("courses");
-    if (!data) return {};
+export default function CoursesPage() {
+    const [data, setData] = useState<any>(null);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedCourse, setSelectedCourse] = useState<any>(null);
 
-    return {
-        title: data.seo.metaTitle,
-        description: data.seo.metaDescription,
-        openGraph: {
-            title: data.seo.ogTitle,
-            description: data.seo.ogDescription,
-            images: [data.seo.ogImage],
-        },
+    useEffect(() => {
+        fetch("/api/page-content?pageId=courses")
+            .then(res => res.json())
+            .then(setData)
+            .catch(err => console.error("Error loading content:", err));
+    }, []);
+
+    const handleBookNow = (course: any) => {
+        setSelectedCourse(course);
+        setIsModalOpen(true);
     };
-}
 
-export default async function CoursesPage() {
-    const data = await getPageContent("courses");
-
-    if (!data) return <div>Error loading content</div>;
+    if (!data) return <div>Loading...</div>;
 
     return (
         <main className="min-h-screen bg-slate-50">
-            <JsonLd pageId="courses" />
 
             {/* Hero Section with Gradient & Pattern */}
             <section className="relative py-24 bg-slate-900 overflow-hidden">
@@ -133,7 +132,10 @@ export default async function CoursesPage() {
                                         <span className="text-slate-400 text-sm line-through block">{course.originalPrice}</span>
                                         <span className="text-2xl font-bold text-slate-900">{course.price}</span>
                                     </div>
-                                    <Button className="bg-slate-900 text-white hover:bg-slate-800">
+                                    <Button
+                                        onClick={() => handleBookNow(course)}
+                                        className="bg-slate-900 text-white hover:bg-slate-800"
+                                    >
                                         Book Now
                                     </Button>
                                 </div>
@@ -142,6 +144,14 @@ export default async function CoursesPage() {
                     ))}
                 </div>
             </section>
+
+            {/* Book Now Modal */}
+            <BookNowModal
+                isOpen={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
+                courseTitle={selectedCourse?.title || ""}
+                coursePrice={selectedCourse?.price || ""}
+            />
         </main>
     );
 }

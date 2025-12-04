@@ -3,9 +3,10 @@ import { Metadata } from "next";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { BookingForm } from "@/components/sections/BookingForm";
 import { ServicesGrid } from "@/components/sections/ServicesGrid";
-import { Testimonials } from "@/components/sections/Testimonials";
+import { SuccessStories } from "@/components/sections/SuccessStories";
 import { HeroCarousel } from "@/components/sections/HeroCarousel";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
+import { ConditionsGrid } from "@/components/sections/ConditionsGrid";
 
 export async function generateMetadata(): Promise<Metadata> {
     const data = await getPageContent("homepage");
@@ -63,30 +64,28 @@ export default async function Home() {
                 </div>
             )}
 
-            {/* Value Props */}
+            {/* Value Props Teaser */}
             <section className="py-24 bg-slate-50">
                 <div className="max-w-7xl mx-auto px-4 md:px-8">
-                    <AnimatedSection className="text-center mb-16">
+                    <AnimatedSection className="text-center">
                         <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-                            The Atreus Approach
+                            What Makes ATREUS PHYSIO Different
                         </h2>
-                        <div className="w-20 h-1 bg-blue-600 mx-auto rounded-full"></div>
-                        <p className="mt-4 text-slate-600 max-w-2xl mx-auto">
-                            Combining clinical expertise with patient education for lasting results.
+                        <div className="w-20 h-1 bg-blue-600 mx-auto rounded-full mb-8"></div>
+                        <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed mb-12">
+                            Combining clinical expertise with patient education for lasting results. We believe in a science-driven, assessment-first approach that puts you in control of your recovery.
                         </p>
-                    </AnimatedSection>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {data.valueProps.map((prop: any, i: number) => (
-                            <AnimatedSection key={prop.id} delay={i * 0.1} className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all border border-slate-100">
-                                <div className="w-12 h-12 bg-blue-50 rounded-xl mb-6 flex items-center justify-center text-blue-600">
-                                    <div className="w-6 h-6 bg-current rounded-full opacity-20" /> {/* Icon placeholder */}
-                                </div>
-                                <h3 className="text-xl font-bold mb-3 text-slate-900">{prop.title}</h3>
-                                <p className="text-slate-600 leading-relaxed text-sm">{prop.desc}</p>
-                            </AnimatedSection>
-                        ))}
-                    </div>
+                        <a
+                            href="/about"
+                            className="inline-flex items-center justify-center px-8 py-4 bg-white text-slate-900 border border-slate-200 rounded-xl font-medium hover:bg-slate-50 hover:border-blue-300 transition-all group shadow-sm hover:shadow-md"
+                        >
+                            View All
+                            <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                        </a>
+                    </AnimatedSection>
                 </div>
             </section>
 
@@ -96,36 +95,61 @@ export default async function Home() {
                     <div className="max-w-7xl mx-auto px-4 md:px-8">
                         <AnimatedSection className="text-center mb-16">
                             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-                                Meet the Experts
+                                Meet Your Therapist
                             </h2>
-                            <p className="text-slate-600">Led by visionaries in the field of physiotherapy.</p>
+                            <div className="w-20 h-1 bg-blue-600 mx-auto rounded-full"></div>
                         </AnimatedSection>
 
-                        <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                        <div className="max-w-6xl mx-auto">
                             {data.founders.map((founder: any, i: number) => (
-                                <AnimatedSection key={i} delay={i * 0.2} className="flex flex-col md:flex-row gap-6 items-center md:items-start text-center md:text-left">
-                                    <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-slate-200 shrink-0 overflow-hidden border-4 border-white shadow-lg">
-                                        {/* Image would go here */}
-                                        <div className="w-full h-full bg-slate-300" />
+                                <div key={i} className="flex flex-col lg:flex-row gap-16 items-start">
+                                    <AnimatedSection delay={0.2} className="w-full lg:w-1/3 shrink-0">
+                                        <div className="aspect-[3/4] rounded-2xl bg-slate-200 overflow-hidden shadow-xl relative group">
+                                            {/* Image placeholder */}
+                                            <div className="absolute inset-0 bg-slate-300 group-hover:scale-105 transition-transform duration-700" />
+                                            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-slate-900/90 to-transparent p-6 text-white">
+                                                <h3 className="text-xl font-bold">{founder.name}</h3>
+                                                <p className="text-blue-300 text-sm">{founder.role}</p>
+                                                <p className="text-slate-300 text-xs mt-1">{founder.qualifications}</p>
+                                            </div>
+                                        </div>
+                                    </AnimatedSection>
+
+                                    <div className="w-full lg:w-2/3 space-y-8">
+                                        <AnimatedSection delay={0.3}>
+                                            <h3 className="text-2xl font-bold text-slate-900 mb-4">Experience & Clinical Interests</h3>
+                                            <p className="text-slate-600 leading-relaxed text-lg mb-6">
+                                                {founder.shortBio || founder.bio}
+                                            </p>
+                                        </AnimatedSection>
+
+                                        <AnimatedSection delay={0.4}>
+                                            <a
+                                                href="/about"
+                                                className="inline-flex items-center justify-center px-8 py-4 bg-slate-900 text-white rounded-xl font-medium hover:bg-blue-600 transition-colors group"
+                                            >
+                                                Read Full Profile
+                                                <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                                </svg>
+                                            </a>
+                                        </AnimatedSection>
                                     </div>
-                                    <div>
-                                        <h3 className="text-2xl font-bold text-slate-900">{founder.name}</h3>
-                                        <div className="text-blue-600 font-medium mb-2">{founder.role}</div>
-                                        <div className="text-xs font-bold bg-slate-100 inline-block px-2 py-1 rounded mb-3 text-slate-700">{founder.qualifications}</div>
-                                        <p className="text-slate-600 text-sm leading-relaxed">{founder.bio}</p>
-                                    </div>
-                                </AnimatedSection>
+                                </div>
                             ))}
                         </div>
                     </div>
                 </section>
             )}
 
+            {/* Conditions Section */}
+            {data.conditions && <ConditionsGrid conditions={data.conditions} />}
+
             {/* Services Section */}
             {data.services && <ServicesGrid services={data.services} />}
 
-            {/* Testimonials Section */}
-            {data.testimonials && <Testimonials testimonials={data.testimonials} />}
+            {/* Success Stories Section */}
+            {data.successStories && <SuccessStories data={data.successStories} />}
 
             {/* Booking Form Section */}
             {data.forms?.bookingForm && (

@@ -1,54 +1,111 @@
 {
-    "pageId": "about",
     "seo": {
-        "metaTitle": "About AtreusPhysio | Founders Swatheeshwaran & Dr. Swathi",
-        "metaDescription": "Meet the team behind AtreusPhysio. We combine clinical expertise with a passion for education to elevate physiotherapy standards.",
+        "metaTitle": "About Us | AtreusPhysio",
+        "metaDescription": "Learn about AtreusPhysio, founded by Dr. Swatheeshwaran. Science driven assessment, movement based rehabilitation and structured loading.",
+        "keywords": [
+            "Physiotherapy Trichy",
+            "Dr. Swatheeshwaran",
+            "Sports Rehab",
+            "About Atreus Physio"
+        ],
         "canonical": "https://atreusphysio.in/about",
-        "ogTitle": "About AtreusPhysio",
-        "ogDescription": "Leading the way in evidence-based rehab and education.",
+        "ogTitle": "About Us - AtreusPhysio",
+        "ogDescription": "Reborn To Move Fearless. Science driven care for pain relief and performance.",
         "ogImage": "/images/og-about.jpg",
         "robots": "index,follow"
     },
     "hero": {
-        "title": "Bridging Evidence & Practice",
-        "subtitle": "AtreusPhysio is more than a clinic; it's a movement towards better physiotherapy standards.",
+        "title": "Reborn To Move Fearless",
+        "subtitle": "Recover with Clarity, move with Confidence and live without Fear.",
         "image": {
-            "src": "https://i.ibb.co/60Mvh91C/Generated-Image-December-02-2025-12-14-AM-1.png",
-            "alt": "Atreus Team"
+            "src": "https://i.ibb.co/Df4FM7vz/Lucid-Origin-create-a-physio-therepist-images-related-to-these-1.jpg",
+            "alt": "Atreus Physio Clinic"
         }
     },
-    "content": {
-        "intro": "Founded by Swatheeshwaran and Dr. Swathi, AtreusPhysio was born from a shared vision: to provide patient-centred care that is truly evidence-based, while simultaneously empowering the next generation of therapists through high-quality education.",
-        "mission": "To demystify complex rehabilitation concepts for patients and professionals alike.",
-        "stats": [
+    "founder": {
+        "name": "Dr. Swatheeshwaran",
+        "role": "Founder & Sports Physiotherapist",
+        "qualifications": "MPT Sports",
+        "bio": "Dr. Swatheeshwaran, MPT Sports, is the founder of ATREUS PHYSIO and a clinician who believes in science driven, movement centred rehabilitation. His practice focuses on helping people return to an active, confident and pain free life.",
+        "experience": "He has worked as an Assistant Professor for three years, trained institutional and professional athletes, and delivered rehabilitation for high performance sport environments. His on field experience includes serving as physiotherapist for multiple major national, state and inter university events.",
+        "image": "/images/dummy/founder-swatheesh.jpg",
+        "achievements": {
+            "national": [
+                "All India Aquatics, Beach Volleyball, Badminton, Basketball Championships (2023 to 2024)"
+            ],
+            "state": [
+                "SDAT CM Trophy (2021 to 2022)",
+                "TNBA Basketball Championships: Junior, Senior and State categories (2021 to 2022)"
+            ],
+            "university": [
+                "South Zone Tournaments in Football",
+                "South Zone Volleyball",
+                "South Zone Tennis",
+                "South Zone Basketball (2021 to 2023)"
+            ]
+        },
+        "approach": "His approach combines clear assessment, movement analysis and evidence based loading to guide both recovery and performance. Treatment is structured to help patients return to daily function, return to sport and train with confidence. Every session focuses on clear communication so progress feels predictable, safe and understood."
+    },
+    "philosophy": {
+        "title": "About Us",
+        "intro": "ATREUS PHYSIO was built from years of Clinical Experience, Teaching and On-Field Sports Practice. The focus has always been simple: help people Move Better, Recover Stronger and Feel Confident in their bodies again.",
+        "sections": [
             {
-                "label": "Years of Excellence",
-                "value": "8+"
+                "title": "Why ATREUS PHYSIO Was Created",
+                "content": "It was created to bring Science Driven Assessment, Movement Based Rehabilitation and Structured Loading into everyday physiotherapy care, removing Guesswork and Uncertainty for patients."
             },
             {
-                "label": "Workshops Conducted",
-                "value": "100+"
+                "title": "Philosophy: Movement First, Fear Out",
+                "content": "Movement is the foundation of recovery. Reducing Fear, improving Understanding and building Confidence are central to long term progress."
             },
             {
-                "label": "Lives Touched",
-                "value": "10k+"
+                "title": "Treatment Style",
+                "content": "Assessment Led, Biomechanics Informed and Exercise Centred. Every plan is Personalised, Progressive and built to improve Strength, Endurance and Cardiac Capacity through structured, evidence based loading."
+            },
+            {
+                "title": "Qualifications and Background",
+                "content": "Led by Dr. Swatheeshwaran, MPT Sports, with experience as an Assistant Professor, Sports Physiotherapist and Performance Trainer for National, State and Inter-University Athletes."
+            },
+            {
+                "title": "Patient Centred Approach",
+                "content": "Care is designed around the Person, not just the Injury. Communication is Clear, Goals are Aligned and treatment evolves based on the Patient’s Response."
+            },
+            {
+                "title": "Vision and Identity of ATREUS PHYSIO",
+                "content": "To create a space where Science, Clarity and Movement shape rehabilitation. A clinic where people feel Supported, Guided and Capable of returning to the activities they value."
             }
         ]
     },
-    "founders": [
+    "valueProps": [
         {
-            "name": "Swatheeshwaran",
-            "role": "Founder",
-            "qualifications": "MPT (Sports)",
-            "bio": "A passionate Sports Physiotherapist with a deep interest in tendon rehabilitation and clinical reasoning. Swatheeshwaran is a well-known educator in the physio community, frequently lecturing on complex musculoskeletal conditions.",
-            "image": "/images/dummy/founder-swatheesh.jpg"
+            "id": "assessment",
+            "title": "Assessment First Approach",
+            "desc": "A structured evaluation to understand the real cause instead of chasing symptoms."
         },
         {
-            "name": "Dr. Swathi",
-            "role": "Co-Founder",
-            "qualifications": "MPT (Orthopaedics)",
-            "bio": "Specializing in orthopedic rehabilitation, Dr. Swathi brings a compassionate, patient-first approach to care. She is also an Assistant Professor, dedicated to academic excellence.",
-            "image": "/images/dummy/founder-swathi.jpg"
+            "id": "patient-centred",
+            "title": "Patient Centred Personalised Treatment",
+            "desc": "Treatment plans designed around your specific needs, goals, and lifestyle."
+        },
+        {
+            "id": "science",
+            "title": "Exercise Science Centred Rehabilitation",
+            "desc": "Rehabilitation grounded in exercise science for effective, long-term recovery."
+        },
+        {
+            "id": "evidence",
+            "title": "Evidence Based Reasoning and Management",
+            "desc": "Protocols based on the latest scientific research and international guidelines."
+        },
+        {
+            "id": "progressive",
+            "title": "Clear, Progressive Treatment Planning",
+            "desc": "A roadmap to recovery that is transparent, structured, and predictable."
+        },
+        {
+            "id": "biomechanics",
+            "title": "Movement and Biomechanics Based Reasoning",
+            "desc": "Using advanced movement analysis to guide clinical decisions and correct mechanics."
         }
     ]
 }

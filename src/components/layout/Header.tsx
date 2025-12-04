@@ -6,10 +6,13 @@ import { motion, useScroll, useMotionValueEvent, AnimatePresence } from "framer-
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 
+import { GlobalBookingDialog } from "@/components/ui/GlobalBookingDialog";
+
 export function Header() {
     const { scrollY } = useScroll();
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [isBookingOpen, setIsBookingOpen] = useState(false);
 
     useMotionValueEvent(scrollY, "change", (latest) => {
         if (latest > 50) {
@@ -89,8 +92,8 @@ export function Header() {
 
                     {/* CTA Button & Mobile Toggle */}
                     <div className="flex items-center gap-4 shrink-0 z-50">
-                        <Link
-                            href="/book"
+                        <button
+                            onClick={() => setIsBookingOpen(true)}
                             className={cn(
                                 "hidden md:inline-flex h-10 items-center justify-center rounded-full px-6 text-sm font-medium transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
                                 isScrolled
@@ -99,7 +102,7 @@ export function Header() {
                             )}
                         >
                             Book Now
-                        </Link>
+                        </button>
 
                         {/* Mobile Menu Toggle */}
                         <button
@@ -177,18 +180,22 @@ export function Header() {
                                 transition={{ delay: 0.5 }}
                                 className="mt-4"
                             >
-                                <Link
-                                    href="/book"
-                                    onClick={() => setIsMobileMenuOpen(false)}
+                                <button
+                                    onClick={() => {
+                                        setIsMobileMenuOpen(false);
+                                        setIsBookingOpen(true);
+                                    }}
                                     className="inline-flex h-14 items-center justify-center rounded-full bg-blue-600 px-10 text-lg font-medium text-white shadow-lg transition-all hover:bg-blue-700 hover:scale-105"
                                 >
                                     Book Now
-                                </Link>
+                                </button>
                             </motion.div>
                         </nav>
                     </motion.div>
                 )}
             </AnimatePresence>
+
+            <GlobalBookingDialog isOpen={isBookingOpen} onClose={() => setIsBookingOpen(false)} />
         </>
     );
 }
