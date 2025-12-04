@@ -25,7 +25,7 @@ export default function RootLayout({
             <body className={`${inter.variable} ${outfit.variable} font-sans antialiased`}>
                 <Providers>
                     <Header />
-                    <div className="pt-20 md:pt-24">
+                    <div className="">
                         {children}
                     </div>
                     <Footer />
