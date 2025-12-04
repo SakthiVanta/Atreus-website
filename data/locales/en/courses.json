@@ -1,23 +1,23 @@
 {
     "pageId": "courses",
     "seo": {
-        "metaTitle": "Physio Chronicles & Webinars | AtreusPhysio Academy",
-        "metaDescription": "Join our webinars on Tendonopathy, Plantar Fasciitis, and Clinical Reasoning. Learn from Swatheeshwaran and Dr. Swathi.",
+        "metaTitle": "AtreusPhysio Academy | Professional Physiotherapy Courses & Webinars",
+        "metaDescription": "Elevate your practice with expert-led courses on Tendonopathy, Plantar Fasciitis, and Clinical Reasoning. Learn from experienced physiotherapists at AtreusPhysio Academy.",
         "canonical": "https://atreusphysio.in/courses",
-        "ogTitle": "AtreusPhysio Academy - Learn from Experts",
-        "ogDescription": "Upgrade your clinical reasoning skills.",
+        "ogTitle": "AtreusPhysio Academy - Professional Development for Physiotherapists",
+        "ogDescription": "Upgrade your clinical reasoning skills with evidence-based courses and workshops.",
         "ogImage": "/images/og-courses.jpg",
         "robots": "index,follow"
     },
     "hero": {
-        "title": "Physio Chronicles",
-        "subtitle": "Deep dive into clinical reasoning, evidence-based practice, and modern rehabilitation protocols.",
-        "cta": "Explore Webinars",
+        "title": "AtreusPhysio Academy",
+        "subtitle": "Elevate your practice with expert-led courses. Deep dive into clinical reasoning, evidence-based practice, and modern rehabilitation protocols.",
+        "cta": "Explore Courses",
         "image": "/images/dummy/courses-hero-real.jpg"
     },
     "offer": {
         "active": true,
-        "title": "New Webinar Series",
+        "title": "New Course Series",
         "description": "Mastering Tendonopathy: From Pathophysiology to Loading Programs.",
         "code": "TENDON25",
         "countdownTarget": "2025-12-31T23:59:59"
@@ -45,12 +45,32 @@
             "originalPrice": "₹1,999",
             "description": "A complete guide to managing tendon pain, from isometric loading to return to sport.",
             "tags": [
-                "Webinar",
+                "Course",
                 "Best Seller"
             ],
             "seatsLeft": 100,
             "location": "Online",
-            "image": "/images/dummy/course-tendon.jpg"
+            "image": "/images/dummy/course-tendon.jpg",
+            "details": {
+                "topics": [
+                    "Tendon pathophysiology and healing timeline",
+                    "Loading principles: Isometric, isotonic, eccentric",
+                    "Progressive overload strategies",
+                    "Return to sport protocols"
+                ],
+                "learningOutcomes": [
+                    "Understand tendon structure and healing mechanisms",
+                    "Design evidence-based loading programs",
+                    "Implement progressive rehabilitation protocols",
+                    "Make informed return-to-sport decisions"
+                ],
+                "technicalTerms": [
+                    "Reactive tendinopathy vs degenerative tendinopathy",
+                    "Mechanical load tolerance",
+                    "Time under tension (TUT)",
+                    "Eccentric overload training"
+                ]
+            }
         },
         {
             "id": "w2",
@@ -65,7 +85,27 @@
             ],
             "seatsLeft": 45,
             "location": "Zoom",
-            "image": "/images/dummy/course-plantar.jpg"
+            "image": "/images/dummy/course-plantar.jpg",
+            "details": {
+                "topics": [
+                    "Plantar fascia anatomy and biomechanics",
+                    "Differential diagnosis of heel pain",
+                    "Hip and ankle mobility assessment",
+                    "Gait analysis and footwear assessment"
+                ],
+                "learningOutcomes": [
+                    "Perform comprehensive foot and ankle assessments",
+                    "Identify contributing factors in the kinetic chain",
+                    "Develop individualized treatment plans",
+                    "Educate patients on footwear and activity modification"
+                ],
+                "technicalTerms": [
+                    "Windlass mechanism",
+                    "Medial longitudinal arch",
+                    "Pronation vs supination",
+                    "First ray mobility"
+                ]
+            }
         },
         {
             "id": "w3",
@@ -80,7 +120,27 @@
             ],
             "seatsLeft": 15,
             "location": "Online",
-            "image": "/images/dummy/course-spine.jpg"
+            "image": "/images/dummy/course-spine.jpg",
+            "details": {
+                "topics": [
+                    "Red flags and differential diagnosis",
+                    "Biopsychosocial assessment framework",
+                    "Movement-based classification systems",
+                    "Pain neuroscience education strategies"
+                ],
+                "learningOutcomes": [
+                    "Screen for serious pathology effectively",
+                    "Address psychosocial factors influencing pain",
+                    "Apply movement-based treatment approaches",
+                    "Communicate pain science concepts to patients"
+                ],
+                "technicalTerms": [
+                    "Central sensitization",
+                    "Fear-avoidance behavior",
+                    "Directional preference",
+                    "Load management strategies"
+                ]
+            }
         }
     ]
 }

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Instagram, Linkedin, Phone, MapPin, Mail, MessageCircle } from "lucide-react";
 
 const contactInfo = {
@@ -16,20 +17,19 @@ const contactInfo = {
 
 export function Footer() {
     return (
-        <footer className="bg-[#06113d] text-white">
+        <footer className="bg-slate-100 dark:bg-[#06113d] text-slate-900 dark:text-white">
             {/* Main Footer */}
             <div className="container px-4 md:px-8 mx-auto max-w-7xl py-16">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
                     {/* Brand */}
                     <div className="space-y-6">
-                        <div>
-                            <span className="text-2xl font-bold tracking-tight">
-                                ATREUS <span className="text-[#e3171e]">PHYSIO</span>
-                            </span>
-                            <p className="text-slate-400 mt-3 text-sm leading-relaxed">
-                                Recover Faster. Move Better. Live Stronger. Your trusted partner for physiotherapy and rehabilitation in Tiruchirappalli.
-                            </p>
-                        </div>
+                        <Image
+                            src="/images/logo.webp"
+                            alt="AtreusPhysio Logo"
+                            width={200}
+                            height={80}
+                            className="h-16 w-auto object-contain bg-white px-3 py-2 rounded-full"
+                        />
 
                         {/* Social Links */}
                         <div className="flex gap-3">
@@ -151,27 +151,27 @@ export function Footer() {
                             </a>
                         </div>
                     </div>
-                </div>
-            </div>
+                </div >
+            </div >
 
             {/* Bottom Bar */}
-            <div className="border-t border-white/10">
+            <div className="border-t border-slate-300 dark:border-white/10">
                 <div className="container px-4 md:px-8 mx-auto max-w-7xl py-6">
                     <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-                        <p className="text-sm text-slate-400">
+                        <p className="text-sm text-slate-600 dark:text-slate-400">
                             © {new Date().getFullYear()} ATREUS PHYSIO. All rights reserved.
                         </p>
-                        <div className="flex gap-6 text-sm text-slate-400">
-                            <Link href="/privacy" className="hover:text-white transition-colors">
+                        <div className="flex gap-6 text-sm text-slate-600 dark:text-slate-400">
+                            <Link href="/privacy" className="hover:text-slate-900 dark:hover:text-white transition-colors">
                                 Privacy Policy
                             </Link>
-                            <Link href="/terms" className="hover:text-white transition-colors">
+                            <Link href="/terms" className="hover:text-slate-900 dark:hover:text-white transition-colors">
                                 Terms of Service
                             </Link>
                         </div>
                     </div>
                 </div>
-            </div>
-        </footer>
+            </div >
+        </footer >
     );
 }

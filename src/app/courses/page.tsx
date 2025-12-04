@@ -3,13 +3,14 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/Button";
-import { Clock, MapPin, Tag, Users } from "lucide-react";
+import { Clock, MapPin, Tag, Users, MoreVertical, ChevronDown, ChevronUp, BookOpen, Target, Brain } from "lucide-react";
 import { BookNowModal } from "@/components/courses/BookNowModal";
 
 export default function CoursesPage() {
     const [data, setData] = useState<any>(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedCourse, setSelectedCourse] = useState<any>(null);
+    const [expandedCourse, setExpandedCourse] = useState<string | null>(null);
 
     useEffect(() => {
         fetch("/api/page-content?pageId=courses")
@@ -21,6 +22,10 @@ export default function CoursesPage() {
     const handleBookNow = (course: any) => {
         setSelectedCourse(course);
         setIsModalOpen(true);
+    };
+
+    const toggleCourseDetails = (courseId: string) => {
+        setExpandedCourse(expandedCourse === courseId ? null : courseId);
     };
 
     if (!data) return <div>Loading...</div>;
@@ -192,6 +197,84 @@ export default function CoursesPage() {
                                     <span className="w-1 h-1 bg-slate-300 dark:bg-slate-600 rounded-full"></span>
                                     <span className="text-[#e3171e] font-medium">{course.seatsLeft} seats left</span>
                                 </div>
+
+                                {/* Collapsible Course Details */}
+                                {course.details && (
+                                    <div className="mb-6">
+                                        <button
+                                            onClick={() => toggleCourseDetails(course.id)}
+                                            className="flex items-center gap-2 text-sm font-semibold text-[#06113d] dark:text-[#e3171e] hover:gap-3 transition-all mb-3"
+                                        >
+                                            <MoreVertical className="w-4 h-4" />
+                                            {expandedCourse === course.id ? 'Hide' : 'View'} Course Details
+                                            {expandedCourse === course.id ? (
+                                                <ChevronUp className="w-4 h-4" />
+                                            ) : (
+                                                <ChevronDown className="w-4 h-4" />
+                                            )}
+                                        </button>
+
+                                        <motion.div
+                                            initial={false}
+                                            animate={{ height: expandedCourse === course.id ? 'auto' : 0 }}
+                                            transition={{ duration: 0.3, ease: 'easeInOut' }}
+                                            className="overflow-hidden"
+                                        >
+                                            <div className="space-y-4 p-4 bg-slate-50 dark:bg-slate-900/50 rounded-xl border border-slate-200 dark:border-slate-700">
+                                                {/* Topics */}
+                                                {course.details.topics && (
+                                                    <div>
+                                                        <div className="flex items-center gap-2 mb-2">
+                                                            <BookOpen className="w-4 h-4 text-[#06113d] dark:text-[#e3171e]" />
+                                                            <h4 className="font-bold text-sm text-slate-900 dark:text-white">Topics Covered</h4>
+                                                        </div>
+                                                        <ul className="space-y-1 ml-6">
+                                                            {course.details.topics.map((topic: string, i: number) => (
+                                                                <li key={i} className="text-xs text-slate-600 dark:text-slate-400 list-disc">
+                                                                    {topic}
+                                                                </li>
+                                                            ))}
+                                                        </ul>
+                                                    </div>
+                                                )}
+
+                                                {/* Learning Outcomes */}
+                                                {course.details.learningOutcomes && (
+                                                    <div>
+                                                        <div className="flex items-center gap-2 mb-2">
+                                                            <Target className="w-4 h-4 text-[#06113d] dark:text-[#e3171e]" />
+                                                            <h4 className="font-bold text-sm text-slate-900 dark:text-white">What You'll Learn</h4>
+                                                        </div>
+                                                        <ul className="space-y-1 ml-6">
+                                                            {course.details.learningOutcomes.map((outcome: string, i: number) => (
+                                                                <li key={i} className="text-xs text-slate-600 dark:text-slate-400 list-disc">
+                                                                    {outcome}
+                                                                </li>
+                                                            ))}
+                                                        </ul>
+                                                    </div>
+                                                )}
+
+                                                {/* Technical Terms */}
+                                                {course.details.technicalTerms && (
+                                                    <div>
+                                                        <div className="flex items-center gap-2 mb-2">
+                                                            <Brain className="w-4 h-4 text-[#06113d] dark:text-[#e3171e]" />
+                                                            <h4 className="font-bold text-sm text-slate-900 dark:text-white">Technical Concepts</h4>
+                                                        </div>
+                                                        <ul className="space-y-1 ml-6">
+                                                            {course.details.technicalTerms.map((term: string, i: number) => (
+                                                                <li key={i} className="text-xs text-slate-600 dark:text-slate-400 list-disc">
+                                                                    {term}
+                                                                </li>
+                                                            ))}
+                                                        </ul>
+                                                    </div>
+                                                )}
+                                            </div>
+                                        </motion.div>
+                                    </div>
+                                )}
 
                                 <div className="flex items-center justify-between pt-6 border-t border-slate-100 dark:border-slate-700">
                                     <div>

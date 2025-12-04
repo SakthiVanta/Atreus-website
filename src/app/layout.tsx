@@ -25,7 +25,9 @@ export default function RootLayout({
             <body className={`${inter.variable} ${outfit.variable} font-sans antialiased`}>
                 <Providers>
                     <Header />
-                    {children}
+                    <div className="pt-20 md:pt-24">
+                        {children}
+                    </div>
                     <Footer />
                     <FloatingCTA />
                 </Providers>

@@ -2,12 +2,23 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, useScroll, useMotionValueEvent, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
-import { Menu, X, Sparkles } from "lucide-react";
+import { Menu, X, Instagram, Linkedin, Phone, Mail } from "lucide-react";
 
 import { GlobalBookingDialog } from "@/components/ui/GlobalBookingDialog";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
+
+// Contact Information
+const contactInfo = {
+    phone: "+91 7010294784",
+    email: "contact@atreusphysio.com",
+    social: {
+        instagram: "https://www.instagram.com/atreus_physio",
+        linkedin: "https://www.linkedin.com/company/atreus-physio/",
+    }
+};
 
 export function Header() {
     const { scrollY } = useScroll();
@@ -36,6 +47,7 @@ export function Header() {
         { name: "Home", href: "/" },
         { name: "About", href: "/about" },
         { name: "Courses", href: "/courses" },
+        { name: "Podcasts", href: "/podcasts" },
         { name: "Contact", href: "/contact" },
     ];
 
@@ -67,19 +79,19 @@ export function Header() {
                             "bg-white/90 dark:bg-slate-900/90",
                             isScrolled && "shadow-2xl shadow-[#06113d]/10 dark:shadow-[#e3171e]/20"
                         )}>
-                            {/* Logo with gradient */}
                             <Link
                                 href="/"
-                                className="flex items-center gap-2 shrink-0 z-50 cursor-pointer group"
+                                className="flex items-center shrink-0 z-50 cursor-pointer group"
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >
-                                <div className="relative">
-                                    <div className="absolute -inset-1 bg-gradient-to-r from-[#06113d] to-[#e3171e] rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-300"></div>
-                                    <Sparkles className="relative w-6 h-6 text-[#e3171e]" />
-                                </div>
-                                <span className="text-xl font-bold bg-gradient-to-r from-[#06113d] via-slate-800 to-[#06113d] dark:from-white dark:via-slate-200 dark:to-white bg-clip-text text-transparent">
-                                    AtreusPhysio
-                                </span>
+                                <Image
+                                    src="/images/logo.webp"
+                                    alt="AtreusPhysio Logo"
+                                    width={180}
+                                    height={130}
+                                    className="h-16 w-auto object-contain dark:bg-white dark:px-2 dark:py-1 dark:rounded-full"
+                                    priority
+                                />
                             </Link>
 
                             {/* Desktop Nav with enhanced styling */}
@@ -142,7 +154,6 @@ export function Header() {
                                     )}>
                                         <span className="flex items-center gap-2">
                                             Book Now
-                                            <Sparkles className="w-4 h-4 animate-pulse" />
                                         </span>
                                     </div>
                                 </motion.button>
@@ -185,96 +196,101 @@ export function Header() {
                         {/* Gradient background */}
                         <div className="absolute inset-0 bg-gradient-to-br from-white via-[#06113d]/5 to-[#e3171e]/5 dark:from-slate-950 dark:via-[#06113d]/20 dark:to-[#e3171e]/20 backdrop-blur-2xl" />
 
-                        {/* Content */}
-                        <div className="relative h-full flex flex-col items-center justify-center p-8">
-                            <nav className="flex flex-col items-center gap-6 mb-12">
-                                {navItems.map((item, i) => (
-                                    <motion.div
-                                        key={item.name}
-                                        initial={{ opacity: 0, x: -50 }}
-                                        animate={{ opacity: 1, x: 0 }}
-                                        transition={{ delay: 0.1 + i * 0.1, type: "spring", stiffness: 100 }}
-                                    >
-                                        <Link
-                                            href={item.href}
-                                            onClick={() => setIsMobileMenuOpen(false)}
-                                            className="relative group cursor-pointer"
+                        {/* Content - Scrollable */}
+                        <div className="relative h-full overflow-y-auto overflow-x-hidden">
+                            <div className="min-h-full flex flex-col items-center p-8 pt-32 pb-24">
+                                <nav className="flex flex-col items-center gap-6 mb-12">
+                                    {navItems.map((item, i) => (
+                                        <motion.div
+                                            key={item.name}
+                                            initial={{ opacity: 0, x: -50 }}
+                                            animate={{ opacity: 1, x: 0 }}
+                                            transition={{ delay: 0.1 + i * 0.1, type: "spring", stiffness: 100 }}
                                         >
-                                            <span className="text-4xl font-bold bg-gradient-to-r from-[#06113d] via-slate-800 to-[#06113d] dark:from-white dark:via-slate-200 dark:to-white bg-clip-text text-transparent group-hover:scale-110 inline-block transition-transform">
-                                                {item.name}
-                                            </span>
-                                            <motion.div
-                                                className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-[#06113d] to-[#e3171e] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
-                                            />
-                                        </Link>
-                                    </motion.div>
-                                ))}
-                            </nav>
-
-                            {/* Socials & Contact */}
-                            <motion.div
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ delay: 0.5 }}
-                                className="flex flex-col items-center gap-6"
-                            >
-                                <div className="flex gap-4">
-                                    {[
-                                        { icon: "I", href: "#", label: "Instagram" },
-                                        { icon: "L", href: "#", label: "LinkedIn" },
-                                        { icon: "T", href: "#", label: "Twitter" },
-                                        { icon: "F", href: "#", label: "Facebook" },
-                                    ].map((social, i) => (
-                                        <motion.a
-                                            key={i}
-                                            href={social.href}
-                                            whileHover={{ scale: 1.1, rotate: 5 }}
-                                            whileTap={{ scale: 0.95 }}
-                                            className="relative w-12 h-12 flex items-center justify-center rounded-full cursor-pointer group"
-                                        >
-                                            <div className="absolute inset-0 bg-gradient-to-r from-[#06113d] to-[#e3171e] rounded-full opacity-0 group-hover:opacity-100 transition-opacity blur"></div>
-                                            <div className="relative w-full h-full flex items-center justify-center rounded-full bg-slate-100 dark:bg-slate-800 group-hover:bg-gradient-to-r group-hover:from-[#06113d] group-hover:to-[#e3171e] transition-all">
-                                                <span className="text-sm font-bold text-slate-700 dark:text-slate-300 group-hover:text-white transition-colors">
-                                                    {social.icon}
+                                            <Link
+                                                href={item.href}
+                                                onClick={() => setIsMobileMenuOpen(false)}
+                                                className="relative group cursor-pointer"
+                                            >
+                                                <span className="text-4xl font-bold bg-gradient-to-r from-[#06113d] via-slate-800 to-[#06113d] dark:from-white dark:via-slate-200 dark:to-white bg-clip-text text-transparent group-hover:scale-110 inline-block transition-transform">
+                                                    {item.name}
                                                 </span>
-                                            </div>
-                                        </motion.a>
+                                                <motion.div
+                                                    className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-[#06113d] to-[#e3171e] rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
+                                                />
+                                            </Link>
+                                        </motion.div>
                                     ))}
-                                </div>
+                                </nav>
 
-                                <div className="text-center space-y-1">
-                                    <p className="text-slate-600 dark:text-slate-400 text-sm font-medium">+91 98765 43210</p>
-                                    <p className="text-slate-600 dark:text-slate-400 text-sm font-medium">contact@atreusphysio.in</p>
-                                </div>
-                            </motion.div>
-
-                            {/* Mobile CTA */}
-                            <motion.div
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ delay: 0.6 }}
-                                className="mt-8 flex flex-col items-center gap-4"
-                            >
-                                <ThemeToggle />
-
-                                <motion.button
-                                    onClick={() => {
-                                        setIsMobileMenuOpen(false);
-                                        setIsBookingOpen(true);
-                                    }}
-                                    whileHover={{ scale: 1.05 }}
-                                    whileTap={{ scale: 0.95 }}
-                                    className="relative group cursor-pointer"
+                                {/* Socials & Contact */}
+                                <motion.div
+                                    initial={{ opacity: 0, y: 20 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ delay: 0.5 }}
+                                    className="flex flex-col items-center gap-6"
                                 >
-                                    <div className="absolute -inset-1 bg-gradient-to-r from-[#06113d] to-[#e3171e] rounded-full blur opacity-75 group-hover:opacity-100 transition duration-300 animate-pulse"></div>
-                                    <div className="relative px-10 py-4 bg-gradient-to-r from-[#06113d] to-[#e3171e] rounded-full">
-                                        <span className="text-lg font-bold text-white flex items-center gap-2">
-                                            Book Now
-                                            <Sparkles className="w-5 h-5" />
-                                        </span>
+                                    <div className="flex gap-4">
+                                        {[
+                                            { icon: Instagram, href: contactInfo.social.instagram, label: "Instagram" },
+                                            { icon: Linkedin, href: contactInfo.social.linkedin, label: "LinkedIn" },
+                                        ].map((social, i) => (
+                                            <motion.a
+                                                key={i}
+                                                href={social.href}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                whileHover={{ scale: 1.1, rotate: 5 }}
+                                                whileTap={{ scale: 0.95 }}
+                                                className="relative w-12 h-12 flex items-center justify-center rounded-full cursor-pointer group"
+                                            >
+                                                <div className="absolute inset-0 bg-gradient-to-r from-[#06113d] to-[#e3171e] rounded-full opacity-0 group-hover:opacity-100 transition-opacity blur"></div>
+                                                <div className="relative w-full h-full flex items-center justify-center rounded-full bg-slate-100 dark:bg-slate-800 group-hover:bg-gradient-to-r group-hover:from-[#06113d] group-hover:to-[#e3171e] transition-all">
+                                                    <social.icon className="w-5 h-5 text-slate-700 dark:text-slate-300 group-hover:text-white transition-colors" />
+                                                </div>
+                                            </motion.a>
+                                        ))}
                                     </div>
-                                </motion.button>
-                            </motion.div>
+
+                                    <div className="text-center space-y-1">
+                                        <a href={`tel:${contactInfo.phone}`} className="text-slate-600 dark:text-slate-400 text-sm font-medium hover:text-[#e3171e] transition-colors flex items-center justify-center gap-1">
+                                            <Phone className="w-4 h-4" />
+                                            {contactInfo.phone}
+                                        </a>
+                                        <a href={`mailto:${contactInfo.email}`} className="text-slate-600 dark:text-slate-400 text-sm font-medium hover:text-[#e3171e] transition-colors flex items-center justify-center gap-1">
+                                            <Mail className="w-4 h-4" />
+                                            {contactInfo.email}
+                                        </a>
+                                    </div>
+                                </motion.div>
+
+                                {/* Mobile CTA */}
+                                <motion.div
+                                    initial={{ opacity: 0, y: 20 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ delay: 0.6 }}
+                                    className="mt-8 flex flex-col items-center gap-4"
+                                >
+                                    <ThemeToggle />
+
+                                    <motion.button
+                                        onClick={() => {
+                                            setIsMobileMenuOpen(false);
+                                            setIsBookingOpen(true);
+                                        }}
+                                        whileHover={{ scale: 1.05 }}
+                                        whileTap={{ scale: 0.95 }}
+                                        className="relative group cursor-pointer"
+                                    >
+                                        <div className="absolute -inset-1 bg-gradient-to-r from-[#06113d] to-[#e3171e] rounded-full blur opacity-75 group-hover:opacity-100 transition duration-300 animate-pulse"></div>
+                                        <div className="relative px-10 py-4 bg-gradient-to-r from-[#06113d] to-[#e3171e] rounded-full">
+                                            <span className="text-lg font-bold text-white flex items-center gap-2">
+                                                Book Now
+                                            </span>
+                                        </div>
+                                    </motion.button>
+                                </motion.div>
+                            </div>
                         </div>
                     </motion.div>
                 )}
