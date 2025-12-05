@@ -54,7 +54,7 @@ export async function POST(request: Request) {
         // Send email
         await transporter.sendMail({
             from: process.env.SMTP_FROM,
-            to: "developer@physiolaxy.com",
+            to: "atreusphysio@gmail.com",
             subject: subject,
             html: html,
             replyTo: data.email || data.phone,
