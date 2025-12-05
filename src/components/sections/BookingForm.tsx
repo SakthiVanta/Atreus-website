@@ -3,6 +3,7 @@
 import { useMutation } from "@tanstack/react-query";
 import { useState } from "react";
 import { Button } from "../ui/Button";
+import { toast } from "sonner";
 
 type FormData = {
     fullName: string;
@@ -20,7 +21,6 @@ export function BookingForm({ formConfig }: { formConfig: any }) {
         preferredDate: "",
         notes: "",
     });
-    const [success, setSuccess] = useState(false);
 
     const mutation = useMutation({
         mutationFn: async (data: FormData) => {
@@ -29,11 +29,30 @@ export function BookingForm({ formConfig }: { formConfig: any }) {
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(data),
             });
-            if (!res.ok) throw new Error("Booking failed");
-            return res.json();
+
+            const result = await res.json();
+
+            if (!res.ok) {
+                throw new Error(result.message || "Booking failed");
+            }
+
+            return result;
         },
-        onSuccess: () => {
-            setSuccess(true);
+        onMutate: () => {
+            toast.loading("Sending your booking request...", { id: "booking-toast" });
+        },
+        onSuccess: (data) => {
+            toast.success(data.message || formConfig.submit.successMessage || "Booking request received!", { id: "booking-toast" });
+            setFormData({
+                fullName: "",
+                email: "",
+                phone: "",
+                preferredDate: "",
+                notes: "",
+            });
+        },
+        onError: (error) => {
+            toast.error(error.message || "Something went wrong. Please try again.", { id: "booking-toast" });
         },
     });
 
@@ -48,14 +67,7 @@ export function BookingForm({ formConfig }: { formConfig: any }) {
         setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
     };
 
-    if (success) {
-        return (
-            <div className="p-6 bg-green-50 text-green-800 rounded-xl border border-green-100">
-                <h3 className="text-lg font-semibold mb-2">Request Received</h3>
-                <p>{formConfig.submit.successMessage}</p>
-            </div>
-        );
-    }
+
 
     return (
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -132,11 +144,7 @@ export function BookingForm({ formConfig }: { formConfig: any }) {
                 {mutation.isPending ? "Sending..." : formConfig.submit.text}
             </Button>
 
-            {mutation.isError && (
-                <p className="text-sm text-red-600">
-                    Something went wrong. Please try again.
-                </p>
-            )}
+
         </form>
     );
 }

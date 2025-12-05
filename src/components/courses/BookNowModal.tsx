@@ -5,12 +5,13 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import { X, Check, Loader2, ChevronRight } from "lucide-react";
+import { X, Loader2, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/Button";
+import { toast } from "@/lib/toast";
 
 const formSchema = z.object({
     name: z.string().min(2, "Name must be at least 2 characters"),
-    email: z.string().email("Invalid email address"),
+    email: z.string().email("Invalid email address").optional().or(z.literal("")),
     phone: z.string().min(10, "Phone number must be at least 10 digits"),
 });
 
@@ -25,7 +26,6 @@ interface BookNowModalProps {
 
 export function BookNowModal({ isOpen, onClose, courseTitle, coursePrice }: BookNowModalProps) {
     const [isSubmitting, setIsSubmitting] = useState(false);
-    const [isSuccess, setIsSuccess] = useState(false);
 
     const {
         register,
@@ -38,20 +38,50 @@ export function BookNowModal({ isOpen, onClose, courseTitle, coursePrice }: Book
 
     const onSubmit = async (data: FormData) => {
         setIsSubmitting(true);
+        const loadingToast = toast.loading({
+            title: "Processing your booking...",
+            description: `Securing your spot for ${courseTitle}`
+        });
+
         try {
             const response = await fetch("/api/send-email", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ ...data, courseTitle, coursePrice, type: "course" }),
+                body: JSON.stringify({
+                    ...data,
+                    courseTitle,
+                    coursePrice,
+                    type: "course",
+                    page: "Courses Page",
+                    timestamp: new Date().toLocaleString('en-IN', {
+                        dateStyle: 'medium',
+                        timeStyle: 'short',
+                        timeZone: 'Asia/Kolkata'
+                    })
+                }),
             });
 
-            if (!response.ok) throw new Error("Failed to submit");
+            const result = await response.json();
 
-            setIsSuccess(true);
+            if (!response.ok) {
+                throw new Error(result.message || "Failed to submit");
+            }
+
+            toast.dismiss(loadingToast);
+            toast.success({
+                title: "Course Booking Confirmed!",
+                description: `Check your email for payment details. We'll contact you at ${data.phone}`,
+                duration: 5000
+            });
+
             reset();
-        } catch (error) {
-            console.error("Error booking course:", error);
-            // You might want to show an error toast here
+            onClose();
+        } catch (error: any) {
+            toast.dismiss(loadingToast);
+            toast.error({
+                title: "Booking Failed",
+                description: error.message || "Please check your information and try again.",
+            });
         } finally {
             setIsSubmitting(false);
         }
@@ -94,90 +124,63 @@ export function BookNowModal({ isOpen, onClose, courseTitle, coursePrice }: Book
 
                         {/* Content */}
                         <div className="p-6">
-                            <AnimatePresence mode="wait">
-                                {isSuccess ? (
-                                    <motion.div
-                                        key="success"
-                                        initial={{ opacity: 0, y: 10 }}
-                                        animate={{ opacity: 1, y: 0 }}
-                                        exit={{ opacity: 0, y: -10 }}
-                                        className="text-center py-8"
+                            <form
+                                onSubmit={handleSubmit(onSubmit)}
+                                className="space-y-4"
+                            >
+                                <div className="space-y-1">
+                                    <label className="text-sm font-medium text-slate-700">Full Name</label>
+                                    <input
+                                        {...register("name")}
+                                        className="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 outline-none transition-all"
+                                        placeholder="John Doe"
+                                    />
+                                    {errors.name && <p className="text-xs text-red-500">{errors.name.message}</p>}
+                                </div>
+
+                                <div className="space-y-1">
+                                    <label className="text-sm font-medium text-slate-700">Email Address (Optional)</label>
+                                    <input
+                                        {...register("email")}
+                                        type="email"
+                                        className="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-[#06113d] focus:ring-2 focus:ring-[#06113d]/20 outline-none transition-all"
+                                        placeholder="john@example.com"
+                                    />
+                                    {errors.email && <p className="text-xs text-red-500">{errors.email.message}</p>}
+                                </div>
+
+                                <div className="space-y-1">
+                                    <label className="text-sm font-medium text-slate-700">Phone Number</label>
+                                    <input
+                                        {...register("phone")}
+                                        type="tel"
+                                        className="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 outline-none transition-all"
+                                        placeholder="+91 98765 43210"
+                                    />
+                                    {errors.phone && <p className="text-xs text-red-500">{errors.phone.message}</p>}
+                                </div>
+
+                                <div className="pt-2">
+                                    <Button
+                                        type="submit"
+                                        disabled={isSubmitting}
+                                        className="w-full bg-slate-900 text-white hover:bg-slate-800 flex items-center justify-center gap-2"
                                     >
-                                        <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                                            <Check className="w-8 h-8" />
-                                        </div>
-                                        <h4 className="text-xl font-bold text-slate-900 mb-2">Booking Confirmed!</h4>
-                                        <p className="text-slate-600 mb-6">
-                                            We've received your details. Check your email for the payment link and invoice.
-                                        </p>
-                                        <Button onClick={onClose} className="w-full bg-slate-900 text-white hover:bg-slate-800">
-                                            Close
-                                        </Button>
-                                    </motion.div>
-                                ) : (
-                                    <motion.form
-                                        key="form"
-                                        initial={{ opacity: 0, y: 10 }}
-                                        animate={{ opacity: 1, y: 0 }}
-                                        exit={{ opacity: 0, y: -10 }}
-                                        onSubmit={handleSubmit(onSubmit)}
-                                        className="space-y-4"
-                                    >
-                                        <div className="space-y-1">
-                                            <label className="text-sm font-medium text-slate-700">Full Name</label>
-                                            <input
-                                                {...register("name")}
-                                                className="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 outline-none transition-all"
-                                                placeholder="John Doe"
-                                            />
-                                            {errors.name && <p className="text-xs text-red-500">{errors.name.message}</p>}
-                                        </div>
-
-                                        <div className="space-y-1">
-                                            <label className="text-sm font-medium text-slate-700">Email Address</label>
-                                            <input
-                                                {...register("email")}
-                                                type="email"
-                                                className="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 outline-none transition-all"
-                                                placeholder="john@example.com"
-                                            />
-                                            {errors.email && <p className="text-xs text-red-500">{errors.email.message}</p>}
-                                        </div>
-
-                                        <div className="space-y-1">
-                                            <label className="text-sm font-medium text-slate-700">Phone Number</label>
-                                            <input
-                                                {...register("phone")}
-                                                type="tel"
-                                                className="w-full px-4 py-2 rounded-lg border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 outline-none transition-all"
-                                                placeholder="+91 98765 43210"
-                                            />
-                                            {errors.phone && <p className="text-xs text-red-500">{errors.phone.message}</p>}
-                                        </div>
-
-                                        <div className="pt-2">
-                                            <Button
-                                                type="submit"
-                                                disabled={isSubmitting}
-                                                className="w-full bg-slate-900 text-white hover:bg-slate-800 flex items-center justify-center gap-2"
-                                            >
-                                                {isSubmitting ? (
-                                                    <>
-                                                        <Loader2 className="w-4 h-4 animate-spin" /> Processing...
-                                                    </>
-                                                ) : (
-                                                    <>
-                                                        Proceed to Payment <ChevronRight className="w-4 h-4" />
-                                                    </>
-                                                )}
-                                            </Button>
-                                            <p className="text-xs text-center text-slate-400 mt-3">
-                                                Secure payment link will be sent to your email.
-                                            </p>
-                                        </div>
-                                    </motion.form>
-                                )}
-                            </AnimatePresence>
+                                        {isSubmitting ? (
+                                            <>
+                                                <Loader2 className="w-4 h-4 animate-spin" /> Processing...
+                                            </>
+                                        ) : (
+                                            <>
+                                                Proceed to Payment <ChevronRight className="w-4 h-4" />
+                                            </>
+                                        )}
+                                    </Button>
+                                    <p className="text-xs text-center text-slate-400 mt-3">
+                                        Secure payment link will be sent to your email.
+                                    </p>
+                                </div>
+                            </form>
                         </div>
                     </motion.div>
                 </>

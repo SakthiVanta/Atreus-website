@@ -5,9 +5,10 @@ import { motion } from "framer-motion";
 import {
     MapPin, Phone, Mail, Clock, Instagram, Linkedin,
     MessageCircle, Navigation, ChevronRight, Sparkles,
-    Calendar, Send, CheckCircle2, Loader2
+    Calendar, Send, Loader2
 } from "lucide-react";
 import { Button } from "@/components/ui/Button";
+import { toast } from "sonner";
 
 const contactInfo = {
     address: {
@@ -132,20 +133,38 @@ export default function ContactPage() {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setFormState('loading');
+        const loadingToast = toast.loading("Sending your message...", { id: "contact-toast" });
 
         try {
             const response = await fetch('/api/send-email', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ ...formData, type: 'contact', source: 'Contact Page' })
+                body: JSON.stringify({
+                    ...formData,
+                    type: 'contact',
+                    page: 'Contact Page',
+                    timestamp: new Date().toLocaleString('en-IN', {
+                        dateStyle: 'medium',
+                        timeStyle: 'short',
+                        timeZone: 'Asia/Kolkata'
+                    })
+                })
             });
+
+            const result = await response.json();
 
             if (response.ok) {
                 setFormState('success');
                 setFormData({ name: '', email: '', phone: '', message: '' });
+                toast.success("Message sent successfully! We'll get back to you soon.", { id: "contact-toast" });
+                setFormState('idle');
+            } else {
+                throw new Error(result.message || "Failed to send message");
             }
-        } catch (error) {
+        } catch (error: any) {
             console.error('Form submission error:', error);
+            setFormState('idle');
+            toast.error(error.message || "Something went wrong. Please try again.", { id: "contact-toast" });
         }
     };
 
@@ -374,97 +393,78 @@ export default function ContactPage() {
                                     </div>
                                 </div>
 
-                                {formState === 'success' ? (
-                                    <motion.div
-                                        initial={{ opacity: 0, scale: 0.9 }}
-                                        animate={{ opacity: 1, scale: 1 }}
-                                        className="text-center py-8"
-                                    >
-                                        <div className="w-16 h-16 bg-green-100 dark:bg-green-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
-                                            <CheckCircle2 className="w-8 h-8 text-green-600 dark:text-green-400" />
-                                        </div>
-                                        <h4 className="text-xl font-bold text-slate-900 dark:text-white mb-2">Message Sent!</h4>
-                                        <p className="text-slate-600 dark:text-slate-400 mb-6">
-                                            Thank you for reaching out. We'll contact you soon.
-                                        </p>
-                                        <Button onClick={() => setFormState('idle')} className="bg-[#06113d] hover:bg-[#e3171e]">
-                                            Send Another Message
-                                        </Button>
-                                    </motion.div>
-                                ) : (
-                                    <form onSubmit={handleSubmit} className="space-y-4">
-                                        <div className="grid md:grid-cols-2 gap-4">
-                                            <div>
-                                                <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1.5">
-                                                    Full Name *
-                                                </label>
-                                                <input
-                                                    type="text"
-                                                    required
-                                                    value={formData.name}
-                                                    onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
-                                                    className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-white focus:border-[#06113d] focus:ring-2 focus:ring-[#06113d]/20 outline-none transition-all"
-                                                    placeholder="John Doe"
-                                                />
-                                            </div>
-                                            <div>
-                                                <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1.5">
-                                                    Phone Number *
-                                                </label>
-                                                <input
-                                                    type="tel"
-                                                    required
-                                                    value={formData.phone}
-                                                    onChange={(e) => setFormData(prev => ({ ...prev, phone: e.target.value }))}
-                                                    className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-white focus:border-[#06113d] focus:ring-2 focus:ring-[#06113d]/20 outline-none transition-all"
-                                                    placeholder="+91 98765 43210"
-                                                />
-                                            </div>
-                                        </div>
+                                <form onSubmit={handleSubmit} className="space-y-4">
+                                    <div className="grid md:grid-cols-2 gap-4">
                                         <div>
                                             <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1.5">
-                                                Email Address
+                                                Full Name *
                                             </label>
                                             <input
-                                                type="email"
-                                                value={formData.email}
-                                                onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
+                                                type="text"
+                                                required
+                                                value={formData.name}
+                                                onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
                                                 className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-white focus:border-[#06113d] focus:ring-2 focus:ring-[#06113d]/20 outline-none transition-all"
-                                                placeholder="you@example.com"
+                                                placeholder="John Doe"
                                             />
                                         </div>
                                         <div>
                                             <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1.5">
-                                                How can we help you?
+                                                Phone Number *
                                             </label>
-                                            <textarea
+                                            <input
+                                                type="tel"
                                                 required
-                                                rows={4}
-                                                value={formData.message}
-                                                onChange={(e) => setFormData(prev => ({ ...prev, message: e.target.value }))}
-                                                className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-white focus:border-[#06113d] focus:ring-2 focus:ring-[#06113d]/20 outline-none transition-all resize-none"
-                                                placeholder="Tell us about your condition or query..."
+                                                value={formData.phone}
+                                                onChange={(e) => setFormData(prev => ({ ...prev, phone: e.target.value }))}
+                                                className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-white focus:border-[#06113d] focus:ring-2 focus:ring-[#06113d]/20 outline-none transition-all"
+                                                placeholder="+91 98765 43210"
                                             />
                                         </div>
-                                        <Button
-                                            type="submit"
-                                            disabled={formState === 'loading'}
-                                            className="w-full bg-gradient-to-r from-[#06113d] to-[#0a1a5c] hover:from-[#e3171e] hover:to-[#c41218] text-white py-4 rounded-xl font-semibold flex items-center justify-center gap-2 transition-all duration-300"
-                                        >
-                                            {formState === 'loading' ? (
-                                                <>
-                                                    <Loader2 className="w-5 h-5 animate-spin" />
-                                                    Sending...
-                                                </>
-                                            ) : (
-                                                <>
-                                                    <Send className="w-5 h-5" />
-                                                    Send Message
-                                                </>
-                                            )}
-                                        </Button>
-                                    </form>
-                                )}
+                                    </div>
+                                    <div>
+                                        <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1.5">
+                                            Email Address
+                                        </label>
+                                        <input
+                                            type="email"
+                                            value={formData.email}
+                                            onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
+                                            className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-white focus:border-[#06113d] focus:ring-2 focus:ring-[#06113d]/20 outline-none transition-all"
+                                            placeholder="you@example.com"
+                                        />
+                                    </div>
+                                    <div>
+                                        <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1.5">
+                                            How can we help you?
+                                        </label>
+                                        <textarea
+                                            required
+                                            rows={4}
+                                            value={formData.message}
+                                            onChange={(e) => setFormData(prev => ({ ...prev, message: e.target.value }))}
+                                            className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-white focus:border-[#06113d] focus:ring-2 focus:ring-[#06113d]/20 outline-none transition-all resize-none"
+                                            placeholder="Tell us about your condition or query..."
+                                        />
+                                    </div>
+                                    <Button
+                                        type="submit"
+                                        disabled={formState === 'loading'}
+                                        className="w-full bg-gradient-to-r from-[#06113d] to-[#0a1a5c] hover:from-[#e3171e] hover:to-[#c41218] text-white py-4 rounded-xl font-semibold flex items-center justify-center gap-2 transition-all duration-300"
+                                    >
+                                        {formState === 'loading' ? (
+                                            <>
+                                                <Loader2 className="w-5 h-5 animate-spin" />
+                                                Sending...
+                                            </>
+                                        ) : (
+                                            <>
+                                                <Send className="w-5 h-5" />
+                                                Send Message
+                                            </>
+                                        )}
+                                    </Button>
+                                </form>
                             </motion.div>
                         </div>
                     </div>

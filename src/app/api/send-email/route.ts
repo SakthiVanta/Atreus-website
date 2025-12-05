@@ -13,10 +13,10 @@ export async function POST(request: Request) {
         const body = await request.json();
         const { type = "general", ...data } = body;
 
-        // Validate required fields
-        if (!data.name || !data.email || !data.phone) {
+        // Validate required fields (email is optional now)
+        if (!data.name || !data.phone) {
             return NextResponse.json(
-                { error: "Missing required fields" },
+                { error: "Missing required fields", message: "Name and phone are required" },
                 { status: 400 }
             );
         }
@@ -24,8 +24,9 @@ export async function POST(request: Request) {
         // Get template
         const template = (templates as any)[type];
         if (!template) {
+            console.error(`Template '${type}' not found in email-templates.json. Available keys:`, Object.keys(templates));
             return NextResponse.json(
-                { error: "Invalid template type" },
+                { error: "Invalid template type", message: "Email template configuration error" },
                 { status: 400 }
             );
         }
@@ -35,8 +36,8 @@ export async function POST(request: Request) {
         let subject = template.subject;
         Object.keys(data).forEach((key) => {
             const regex = new RegExp(`{{${key}}}`, "g");
-            html = html.replace(regex, data[key]);
-            subject = subject.replace(regex, data[key]);
+            html = html.replace(regex, data[key] || "N/A");
+            subject = subject.replace(regex, data[key] || "N/A");
         });
 
         // Configure transporter
@@ -56,7 +57,7 @@ export async function POST(request: Request) {
             to: "developer@physiolaxy.com",
             subject: subject,
             html: html,
-            replyTo: data.email,
+            replyTo: data.email || data.phone,
         });
 
         return NextResponse.json({ success: true });
