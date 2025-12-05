@@ -1,13 +1,86 @@
 {
     "pageId": "contact",
     "seo": {
-        "metaTitle": "Contact Us | AtreusPhysio Chennai",
-        "metaDescription": "Get in touch with AtreusPhysio. Call us, email us, or visit our clinic in Chennai.",
+        "metaTitle": "Contact ATREUS PHYSIO | Physiotherapy Clinic in Tiruchirappalli, Tamil Nadu",
+        "metaDescription": "Visit ATREUS PHYSIO in Tiruchirappalli for expert physiotherapy care. Call +91 7010294784 or visit us at Kamaraj Complex, EVR Rd, Sathanur. Open Monday-Saturday 8:30 AM – 9:00 PM.",
         "canonical": "https://atreusphysio.in/contact",
-        "ogTitle": "Contact AtreusPhysio",
-        "ogDescription": "We are here to help. Reach out today.",
-        "ogImage": "/images/og-default.jpg",
-        "robots": "index,follow"
+        "ogTitle": "Contact ATREUS PHYSIO - Expert Physiotherapy in Trichy",
+        "ogDescription": "Book your appointment today. Professional physiotherapy services in Tiruchirappalli, Tamil Nadu.",
+        "ogImage": "/images/og-contact.jpg",
+        "ogType": "website",
+        "ogSiteName": "AtreusPhysio",
+        "ogLocale": "en_IN",
+        "twitterCard": "summary",
+        "twitterTitle": "Contact ATREUS PHYSIO Trichy",
+        "twitterDescription": "Expert physiotherapy clinic in Tiruchirappalli. Book your appointment today.",
+        "twitterImage": "/images/og-contact.jpg",
+        "robots": "index,follow",
+        "keywords": [
+            "Physiotherapy clinic Trichy",
+            "Physiotherapist Tiruchirappalli",
+            "Sports physio Tamil Nadu",
+            "Back pain treatment Trichy",
+            "Knee pain specialist Trichy",
+            "Contact AtreusPhysio",
+            "Book physiotherapy appointment Trichy",
+            "ATREUS PHYSIO location",
+            "Physiotherapy clinic near me Trichy",
+            "Best physiotherapist Tiruchirappalli",
+            "Sports rehabilitation Trichy",
+            "Pain management clinic Trichy",
+            "Physio clinic Sathanur",
+            "Physiotherapy EVR Road Trichy"
+        ],
+        "structuredData": {
+            "@context": "https://schema.org",
+            "@type": "MedicalBusiness",
+            "name": "ATREUS PHYSIO",
+            "alternateName": "AtreusPhysio",
+            "description": "Professional physiotherapy clinic in Tiruchirappalli specializing in sports rehabilitation, pain management, and movement-based therapy.",
+            "url": "https://atreusphysio.in",
+            "telephone": "+917010294784",
+            "email": "contact@atreusphysio.com",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Kamaraj Complex, 46A, EVR Rd, Mahalakshmi Nagar, Sathanur",
+                "addressLocality": "Tiruchirappalli",
+                "addressRegion": "Tamil Nadu",
+                "postalCode": "620021",
+                "addressCountry": "IN"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "10.8165088",
+                "longitude": "78.6899661"
+            },
+            "openingHoursSpecification": [
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday",
+                        "Saturday"
+                    ],
+                    "opens": "08:30",
+                    "closes": "21:00"
+                }
+            ],
+            "priceRange": "₹₹",
+            "founder": {
+                "@type": "Person",
+                "name": "Dr. Swatheeshwaran",
+                "jobTitle": "Founder & Sports Physiotherapist",
+                "description": "MPT Sports, specialized in sports rehabilitation and movement-based therapy"
+            },
+            "sameAs": [
+                "https://www.instagram.com/atreus_physio",
+                "https://www.linkedin.com/company/atreus-physio/"
+            ],
+            "hasMap": "https://www.google.com/maps/place/ATREUS+Physio/@10.8165088,78.6899661,17z"
+        }
     },
     "info": {
         "title": "Get in Touch",
@@ -15,18 +88,18 @@
         "details": [
             {
                 "label": "Phone",
-                "value": "+91 98765 43210",
-                "href": "tel:+919876543210"
+                "value": "+91 7010294784",
+                "href": "tel:+917010294784"
             },
             {
                 "label": "Email",
-                "value": "hello@atreusphysio.com",
-                "href": "mailto:hello@atreusphysio.com"
+                "value": "contact@atreusphysio.com",
+                "href": "mailto:contact@atreusphysio.com"
             },
             {
                 "label": "Address",
-                "value": "123 Health Street, Chennai, India",
-                "href": "https://maps.google.com"
+                "value": "Kamaraj Complex, 46A, EVR Rd, Mahalakshmi Nagar, Sathanur, Tiruchirappalli, Tamil Nadu 620021",
+                "href": "https://www.google.com/maps/place/ATREUS+Physio/@10.8165088,78.6899661,17z"
             }
         ]
     },

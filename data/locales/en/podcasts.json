@@ -7,7 +7,44 @@
         "ogTitle": "Physio Chronicles - Your Guide to Evidence-Based Physiotherapy",
         "ogDescription": "Deep dives into clinical reasoning, research updates, and practical rehabilitation strategies.",
         "ogImage": "/images/og-podcasts.jpg",
-        "robots": "index,follow"
+        "ogType": "video.other",
+        "ogSiteName": "AtreusPhysio",
+        "ogLocale": "en_IN",
+        "ogVideo": "https://www.youtube.com/@atreusphysio",
+        "twitterCard": "summary_large_image",
+        "twitterTitle": "Physio Chronicles - Evidence-Based Physiotherapy Podcast",
+        "twitterDescription": "Watch in-depth discussions on clinical reasoning, rehabilitation, and evidence-based practice.",
+        "twitterImage": "/images/og-podcasts.jpg",
+        "twitterPlayer": "https://www.youtube.com/@atreusphysio",
+        "robots": "index,follow",
+        "keywords": [
+            "Physiotherapy podcast India",
+            "Evidence-based physio discussions",
+            "Clinical reasoning podcast",
+            "Sports rehabilitation podcast",
+            "Physio Chronicles",
+            "Dr. Swatheeshwaran podcast",
+            "Physiotherapy YouTube channel",
+            "Tendonopathy management discussion",
+            "Pain science podcast",
+            "Rehabilitation strategies podcast",
+            "Physiotherapy education videos",
+            "Professional development physiotherapy",
+            "ACL rehab podcast",
+            "Shoulder rehabilitation videos"
+        ],
+        "structuredData": {
+            "@context": "https://schema.org",
+            "@type": "PodcastSeries",
+            "name": "Physio Chronicles",
+            "description": "Evidence-based physiotherapy discussions featuring in-depth conversations about clinical reasoning, research updates, and practical rehabilitation strategies.",
+            "url": "https://atreusphysio.in/podcasts",
+            "author": {
+                "@type": "Person",
+                "name": "Dr. Swatheeshwaran"
+            },
+            "webFeed": "https://www.youtube.com/@atreusphysio"
+        }
     },
     "hero": {
         "title": "Physio Chronicles",

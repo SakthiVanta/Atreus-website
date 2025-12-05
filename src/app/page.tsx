@@ -1,5 +1,6 @@
 import { getPageContent } from "@/lib/content";
 import { Metadata } from "next";
+import { generateStandardMetadata } from "@/lib/seo-utils";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { BookingForm } from "@/components/sections/BookingForm";
 import { ServicesGrid } from "@/components/sections/ServicesGrid";
@@ -13,28 +14,7 @@ export async function generateMetadata(): Promise<Metadata> {
     const data = await getPageContent("homepage");
     if (!data) return {};
 
-    return {
-        title: data.seo.metaTitle,
-        description: data.seo.metaDescription,
-        keywords: data.seo.keywords,
-        authors: [{ name: "AtreusPhysio" }],
-        publisher: "AtreusPhysio",
-        alternates: {
-            canonical: data.seo.canonical,
-        },
-        robots: {
-            index: data.seo.robots?.includes("index"),
-            follow: data.seo.robots?.includes("follow"),
-        },
-        openGraph: {
-            title: data.seo.ogTitle,
-            description: data.seo.ogDescription,
-            images: [data.seo.ogImage],
-            url: data.seo.canonical,
-            type: "website",
-            siteName: "AtreusPhysio",
-        },
-    };
+    return generateStandardMetadata(data.seo);
 }
 
 export default async function Home() {

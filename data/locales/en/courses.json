@@ -7,7 +7,98 @@
         "ogTitle": "AtreusPhysio Academy - Professional Development for Physiotherapists",
         "ogDescription": "Upgrade your clinical reasoning skills with evidence-based courses and workshops.",
         "ogImage": "/images/og-courses.jpg",
-        "robots": "index,follow"
+        "ogType": "website",
+        "ogSiteName": "AtreusPhysio",
+        "ogLocale": "en_IN",
+        "twitterCard": "summary_large_image",
+        "twitterTitle": "AtreusPhysio Academy - Professional Physiotherapy Courses",
+        "twitterDescription": "Master clinical reasoning with evidence-based courses for physiotherapists.",
+        "twitterImage": "/images/og-courses.jpg",
+        "robots": "index,follow",
+        "keywords": [
+            "Professional physiotherapy courses",
+            "Clinical reasoning training",
+            "Evidence-based physiotherapy education",
+            "Tendonopathy rehabilitation course",
+            "Physio webinars India",
+            "AtreusPhysio Academy",
+            "Continuing education for physiotherapists",
+            "Physiotherapy masterclass",
+            "Sports physiotherapy courses",
+            "Plantar fasciitis training",
+            "Spine pain management course",
+            "Online physiotherapy education",
+            "CPD for physiotherapists India",
+            "Rehabilitation protocols training"
+        ],
+        "structuredData": {
+            "@context": "https://schema.org",
+            "@type": "EducationalOrganization",
+            "name": "AtreusPhysio Academy",
+            "description": "Professional development courses for physiotherapists focusing on clinical reasoning and evidence-based practice.",
+            "url": "https://atreusphysio.in/courses",
+            "provider": {
+                "@type": "Organization",
+                "name": "AtreusPhysio",
+                "url": "https://atreusphysio.in"
+            },
+            "hasCourseInstance": [
+                {
+                    "@type": "Course",
+                    "name": "Tendonopathy Rehab Masterclass",
+                    "description": "A complete guide to managing tendon pain, from isometric loading to return to sport.",
+                    "provider": {
+                        "@type": "Organization",
+                        "name": "AtreusPhysio Academy"
+                    },
+                    "courseMode": "online",
+                    "educationalLevel": "Professional",
+                    "offers": {
+                        "@type": "Offer",
+                        "price": "999",
+                        "priceCurrency": "INR",
+                        "availability": "https://schema.org/InStock",
+                        "url": "https://atreusphysio.in/courses"
+                    }
+                },
+                {
+                    "@type": "Course",
+                    "name": "Plantar Fasciitis: Beyond the Foot",
+                    "description": "Understanding the kinetic chain and differential diagnosis for heel pain.",
+                    "provider": {
+                        "@type": "Organization",
+                        "name": "AtreusPhysio Academy"
+                    },
+                    "courseMode": "online",
+                    "educationalLevel": "Professional",
+                    "offers": {
+                        "@type": "Offer",
+                        "price": "499",
+                        "priceCurrency": "INR",
+                        "availability": "https://schema.org/InStock",
+                        "url": "https://atreusphysio.in/courses"
+                    }
+                },
+                {
+                    "@type": "Course",
+                    "name": "Clinical Reasoning in Spine Pain",
+                    "description": "Advanced assessment and triage for low back and neck pain.",
+                    "provider": {
+                        "@type": "Organization",
+                        "name": "AtreusPhysio Academy"
+                    },
+                    "courseMode": "online",
+                    "educationalLevel": "Advanced",
+                    "offers": {
+                        "@type": "Offer",
+                        "price": "1499",
+                        "priceCurrency": "INR",
+                        "availability": "https://schema.org/InStock",
+                        "url": "https://atreusphysio.in/courses"
+                    }
+                }
+            ]
+        }
     },
     "hero": {
         "title": "AtreusPhysio Academy",

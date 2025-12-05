@@ -1,5 +1,6 @@
 import { getPageContent } from "@/lib/content";
 import { Metadata } from "next";
+import { generateStandardMetadata } from "@/lib/seo-utils";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { FAQSection } from "@/components/sections/FAQSection";
@@ -10,28 +11,7 @@ export async function generateMetadata(): Promise<Metadata> {
     const data = await getPageContent("about");
     if (!data) return {};
 
-    return {
-        title: data.seo.metaTitle,
-        description: data.seo.metaDescription,
-        keywords: data.seo.keywords,
-        authors: [{ name: "AtreusPhysio Team" }],
-        publisher: "AtreusPhysio",
-        alternates: {
-            canonical: data.seo.canonical,
-        },
-        robots: {
-            index: data.seo.robots?.includes("index"),
-            follow: data.seo.robots?.includes("follow"),
-        },
-        openGraph: {
-            title: data.seo.ogTitle,
-            description: data.seo.ogDescription,
-            images: [data.seo.ogImage],
-            url: data.seo.canonical,
-            type: "website",
-            siteName: "AtreusPhysio",
-        },
-    };
+    return generateStandardMetadata(data.seo);
 }
 
 export default async function AboutPage() {
@@ -45,7 +25,13 @@ export default async function AboutPage() {
 
     return (
         <main className="min-h-screen bg-white dark:bg-slate-900">
-            <JsonLd pageId="about" />
+            {/* Structured Data JSON-LD */}
+            {data.seo.structuredData && (
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(data.seo.structuredData) }}
+                />
+            )}
 
             {/* Hero */}
             <section className="relative bg-gradient-to-br from-[#06113d] via-[#06113d] to-[#0a1a5c] text-white py-24 overflow-hidden">
