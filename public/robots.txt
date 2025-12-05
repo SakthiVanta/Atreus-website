@@ -1,0 +1,64 @@
+# Allow all search engines and AI crawlers
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://atreusphysio.in/sitemap.xml
+
+# === AI Search Engine Crawlers (2024-2025) ===
+
+# OpenAI (ChatGPT, SearchGPT)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Google AI (Gemini, Bard)
+User-agent: Google-Extended
+Allow: /
+
+# Anthropic (Claude)
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# Meta AI (Llama models)
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Bing AI (Copilot)
+User-agent: Bingbot
+Allow: /
+
+# Common AI Training Bots
+User-agent: CCBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# === Traditional Search Engines ===
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# === What to Block (if needed) ===
+# Block admin and API routes from all crawlers
+Disallow: /api/
+Disallow: /_next/static/
+Disallow: /admin/
+
+# === Crawl Rate Optimization ===
+# Request crawl-delay: 1  # Uncomment if server load is high

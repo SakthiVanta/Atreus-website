@@ -11,7 +11,7 @@ const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
 
 export const metadata: Metadata = {
     title: "AtreusPhysio",
-    description: "Recover Faster, Move Better.",
+    description: "Recover Faster, Move Better. Science-driven physiotherapy care in Trichy.",
     metadataBase: new URL("https://atreusphysio.in"),
 };
 
