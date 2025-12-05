@@ -7,7 +7,7 @@ import { getPageContent } from '@/lib/content';
  * Following Google's latest SEO best practices (2024-2025)
  */
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-    const baseUrl = 'https://atreusphysio.com';
+    const baseUrl = 'https://www.atreusphysio.com';
 
     // Static pages with SEO priority and update frequency
     const staticPages: MetadataRoute.Sitemap = [
