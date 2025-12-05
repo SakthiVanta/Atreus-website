@@ -3,8 +3,8 @@
 import { useState } from "react";
 
 import { motion, AnimatePresence } from "framer-motion";
-import { X, MessageCircle, Calendar } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { X, Calendar } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 import { GlobalBookingDialog } from "@/components/ui/GlobalBookingDialog";
 
@@ -23,7 +23,8 @@ export function FloatingCTA() {
                     className="pointer-events-auto flex items-center justify-center w-14 h-14 bg-[#25D366] text-white rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300"
                     aria-label="Chat on WhatsApp"
                 >
-                    <MessageCircle size={28} fill="white" />
+                    <FaWhatsapp size={28} className="text-white" />
+
                 </a>
 
                 {/* Floating Booking Banner */}

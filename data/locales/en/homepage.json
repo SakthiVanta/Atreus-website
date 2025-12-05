@@ -2,7 +2,7 @@
     "pageId": "home",
     "locale": "en",
     "domain": {
-        "preferred": "atreusphysio.in",
+        "preferred": "atreusphysio.com",
         "alternate": [
             "atreusphysio.com"
         ]
@@ -10,7 +10,7 @@
     "seo": {
         "metaTitle": "AtreusPhysio | Reborn To Move Fearless",
         "metaDescription": "Your path out of pain starts with science driven care. Assessment first approach, patient centred personalised treatment, and exercise science centred rehabilitation.",
-        "canonical": "https://atreusphysio.in/",
+        "canonical": "https://atreusphysio.com/",
         "ogTitle": "AtreusPhysio - Reborn To Move Fearless",
         "ogDescription": "Science driven care for pain relief and performance. Expert physiotherapy in Trichy.",
         "ogImage": "/images/og-home.jpg",
@@ -32,7 +32,7 @@
                 "@type": "Person",
                 "name": "Dr. Swatheeshwaran"
             },
-            "url": "https://atreusphysio.in/",
+            "url": "https://atreusphysio.com/",
             "telephone": "+916379330661",
             "address": {
                 "@type": "PostalAddress",

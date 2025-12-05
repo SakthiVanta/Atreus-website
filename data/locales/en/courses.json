@@ -3,7 +3,7 @@
     "seo": {
         "metaTitle": "AtreusPhysio Academy | Professional Physiotherapy Courses & Webinars",
         "metaDescription": "Elevate your practice with expert-led courses on Tendonopathy, Plantar Fasciitis, and Clinical Reasoning. Learn from experienced physiotherapists at AtreusPhysio Academy.",
-        "canonical": "https://atreusphysio.in/courses",
+        "canonical": "https://atreusphysio.com/courses",
         "ogTitle": "AtreusPhysio Academy - Professional Development for Physiotherapists",
         "ogDescription": "Upgrade your clinical reasoning skills with evidence-based courses and workshops.",
         "ogImage": "/images/og-courses.jpg",
@@ -36,11 +36,11 @@
             "@type": "EducationalOrganization",
             "name": "AtreusPhysio Academy",
             "description": "Professional development courses for physiotherapists focusing on clinical reasoning and evidence-based practice.",
-            "url": "https://atreusphysio.in/courses",
+            "url": "https://atreusphysio.com/courses",
             "provider": {
                 "@type": "Organization",
                 "name": "AtreusPhysio",
-                "url": "https://atreusphysio.in"
+                "url": "https://atreusphysio.com"
             },
             "hasCourseInstance": [
                 {
@@ -58,7 +58,7 @@
                         "price": "999",
                         "priceCurrency": "INR",
                         "availability": "https://schema.org/InStock",
-                        "url": "https://atreusphysio.in/courses"
+                        "url": "https://atreusphysio.com/courses"
                     }
                 },
                 {
@@ -76,7 +76,7 @@
                         "price": "499",
                         "priceCurrency": "INR",
                         "availability": "https://schema.org/InStock",
-                        "url": "https://atreusphysio.in/courses"
+                        "url": "https://atreusphysio.com/courses"
                     }
                 },
                 {
@@ -94,7 +94,7 @@
                         "price": "1499",
                         "priceCurrency": "INR",
                         "availability": "https://schema.org/InStock",
-                        "url": "https://atreusphysio.in/courses"
+                        "url": "https://atreusphysio.com/courses"
                     }
                 }
             ]

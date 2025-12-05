@@ -3,12 +3,13 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import {
-    MapPin, Phone, Mail, Clock, Instagram, Linkedin,
-    MessageCircle, Navigation, ChevronRight, Sparkles,
+    MapPin, Phone, Mail, Clock, Instagram, Linkedin, Navigation, ChevronRight, Sparkles,
     Calendar, Send, Loader2
 } from "lucide-react";
+
 import { Button } from "@/components/ui/Button";
 import { toast } from "sonner";
+import { FaWhatsapp } from "react-icons/fa";
 
 const contactInfo = {
     address: {
@@ -85,7 +86,7 @@ function ContactCard({ icon: Icon, title, children, delay = 0 }: {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay }}
-            className="group bg-white dark:bg-slate-800 rounded-2xl p-6 border-2 border-slate-100 dark:border-slate-700 hover:border-[#e3171e]/20 hover:shadow-lg transition-all duration-300"
+            className="group bg-white dark:bg-slate-800 rounded-2xl p-6  border-2 border-slate-100 dark:border-slate-700 hover:border-[#e3171e]/20 hover:shadow-lg transition-all duration-300"
         >
             <div className="flex items-start gap-4">
                 <div className="w-11 h-11 rounded-xl bg-slate-50 dark:bg-slate-700/50 flex items-center justify-center shrink-0 text-[#06113d] dark:text-[#e3171e] group-hover:bg-[#06113d] group-hover:text-white dark:group-hover:bg-[#e3171e] transition-all duration-300">
@@ -175,7 +176,7 @@ export default function ContactPage() {
     return (
         <main className="min-h-screen bg-slate-50 dark:bg-slate-900">
             {/* Hero Section */}
-            <section className="relative bg-gradient-to-br from-[#06113d] via-[#06113d] to-[#0a1a5c] text-white py-24 overflow-hidden">
+            <section className="relative bg-gradient-to-br from-[#06113d] via-[#06113d] to-[#0a1a5c] text-white py-32 overflow-hidden">
                 {/* Decorative Elements */}
                 <div className="absolute inset-0 overflow-hidden">
                     <div className="absolute -top-40 -right-40 w-80 h-80 bg-[#e3171e]/20 rounded-full blur-3xl" />
@@ -229,7 +230,7 @@ export default function ContactPage() {
                         />
                         <QuickActionButton
                             href={`https://wa.me/${contactInfo.whatsapp}`}
-                            icon={MessageCircle}
+                            icon={FaWhatsapp}
                             label="WhatsApp"
                             iconColor="bg-green-50 dark:bg-green-900/20 text-green-600 dark:text-green-400"
                         />
@@ -495,7 +496,7 @@ export default function ContactPage() {
                                 whileTap={{ scale: 0.95 }}
                                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-green-500 hover:bg-green-600 text-white rounded-xl font-semibold transition-colors"
                             >
-                                <MessageCircle className="w-5 h-5" />
+                                <FaWhatsapp className="w-5 h-5" />
                                 Book via WhatsApp
                             </motion.a>
                             <motion.a

@@ -26,7 +26,7 @@ export function CoursesClientPage({ data }: { data: any }) {
         <main className="min-h-screen bg-slate-50 dark:bg-slate-900">
 
             {/* Hero Section */}
-            <section className="relative bg-gradient-to-br from-[#06113d] via-[#06113d] to-[#0a1a5c] text-white py-24 overflow-hidden">
+            <section className="relative bg-gradient-to-br from-[#06113d] via-[#06113d] to-[#0a1a5c] text-white py-32 overflow-hidden">
                 {/* Decorative Elements */}
                 <div className="absolute inset-0 overflow-hidden">
                     <div className="absolute -top-40 -right-40 w-80 h-80 bg-[#e3171e]/20 rounded-full blur-3xl" />

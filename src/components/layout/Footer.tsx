@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Instagram, Linkedin, Phone, MapPin, Mail, MessageCircle } from "lucide-react";
+import { Instagram, Linkedin, Phone, MapPin, Mail } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const contactInfo = {
     phone: "+91 7010294784",
@@ -58,7 +59,7 @@ export function Footer() {
                                 className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-green-500 transition-all duration-300"
                                 aria-label="WhatsApp"
                             >
-                                <MessageCircle className="w-5 h-5" />
+                                <FaWhatsapp className="w-5 h-5" />
                             </a>
                         </div>
                     </div>
@@ -146,7 +147,7 @@ export function Footer() {
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center gap-2 px-4 py-2 bg-[#e3171e] hover:bg-[#c41218] rounded-lg text-white text-sm font-medium transition-colors"
                             >
-                                <MessageCircle className="w-4 h-4" />
+                                <FaWhatsapp className="w-4 h-4" />
                                 Book Appointment
                             </a>
                         </div>

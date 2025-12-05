@@ -3,7 +3,7 @@
     "seo": {
         "metaTitle": "Physio Chronicles Podcast | Evidence-Based Physiotherapy Discussions",
         "metaDescription": "Join Swatheeshwaran and Dr. Swathi as they discuss evidence-based physiotherapy, clinical reasoning, and rehabilitation strategies. Watch our podcast series on YouTube.",
-        "canonical": "https://atreusphysio.in/podcasts",
+        "canonical": "https://atreusphysio.com/podcasts",
         "ogTitle": "Physio Chronicles - Your Guide to Evidence-Based Physiotherapy",
         "ogDescription": "Deep dives into clinical reasoning, research updates, and practical rehabilitation strategies.",
         "ogImage": "/images/og-podcasts.jpg",
@@ -38,7 +38,7 @@
             "@type": "PodcastSeries",
             "name": "Physio Chronicles",
             "description": "Evidence-based physiotherapy discussions featuring in-depth conversations about clinical reasoning, research updates, and practical rehabilitation strategies.",
-            "url": "https://atreusphysio.in/podcasts",
+            "url": "https://atreusphysio.com/podcasts",
             "author": {
                 "@type": "Person",
                 "name": "Dr. Swatheeshwaran"

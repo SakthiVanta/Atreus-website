@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         metaTitle: `${course.title} | ATREUS PHYSIO Academy`,
         metaDescription: course.description,
         keywords: [course.title, "physiotherapy course", "professional development", "CPD physiotherapy", ...course.tags],
-        canonical: `https://atreusphysio.in/courses/${course.id}`,
+        canonical: `https://atreusphysio.com/courses/${course.id}`,
         ogTitle: `${course.title} | ATREUS PHYSIO Academy`,
         ogDescription: course.description,
         ogImage: course.image,
@@ -64,7 +64,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function CoursePage({ params }: Props) {
     const { courseId } = await params;
     const data = await getCoursesData();
-    const course = data?.courseList?.find((c: any) => c.id === courseId);  // Fixed: use courseList
+    const course = data?.courseList?.find((c: any) => c.slug === courseId || c.id === courseId);
 
     if (!course) {
         notFound();
@@ -73,7 +73,7 @@ export default async function CoursePage({ params }: Props) {
     return (
         <main className="min-h-screen bg-slate-50 dark:bg-slate-900">
             {/* Hero Section */}
-            <section className="relative bg-gradient-to-br from-[#06113d] via-[#06113d] to-[#0a1a5c] text-white py-24 overflow-hidden">
+            <section className="relative bg-gradient-to-br from-[#06113d] via-[#06113d] to-[#0a1a5c] text-white py-32 overflow-hidden">
                 <div className="absolute inset-0 overflow-hidden">
                     <div className="absolute -top-40 -right-40 w-80 h-80 bg-[#e3171e]/20 rounded-full blur-3xl" />
                     <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-[#e3171e]/10 rounded-full blur-3xl" />

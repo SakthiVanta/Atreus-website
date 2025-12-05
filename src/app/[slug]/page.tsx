@@ -50,7 +50,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         authors: [{ name: "AtreusPhysio" }],
         publisher: "AtreusPhysio",
         alternates: {
-            canonical: `https://atreusphysio.in/${page.slug}`,
+            canonical: `https://atreusphysio.com/${page.slug}`,
         },
         robots: {
             index: true,
@@ -59,7 +59,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         openGraph: {
             title: page.title,
             description: page.description,
-            url: `https://atreusphysio.in/${page.slug}`,
+            url: `https://atreusphysio.com/${page.slug}`,
             type: "website",
             siteName: "AtreusPhysio",
             locale: "en_IN",
