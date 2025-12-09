@@ -33,7 +33,7 @@ const contactInfo = {
     ],
     social: {
         instagram: "https://www.instagram.com/atreus_physio",
-        linkedin: "https://www.linkedin.com/company/atreus-physio/",
+        linkedin: "https://www.linkedin.com/in/swatheeshwaran-mpt-sports-018566274?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     }
 };
 

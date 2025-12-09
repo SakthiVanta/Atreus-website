@@ -9,6 +9,7 @@ import { HeroCarousel } from "@/components/sections/HeroCarousel";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { ConditionsGrid } from "@/components/sections/ConditionsGrid";
 import { SectionHeader } from "@/components/ui/SectionHeader";
+import Image from "next/image";
 
 export async function generateMetadata(): Promise<Metadata> {
     const data = await getPageContent("homepage");
@@ -86,9 +87,16 @@ export default async function Home() {
                             {data.founders.map((founder: any, i: number) => (
                                 <div key={i} className="flex flex-col lg:flex-row gap-16 items-start">
                                     <AnimatedSection delay={0.2} className="w-full lg:w-1/3 shrink-0">
-                                        <div className="aspect-[3/4] rounded-2xl bg-slate-200 dark:bg-slate-700 overflow-hidden shadow-xl relative group">
+                                        <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-xl relative group">
                                             {/* Image placeholder */}
-                                            <div className="absolute inset-0 bg-slate-300 dark:bg-slate-600 group-hover:scale-105 transition-transform duration-700" />
+                                            <Image
+                                                src={founder.image}
+                                                alt={founder.name}
+                                                width={400}
+                                                height={400}
+                                                className="object-cover"
+                                            />
+                                            {/* <div className="absolute inset-0 bg-slate-300 dark:bg-slate-600 group-hover:scale-105 transition-transform duration-700" /> */}
                                             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-slate-900/90 to-transparent p-6 text-white">
                                                 <h3 className="text-xl font-bold">{founder.name}</h3>
                                                 <p className="text-[#e3171e] text-sm">{founder.role}</p>

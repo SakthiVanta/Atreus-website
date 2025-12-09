@@ -2,7 +2,7 @@
     "pageId": "courses",
     "seo": {
         "metaTitle": "AtreusPhysio Academy | Professional Physiotherapy Courses & Webinars",
-        "metaDescription": "Elevate your practice with expert-led courses on Tendonopathy, Plantar Fasciitis, and Clinical Reasoning. Learn from experienced physiotherapists at AtreusPhysio Academy.",
+        "metaDescription": "Elevate your practice with expert-led courses on Clinical Reasoning, Biomechanics, and Evidence-Based Practice. Learn from experienced physiotherapists at AtreusPhysio Academy.",
         "canonical": "https://atreusphysio.com/courses",
         "ogTitle": "AtreusPhysio Academy - Professional Development for Physiotherapists",
         "ogDescription": "Upgrade your clinical reasoning skills with evidence-based courses and workshops.",
@@ -19,17 +19,16 @@
             "Professional physiotherapy courses",
             "Clinical reasoning training",
             "Evidence-based physiotherapy education",
-            "Tendonopathy rehabilitation course",
+            "Biomechan for physios",
             "Physio webinars India",
             "AtreusPhysio Academy",
             "Continuing education for physiotherapists",
             "Physiotherapy masterclass",
             "Sports physiotherapy courses",
-            "Plantar fasciitis training",
-            "Spine pain management course",
+            "Exercise physiology training",
+            "Pain management course",
             "Online physiotherapy education",
-            "CPD for physiotherapists India",
-            "Rehabilitation protocols training"
+            "CPD for physiotherapists India"
         ],
         "structuredData": {
             "@context": "https://schema.org",
@@ -41,76 +40,20 @@
                 "@type": "Organization",
                 "name": "AtreusPhysio",
                 "url": "https://atreusphysio.com"
-            },
-            "hasCourseInstance": [
-                {
-                    "@type": "Course",
-                    "name": "Tendonopathy Rehab Masterclass",
-                    "description": "A complete guide to managing tendon pain, from isometric loading to return to sport.",
-                    "provider": {
-                        "@type": "Organization",
-                        "name": "AtreusPhysio Academy"
-                    },
-                    "courseMode": "online",
-                    "educationalLevel": "Professional",
-                    "offers": {
-                        "@type": "Offer",
-                        "price": "999",
-                        "priceCurrency": "INR",
-                        "availability": "https://schema.org/InStock",
-                        "url": "https://atreusphysio.com/courses"
-                    }
-                },
-                {
-                    "@type": "Course",
-                    "name": "Plantar Fasciitis: Beyond the Foot",
-                    "description": "Understanding the kinetic chain and differential diagnosis for heel pain.",
-                    "provider": {
-                        "@type": "Organization",
-                        "name": "AtreusPhysio Academy"
-                    },
-                    "courseMode": "online",
-                    "educationalLevel": "Professional",
-                    "offers": {
-                        "@type": "Offer",
-                        "price": "499",
-                        "priceCurrency": "INR",
-                        "availability": "https://schema.org/InStock",
-                        "url": "https://atreusphysio.com/courses"
-                    }
-                },
-                {
-                    "@type": "Course",
-                    "name": "Clinical Reasoning in Spine Pain",
-                    "description": "Advanced assessment and triage for low back and neck pain.",
-                    "provider": {
-                        "@type": "Organization",
-                        "name": "AtreusPhysio Academy"
-                    },
-                    "courseMode": "online",
-                    "educationalLevel": "Advanced",
-                    "offers": {
-                        "@type": "Offer",
-                        "price": "1499",
-                        "priceCurrency": "INR",
-                        "availability": "https://schema.org/InStock",
-                        "url": "https://atreusphysio.com/courses"
-                    }
-                }
-            ]
+            }
         }
     },
     "hero": {
         "title": "AtreusPhysio Academy",
-        "subtitle": "Elevate your practice with expert-led courses. Deep dive into clinical reasoning, evidence-based practice, and modern rehabilitation protocols.",
+        "subtitle": "Elevate your practice with expert-led courses. Deep dive into clinical reasoning and evidence-based practice.",
         "cta": "Explore Courses",
         "image": "/images/dummy/courses-hero-real.jpg"
     },
     "offer": {
         "active": true,
         "title": "New Course Series",
-        "description": "Mastering Tendonopathy: From Pathophysiology to Loading Programs.",
-        "code": "TENDON25",
+        "description": "Mastering Clinical Reasoning and Evidence-Based Practice for Physiotherapists.",
+        "code": "PHYSIO25",
         "countdownTarget": "2025-12-31T23:59:59"
     },
     "features": [
@@ -129,110 +72,230 @@
     ],
     "courseList": [
         {
-            "id": "w1",
-            "slug": "tendonopathy-rehab-masterclass",
-            "title": "Tendonopathy Rehab Masterclass",
+            "id": "c1",
+            "slug": "biomechanics-for-physios",
+            "title": "Biomechanics for Physios",
             "date": "Available On-Demand",
             "price": "₹999",
             "originalPrice": "₹1,999",
-            "description": "A complete guide to managing tendon pain, from isometric loading to return to sport.",
+            "description": "Kinematics, kinetics, joint mechanics, load distribution and functional movement patterns.",
             "tags": [
-                "Course",
-                "Best Seller"
+                "Core Course",
+                "50+ Hours"
             ],
             "seatsLeft": 100,
             "location": "Online",
-            "image": "/images/dummy/course-tendon.jpg",
+            "image": "/images/dummy/course-biomechanics.jpg",
             "details": {
                 "topics": [
-                    "Tendon pathophysiology and healing timeline",
-                    "Loading principles: Isometric, isotonic, eccentric",
-                    "Progressive overload strategies",
-                    "Return to sport protocols"
+                    "Kinematics and kinetics fundamentals",
+                    "Joint mechanics and load distribution",
+                    "Functional movement patterns",
+                    "Biomechanical assessment techniques"
                 ],
                 "learningOutcomes": [
-                    "Understand tendon structure and healing mechanisms",
-                    "Design evidence-based loading programs",
-                    "Implement progressive rehabilitation protocols",
-                    "Make informed return-to-sport decisions"
+                    "Understand biomechanical principles and how they influence human movement",
+                    "Analyse joint mechanics, load transfer and functional patterns with clarity",
+                    "Apply biomechanics to assessment and exercise based rehabilitation",
+                    "Build stronger clinical reasoning using mechanical and movement based logic"
                 ],
                 "technicalTerms": [
-                    "Reactive tendinopathy vs degenerative tendinopathy",
-                    "Mechanical load tolerance",
-                    "Time under tension (TUT)",
-                    "Eccentric overload training"
+                    "Force vectors and moments",
+                    "Center of mass and ground reaction forces",
+                    "Joint kinematics and degrees of freedom",
+                    "Load-deformation curves"
                 ]
             }
         },
         {
-            "id": "w2",
-            "slug": "plantar-fasciitis-course",
-            "title": "Plantar Fasciitis: Beyond the Foot",
-            "date": "Live: Oct 25, 2025",
+            "id": "c2",
+            "slug": "exercise-physiology-for-physios",
+            "title": "Exercise Physiology for Physios",
+            "date": "Coming Soon",
+            "price": "TBA",
+            "originalPrice": "",
+            "description": "Coming Soon",
+            "tags": [
+                "Core Course",
+                "Coming Soon"
+            ],
+            "seatsLeft": 0,
+            "location": "Online",
+            "image": "/images/dummy/course-physiology.jpg"
+        },
+        {
+            "id": "c3",
+            "slug": "pain-mechanism-physio-management",
+            "title": "Pain Mechanism and Physio Management",
+            "date": "Coming Soon",
+            "price": "TBA",
+            "originalPrice": "",
+            "description": "Coming Soon",
+            "tags": [
+                "Core Course",
+                "Coming Soon"
+            ],
+            "seatsLeft": 0,
+            "location": "Online",
+            "image": "/images/dummy/course-pain.jpg"
+        },
+        {
+            "id": "c4",
+            "slug": "evidence-based-practice-for-physios",
+            "title": "Evidence Based Practice for Physios",
+            "date": "Coming Soon",
+            "price": "TBA",
+            "originalPrice": "",
+            "description": "Coming Soon",
+            "tags": [
+                "Core Course",
+                "Coming Soon"
+            ],
+            "seatsLeft": 0,
+            "location": "Online",
+            "image": "/images/dummy/course-evidence.jpg"
+        },
+        {
+            "id": "l1",
+            "slug": "load-capacity-recovery",
+            "title": "Load Capacity and Recovery The Physio Trinity",
+            "date": "Available On-Demand",
             "price": "₹499",
             "originalPrice": "₹999",
-            "description": "Understanding the kinetic chain and differential diagnosis for heel pain.",
+            "description": "Load planning, tissue capacity, recovery logic and return to activity.",
             "tags": [
-                "Live Session",
+                "Single Day Lecture",
+                "2-3 Hours"
+            ],
+            "seatsLeft": 100,
+            "location": "Online",
+            "image": "/images/dummy/lecture-load.jpg",
+            "details": {
+                "topics": [
+                    "Load planning principles",
+                    "Tissue capacity assessment",
+                    "Recovery logic and adaptation",
+                    "Return to activity protocols"
+                ],
+                "learningOutcomes": [
+                    "Understand the relationship between load, capacity and recovery",
+                    "Analyse patient capacity and training tolerance accurately",
+                    "Plan progressions based on tissue response and adaptation",
+                    "Make better decisions for return to activity or sport"
+                ],
+                "technicalTerms": [
+                    "Acute:Chronic Workload Ratio",
+                    "Tissue tolerance and adaptation",
+                    "Progressive overload principles",
+                    "Deload strategies"
+                ]
+            }
+        },
+        {
+            "id": "l2",
+            "slug": "fitness-factors-principles",
+            "title": "Application of Fitness Factors and Principles in Physiotherapy",
+            "date": "Live: Jan 15, 2026",
+            "price": "₹499",
+            "originalPrice": "₹999",
+            "description": "Overload, specificity, volume, intensity, frequency and programming clarity.",
+            "tags": [
+                "Single Day Lecture",
+                "Live Session"
+            ],
+            "seatsLeft": 50,
+            "location": "Zoom",
+            "image": "/images/dummy/lecture-fitness.jpg",
+            "details": {
+                "topics": [
+                    "Overload and specificity principles",
+                    "Volume and intensity management",
+                    "Frequency and programming",
+                    "Periodization for rehabilitation"
+                ],
+                "learningOutcomes": [
+                    "Understand key fitness principles relevant to physiotherapy",
+                    "Apply overload, specificity and progression with precision",
+                    "Plan exercise volume and intensity safely",
+                    "Build physiotherapy programs that follow structured fitness logic"
+                ],
+                "technicalTerms": [
+                    "FITT principle",
+                    "Progressive overload",
+                    "Specificity of training",
+                    "Volume landmarks"
+                ]
+            }
+        },
+        {
+            "id": "l3",
+            "slug": "beyond-passive-care",
+            "title": "Beyond IFT UST Manual Therapy The Physio Mindset Shift",
+            "date": "Live: Feb 10, 2026",
+            "price": "₹499",
+            "originalPrice": "₹999",
+            "description": "Moving from passive care to active rehabilitation and functional outcomes.",
+            "tags": [
+                "Single Day Lecture",
                 "New"
             ],
             "seatsLeft": 45,
             "location": "Zoom",
-            "image": "/images/dummy/course-plantar.jpg",
+            "image": "/images/dummy/lecture-mindset.jpg",
             "details": {
                 "topics": [
-                    "Plantar fascia anatomy and biomechanics",
-                    "Differential diagnosis of heel pain",
-                    "Hip and ankle mobility assessment",
-                    "Gait analysis and footwear assessment"
+                    "Limitations of passive modalities",
+                    "Active vs passive care models",
+                    "Movement-centered clinical thinking",
+                    "Patient education as treatment"
                 ],
                 "learningOutcomes": [
-                    "Perform comprehensive foot and ankle assessments",
-                    "Identify contributing factors in the kinetic chain",
-                    "Develop individualized treatment plans",
-                    "Educate patients on footwear and activity modification"
+                    "Understand limitations of passive modalities in long term outcomes",
+                    "Shift to active, movement centred clinical thinking",
+                    "Use patient education as a core treatment tool",
+                    "Build treatment plans focused on function and self management"
                 ],
                 "technicalTerms": [
-                    "Windlass mechanism",
-                    "Medial longitudinal arch",
-                    "Pronation vs supination",
-                    "First ray mobility"
+                    "Active vs passive rehabilitation",
+                    "Self-efficacy in treatment",
+                    "Functional outcome measures",
+                    "Patient-centered goal setting"
                 ]
             }
         },
         {
-            "id": "w3",
-            "slug": "clinical-reasoning-spine-pain",
-            "title": "Clinical Reasoning in Spine Pain",
-            "date": "Nov 10, 2025",
-            "price": "₹1,499",
-            "originalPrice": "₹2,499",
-            "description": "Advanced assessment and triage for low back and neck pain.",
+            "id": "l4",
+            "slug": "physio-assessment-clinical-reasoning",
+            "title": "Physio Assessment and Clinical Reasoning",
+            "date": "Mar 5, 2026",
+            "price": "₹599",
+            "originalPrice": "₹1,199",
+            "description": "Structured assessment, hypothesis building, flag reasoning and judgement.",
             "tags": [
-                "Workshop",
+                "Single Day Lecture",
                 "Advanced"
             ],
-            "seatsLeft": 15,
+            "seatsLeft": 40,
             "location": "Online",
-            "image": "/images/dummy/course-spine.jpg",
+            "image": "/images/dummy/lecture-assessment.jpg",
             "details": {
                 "topics": [
-                    "Red flags and differential diagnosis",
-                    "Biopsychosocial assessment framework",
-                    "Movement-based classification systems",
-                    "Pain neuroscience education strategies"
+                    "Structured physiotherapy assessment",
+                    "Hypothesis building and testing",
+                    "Red and yellow flag identification",
+                    "Clinical reasoning pathways"
                 ],
                 "learningOutcomes": [
-                    "Screen for serious pathology effectively",
-                    "Address psychosocial factors influencing pain",
-                    "Apply movement-based treatment approaches",
-                    "Communicate pain science concepts to patients"
+                    "Understand the components of a complete physiotherapy assessment",
+                    "Build strong clinical hypotheses based on findings",
+                    "Identify red and yellow flags clearly and confidently",
+                    "Develop consistent, logical clinical reasoning pathways"
                 ],
                 "technicalTerms": [
-                    "Central sensitization",
-                    "Fear-avoidance behavior",
-                    "Directional preference",
-                    "Load management strategies"
+                    "Subjective and objective assessment",
+                    "Hypothesis-oriented clinical reasoning",
+                    "Red and yellow flags",
+                    "Clinical prediction rules"
                 ]
             }
         }

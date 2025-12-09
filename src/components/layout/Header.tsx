@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { motion, useScroll, useMotionValueEvent, AnimatePresence } from "framer-motion";
@@ -16,16 +17,16 @@ const contactInfo = {
     email: "contact@atreusphysio.com",
     social: {
         instagram: "https://www.instagram.com/atreus_physio",
-        linkedin: "https://www.linkedin.com/company/atreus-physio/",
+        linkedin: "https://www.linkedin.com/in/swatheeshwaran-mpt-sports-018566274?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     }
 };
 
 export function Header() {
+    const pathname = usePathname();
     const { scrollY } = useScroll();
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isBookingOpen, setIsBookingOpen] = useState(false);
-    const [activeNav, setActiveNav] = useState("/");
 
     useMotionValueEvent(scrollY, "change", (latest) => {
         setIsScrolled(latest > 50);
@@ -96,36 +97,49 @@ export function Header() {
 
                             {/* Desktop Nav with enhanced styling */}
                             <nav className="hidden md:flex items-center gap-1">
-                                {navItems.map((item) => (
-                                    <Link
-                                        key={item.name}
-                                        href={item.href}
-                                        onClick={() => setActiveNav(item.href)}
-                                        className="relative px-4 py-2 cursor-pointer group"
-                                    >
-                                        <span className={cn(
-                                            "relative z-10 text-sm font-semibold transition-colors duration-300",
-                                            activeNav === item.href
-                                                ? "text-[#e3171e]"
-                                                : "text-slate-600 dark:text-slate-300 group-hover:text-[#e3171e]"
-                                        )}>
-                                            {item.name}
-                                        </span>
-                                        {/* Hover background effect */}
-                                        <motion.div
-                                            className="absolute inset-0 bg-gradient-to-r from-[#06113d]/5 to-[#e3171e]/5 dark:from-[#06113d]/20 dark:to-[#e3171e]/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                                            layoutId={activeNav === item.href ? "activeNav" : undefined}
-                                        />
-                                        {/* Active indicator */}
-                                        {activeNav === item.href && (
-                                            <motion.div
-                                                layoutId="activeNavIndicator"
-                                                className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1.5 h-1.5 bg-gradient-to-r from-[#06113d] to-[#e3171e] rounded-full"
-                                                transition={{ type: "spring", stiffness: 380, damping: 30 }}
-                                            />
-                                        )}
-                                    </Link>
-                                ))}
+                                {navItems.map((item) => {
+                                    const isActive = pathname === item.href || (pathname.startsWith(item.href) && item.href !== '/');
+
+                                    return (
+                                        <Link
+                                            key={item.name}
+                                            href={item.href}
+                                            className="relative px-4 py-2 cursor-pointer group"
+                                        >
+                                            <span className={cn(
+                                                "relative z-10 text-sm font-semibold transition-colors duration-300",
+                                                isActive
+                                                    ? "text-[#e3171e]"
+                                                    : "text-slate-600 dark:text-slate-300 group-hover:text-[#e3171e]"
+                                            )}>
+                                                {item.name}
+                                            </span>
+
+                                            {/* Active Background - Persists */}
+                                            {isActive && (
+                                                <motion.div
+                                                    layoutId="activeNavBackground"
+                                                    className="absolute inset-0 bg-gradient-to-r from-[#06113d]/10 to-[#e3171e]/10 dark:from-[#06113d]/30 dark:to-[#e3171e]/30 rounded-full"
+                                                    transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                                                />
+                                            )}
+
+                                            {/* Hover Background - Only when NOT active */}
+                                            {!isActive && (
+                                                <div className="absolute inset-0 bg-gradient-to-r from-[#06113d]/5 to-[#e3171e]/5 dark:from-[#06113d]/20 dark:to-[#e3171e]/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                                            )}
+
+                                            {/* Active Indicator Dot */}
+                                            {isActive && (
+                                                <motion.div
+                                                    layoutId="activeNavIndicator"
+                                                    className="absolute bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 bg-gradient-to-r from-[#06113d] to-[#e3171e] rounded-full"
+                                                    transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                                                />
+                                            )}
+                                        </Link>
+                                    );
+                                })}
                             </nav>
 
                             {/* CTA Button & Controls */}

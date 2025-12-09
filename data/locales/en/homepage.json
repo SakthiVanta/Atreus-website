@@ -96,7 +96,7 @@
         {
             "id": "biomechanics",
             "title": "Movement and Biomechanics Based Reasoning",
-            "desc": "Using advanced movement analysis to guide clinical decisions and correct mechanics."
+            "desc": "Using movement analysis to guide clinical decisions and correct mechanics."
         }
     ],
     "founders": [
@@ -107,7 +107,8 @@
             "bio": "Dr. Swatheeshwaran, MPT Sports, is the founder of ATREUS PHYSIO and a clinician who believes in science driven, movement centred rehabilitation. His practice focuses on helping people return to an active, confident and pain free life.",
             "shortBio": "Dr. Swatheeshwaran, MPT Sports, is the founder of ATREUS PHYSIO and a clinician who believes in science driven, movement centred rehabilitation. His practice focuses on helping people return to an active, confident and pain free life.",
             "experience": "He has worked as an Assistant Professor for three years, trained institutional and professional athletes, and delivered rehabilitation for high performance sport environments. His on field experience includes serving as physiotherapist for multiple major national, state and inter university events.",
-            "image": "/images/dummy/founder-swatheesh.jpg",
+            "image": "/images/profileImage.webp",
+            "linkedin": "https://www.linkedin.com/in/swatheeshwaran-mpt-sports-018566274?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
             "achievements": {
                 "national": [
                     "All India Aquatics, Beach Volleyball, Badminton, Basketball Championships (2023 to 2024)"

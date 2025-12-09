@@ -12,7 +12,7 @@ const contactInfo = {
     address: "Kamaraj Complex, 46A, EVR Rd, Tiruchirappalli",
     social: {
         instagram: "https://www.instagram.com/atreus_physio",
-        linkedin: "https://www.linkedin.com/company/atreus-physio/",
+        linkedin: "https://www.linkedin.com/in/swatheeshwaran-mpt-sports-018566274?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
     }
 };
 
@@ -66,8 +66,8 @@ export function Footer() {
 
                     {/* Quick Links */}
                     <div>
-                        <h3 className="font-semibold mb-6 text-white">Quick Links</h3>
-                        <ul className="space-y-3 text-sm text-slate-400">
+                        <h3 className="font-semibold mb-6 text-slate-900 dark:text-white">Quick Links</h3>
+                        <ul className="space-y-3 text-sm text-slate-600 dark:text-slate-200">
                             <li>
                                 <Link href="/" className="hover:text-[#e3171e] transition-colors">
                                     Home
@@ -93,8 +93,8 @@ export function Footer() {
 
                     {/* Services */}
                     <div>
-                        <h3 className="font-semibold mb-6 text-white">Our Services</h3>
-                        <ul className="space-y-3 text-sm text-slate-400">
+                        <h3 className="font-semibold mb-6 text-slate-900 dark:text-white">Our Services</h3>
+                        <ul className="space-y-3 text-sm text-slate-600 dark:text-slate-200">
                             <li>
                                 <Link href="/services/sports-rehab" className="hover:text-[#e3171e] transition-colors">
                                     Sports Rehabilitation
@@ -120,21 +120,21 @@ export function Footer() {
 
                     {/* Contact Info */}
                     <div>
-                        <h3 className="font-semibold mb-6 text-white">Contact Us</h3>
-                        <ul className="space-y-4 text-sm text-slate-400">
+                        <h3 className="font-semibold mb-6 text-slate-900 dark:text-white">Contact Us</h3>
+                        <ul className="space-y-4 text-sm text-slate-600 dark:text-slate-200">
                             <li className="flex items-start gap-3">
                                 <MapPin className="w-5 h-5 text-[#e3171e] shrink-0 mt-0.5" />
                                 <span>{contactInfo.address}</span>
                             </li>
                             <li className="flex items-center gap-3">
                                 <Phone className="w-5 h-5 text-[#e3171e] shrink-0" />
-                                <a href={`tel:${contactInfo.phone}`} className="hover:text-white transition-colors">
+                                <a href={`tel:${contactInfo.phone}`} className="text-slate-600 dark:text-slate-200 hover:text-slate-900 dark:hover:text-white transition-colors">
                                     {contactInfo.phone}
                                 </a>
                             </li>
                             <li className="flex items-center gap-3">
                                 <Mail className="w-5 h-5 text-[#e3171e] shrink-0" />
-                                <a href={`mailto:${contactInfo.email}`} className="hover:text-white transition-colors">
+                                <a href={`mailto:${contactInfo.email}`} className="text-slate-600 dark:text-slate-200 hover:text-slate-900 dark:hover:text-white transition-colors">
                                     {contactInfo.email}
                                 </a>
                             </li>

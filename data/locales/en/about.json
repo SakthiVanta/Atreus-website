@@ -29,6 +29,7 @@
         "bio": "I'm Swatheeshwaran, and I started ATREUS PHYSIO because I wanted to create something different—a clinic where patients don't just get treated, but truly understand what's happening in their bodies. My journey began in sports physiotherapy, where I learned that recovery is as much about mindset as it is about exercises. Over the years, I've had the privilege of working with everyone from professional athletes to people dealing with everyday aches and pains, and each person has taught me something new about resilience and healing.",
         "experience": "I spent three years as an Assistant Professor, which shaped how I communicate complex medical concepts in ways that actually make sense. Teaching forced me to think from the student's perspective, and I carry that same approach into patient care today. I've also been fortunate to work on the sidelines of major sporting events—national championships, state tournaments, and university competitions—where split-second decisions and rapid recovery protocols are part of the job. Those high-pressure environments taught me to stay calm, think clearly, and always put the athlete's long-term health first.",
         "image": "/images/dummy/founder-swatheesh.jpg",
+        "linkedin": "https://www.linkedin.com/in/swatheeshwaran-mpt-sports-018566274?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
         "achievements": {
             "national": [
                 "All India Aquatics, Beach Volleyball, Badminton, Basketball Championships (2023-2024)"
@@ -45,7 +46,7 @@
     },
     "philosophy": {
         "title": "About Us",
-        "intro": "ATREUS PHYSIO started with a simple goal: to help people in Trichy move better, recover faster, and live without pain holding them back. We're a team that believes recovery shouldn't feel mysterious or overwhelming—it should make sense to you every step of the way.",
+        "intro": "ATREUS PHYSIO started with a simple goal: to help people move better, recover faster, and live without pain holding them back. We're a team that believes recovery shouldn't feel mysterious or overwhelming—it should make sense to you every step of the way.",
         "sections": [
             {
                 "title": "Why We Started ATREUS PHYSIO",
@@ -69,7 +70,7 @@
             },
             {
                 "title": "Our Vision for ATREUS PHYSIO",
-                "content": "We want ATREUS PHYSIO to be more than just a clinic in Trichy. We want it to be a place where people feel heard, understood, and supported. A place where science meets empathy, and where every patient leaves not just feeling better, but understanding their body better too. That's what 'Reborn To Move Fearless' means to us—helping you rediscover the freedom to move, play, work, and live without limitations."
+                "content": "We want ATREUS PHYSIO to be more than just a Physio clinic. We want it to be a place where people feel heard, understood, and supported. A place where science meets empathy, and where every patient leaves not just feeling better, but understanding their body better too. That's what 'Reborn To Move Fearless' means to us—helping you rediscover the freedom to move, play, work, and live without limitations."
             }
         ]
     },
@@ -102,7 +103,7 @@
         {
             "id": "biomechanics",
             "title": "Movement and Biomechanics Based Reasoning",
-            "desc": "Using advanced movement analysis to guide clinical decisions and correct mechanics."
+            "desc": "Using movement analysis to guide clinical decisions and correct mechanics."
         }
     ]
 }
