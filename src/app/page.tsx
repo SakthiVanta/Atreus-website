@@ -10,6 +10,16 @@ import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { ConditionsGrid } from "@/components/sections/ConditionsGrid";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import Image from "next/image";
+import { ClipboardList, User, FlaskConical, BookOpen, TrendingUp, Activity } from "lucide-react";
+
+const ICON_MAP: Record<string, any> = {
+    "assessment": ClipboardList,
+    "patient-centred": User,
+    "science": FlaskConical,
+    "evidence": BookOpen,
+    "progressive": TrendingUp,
+    "biomechanics": Activity
+};
 
 export async function generateMetadata(): Promise<Metadata> {
     const data = await getPageContent("homepage");
@@ -66,6 +76,27 @@ export default async function Home() {
                             linkText="Learn More About Us"
                             linkHref="/about"
                         />
+
+                        {data.valueProps && (
+                            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+                                {data.valueProps.map((prop: any, i: number) => {
+                                    const Icon = ICON_MAP[prop.id] || Activity;
+                                    return (
+                                        <div key={i} className="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-slate-100 dark:border-slate-800">
+                                            <div className="w-12 h-12 bg-[#e3171e]/10 rounded-xl flex items-center justify-center mb-6">
+                                                <Icon className="w-6 h-6 text-[#e3171e]" />
+                                            </div>
+                                            <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3">
+                                                {prop.title}
+                                            </h3>
+                                            <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+                                                {prop.desc}
+                                            </p>
+                                        </div>
+                                    );
+                                })}
+                            </div>
+                        )}
                     </AnimatedSection>
                 </div>
             </section>

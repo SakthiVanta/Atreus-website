@@ -4,6 +4,7 @@ import { generateStandardMetadata } from "@/lib/seo-utils";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { FAQSection } from "@/components/sections/FAQSection";
+import Image from "next/image";
 
 const faqs = require("../../../data/locales/en/faqs.json");
 
@@ -16,12 +17,11 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function AboutPage() {
     const data = await getPageContent("about");
-    const homepage = await getPageContent("homepage");
 
     if (!data) return <div>Error loading content</div>;
 
     // Get success story images
-    const images = homepage?.successStories?.snapshots || [];
+    const images = data?.aboutImages || [];
 
     return (
         <main className="min-h-screen bg-white dark:bg-slate-900">
@@ -95,8 +95,8 @@ export default async function AboutPage() {
                                             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl relative group">
                                                 {image && (
                                                     <img
-                                                        src={image.image}
-                                                        alt={image.title}
+                                                        src={image.src}
+                                                        alt={image.alt}
                                                         className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700"
                                                     />
                                                 )}
@@ -137,7 +137,13 @@ export default async function AboutPage() {
                         <AnimatedSection className="w-full lg:w-1/3 shrink-0">
                             <div className="aspect-[3/4] rounded-2xl bg-slate-200 dark:bg-slate-700 overflow-hidden shadow-xl relative group">
                                 {/* Image placeholder */}
-                                <div className="absolute inset-0 bg-slate-300 dark:bg-slate-600 group-hover:scale-105 transition-transform duration-700" />
+                                <Image
+                                    src={data.founder.image}
+                                    alt={data.founder.name}
+                                    width={500}
+                                    height={500}
+                                    className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700"
+                                />
                                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-slate-900/90 to-transparent p-6 text-white">
                                     <h3 className="text-xl font-bold">{data.founder.name}</h3>
                                     <p className="text-blue-300 text-sm">{data.founder.role}</p>

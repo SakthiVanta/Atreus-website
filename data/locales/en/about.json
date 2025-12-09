@@ -74,6 +74,38 @@
             }
         ]
     },
+    "aboutImages": [
+        {
+            "id": "aboutImage1",
+            "src": "/images/003.webp",
+            "alt": "About Us Image 1"
+        },
+        {
+            "id": "aboutImage2",
+            "src": "/images/002.webp",
+            "alt": "About Us Image 2"
+        },
+        {
+            "id": "aboutImage3",
+            "src": "/images/001.webp",
+            "alt": "About Us Image 3"
+        },
+        {
+            "id": "aboutImage4",
+            "src": "/images/005.webp",
+            "alt": "About Us Image 4"
+        },
+        {
+            "id": "aboutImage5",
+            "src": "/images/006.webp",
+            "alt": "About Us Image 5"
+        },
+        {
+            "id": "aboutImage6",
+            "src": "/images/007.webp",
+            "alt": "About Us Image 6"
+        }
+    ],
     "valueProps": [
         {
             "id": "assessment",
