@@ -140,69 +140,75 @@ export default async function CoursePage({ params }: Props) {
             </section>
 
             {/* Course Topics */}
-            <section className="py-16 bg-white dark:bg-slate-900">
-                <div className="max-w-7xl mx-auto px-4 md:px-8">
-                    <AnimatedSection>
-                        <div className="flex items-center gap-3 mb-8">
-                            <BookOpen className="w-8 h-8 text-[#e3171e]" />
-                            <h2 className="text-3xl font-bold text-slate-900 dark:text-white">
-                                What You'll Learn
-                            </h2>
-                        </div>
-                        <div className="grid md:grid-cols-2 gap-4">
-                            {course.details.topics.map((topic: string, index: number) => (
-                                <div key={index} className="flex items-start gap-3 p-4 bg-slate-50 dark:bg-slate-800 rounded-xl">
-                                    <CheckCircle className="w-6 h-6 text-green-500 shrink-0 mt-0.5" />
-                                    <span className="text-slate-700 dark:text-slate-300">{topic}</span>
-                                </div>
-                            ))}
-                        </div>
-                    </AnimatedSection>
-                </div>
-            </section>
+            {course.details?.topics && (
+                <section className="py-16 bg-white dark:bg-slate-900">
+                    <div className="max-w-7xl mx-auto px-4 md:px-8">
+                        <AnimatedSection>
+                            <div className="flex items-center gap-3 mb-8">
+                                <BookOpen className="w-8 h-8 text-[#e3171e]" />
+                                <h2 className="text-3xl font-bold text-slate-900 dark:text-white">
+                                    What You'll Learn
+                                </h2>
+                            </div>
+                            <div className="grid md:grid-cols-2 gap-4">
+                                {course.details.topics.map((topic: string, index: number) => (
+                                    <div key={index} className="flex items-start gap-3 p-4 bg-slate-50 dark:bg-slate-800 rounded-xl">
+                                        <CheckCircle className="w-6 h-6 text-green-500 shrink-0 mt-0.5" />
+                                        <span className="text-slate-700 dark:text-slate-300">{topic}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </AnimatedSection>
+                    </div>
+                </section>
+            )}
 
             {/* Learning Outcomes */}
-            <section className="py-16 bg-slate-50 dark:bg-slate-800">
-                <div className="max-w-7xl mx-auto px-4 md:px-8">
-                    <AnimatedSection>
-                        <div className="flex items-center gap-3 mb-8">
-                            <Target className="w-8 h-8 text-[#e3171e]" />
-                            <h2 className="text-3xl font-bold text-slate-900 dark:text-white">
-                                Learning Outcomes
-                            </h2>
-                        </div>
-                        <div className="grid md:grid-cols-2 gap-6">
-                            {course.details.learningOutcomes.map((outcome: string, index: number) => (
-                                <div key={index} className="flex items-start gap-4 p-6 bg-white dark:bg-slate-900 rounded-xl border-l-4 border-[#e3171e]">
-                                    <Award className="w-6 h-6 text-[#06113d] dark:text-[#e3171e] shrink-0 mt-0.5" />
-                                    <span className="text-slate-700 dark:text-slate-300 font-medium">{outcome}</span>
-                                </div>
-                            ))}
-                        </div>
-                    </AnimatedSection>
-                </div>
-            </section>
+            {course.details?.learningOutcomes && (
+                <section className="py-16 bg-slate-50 dark:bg-slate-800">
+                    <div className="max-w-7xl mx-auto px-4 md:px-8">
+                        <AnimatedSection>
+                            <div className="flex items-center gap-3 mb-8">
+                                <Target className="w-8 h-8 text-[#e3171e]" />
+                                <h2 className="text-3xl font-bold text-slate-900 dark:text-white">
+                                    Learning Outcomes
+                                </h2>
+                            </div>
+                            <div className="grid md:grid-cols-2 gap-6">
+                                {course.details.learningOutcomes.map((outcome: string, index: number) => (
+                                    <div key={index} className="flex items-start gap-4 p-6 bg-white dark:bg-slate-900 rounded-xl border-l-4 border-[#e3171e]">
+                                        <Award className="w-6 h-6 text-[#06113d] dark:text-[#e3171e] shrink-0 mt-0.5" />
+                                        <span className="text-slate-700 dark:text-slate-300 font-medium">{outcome}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </AnimatedSection>
+                    </div>
+                </section>
+            )}
 
             {/* Technical Terms */}
-            <section className="py-16 bg-white dark:bg-slate-900">
-                <div className="max-w-7xl mx-auto px-4 md:px-8">
-                    <AnimatedSection>
-                        <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-8">
-                            Key Concepts Covered
-                        </h2>
-                        <div className="flex flex-wrap gap-3">
-                            {course.details.technicalTerms.map((term: string, index: number) => (
-                                <span
-                                    key={index}
-                                    className="px-4 py-2 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg border border-slate-200 dark:border-slate-700 font-medium"
-                                >
-                                    {term}
-                                </span>
-                            ))}
-                        </div>
-                    </AnimatedSection>
-                </div>
-            </section>
+            {course.details?.technicalTerms && (
+                <section className="py-16 bg-white dark:bg-slate-900">
+                    <div className="max-w-7xl mx-auto px-4 md:px-8">
+                        <AnimatedSection>
+                            <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-8">
+                                Key Concepts Covered
+                            </h2>
+                            <div className="flex flex-wrap gap-3">
+                                {course.details.technicalTerms.map((term: string, index: number) => (
+                                    <span
+                                        key={index}
+                                        className="px-4 py-2 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg border border-slate-200 dark:border-slate-700 font-medium"
+                                    >
+                                        {term}
+                                    </span>
+                                ))}
+                            </div>
+                        </AnimatedSection>
+                    </div>
+                </section>
+            )}
 
             {/* CTA Section */}
             <section className="py-16 bg-gradient-to-br from-[#06113d] to-[#0a1a5c] text-white">

@@ -47,21 +47,21 @@
     "heroSlides": [
         {
             "id": "slide1",
-            "image": "https://i.ibb.co/Df4FM7vz/Lucid-Origin-create-a-physio-therepist-images-related-to-these-1.jpg",
+            "image": "/images/005.webp",
             "title": "Reborn To Move Fearless",
             "subtitle": "Your path out of pain starts with science driven care.",
             "cta": "Book Appointment"
         },
         {
             "id": "slide2",
-            "image": "https://i.ibb.co/TqkHftwd/Lucid-Origin-create-a-physio-therepist-images-related-to-these-2.jpg",
+            "image": "/images/003.webp",
             "title": "Science Driven Care",
             "subtitle": "Evidence-based reasoning and management for lasting recovery.",
             "cta": "Our Services"
         },
         {
             "id": "slide3",
-            "image": "https://i.ibb.co/Z1Y8sM0H/gemini-2-5-flash-image-create-a-physio-therepist-clinic-images-related-to-these-captions-Elite-Sport.jpg",
+            "image": "/images/004.webp",
             "title": "Expert Rehabilitation",
             "subtitle": "Helping you return to an active, confident, and pain-free life.",
             "cta": "Meet The Team"
@@ -138,7 +138,7 @@
                 "approach": "Assessment first, movement correction, progressive exercises and load planning to restore confidence."
             },
             "image": {
-                "src": "https://i.ibb.co/60Mvh91C/Generated-Image-December-02-2025-12-14-AM-1.png",
+                "src": "/images/007.webp",
                 "alt": "Pain Management"
             }
         },
@@ -152,7 +152,7 @@
                 "approach": "Biomechanics based rehab, sport specific loading, movement retraining and strength progressions."
             },
             "image": {
-                "src": "https://i.ibb.co/nsyNL6Pn/Generated-Image-December-02-2025-12-14-AM.png",
+                "src": "/images/005.webp",
                 "alt": "Sports Rehab"
             }
         },
@@ -166,7 +166,7 @@
                 "approach": "Controlled mobility, gradual strengthening, gait and movement retraining, and long term function building."
             },
             "image": {
-                "src": "https://i.ibb.co/Z1Y8sM0H/gemini-2-5-flash-image-create-a-physio-therepist-clinic-images-related-to-these-captions-Elite-Sport.jpg",
+                "src": "/images/010.webp",
                 "alt": "Post Surgical Rehab"
             }
         },
@@ -180,7 +180,7 @@
                 "approach": "Movement analysis, spinal mechanics, targeted exercise and strength conditioning."
             },
             "image": {
-                "src": "https://i.ibb.co/60Mvh91C/Generated-Image-December-02-2025-12-14-AM-1.png",
+                "src": "/images/008.webp",
                 "alt": "Spine Care"
             }
         },
@@ -194,7 +194,7 @@
                 "approach": "Joint loading strategies, mobility needs, strength profiling and functional progression."
             },
             "image": {
-                "src": "https://i.ibb.co/nsyNL6Pn/Generated-Image-December-02-2025-12-14-AM.png",
+                "src": "/images/009.webp",
                 "alt": "Knee & Shoulder"
             }
         },
@@ -208,7 +208,7 @@
                 "approach": "Strength and conditioning, movement efficiency, load progression and performance metrics."
             },
             "image": {
-                "src": "https://i.ibb.co/Z1Y8sM0H/gemini-2-5-flash-image-create-a-physio-therepist-clinic-images-related-to-these-captions-Elite-Sport.jpg",
+                "src": "/images/011.webp",
                 "alt": "Performance Training"
             }
         },
@@ -222,7 +222,7 @@
                 "approach": "Movement review through video, personalised exercise plan and load management advice."
             },
             "image": {
-                "src": "https://i.ibb.co/Z1Y8sM0H/gemini-2-5-flash-image-create-a-physio-therepist-clinic-images-related-to-these-captions-Elite-Sport.jpg",
+                "src": "/images/002.webp",
                 "alt": "Online Consultations"
             }
         }
@@ -291,19 +291,31 @@
                 "id": "s1",
                 "title": "ACL Rehab Success",
                 "description": "Return to football after 6 months of structured rehab.",
-                "image": "https://i.ibb.co/nsyNL6Pn/Generated-Image-December-02-2025-12-14-AM.png"
+                "image": "/images/aditi.webp"
             },
             {
                 "id": "s2",
                 "title": "Chronic Back Pain",
                 "description": "Pain-free lifting after 4 years of struggle.",
-                "image": "https://i.ibb.co/60Mvh91C/Generated-Image-December-02-2025-12-14-AM-1.png"
+                "image": "/images/marimuthu.webp"
             },
             {
                 "id": "s3",
                 "title": "Shoulder Mobility",
                 "description": "Full range of motion restored for competitive swimming.",
-                "image": "https://i.ibb.co/Z1Y8sM0H/gemini-2-5-flash-image-create-a-physio-therepist-clinic-images-related-to-these-captions-Elite-Sport.jpg"
+                "image": "/images/vimal.webp"
+            },
+            {
+                "id": "s4",
+                "title": "MCL Injury Recovery (Kabaddi)",
+                "description": "Pain-free return to professional kabaddi after MCL injury with strengthening and mental health support.",
+                "image": "/images/marimuthu.webp"
+            },
+            {
+                "id": "s5",
+                "title": "ACL & LCL Rehab (Basketball)",
+                "description": "Return to professional basketball after Grade 2 ACL and Grade 1 LCL injury with comprehensive rehab and diet plan.",
+                "image": "/images/bavithra.webp"
             }
         ],
         "testimonials": [

@@ -11,14 +11,14 @@
         "canonical": "https://atreusphysio.com/about",
         "ogTitle": "About Us - AtreusPhysio",
         "ogDescription": "Your trusted partner in recovery and rehabilitation. Science-driven care for pain relief and performance.",
-        "ogImage": "/images/og-about.jpg",
+        "ogImage": "/images/009.webp",
         "robots": "index,follow"
     },
     "hero": {
         "title": "About ATREUS PHYSIO",
         "subtitle": "Your trusted partner in recovery and rehabilitation. Science-driven care with a personal touch.",
         "image": {
-            "src": "https://i.ibb.co/Df4FM7vz/Lucid-Origin-create-a-physio-therepist-images-related-to-these-1.jpg",
+            "src": "/images/009.webp",
             "alt": "Atreus Physio Clinic"
         }
     },
@@ -28,7 +28,7 @@
         "qualifications": "MPT Sports",
         "bio": "I'm Swatheeshwaran, and I started ATREUS PHYSIO because I wanted to create something different—a clinic where patients don't just get treated, but truly understand what's happening in their bodies. My journey began in sports physiotherapy, where I learned that recovery is as much about mindset as it is about exercises. Over the years, I've had the privilege of working with everyone from professional athletes to people dealing with everyday aches and pains, and each person has taught me something new about resilience and healing.",
         "experience": "I spent three years as an Assistant Professor, which shaped how I communicate complex medical concepts in ways that actually make sense. Teaching forced me to think from the student's perspective, and I carry that same approach into patient care today. I've also been fortunate to work on the sidelines of major sporting events—national championships, state tournaments, and university competitions—where split-second decisions and rapid recovery protocols are part of the job. Those high-pressure environments taught me to stay calm, think clearly, and always put the athlete's long-term health first.",
-        "image": "/images/dummy/founder-swatheesh.jpg",
+        "image": "/images/profileImage.webp",
         "linkedin": "https://www.linkedin.com/in/swatheeshwaran-mpt-sports-018566274?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
         "achievements": {
             "national": [
