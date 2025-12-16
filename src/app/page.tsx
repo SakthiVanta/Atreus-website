@@ -59,10 +59,10 @@ export default async function Home() {
 
 
             {/* Conditions Section */}
-            {data.conditions && <ConditionsGrid conditions={data.conditions} />}
+            {data.conditions && <ConditionsGrid />}
 
             {/* Services Section */}
-            {data.services && <ServicesGrid services={data.services} />}
+            {data.services && <ServicesGrid services={data.services} limit={3} />}
 
             {/* Success Stories Section */}
             {data.successStories && <SuccessStories data={data.successStories} />}
@@ -74,7 +74,7 @@ export default async function Home() {
                             title="What Makes ATREUS PHYSIO Different"
                             description="Combining clinical expertise with patient education for lasting results. We believe in a science-driven, assessment-first approach that puts you in control of your recovery."
                             linkText="Learn More About Us"
-                            linkHref="/about"
+                            linkHref="/methodology"
                         />
 
                         {data.valueProps && (
@@ -110,7 +110,7 @@ export default async function Home() {
                                 title="Meet Your Therapist"
                                 description="Experienced professionals dedicated to your recovery and wellness journey."
                                 linkText="View Full Profile"
-                                linkHref="/about"
+                                linkHref="/team/dr-swatheeshwaran"
                             />
                         </AnimatedSection>
 

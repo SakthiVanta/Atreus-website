@@ -59,7 +59,7 @@ export function EnquiryModal({ isOpen, onClose, courseTitle }: EnquiryModalProps
                                 <div className="space-y-2">
                                     <Label className="text-slate-700 dark:text-slate-300">Full Name</Label>
                                     <Input
-                                        placeholder="Rahul Sharma"
+                                        placeholder="Enter your name"
                                         required
                                         className="bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500"
                                     />
@@ -68,7 +68,7 @@ export function EnquiryModal({ isOpen, onClose, courseTitle }: EnquiryModalProps
                                     <Label className="text-slate-700 dark:text-slate-300">Email Address</Label>
                                     <Input
                                         type="email"
-                                        placeholder="rahul.sharma@example.com"
+                                        placeholder="Enter your email"
                                         required
                                         className="bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500"
                                     />

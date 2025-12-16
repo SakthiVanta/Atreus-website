@@ -133,7 +133,7 @@ export function BookNowModal({ isOpen, onClose, courseTitle, coursePrice }: Book
                                     <input
                                         {...register("name")}
                                         className="w-full px-4 py-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 outline-none transition-all placeholder:text-slate-400 dark:placeholder:text-slate-500"
-                                        placeholder="Rahul Sharma"
+                                        placeholder="Enter your name"
                                     />
                                     {errors.name && <p className="text-xs text-red-500">{errors.name.message}</p>}
                                 </div>
@@ -144,7 +144,7 @@ export function BookNowModal({ isOpen, onClose, courseTitle, coursePrice }: Book
                                         {...register("email")}
                                         type="email"
                                         className="w-full px-4 py-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:border-[#06113d] focus:ring-2 focus:ring-[#06113d]/20 outline-none transition-all placeholder:text-slate-400 dark:placeholder:text-slate-500"
-                                        placeholder="rahul.sharma@example.com"
+                                        placeholder="Enter your email"
                                     />
                                     {errors.email && <p className="text-xs text-red-500">{errors.email.message}</p>}
                                 </div>
@@ -155,7 +155,7 @@ export function BookNowModal({ isOpen, onClose, courseTitle, coursePrice }: Book
                                         {...register("phone")}
                                         type="tel"
                                         className="w-full px-4 py-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 outline-none transition-all placeholder:text-slate-400 dark:placeholder:text-slate-500"
-                                        placeholder="+91 98765 43210"
+                                        placeholder="+91 98765 43***"
                                     />
                                     {errors.phone && <p className="text-xs text-red-500">{errors.phone.message}</p>}
                                 </div>

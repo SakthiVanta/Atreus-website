@@ -47,11 +47,11 @@
         }
     },
     "hero": {
-        "title": "Physio Chronicles",
+        "title": "ATREUS Physio Chronicles",
         "subtitle": "Join us on a journey through evidence-based physiotherapy. Real conversations, practical insights, and clinical wisdom.",
         "tag": "Podcast Series"
     },
-    "description": "Physio Chronicles is your go-to podcast for evidence-based physiotherapy discussions. Each episode features in-depth conversations about clinical reasoning, research updates, and practical rehabilitation strategies that you can apply in your practice.",
+    "description": "ATREUS Physio Chronicles is your go-to podcast for evidence-based physiotherapy discussions. Each episode features in-depth conversations about clinical reasoning, research updates, and practical rehabilitation strategies that you can apply in your practice.",
     "episodes": [
         {
             "id": "ep1",

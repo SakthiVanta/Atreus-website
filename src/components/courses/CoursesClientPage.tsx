@@ -11,14 +11,30 @@ import { BookNowModal } from "@/components/courses/BookNowModal";
 import { EnquiryModal } from "@/components/courses/EnquiryModal";
 import { FilterCourses } from "@/components/courses/FilterCourses";
 
-// Helper to determine course status
+// --- Types (Optional but good for syntax strictness) ---
+type Course = {
+    id: string;
+    title: string;
+    date: string;
+    location: string;
+    price: string;
+    originalPrice?: string;
+    description: string;
+    tags: string[];
+    seatsLeft?: number;
+    details?: {
+        topics: string[];
+    };
+};
+
+// --- Helper Functions ---
+
 const getCourseStatus = (course: any) => {
-    if (course.tags.includes("Coming Soon") || course.date === "Coming Soon") return "coming-soon";
+    if (course.tags?.includes("Coming Soon") || course.date === "Coming Soon") return "coming-soon";
     if (course.seatsLeft === 0) return "sold-out";
     return "available";
 };
 
-// Helper to get course format
 const getCourseFormat = (course: any) => {
     if (course.date?.includes("On-Demand")) return "on-demand";
     if (course.location === "Zoom") return "zoom";
@@ -26,12 +42,13 @@ const getCourseFormat = (course: any) => {
     return "online";
 };
 
-// Helper to determine if course is paid
 const getCoursePriceType = (course: any) => {
     if (course.price === "Free" || course.price === "₹0") return "free";
     if (course.price === "TBA" || course.price === "") return "tba";
     return "paid";
 };
+
+// --- Main Component ---
 
 export function CoursesClientPage({ data }: { data: any }) {
     const [isBookModalOpen, setIsBookModalOpen] = useState(false);
@@ -40,7 +57,7 @@ export function CoursesClientPage({ data }: { data: any }) {
     const [selectedCourse, setSelectedCourse] = useState<any>(null);
     const [expandedCourse, setExpandedCourse] = useState<string | null>(null);
 
-    // Multiple filter states
+    // Filter States
     const [filters, setFilters] = useState({
         availability: "all" as "all" | "available" | "coming-soon",
         courseType: "all" as "all" | "core" | "lecture",
@@ -48,8 +65,10 @@ export function CoursesClientPage({ data }: { data: any }) {
         format: "all" as "all" | "online" | "zoom" | "live" | "on-demand"
     });
 
-    // Filter Logic with multiple criteria
+    // Filter Logic
     const filteredCourses = useMemo(() => {
+        if (!data?.courseList) return [];
+
         return data.courseList.filter((course: any) => {
             const status = getCourseStatus(course);
             const format = getCourseFormat(course);
@@ -72,9 +91,8 @@ export function CoursesClientPage({ data }: { data: any }) {
 
             return true;
         });
-    }, [data.courseList, filters]);
+    }, [data, filters]);
 
-    // Separate courses into available and coming soon
     const availableCourses = filteredCourses.filter((course: any) => getCourseStatus(course) === "available");
     const comingSoonCourses = filteredCourses.filter((course: any) => getCourseStatus(course) === "coming-soon");
 
@@ -91,11 +109,10 @@ export function CoursesClientPage({ data }: { data: any }) {
         setExpandedCourse(expandedCourse === courseId ? null : courseId);
     };
 
-    // Check if any filters are active
+    // Filter Helpers
     const hasActiveFilters = filters.availability !== "all" || filters.courseType !== "all" ||
         filters.priceType !== "all" || filters.format !== "all";
 
-    // Clear all filters
     const clearAllFilters = () => {
         setFilters({
             availability: "all",
@@ -105,7 +122,6 @@ export function CoursesClientPage({ data }: { data: any }) {
         });
     };
 
-    // Get active filter chips
     const getActiveFilterChips = () => {
         const chips = [];
         if (filters.availability !== "all") chips.push({ key: "availability", label: filters.availability === "available" ? "Available Now" : "Coming Soon" });
@@ -130,7 +146,6 @@ export function CoursesClientPage({ data }: { data: any }) {
 
     return (
         <main className="min-h-screen bg-slate-50 dark:bg-slate-950">
-
             {/* Hero Section */}
             <section className="relative bg-[#06113d] text-white py-32 overflow-hidden">
                 <div className="absolute inset-0 overflow-hidden">
@@ -138,8 +153,6 @@ export function CoursesClientPage({ data }: { data: any }) {
                     <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[100px]" />
                 </div>
                 <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10 text-center flex flex-col items-center">
-
-                    {/* Atreus Academy Pill */}
                     <motion.div
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -174,8 +187,7 @@ export function CoursesClientPage({ data }: { data: any }) {
                     >
                         <Button
                             onClick={scrollToCourses}
-                            className="bg-white hover:bg-slate-100 text-[#e3171e] px-8 py-6 rounded-full text-lg font-semibold shadow-lg hover:shadow-slate-300/20 transition-all flex items-center gap-2 group
-                                       dark:bg-slate-800 dark:hover:bg-slate-700 dark:text-white dark:hover:shadow-slate-600/20"
+                            className="bg-white hover:bg-slate-100 text-[#e3171e] px-8 py-6 rounded-full text-lg font-semibold shadow-lg hover:shadow-slate-300/20 transition-all flex items-center gap-2 group dark:bg-slate-800 dark:hover:bg-slate-700 dark:text-white dark:hover:shadow-slate-600/20"
                         >
                             Explore Courses
                             <ChevronDown className="w-5 h-5 text-[#e3171e] group-hover:translate-y-1 transition-transform dark:text-white" />
@@ -184,11 +196,11 @@ export function CoursesClientPage({ data }: { data: any }) {
                 </div>
             </section>
 
-            {/* Features Grid (Preserved) */}
+            {/* Features Grid */}
             <section className="py-12 border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900">
                 <div className="max-w-7xl mx-auto px-4 md:px-8">
                     <div className="grid md:grid-cols-3 gap-8">
-                        {data.features.map((feature: any, i: number) => (
+                        {data.features?.map((feature: any, i: number) => (
                             <motion.div
                                 key={i}
                                 initial={{ opacity: 0, y: 10 }}
@@ -212,7 +224,6 @@ export function CoursesClientPage({ data }: { data: any }) {
 
             {/* Main Course Section */}
             <section id="courses-list" className="py-20 max-w-7xl mx-auto px-4 md:px-8">
-
                 {/* Header */}
                 <div className="mb-8">
                     <h2 className="text-3xl font-bold text-slate-900 dark:text-white">Academy Schedule</h2>
@@ -333,7 +344,7 @@ export function CoursesClientPage({ data }: { data: any }) {
     );
 }
 
-// Course Grid Component
+// --- Course Grid Component ---
 function CourseGrid({
     courses,
     expandedCourse,
@@ -371,25 +382,37 @@ function CourseGrid({
                             <div className={`h-48 relative ${isComingSoon ? "bg-slate-200 dark:bg-slate-800 grayscale opacity-80" : "bg-gradient-to-br from-[#06113d] to-[#0a1a5c]"}`}>
                                 <div className="absolute inset-0 bg-[url('/images/grid-pattern.svg')] opacity-10"></div>
 
-                                {/* Status Badge */}
-                                <div className="absolute top-4 right-4 z-10">
-                                    {isComingSoon ? (
-                                        <span className="bg-yellow-400 text-yellow-900 text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-1 shadow-sm">
-                                            <Clock className="w-3 h-3" /> Coming Soon
-                                        </span>
-                                    ) : (
-                                        <span className="bg-green-500 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-sm">
-                                            Open for Booking
-                                        </span>
-                                    )}
-                                </div>
+                                {/* 
+                                    Header Flex Container
+                                    Contains both Badge (Right) and Tags (Left) 
+                                    Using Flexbox ensures they don't overlap.
+                                */}
+                                <div className="absolute top-0 left-0 w-full p-4 flex justify-between items-start z-20 pointer-events-none">
 
-                                <div className="absolute top-4 left-4 flex flex-wrap gap-2 pr-20">
-                                    {course.tags.map((tag: string) => (
-                                        <span key={tag} className="bg-white/90 dark:bg-slate-900/90 backdrop-blur text-[10px] font-bold px-2 py-1 rounded text-slate-900 dark:text-white uppercase tracking-wide">
-                                            {tag}
-                                        </span>
-                                    ))}
+                                    {/* Link Tags (Left) */}
+                                    <div className="flex flex-wrap gap-2 pointer-events-auto mr-2">
+                                        {course.tags.map((tag: string) => (
+                                            <span
+                                                key={tag}
+                                                className="bg-white/90 dark:bg-slate-900/90 backdrop-blur text-[10px] font-bold px-2 py-1 rounded text-slate-900 dark:text-white uppercase tracking-wide shadow-sm"
+                                            >
+                                                {tag}
+                                            </span>
+                                        ))}
+                                    </div>
+
+                                    {/* Status Badge (Right) */}
+                                    <div className="shrink-0 pointer-events-auto">
+                                        {isComingSoon ? (
+                                            <span className="bg-yellow-400 text-yellow-900 text-xs font-bold px-3 py-1.5 rounded-full flex items-center gap-1 shadow-sm whitespace-nowrap">
+                                                <Clock className="w-3 h-3" /> Coming Soon
+                                            </span>
+                                        ) : (
+                                            <span className="bg-green-500 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-sm whitespace-nowrap">
+                                                Open for Booking
+                                            </span>
+                                        )}
+                                    </div>
                                 </div>
                             </div>
 

@@ -2,7 +2,7 @@
     "about": [
         {
             "question": "What makes ATREUS PHYSIO different from other physiotherapy clinics?",
-            "answer": "We focus on education as much as treatment. Every session includes clear explanations of what's happening in your body and why each exercise matters. Our approach combines evidence-based practice with personalized care—no cookie-cutter solutions. We also have experience working with both professional athletes and everyday people, so we understand recovery from multiple perspectives."
+            "answer": "We focus on education as much as treatment. Every session includes clear explanations of what's happening in your body and why each exercise matters. Our approach combines evidence-based practice with personalized care, no cookie-cutter solutions. We also have experience working with both professional athletes and everyday people, so we understand recovery from multiple perspectives."
         },
         {
             "question": "Do I need a doctor's referral to book an appointment?",
@@ -10,7 +10,7 @@
         },
         {
             "question": "How long does each physiotherapy session typically last?",
-            "answer": "Initial assessments usually take 45-60 minutes as we conduct a thorough evaluation and explain our findings. Follow-up treatment sessions are typically 30-45 minutes, depending on your specific needs and treatment plan. We believe in quality over quantity—each session is focused and purposeful."
+            "answer": "Initial assessments usually take 45-60 minutes as we conduct a thorough evaluation and explain our findings. Follow-up treatment sessions are typically 30-45 minutes, depending on your specific needs and treatment plan. We believe in quality over quantity, each session is focused and purposeful."
         },
         {
             "question": "What conditions do you treat at ATREUS PHYSIO?",
@@ -66,7 +66,7 @@
     "homepage": [
         {
             "question": "What is physiotherapy and how can it help me?",
-            "answer": "Physiotherapy is a science-based healthcare profession focused on helping you move better, reduce pain, and prevent future injuries. It involves assessment, hands-on treatment, exercise prescription, and education. Whether you're recovering from an injury, managing chronic pain, or looking to improve athletic performance, physiotherapy can help you get back to doing what you love—safely and confidently."
+            "answer": "Physiotherapy is a science-based healthcare profession focused on helping you move better, reduce pain, and prevent future injuries. It involves assessment, hands-on treatment, exercise prescription, and education. Whether you're recovering from an injury, managing chronic pain, or looking to improve athletic performance, physiotherapy can help you get back to doing what you love, safely and confidently."
         },
         {
             "question": "Is physiotherapy painful?",
@@ -74,7 +74,7 @@
         },
         {
             "question": "How soon will I see results?",
-            "answer": "Most people notice some improvement within the first few sessions—whether that's reduced pain, better movement, or increased confidence. However, lasting change takes time. Your body needs consistent, progressive loading to adapt and heal. We'll track your progress together and celebrate the small wins along the way."
+            "answer": "Most people notice some improvement within the first few sessions, whether that's reduced pain, better movement, or increased confidence. However, lasting change takes time. Your body needs consistent, progressive loading to adapt and heal. We'll track your progress together and celebrate the small wins along the way."
         }
     ]
 }

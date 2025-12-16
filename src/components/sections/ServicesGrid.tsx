@@ -7,6 +7,7 @@ import { SectionHeader } from "@/components/ui/SectionHeader";
 
 type Service = {
     id: string;
+    slug?: string;
     title: string;
     excerpt: string;
     image: {
@@ -15,8 +16,8 @@ type Service = {
     };
 };
 
-export function ServicesGrid({ services }: { services: Service[] }) {
-    const displayedServices = services.slice(0, 3);
+export function ServicesGrid({ services, limit }: { services: Service[]; limit?: number }) {
+    const displayedServices = limit ? services.slice(0, limit) : services;
 
     return (
         <section className="py-20 bg-white dark:bg-slate-900">
@@ -25,7 +26,7 @@ export function ServicesGrid({ services }: { services: Service[] }) {
                     title="Our Services"
                     description="Comprehensive care tailored to your specific recovery needs."
                     linkText="View All Services"
-                    linkHref="/about"
+                    linkHref="/services"
                 />
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -40,7 +41,7 @@ export function ServicesGrid({ services }: { services: Service[] }) {
                                 transition={{ duration: 0.3 }}
                             >
                                 <Link
-                                    href={`/services/${service.id}`}
+                                    href={`/services/${service.slug || service.id}`}
                                     className="group block bg-slate-50 dark:bg-slate-800 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow h-full border border-slate-200 dark:border-slate-700"
                                 >
                                     <div className="aspect-[4/3] relative">

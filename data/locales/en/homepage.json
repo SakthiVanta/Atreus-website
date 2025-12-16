@@ -71,67 +71,140 @@
         {
             "id": "assessment",
             "title": "Assessment First Approach",
-            "desc": "A structured evaluation to understand the real cause instead of chasing symptoms."
+            "desc": "A structured evaluation to understand the real cause instead of chasing symptoms.",
+            "description": "We don't guess. We assess. Before any treatment begins, we conduct a comprehensive evaluation to understand not just 'where' it hurts, but 'why' it hurts.",
+            "details": [
+                "Detailed history taking",
+                "Movement screening",
+                "Functional capacity evaluation",
+                "Goal setting aligned with your lifestyle"
+            ]
         },
         {
             "id": "patient-centred",
             "title": "Patient Centred Personalised Treatment",
-            "desc": "Treatment plans designed around your specific needs, goals, and lifestyle."
+            "desc": "Treatment plans designed around your specific needs, goals, and lifestyle.",
+            "description": "You are the expert on your body. We are the experts on movement. Together, we co-create a plan that fits your life, creating sustainable habits.",
+            "details": [
+                "Active listening",
+                "Shared decision making",
+                "Preventive care mindset",
+                "24/7 support via WhatsApp"
+            ]
         },
         {
             "id": "science",
             "title": "Exercise Science Centred Rehabilitation",
-            "desc": "Rehabilitation grounded in exercise science for effective, long-term recovery."
+            "desc": "Building movement control, stability and confidence before adding load.",
+            "description": "Rest doesn't fix everything. Structured, progressive loading is the key to tissue adaptation and long-term resilience.",
+            "details": [
+                "Periodized strength training",
+                "Load management strategies",
+                "Neuromuscular control",
+                "Return-to-sport testing"
+            ]
         },
         {
             "id": "evidence",
-            "title": "Evidence Based Reasoning and Management",
-            "desc": "Protocols based on the latest scientific research and international guidelines."
+            "title": "Evidence Based Reasoning",
+            "desc": "Using current clinical evidence and biomechanics to guide every decision.",
+            "description": "We stay updated with the latest research to ensure your care is effective, proven, and devoid of pseudoscience.",
+            "details": [
+                "Current clinical guidelines",
+                "Biopsychosocial model",
+                "Outcome measure tracking",
+                "Scientific load management"
+            ]
         },
         {
             "id": "progressive",
             "title": "Clear, Progressive Treatment Planning",
-            "desc": "A roadmap to recovery that is transparent, structured, and predictable."
+            "desc": "A plan that continues beyond pain relief to build resilience and independence.",
+            "description": "Rehabilitation shouldn't be a cycle of dependency. We give you a clear roadmap from pain to performance.",
+            "details": [
+                "Short & long term goals",
+                "Phase-based progression",
+                "Self-management strategies",
+                "Maintenance planning"
+            ]
         },
         {
             "id": "biomechanics",
-            "title": "Movement and Biomechanics Based Reasoning",
-            "desc": "Using movement analysis to guide clinical decisions and correct mechanics."
+            "title": "Movement & Biomechanics",
+            "desc": "Observing how you move so patterns, compensations and irritants become clear.",
+            "description": "Pain is often a symptom of poor movement mechanics. We use advanced video analysis and biomechanical reasoning to correct the root cause.",
+            "details": [
+                "Gait analysis",
+                "Running technique correction",
+                "Sport-specific movement screening",
+                "Postural correction"
+            ]
         }
     ],
     "founders": [
         {
+            "id": "dr-swatheeshwaran",
+            "slug": "dr-swatheeshwaran",
             "name": "Dr. Swatheeshwaran",
             "role": "Founder & Sports Physiotherapist",
             "qualifications": "MPT Sports",
-            "bio": "Dr. Swatheeshwaran, MPT Sports, is the founder of ATREUS PHYSIO and a clinician who believes in science driven, movement centred rehabilitation. His practice focuses on helping people return to an active, confident and pain free life.",
+            "bio": "Dr. Swatheeshwaran is a dedicated Sports Physiotherapist with a vision to redefine how pain and performance are managed in Trichy. With a Master's degree in Sports Physiotherapy, he combines academic rigor with on-field practical experience. \n\nHe has worked as an Assistant Professor for three years, training the next generation of physiotherapists while simultaneously managing high-performance athletes. His approach is deeply rooted in biomechanics—understanding how the body moves to fix how it feels.",
             "shortBio": "Dr. Swatheeshwaran, MPT Sports, is the founder of ATREUS PHYSIO and a clinician who believes in science driven, movement centred rehabilitation. His practice focuses on helping people return to an active, confident and pain free life.",
             "experience": "He has worked as an Assistant Professor for three years, trained institutional and professional athletes, and delivered rehabilitation for high performance sport environments. His on field experience includes serving as physiotherapist for multiple major national, state and inter university events.",
             "image": "/images/profileImage.webp",
-            "linkedin": "https://www.linkedin.com/in/swatheeshwaran-mpt-sports-018566274?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-            "achievements": {
-                "national": [
-                    "All India Aquatics, Beach Volleyball, Badminton, Basketball Championships (2023 to 2024)"
-                ],
-                "state": [
-                    "SDAT CM Trophy (2021 to 2022)",
-                    "TNBA Basketball Championships: Junior, Senior and State categories (2021 to 2022)"
-                ],
-                "university": [
-                    "South Zone Tournaments in Football",
-                    "South Zone Volleyball",
-                    "South Zone Tennis",
-                    "South Zone Basketball (2021 to 2023)"
-                ]
+            "specialties": [
+                "Sports Injury Rehabilitation",
+                "ACL & Knee Rehabilitation",
+                "Biomechanics Analysis",
+                "Strength & Conditioning"
+            ],
+            "social": {
+                "linkedin": "https://www.linkedin.com/in/swatheeshwaran-mpt-sports-018566274"
             },
-            "approach": "His approach combines clear assessment, movement analysis and evidence based loading to guide both recovery and performance. Treatment is structured to help patients return to daily function, return to sport and train with confidence. Every session focuses on clear communication so progress feels predictable, safe and understood."
+            "achievements": [
+                {
+                    "category": "National Level",
+                    "items": [
+                        "All India Aquatics, Beach Volleyball, Badminton, Basketball Championships (2023-2024)"
+                    ]
+                },
+                {
+                    "category": "State Level",
+                    "items": [
+                        "SDAT CM Trophy (2021-2022)",
+                        "TNBA Basketball Championships (Junior, Senior, State - 2021-2022)"
+                    ]
+                },
+                {
+                    "category": "University Level",
+                    "items": [
+                        "South Zone tournaments: Football, Volleyball, Tennis, Basketball (2021-2023)"
+                    ]
+                }
+            ],
+            "philosophy": "I don't believe in 'fixing' patients. I believe in educating them, empowering them, and building their capacity so they don't need to come back. Rehabilitation shouldn't be a mystery; it should be a clear, progressive journey."
         }
     ],
     "services": [
         {
             "id": "pain-management",
+            "slug": "pain-management",
             "title": "Pain Management",
             "excerpt": "Assessment first, movement correction, and progressive exercises to restore confidence.",
+            "description": "Chronic pain isn't just about tissues; it's about the nervous system, movement habits, and lifestyle. We use a multi-modal approach to desensitize painful structures and build long-term resilience.",
+            "fullDescription": "Pain is complex, often persisting long after tissues have healed. Our Pain Management program goes beyond temporary relief. We combine manual therapy to reduce immediate symptoms with graded exposure therapy and education to retrain your pain system. By addressing fear-avoidance behaviors and correcting maladaptive movement patterns, we help you regain control over your body.",
+            "benefits": [
+                "Scientific explanation of your pain triggers",
+                "Reduced reliance on painkillers",
+                "Restored movement confidence",
+                "Strategies to manage flare-ups independently"
+            ],
+            "process": [
+                "Detailed pain history and trigger analysis",
+                "Movement screen to identify guarding patterns",
+                "Manual therapy for symptom modification",
+                "Graded exercise exposure"
+            ],
             "details": {
                 "feels": "Localised pain, stiffness, reduced movement or recurring flare ups.",
                 "expect": "A clear explanation of why the pain is happening and a structured plan to reduce symptoms.",
@@ -144,11 +217,26 @@
         },
         {
             "id": "sports-rehab",
+            "slug": "sports-rehab",
             "title": "Sports Rehab",
             "excerpt": "Biomechanics based rehab, sport specific loading, and return to sport steps.",
+            "description": "Athletes need more than just pain relief; they need performance restoration. Our sports rehab is data-driven, sport-specific, and focuses on optimizing biomechanics to prevent re-injury.",
+            "fullDescription": "Whether you're a professional athlete or a weekend warrior, our Sports Rehab program bridges the gap between healthcare and performance. We analyze the specific demands of your sport and replicate them in the clinic. Using video analysis and force (load) management, we rebuild your capacity to sprint, jump, cut, and lift, ensuring you return to the field stronger than before.",
+            "benefits": [
+                "Sport-specific movement analysis",
+                "Objective return-to-sport testing & criteria",
+                "Strength & Conditioning integration",
+                "Performance enhancement post-injury"
+            ],
+            "process": [
+                "Acute injury management & protection",
+                "Restoration of range of motion & activation",
+                "Strength & neuromuscular control",
+                "Sport-specific drills & plyometrics"
+            ],
             "details": {
                 "feels": "Injury during training, reduced performance, difficulty returning to sport or repeated setbacks.",
-                "expect": "A plan that matches the demands of their sport with clear return to sport steps.",
+                "expect": "A plan that matches the demands of your sport with clear return to sport steps.",
                 "approach": "Biomechanics based rehab, sport specific loading, movement retraining and strength progressions."
             },
             "image": {
@@ -158,22 +246,52 @@
         },
         {
             "id": "post-surgical",
+            "slug": "post-surgical-rehab",
             "title": "Post Surgical Rehab",
             "excerpt": "Guided recovery with structured milestones and safe progression.",
+            "description": "Surgery is just the first step. The rehabilitation that follows dictates your long-term outcome. We follow evidence-based protocols while tailoring progression to your specific healing rate.",
+            "fullDescription": "Post-operative recovery matches the surgeon's skill with the therapist's guidance. We communicate directly with your surgeon to ensure protocol compliance while optimizing recovery. From initial swelling management and graft protection to regaining full function and strength, we are with you at every milestone.",
+            "benefits": [
+                "Strict protocol adherence & safety",
+                "Accelerated yet safe recovery timelines",
+                "Scar tissue & swelling management",
+                "Regaining full independence"
+            ],
+            "process": [
+                "Protection & inflammatory control",
+                "Mobility & muscle activation",
+                "Functional strengthening",
+                "Return to full activity"
+            ],
             "details": {
                 "feels": "Weakness, restricted mobility, swelling or difficulty regaining function after surgery.",
                 "expect": "Guided recovery with structured milestones and safe progression.",
                 "approach": "Controlled mobility, gradual strengthening, gait and movement retraining, and long term function building."
             },
             "image": {
-                "src": "/images/010.webp",
+                "src": "/images/003.webp",
                 "alt": "Post Surgical Rehab"
             }
         },
         {
             "id": "spine-care",
+            "slug": "spine-care",
             "title": "Spine Care",
             "excerpt": "Movement analysis, spinal mechanics, targeted exercise and strength conditioning.",
+            "description": "Back and neck pain are often driven by fear and stiffness. We demystify spine problems and build a robust, resilient back through movement and graded loading.",
+            "fullDescription": "Most spine issues are mechanical in nature, accumulating from sustained postures or poor load management. We move away from passive treatments like traction and focus on active spinal rehabilitation. By improving core coordination, spinal mobility, and global strength, we build a 'buffer' against daily stressors.",
+            "benefits": [
+                "Understanding directional preference for relief",
+                "Improved posture & ergonomics",
+                "Core & spinal extensor strengthening",
+                "Fear-free movement restoration"
+            ],
+            "process": [
+                "Mechanical diagnosis (MDT concepts)",
+                "Symptom centralization techniques",
+                "Postural re-education",
+                "Functional loading & lifting mechanics"
+            ],
             "details": {
                 "feels": "Neck pain, low back pain, radiating symptoms or stiffness.",
                 "expect": "Understanding of triggers, relief strategies and long term movement confidence.",
@@ -186,36 +304,81 @@
         },
         {
             "id": "knee-shoulder",
+            "slug": "knee-shoulder-rehab",
             "title": "Knee & Shoulder",
             "excerpt": "Joint loading strategies, mobility needs, strength profiling and functional progression.",
+            "description": "The knee and shoulder are complex joints relying heavily on muscle function. We address the entire kinetic chain to offload the painful joint and restore smooth mechanics.",
+            "fullDescription": "Knee and shoulder pain often result from issues elsewhere—weak hips affecting the knee, or poor thoracic mobility affecting the shoulder. We treat the joint but look at the whole body. Our approach involves isolating the weak link, strengthening it, and then integrating it back into complex movements.",
+            "benefits": [
+                "Joint-specific manual therapy",
+                "Kinetic chain assessment",
+                "Rotator cuff & Scapular control",
+                "Lower limb alignment correction"
+            ],
+            "process": [
+                "Pain modulation & load modification",
+                "Local joint mobility & strength",
+                "Kinetic chain integration",
+                "Functional movement patterns"
+            ],
             "details": {
                 "feels": "Pain with activity, instability, difficulty lifting, walking or playing sports.",
                 "expect": "A joint specific plan that focuses on mechanics, stability and performance.",
                 "approach": "Joint loading strategies, mobility needs, strength profiling and functional progression."
             },
             "image": {
-                "src": "/images/009.webp",
+                "src": "/images/006.webp",
                 "alt": "Knee & Shoulder"
             }
         },
         {
             "id": "performance",
+            "slug": "performance-training",
             "title": "Performance Training",
             "excerpt": "Strength and conditioning, movement efficiency, load progression and performance metrics.",
+            "description": "For those who are pain-free but want to move better, run faster, or lift heavier. We apply clinical biomechanics to sports performance.",
+            "fullDescription": "Performance isn't just about effort; it's about efficiency. We analyze your technique to find energy leaks and potential injury risks. Our conditioning programs are scientifically periodized to peak you for your specific events, whether it's a marathon, a tournament, or simply life.",
+            "benefits": [
+                "Biomechanical efficiency",
+                "Injury risk reduction",
+                "Scientifically periodized programming",
+                "Objective performance metrics"
+            ],
+            "process": [
+                "Performance testing battery",
+                "Power & Explosiveness training",
+                "Energy system development",
+                "Recovery & workload monitoring"
+            ],
             "details": {
                 "feels": "Need for better strength, speed, endurance or sport specific performance.",
                 "expect": "A tailored program designed to enhance capacity, skill and resilience.",
                 "approach": "Strength and conditioning, movement efficiency, load progression and performance metrics."
             },
             "image": {
-                "src": "/images/011.webp",
+                "src": "/images/001.webp",
                 "alt": "Performance Training"
             }
         },
         {
             "id": "online",
+            "slug": "online-consultations",
             "title": "Online Consultations",
             "excerpt": "Movement review through video, personalised exercise plan and load management advice.",
+            "description": "Expert physiotherapy is no longer bound by geography. We provide comprehensive assessment and guided rehab globally through high-quality video consultations.",
+            "fullDescription": "Many musculoskeletal issues can be effectively managed with the right advice and exercise program. Our online consultations involve a thorough history and video movement assessment. We then deliver a custom app-based exercise program with video demonstrations and provide continuous support via WhatsApp.",
+            "benefits": [
+                "Access to expert care from anywhere",
+                "Video-guided exercise app",
+                "Convenient & flexible",
+                "Continuous feedback loop"
+            ],
+            "process": [
+                "Video call assessment",
+                "Movement pattern analysis via video",
+                "Custom program delivery via App",
+                "Regular check-ins & progression"
+            ],
             "details": {
                 "feels": "Pain, movement issues or uncertainty without immediate access to a clinic.",
                 "expect": "A complete online assessment with clear exercises, guidance and follow up support.",
@@ -290,32 +453,26 @@
             {
                 "id": "s1",
                 "title": "ACL Rehab Success",
-                "description": "Return to football after 6 months of structured rehab.",
+                "description": "Back on the football field after 6 months of guided rehabilitation.",
                 "image": "/images/aditi.webp"
             },
             {
                 "id": "s2",
-                "title": "Chronic Back Pain",
-                "description": "Pain-free lifting after 4 years of struggle.",
-                "image": "/images/marimuthu.webp"
+                "title": "ACL & LCL Recovery (Basketball)",
+                "description": "Returned to professional basketball after a Grade 2 ACL and Grade 1 LCL injury with a personalized rehab and nutrition plan.",
+                "image": "/images/bavithra.webp"
             },
             {
                 "id": "s3",
-                "title": "Shoulder Mobility",
-                "description": "Full range of motion restored for competitive swimming.",
-                "image": "/images/vimal.webp"
+                "title": "Shoulder Mobility Recovery",
+                "description": "Regained full shoulder movement and returned to competitive swimming.",
+                "image": "/images/marimuthu.webp"
             },
             {
                 "id": "s4",
                 "title": "MCL Injury Recovery (Kabaddi)",
-                "description": "Pain-free return to professional kabaddi after MCL injury with strengthening and mental health support.",
-                "image": "/images/marimuthu.webp"
-            },
-            {
-                "id": "s5",
-                "title": "ACL & LCL Rehab (Basketball)",
-                "description": "Return to professional basketball after Grade 2 ACL and Grade 1 LCL injury with comprehensive rehab and diet plan.",
-                "image": "/images/bavithra.webp"
+                "description": "Returned to professional kabaddi pain-free with focused strengthening and mental wellness support.",
+                "image": "/images/vimal.webp"
             }
         ],
         "testimonials": [

@@ -54,7 +54,7 @@ export function Header() {
 
     return (
         <>
-            <header className="fixed top-0 left-0 right-0 z-50 flex justify-center pt-4 px-4 pointer-events-none">
+            <header className="fixed top-0 left-0 right-0 z-50 flex justify-center pt-2 px-2 md:pt-4 md:px-4 pointer-events-none">
                 <motion.div
                     layout
                     initial={{ width: "100%", y: 0 }}
@@ -76,7 +76,7 @@ export function Header() {
                     )}>
                         {/* Main navbar content */}
                         <div className={cn(
-                            "flex items-center justify-between px-6 py-3.5 rounded-full backdrop-blur-xl transition-all duration-500",
+                            "flex items-center justify-between px-4 py-2 md:px-6 md:py-3.5 rounded-full backdrop-blur-xl transition-all duration-500",
                             "bg-white/90 dark:bg-slate-900/90",
                             isScrolled && "shadow-2xl shadow-[#06113d]/10 dark:shadow-[#e3171e]/20"
                         )}>
@@ -90,7 +90,7 @@ export function Header() {
                                     alt="AtreusPhysio Logo"
                                     width={180}
                                     height={130}
-                                    className="h-16 w-auto object-contain dark:bg-white dark:px-2 dark:py-1 dark:rounded-full"
+                                    className="h-10 md:h-16 w-auto object-contain dark:bg-white dark:px-2 dark:py-1 dark:rounded-full"
                                     priority
                                 />
                             </Link>
