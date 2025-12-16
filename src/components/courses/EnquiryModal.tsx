@@ -90,7 +90,7 @@ export function EnquiryModal({ isOpen, onClose, courseTitle }: EnquiryModalProps
                                     />
                                 </div>
 
-                                <Button type="submit" className="w-full bg-[#06113d] hover:bg-[#06113d]/90 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-slate-200 text-white mt-2 font-semibold">
+                                <Button type="submit" className="w-full mt-2 font-semibold">
                                     Notify Me When Available
                                 </Button>
                             </form>

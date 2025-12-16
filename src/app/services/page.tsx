@@ -4,10 +4,11 @@ import { ServicesGrid } from "@/components/sections/ServicesGrid";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { generateStandardMetadata } from "@/lib/seo-utils";
 
-export const metadata: Metadata = {
-    title: "Our Services | Atreus Physio",
-    description: "Explore our comprehensive range of specialized physiotherapy services in Trichy. From sports rehab to spine care, we offer science-driven treatment for lasting recovery.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+    const data = await getPageContent("homepage");
+    if (!data?.seo?.pagesSeo?.services) return {};
+    return generateStandardMetadata(data.seo.pagesSeo.services);
+}
 
 export default async function ServicesPage() {
     const data = await getPageContent("homepage");

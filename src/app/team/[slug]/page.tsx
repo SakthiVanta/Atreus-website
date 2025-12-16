@@ -18,15 +18,24 @@ async function getTeamMember(slug: string) {
     return data.founders.find((member: any) => member.slug === slug);
 }
 
+import { generateStandardMetadata } from "@/lib/seo-utils";
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { slug } = await params;
     const member = await getTeamMember(slug);
     if (!member) return {};
 
-    return {
+    // Construct SEO object for the utility
+    const seoData = {
         title: `${member.name} | ${member.role} - Atreus Physio`,
-        description: member.shortBio,
+        description: member.shortBio || member.bio,
+        slug: `team/${slug}`,
+        image: member.image,
+        // Fallback keywords if not explicit
+        keywords: [member.name, member.role, "Physiotherapist", "Trichy", "Atreus Physio"],
     };
+
+    return generateStandardMetadata(seoData);
 }
 
 export async function generateStaticParams() {

@@ -7,33 +7,37 @@ import { Metadata } from "next";
 export function generateStandardMetadata(seoData: any): Metadata {
     if (!seoData) return {};
 
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://atreusphysio.com";
+    const canonicalUrl = seoData.canonical || (seoData.slug ? `${baseUrl}/${seoData.slug}` : baseUrl);
+
     return {
-        title: seoData.metaTitle,
-        description: seoData.metaDescription,
+        metadataBase: new URL(baseUrl),
+        title: seoData.metaTitle || seoData.title,
+        description: seoData.metaDescription || seoData.description,
         keywords: seoData.keywords,
         authors: [{ name: "AtreusPhysio" }],
         publisher: "AtreusPhysio",
         alternates: {
-            canonical: seoData.canonical,
+            canonical: canonicalUrl,
         },
         robots: {
-            index: seoData.robots?.includes("index"),
-            follow: seoData.robots?.includes("follow"),
+            index: seoData.robots?.includes("index") ?? true, // Default to index
+            follow: seoData.robots?.includes("follow") ?? true, // Default to follow
         },
         openGraph: {
-            title: seoData.ogTitle,
-            description: seoData.ogDescription,
-            images: [seoData.ogImage],
-            url: seoData.canonical,
+            title: seoData.ogTitle || seoData.metaTitle || seoData.title,
+            description: seoData.ogDescription || seoData.metaDescription || seoData.description,
+            images: seoData.ogImage || seoData.image ? [seoData.ogImage || seoData.image] : [],
+            url: canonicalUrl,
             type: seoData.ogType || "website",
             siteName: seoData.ogSiteName || "AtreusPhysio",
             locale: seoData.ogLocale || "en_IN",
         },
         twitter: {
             card: seoData.twitterCard || "summary_large_image",
-            title: seoData.twitterTitle || seoData.ogTitle,
-            description: seoData.twitterDescription || seoData.ogDescription,
-            images: [seoData.twitterImage || seoData.ogImage],
+            title: seoData.twitterTitle || seoData.ogTitle || seoData.metaTitle,
+            description: seoData.twitterDescription || seoData.ogDescription || seoData.metaDescription,
+            images: seoData.twitterImage || seoData.ogImage || (seoData.image ? [seoData.image] : []),
         },
     };
 }

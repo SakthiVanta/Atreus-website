@@ -3,12 +3,14 @@ import { ClipboardList, User, FlaskConical, BookOpen, TrendingUp, Activity, Chec
 import { Button } from "@/components/ui/Button";
 import Link from "next/link";
 import { getPageContent } from "@/lib/content";
+import { generateStandardMetadata } from "@/lib/seo-utils";
 
 
-export const metadata: Metadata = {
-    title: "Our Methodology | Atreus Physio",
-    description: "Discover the science-driven, assessment-first approach that makes Atreus Physio different. We focus on long-term recovery, not just quick fixes.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+    const data = await getPageContent("homepage");
+    if (!data?.seo?.pagesSeo?.methodology) return {};
+    return generateStandardMetadata(data.seo.pagesSeo.methodology);
+}
 
 const ICON_MAP: Record<string, any> = {
     assessment: ClipboardList,

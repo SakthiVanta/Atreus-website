@@ -93,6 +93,7 @@ export function BookingForm({ formConfig }: { formConfig: any }) {
                                 placeholder={field.placeholder}
                                 value={(formData as any)[field.name]}
                                 onChange={handleChange}
+                                suppressHydrationWarning
                                 className="rounded-md border border-slate-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-slate-900 min-h-[100px]"
                             />
                         ) : field.type === "select" ? (
@@ -103,6 +104,7 @@ export function BookingForm({ formConfig }: { formConfig: any }) {
                                     required={field.required}
                                     value={(formData as any)[field.name]}
                                     onChange={handleChange as any}
+                                    suppressHydrationWarning
                                     className="w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-slate-900 appearance-none bg-white"
                                 >
                                     <option value="" disabled>
@@ -129,6 +131,7 @@ export function BookingForm({ formConfig }: { formConfig: any }) {
                                 placeholder={field.placeholder}
                                 value={(formData as any)[field.name]}
                                 onChange={handleChange}
+                                suppressHydrationWarning
                                 className="rounded-md border border-slate-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-slate-900"
                             />
                         )}
@@ -138,6 +141,7 @@ export function BookingForm({ formConfig }: { formConfig: any }) {
 
             <Button
                 type="submit"
+                variant="primary"
                 disabled={mutation.isPending}
                 className="w-full md:w-auto"
             >

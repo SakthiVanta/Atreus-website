@@ -3,10 +3,14 @@ import { conditions } from "@/data/conditions";
 import { ConditionCard } from "@/components/conditions/ConditionCard";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 
-export const metadata: Metadata = {
-    title: "Conditions We Treat | Atreus Physio",
-    description: "Explore our comprehensive guide to musculoskeletal conditions. Learn about symptoms, causes, and our science-driven treatment approach.",
-};
+import { getPageContent } from "@/lib/content";
+import { generateStandardMetadata } from "@/lib/seo-utils";
+
+export async function generateMetadata(): Promise<Metadata> {
+    const data = await getPageContent("homepage");
+    if (!data?.seo?.pagesSeo?.conditions) return {};
+    return generateStandardMetadata(data.seo.pagesSeo.conditions);
+}
 
 export default function ConditionsPage() {
     return (

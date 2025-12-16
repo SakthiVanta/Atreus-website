@@ -42,6 +42,50 @@
                 "addressCountry": "IN"
             },
             "openingHours": "Mo-Su 08:00-21:00"
+        },
+        "pagesSeo": {
+            "methodology": {
+                "title": "Our Methodology | Science Driven Physiotherapy in Trichy",
+                "description": "Discover the Atreus Physio difference. Our assessment-first, science-backed approach ensures long-term recovery from pain and injury. No guesswork, just results.",
+                "keywords": [
+                    "Physiotherapy Methodology",
+                    "Science Based Rehab",
+                    "Assessment First Physio",
+                    "Trichy Physiotherapy Approach"
+                ]
+            },
+            "services": {
+                "title": "Our Services | Specialized Physiotherapy & Rehab in Trichy",
+                "description": "Comprehensive physiotherapy services including Pain Management, Sports Rehab, Post-Surgical Care, and Spine Care. tailored to your recovery goals.",
+                "keywords": [
+                    "Sports Rehab Trichy",
+                    "Pain Management",
+                    "Post Surgical Rehab",
+                    "Spine Care Trichy",
+                    "Physiotherapy Services"
+                ]
+            },
+            "conditions": {
+                "title": "Conditions We Treat | Expert Physio for Pain & Injury",
+                "description": "From back pain and knee injuries to sciatica and sports injuries, explore the comprehensive list of conditions we treat at Atreus Physio.",
+                "keywords": [
+                    "Back Pain Treatment",
+                    "Knee Pain Physio",
+                    "Sciatica Relief",
+                    "Sports Injury Treatment",
+                    "Joint Pain Trichy"
+                ]
+            },
+            "team": {
+                "title": "Meet The Team | Expert Physiotherapists in Trichy",
+                "description": "Meet Dr. Swatheeshwaran and the expert team at Atreus Physio. dedicated to helping you move better and live pain-free.",
+                "keywords": [
+                    "Physiotherapists in Trichy",
+                    "Dr Swatheeshwaran",
+                    "Sports Physio Team",
+                    "Best Physio Trichy"
+                ]
+            }
         }
     },
     "heroSlides": [
@@ -543,5 +587,91 @@
                 "successMessage": "Thank you. We will contact you via WhatsApp shortly."
             }
         }
+    },
+    "footer": {
+        "quickLinks": [
+            {
+                "label": "Home",
+                "href": "/"
+            },
+            {
+                "label": "About Us",
+                "href": "/about"
+            },
+            {
+                "label": "Services",
+                "href": "/services"
+            },
+            {
+                "label": "Conditions",
+                "href": "/conditions"
+            },
+            {
+                "label": "Methodology",
+                "href": "/methodology"
+            },
+            {
+                "label": "Team",
+                "href": "/team"
+            },
+            {
+                "label": "Contact",
+                "href": "/contact"
+            }
+        ],
+        "services": [
+            {
+                "label": "Pain Management",
+                "href": "/services/pain-management"
+            },
+            {
+                "label": "Sports Rehab",
+                "href": "/services/sports-rehab"
+            },
+            {
+                "label": "Post Surgical Rehab",
+                "href": "/services/post-surgical-rehab"
+            },
+            {
+                "label": "Spine Care",
+                "href": "/services/spine-care"
+            },
+            {
+                "label": "Knee & Shoulder",
+                "href": "/services/knee-shoulder-rehab"
+            }
+        ],
+        "conditions": [
+            {
+                "label": "Back Pain",
+                "href": "/conditions/back-pain"
+            },
+            {
+                "label": "Knee Pain",
+                "href": "/conditions/knee-pain"
+            },
+            {
+                "label": "Neck Pain",
+                "href": "/conditions/neck-pain"
+            },
+            {
+                "label": "Shoulder Pain",
+                "href": "/conditions/shoulder-pain"
+            },
+            {
+                "label": "Sciatica",
+                "href": "/conditions/sciatica"
+            }
+        ],
+        "legal": [
+            {
+                "label": "Privacy Policy",
+                "href": "/privacy"
+            },
+            {
+                "label": "Terms of Service",
+                "href": "/terms"
+            }
+        ]
     }
 }

@@ -1,9 +1,8 @@
-"use client";
-
 import Link from "next/link";
 import Image from "next/image";
 import { Instagram, Linkedin, Phone, MapPin, Mail } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
+import { getPageContent } from "@/lib/content";
 
 const contactInfo = {
     phone: "+91 7010294784",
@@ -16,14 +15,22 @@ const contactInfo = {
     }
 };
 
-export function Footer() {
+export async function Footer() {
+    const data = await getPageContent("homepage");
+    const footerLinks = data?.footer || {
+        quickLinks: [],
+        services: [],
+        conditions: [],
+        legal: []
+    };
+
     return (
         <footer className="bg-slate-100 dark:bg-[#06113d] text-slate-900 dark:text-white">
             {/* Main Footer */}
             <div className="container px-4 md:px-8 mx-auto max-w-7xl py-16">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12">
                     {/* Brand */}
-                    <div className="space-y-6">
+                    <div className="space-y-6 lg:col-span-2">
                         <Image
                             src="/images/logo.webp"
                             alt="AtreusPhysio Logo"
@@ -31,6 +38,9 @@ export function Footer() {
                             height={80}
                             className="h-16 w-auto object-contain bg-white px-3 py-2 rounded-full"
                         />
+                        <p className="text-slate-600 dark:text-slate-300 max-w-sm">
+                            Reborn to move fearless. Science-driven rehabilitation and performance training in Trichy.
+                        </p>
 
                         {/* Social Links */}
                         <div className="flex gap-3">
@@ -66,55 +76,43 @@ export function Footer() {
 
                     {/* Quick Links */}
                     <div>
-                        <h3 className="font-semibold mb-6 text-slate-900 dark:text-white">Quick Links</h3>
+                        <h3 className="font-semibold mb-6 text-slate-900 dark:text-white">Explore</h3>
                         <ul className="space-y-3 text-sm text-slate-600 dark:text-slate-200">
-                            <li>
-                                <Link href="/" className="hover:text-[#e3171e] transition-colors">
-                                    Home
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/about" className="hover:text-[#e3171e] transition-colors">
-                                    About Us
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/services" className="hover:text-[#e3171e] transition-colors">
-                                    Services
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/contact" className="hover:text-[#e3171e] transition-colors">
-                                    Contact
-                                </Link>
-                            </li>
+                            {footerLinks.quickLinks.map((link: any, i: number) => (
+                                <li key={i}>
+                                    <Link href={link.href} className="hover:text-[#e3171e] transition-colors">
+                                        {link.label}
+                                    </Link>
+                                </li>
+                            ))}
                         </ul>
                     </div>
 
                     {/* Services */}
                     <div>
-                        <h3 className="font-semibold mb-6 text-slate-900 dark:text-white">Our Services</h3>
+                        <h3 className="font-semibold mb-6 text-slate-900 dark:text-white">Services</h3>
                         <ul className="space-y-3 text-sm text-slate-600 dark:text-slate-200">
-                            <li>
-                                <Link href="/services/sports-rehab" className="hover:text-[#e3171e] transition-colors">
-                                    Sports Rehabilitation
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/services/orthopedic" className="hover:text-[#e3171e] transition-colors">
-                                    Orthopedic Physiotherapy
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/services/neurological" className="hover:text-[#e3171e] transition-colors">
-                                    Neurological Rehab
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/services/geriatric" className="hover:text-[#e3171e] transition-colors">
-                                    Geriatric Care
-                                </Link>
-                            </li>
+                            {footerLinks.services.map((link: any, i: number) => (
+                                <li key={i}>
+                                    <Link href={link.href} className="hover:text-[#e3171e] transition-colors">
+                                        {link.label}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+
+                    {/* Conditions */}
+                    <div>
+                        <h3 className="font-semibold mb-6 text-slate-900 dark:text-white">Conditions</h3>
+                        <ul className="space-y-3 text-sm text-slate-600 dark:text-slate-200">
+                            {footerLinks.conditions.map((link: any, i: number) => (
+                                <li key={i}>
+                                    <Link href={link.href} className="hover:text-[#e3171e] transition-colors">
+                                        {link.label}
+                                    </Link>
+                                </li>
+                            ))}
                         </ul>
                     </div>
 
@@ -163,12 +161,11 @@ export function Footer() {
                             © {new Date().getFullYear()} ATREUS PHYSIO. All rights reserved.
                         </p>
                         <div className="flex gap-6 text-sm text-slate-600 dark:text-slate-400">
-                            <Link href="/privacy" className="hover:text-slate-900 dark:hover:text-white transition-colors">
-                                Privacy Policy
-                            </Link>
-                            <Link href="/terms" className="hover:text-slate-900 dark:hover:text-white transition-colors">
-                                Terms of Service
-                            </Link>
+                            {footerLinks.legal && footerLinks.legal.map((link: any, i: number) => (
+                                <Link key={i} href={link.href} className="hover:text-slate-900 dark:hover:text-white transition-colors">
+                                    {link.label}
+                                </Link>
+                            ))}
                         </div>
                     </div>
                 </div>

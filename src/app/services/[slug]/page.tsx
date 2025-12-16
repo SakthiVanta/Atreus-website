@@ -18,15 +18,24 @@ async function getService(slug: string) {
     return data.services.find((service: any) => (service.slug === slug || service.id === slug));
 }
 
+import { generateStandardMetadata } from "@/lib/seo-utils";
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { slug } = await params;
     const service = await getService(slug);
     if (!service) return {};
 
-    return {
+    // Construct SEO object for the utility
+    const seoData = {
         title: `${service.title} | Services - Atreus Physio`,
-        description: service.excerpt,
+        description: service.excerpt || service.description,
+        slug: `services/${slug}`,
+        image: service.image?.src,
+        // Fallback keywords if not explicit in service data
+        keywords: ["Physiotherapy", "Trichy", service.title, "Rehabilitation", "Atreus Physio"],
     };
+
+    return generateStandardMetadata(seoData);
 }
 
 export async function generateStaticParams() {

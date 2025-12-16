@@ -164,7 +164,7 @@ export function BookNowModal({ isOpen, onClose, courseTitle, coursePrice }: Book
                                     <Button
                                         type="submit"
                                         disabled={isSubmitting}
-                                        className="w-full bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 hover:bg-slate-800 dark:hover:bg-slate-200 flex items-center justify-center gap-2"
+                                        className="w-full flex items-center justify-center gap-2"
                                     >
                                         {isSubmitting ? (
                                             <>
