@@ -7,7 +7,7 @@ import { Metadata } from "next";
 export function generateStandardMetadata(seoData: any): Metadata {
     if (!seoData) return {};
 
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://atreusphysio.com";
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://www.atreusphysio.com";
     const canonicalUrl = seoData.canonical || (seoData.slug ? `${baseUrl}/${seoData.slug}` : baseUrl);
 
     return {

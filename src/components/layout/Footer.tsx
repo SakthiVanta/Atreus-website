@@ -49,7 +49,14 @@ export async function Footer() {
                         <div className="space-y-4">
                             <div className="flex items-start gap-3 text-sm text-slate-600 dark:text-slate-300">
                                 <MapPin className="w-5 h-5 text-[#e3171e] shrink-0 mt-0.5" />
-                                <span>{contactInfo.address}</span>
+                                <a
+                                    href="https://maps.app.goo.gl/fuP51EhNhBJtypPx5?g_st=iwb"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="hover:text-[#e3171e] transition-colors"
+                                >
+                                    {contactInfo.address}
+                                </a>
                             </div>
 
                             <div className="flex gap-3 pt-2">

@@ -56,9 +56,15 @@ export function HeroCarousel({ slides }: CarouselProps) {
 
                             {/* Content */}
                             <div className="relative h-full container mx-auto px-4 md:px-8 flex flex-col justify-center items-start text-white max-w-7xl z-20">
-                                <h1 className="text-5xl md:text-7xl font-bold mb-6 max-w-3xl leading-tight animate-fade-in-up">
-                                    {slide.title}
-                                </h1>
+                                {index === 0 ? (
+                                    <h1 className="text-5xl md:text-7xl font-bold mb-6 max-w-3xl leading-tight animate-fade-in-up">
+                                        {slide.title}
+                                    </h1>
+                                ) : (
+                                    <h2 className="text-5xl md:text-7xl font-bold mb-6 max-w-3xl leading-tight animate-fade-in-up">
+                                        {slide.title}
+                                    </h2>
+                                )}
                                 <p className="text-xl md:text-2xl mb-8 max-w-2xl text-slate-100">
                                     {slide.subtitle}
                                 </p>

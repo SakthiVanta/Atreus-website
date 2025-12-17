@@ -12,7 +12,7 @@ const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
 export const metadata: Metadata = {
     title: "AtreusPhysio",
     description: "Recover Faster, Move Better. Science-driven physiotherapy care in Trichy.",
-    metadataBase: new URL("https://atreusphysio.com"),
+    metadataBase: new URL("https://www.atreusphysio.com"),
 
     // Favicon and icons configuration
     icons: {
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "AtreusPhysio",
         description: "Recover Faster, Move Better. Science-driven physiotherapy care in Trichy.",
-        url: "https://atreusphysio.com",
+        url: "https://www.atreusphysio.com",
         siteName: "AtreusPhysio",
         locale: "en_US",
         type: "website",

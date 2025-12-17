@@ -10,7 +10,7 @@
     "seo": {
         "metaTitle": "AtreusPhysio | Reborn To Move Fearless",
         "metaDescription": "Your path out of pain starts with science driven care. Assessment first approach, patient centred personalised treatment, and exercise science centred rehabilitation.",
-        "canonical": "https://atreusphysio.com/",
+        "canonical": "https://www.atreusphysio.com/",
         "ogTitle": "AtreusPhysio - Reborn To Move Fearless",
         "ogDescription": "Science driven care for pain relief and performance. Expert physiotherapy in Trichy.",
         "ogImage": "/images/og-home.jpg",
@@ -32,7 +32,7 @@
                 "@type": "Person",
                 "name": "Dr. Swatheeshwaran"
             },
-            "url": "https://atreusphysio.com/",
+            "url": "https://www.atreusphysio.com/",
             "telephone": "+916379330661",
             "address": {
                 "@type": "PostalAddress",
@@ -97,7 +97,7 @@
                     "Sports injury recovery",
                     "Atreus Physio reviews"
                 ],
-                "canonical": "https://atreusphysio.com/success-stories",
+                "canonical": "https://www.atreusphysio.com/success-stories",
                 "robots": "index, follow",
                 "author": "Dr. Swatheeshwaran",
                 "publisher": "Atreus Physio"
@@ -675,7 +675,7 @@
                         "Sports Physio Success Story",
                         "Bavithra Basketball"
                     ],
-                    "canonical": "https://atreusphysio.com/success-stories/bavithra-basketball-acl-recovery",
+                    "canonical": "https://www.atreusphysio.com/success-stories/bavithra-basketball-acl-recovery",
                     "robots": "index, follow",
                     "author": "Dr. Swatheeshwaran",
                     "publisher": "Atreus Physio"
@@ -698,7 +698,7 @@
                         "Marimuthu Pro Kabaddi",
                         "Knee Pain Relief"
                     ],
-                    "canonical": "https://atreusphysio.com/success-stories/marimuthu-kabaddi-mcl-injury",
+                    "canonical": "https://www.atreusphysio.com/success-stories/marimuthu-kabaddi-mcl-injury",
                     "robots": "index, follow",
                     "author": "Dr. Swatheeshwaran",
                     "publisher": "Atreus Physio"
@@ -721,7 +721,7 @@
                         "Sports Physio Trichy",
                         "Frozen Shoulder Relief"
                     ],
-                    "canonical": "https://atreusphysio.com/success-stories/vimal-volleyball-shoulder-pain",
+                    "canonical": "https://www.atreusphysio.com/success-stories/vimal-volleyball-shoulder-pain",
                     "robots": "index, follow",
                     "author": "Dr. Swatheeshwaran",
                     "publisher": "Atreus Physio"
@@ -744,7 +744,7 @@
                         "Sports Rehab Stories",
                         "Aditi Basketball"
                     ],
-                    "canonical": "https://atreusphysio.com/success-stories/aditi-basketball-ankle-rehab",
+                    "canonical": "https://www.atreusphysio.com/success-stories/aditi-basketball-ankle-rehab",
                     "robots": "index, follow",
                     "author": "Dr. Swatheeshwaran",
                     "publisher": "Atreus Physio"
@@ -767,7 +767,7 @@
                         "Dr Swatheeshwaran Review",
                         "Ameena Success Story"
                     ],
-                    "canonical": "https://atreusphysio.com/success-stories/ameena-knee-pain-relief",
+                    "canonical": "https://www.atreusphysio.com/success-stories/ameena-knee-pain-relief",
                     "robots": "index, follow",
                     "author": "Dr. Swatheeshwaran",
                     "publisher": "Atreus Physio"

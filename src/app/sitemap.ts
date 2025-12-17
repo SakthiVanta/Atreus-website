@@ -62,30 +62,35 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         },
     ];
 
-    // Dynamic SEO pages (Legacy support if needed)
+    // Dynamic SEO pages
     let dynamicSEOPages: MetadataRoute.Sitemap = [];
     try {
+        // Direct file reading as fallback or primary method for this specific file
+        console.log('Attempting to read dynamic-pages.json');
         const fs = require('fs').promises;
         const path = require('path');
         const filePath = path.join(process.cwd(), 'data/locales/en/dynamic-pages.json');
 
         try {
-            await fs.access(filePath);
             const fileContents = await fs.readFile(filePath, 'utf8');
             const data = JSON.parse(fileContents);
-            if (data.pages) {
+            // Verify structure
+            if (data && Array.isArray(data.pages)) {
+                console.log(`Found ${data.pages.length} dynamic pages`);
                 dynamicSEOPages = data.pages.map((page: any) => ({
                     url: `${baseUrl}/${page.slug}`,
                     lastModified: new Date(),
                     changeFrequency: 'weekly' as const,
                     priority: 0.8,
                 }));
+            } else {
+                console.log('Invalid format for dynamic-pages.json');
             }
-        } catch (e) {
-            // File doesn't exist or error reading, ignore
+        } catch (readError) {
+            console.error('Failed to read dynamic-pages.json:', readError);
         }
     } catch (error) {
-        console.log('Error processing dynamic SEO pages', error);
+        console.error('Error processing dynamic SEO pages logic', error);
     }
 
     // 1. Services Pages & Team Pages (from homepage.json)

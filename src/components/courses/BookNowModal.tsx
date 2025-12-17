@@ -106,7 +106,7 @@ export function BookNowModal({ isOpen, onClose, courseTitle, coursePrice }: Book
                         animate={{ opacity: 1, scale: 1, y: 0 }}
                         exit={{ opacity: 0, scale: 0.95, y: 20 }}
                         className="fixed z-50 w-full max-w-md bg-white dark:bg-slate-900 rounded-2xl shadow-2xl overflow-hidden"
-                        style={{ left: "50%", top: "20%", x: "-50%", y: "-50%" }}
+                        style={{ left: "50%", top: "10%", x: "-50%", y: "-50%" }}
                     >
                         {/* Header */}
                         <div className="bg-slate-50 dark:bg-slate-800/50 px-6 py-4 border-b border-slate-100 dark:border-slate-800 flex justify-between items-center">
@@ -177,7 +177,7 @@ export function BookNowModal({ isOpen, onClose, courseTitle, coursePrice }: Book
                                         )}
                                     </Button>
                                     <p className="text-xs text-center text-slate-400 dark:text-slate-500 mt-3">
-                                        Secure payment link will be sent to your email.
+                                        We will contact you with a payment link. You won't be charged anything on clicking here.
                                     </p>
                                 </div>
                             </form>

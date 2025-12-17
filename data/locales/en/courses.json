@@ -1,9 +1,9 @@
 {
     "pageId": "courses",
     "seo": {
-        "metaTitle": "AtreusPhysio Academy | Professional Physiotherapy Courses & Webinars",
+        "metaTitle": "AtreusPhysio Academy | Physio Courses & Webinars",
         "metaDescription": "Elevate your practice with expert-led courses on Clinical Reasoning, Biomechanics, and Evidence-Based Practice. Learn from experienced physiotherapists at AtreusPhysio Academy.",
-        "canonical": "https://atreusphysio.com/courses",
+        "canonical": "https://www.atreusphysio.com/courses",
         "ogTitle": "AtreusPhysio Academy - Professional Development for Physiotherapists",
         "ogDescription": "Upgrade your clinical reasoning skills with evidence-based courses and workshops.",
         "ogImage": "/images/og-courses.jpg",
@@ -35,11 +35,11 @@
             "@type": "EducationalOrganization",
             "name": "AtreusPhysio Academy",
             "description": "Professional development courses for physiotherapists focusing on clinical reasoning and evidence-based practice.",
-            "url": "https://atreusphysio.com/courses",
+            "url": "https://www.atreusphysio.com/courses",
             "provider": {
                 "@type": "Organization",
                 "name": "AtreusPhysio",
-                "url": "https://atreusphysio.com"
+                "url": "https://www.atreusphysio.com"
             }
         }
     },
@@ -96,7 +96,7 @@
                     "joint mechanics",
                     "functional movement"
                 ],
-                "canonical": "https://atreusphysio.com/courses/biomechanics-for-physios",
+                "canonical": "https://www.atreusphysio.com/courses/biomechanics-for-physios",
                 "ogImage": "/images/course-biomechanics.webp",
                 "structuredData": {
                     "@context": "https://schema.org",
@@ -106,7 +106,7 @@
                     "provider": {
                         "@type": "Organization",
                         "name": "AtreusPhysio Academy",
-                        "sameAs": "https://atreusphysio.com"
+                        "sameAs": "https://www.atreusphysio.com"
                     },
                     "offers": {
                         "@type": "Offer",
@@ -161,7 +161,7 @@
                     "physio rehab programming",
                     "metabolic training"
                 ],
-                "canonical": "https://atreusphysio.com/courses/exercise-physiology-for-physios",
+                "canonical": "https://www.atreusphysio.com/courses/exercise-physiology-for-physios",
                 "ogImage": "/images/course-physiology.webp"
             }
         },
@@ -189,7 +189,7 @@
                     "chronic pain rehab",
                     "neuroscience education"
                 ],
-                "canonical": "https://atreusphysio.com/courses/pain-mechanism-physio-management",
+                "canonical": "https://www.atreusphysio.com/courses/pain-mechanism-physio-management",
                 "ogImage": "/images/course-pain-science.webp"
             }
         },
@@ -217,7 +217,7 @@
                     "research literacy",
                     "clinical guidelines"
                 ],
-                "canonical": "https://atreusphysio.com/courses/evidence-based-practice-for-physios",
+                "canonical": "https://www.atreusphysio.com/courses/evidence-based-practice-for-physios",
                 "ogImage": "/images/course-assessment.webp"
             }
         },
@@ -245,7 +245,7 @@
                     "recovery science",
                     "return to sport"
                 ],
-                "canonical": "https://atreusphysio.com/courses/load-capacity-recovery",
+                "canonical": "https://www.atreusphysio.com/courses/load-capacity-recovery",
                 "ogImage": "/images/course-physiology.webp"
             },
             "details": {
@@ -293,7 +293,7 @@
                     "rehab periodization",
                     "strength and conditioning for physios"
                 ],
-                "canonical": "https://atreusphysio.com/courses/fitness-factors-principles",
+                "canonical": "https://www.atreusphysio.com/courses/fitness-factors-principles",
                 "ogImage": "/images/course-biomechanics.webp"
             },
             "details": {
@@ -341,7 +341,7 @@
                     "functional outcomes",
                     "exercise therapy"
                 ],
-                "canonical": "https://atreusphysio.com/courses/beyond-passive-care",
+                "canonical": "https://www.atreusphysio.com/courses/beyond-passive-care",
                 "ogImage": "/images/course-pain-science.webp"
             },
             "details": {
@@ -389,7 +389,7 @@
                     "red flags",
                     "diagnosis"
                 ],
-                "canonical": "https://atreusphysio.com/courses/physio-assessment-clinical-reasoning",
+                "canonical": "https://www.atreusphysio.com/courses/physio-assessment-clinical-reasoning",
                 "ogImage": "/images/course-assessment.webp"
             },
             "details": {
