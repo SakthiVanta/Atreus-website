@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
-import { BookAssessmentButton } from "@/components/ui/BookAssessmentButton";
+import { BookingTrigger } from "@/components/ui/BookingTrigger";
 
 interface PageProps {
     params: Promise<{ slug: string }>;
@@ -134,7 +134,9 @@ export default async function SuccessStoryDetail({ params }: PageProps) {
                     </p>
 
                     <div className="text-start flex justify-center">
-                        <BookAssessmentButton />
+                        <BookingTrigger className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white transition-all duration-200 bg-[#e3171e] border border-transparent rounded-full hover:bg-[#c4121b] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#e3171e] shadow-lg hover:shadow-xl hover:-translate-y-1 cursor-pointer">
+                            Book Your Assessment
+                        </BookingTrigger>
                     </div>
                 </div>
             </article>

@@ -85,7 +85,7 @@
             ],
             "seatsLeft": 100,
             "location": "Online",
-            "image": "/images/course-biomechanics.jpeg",
+            "image": "/images/course-biomechanics.webp",
             "seo": {
                 "metaTitle": "Biomechanics for Physiotherapists | Advanced Clinical Course",
                 "metaDescription": "Master kinematics, joint mechanics, and functional patterns. This comprehensive course relates biomechanics directly to clinical assessment and treatment.",
@@ -97,7 +97,7 @@
                     "functional movement"
                 ],
                 "canonical": "https://atreusphysio.com/courses/biomechanics-for-physios",
-                "ogImage": "/images/course-biomechanics.png",
+                "ogImage": "/images/course-biomechanics.webp",
                 "structuredData": {
                     "@context": "https://schema.org",
                     "@type": "Course",
@@ -151,7 +151,7 @@
             ],
             "seatsLeft": 0,
             "location": "Online",
-            "image": "/images/course-exercise-physiology.JPG",
+            "image": "/images/course-exercise-physiology.webp",
             "seo": {
                 "metaTitle": "Exercise Physiology Course for Physiotherapists",
                 "metaDescription": "Bridge the gap between exercise physiology and clinical rehab. Learn metabolic systems, muscle adaptation, and performance testing.",
@@ -162,7 +162,7 @@
                     "metabolic training"
                 ],
                 "canonical": "https://atreusphysio.com/courses/exercise-physiology-for-physios",
-                "ogImage": "/images/course-physiology.png"
+                "ogImage": "/images/course-physiology.webp"
             }
         },
         {
@@ -179,7 +179,7 @@
             ],
             "seatsLeft": 0,
             "location": "Online",
-            "image": "/images/course-pain-science.png",
+            "image": "/images/course-pain-science.webp",
             "seo": {
                 "metaTitle": "Pain Science & Management Course | AtreusPhysio",
                 "metaDescription": "Deep dive into modern pain mechanisms, neurology, and evidence-based management of chronic and acute pain.",
@@ -190,7 +190,7 @@
                     "neuroscience education"
                 ],
                 "canonical": "https://atreusphysio.com/courses/pain-mechanism-physio-management",
-                "ogImage": "/images/course-pain-science.png"
+                "ogImage": "/images/course-pain-science.webp"
             }
         },
         {
@@ -207,7 +207,7 @@
             ],
             "seatsLeft": 0,
             "location": "Online",
-            "image": "/images/course-evidence-based.jpg",
+            "image": "/images/course-evidence-based.webp",
             "seo": {
                 "metaTitle": "Evidence Based Practice Course for Physiotherapists",
                 "metaDescription": "Master the art of reading research and applying evidence to your clinical practice. Elevate your decision making.",
@@ -218,7 +218,7 @@
                     "clinical guidelines"
                 ],
                 "canonical": "https://atreusphysio.com/courses/evidence-based-practice-for-physios",
-                "ogImage": "/images/course-assessment.png"
+                "ogImage": "/images/course-assessment.webp"
             }
         },
         {
@@ -235,7 +235,7 @@
             ],
             "seatsLeft": 100,
             "location": "Online",
-            "image": "/images/course-loadcapacity.png",
+            "image": "/images/course-loadcapacity.webp",
             "seo": {
                 "metaTitle": "Load, Capacity & Recovery Workshop | Physio Trinity",
                 "metaDescription": "Understanding the vital relationship between training load, tissue capacity, and recovery for optimal rehabilitation.",
@@ -246,7 +246,7 @@
                     "return to sport"
                 ],
                 "canonical": "https://atreusphysio.com/courses/load-capacity-recovery",
-                "ogImage": "/images/course-physiology.png"
+                "ogImage": "/images/course-physiology.webp"
             },
             "details": {
                 "topics": [
@@ -283,7 +283,7 @@
             ],
             "seatsLeft": 50,
             "location": "Zoom",
-            "image": "/images/course-application.jpg",
+            "image": "/images/course-application.webp",
             "seo": {
                 "metaTitle": "Fitness Principles in Physiotherapy | Clinical Workshop",
                 "metaDescription": "Apply strength and conditioning principles like overload, specificity, and volume to your rehabilitation programs.",
@@ -294,7 +294,7 @@
                     "strength and conditioning for physios"
                 ],
                 "canonical": "https://atreusphysio.com/courses/fitness-factors-principles",
-                "ogImage": "/images/course-biomechanics.png"
+                "ogImage": "/images/course-biomechanics.webp"
             },
             "details": {
                 "topics": [
@@ -331,7 +331,7 @@
             ],
             "seatsLeft": 45,
             "location": "Zoom",
-            "image": "/images/course-beyond-passive-care.png",
+            "image": "/images/course-beyond-passive-care.webp",
             "seo": {
                 "metaTitle": "Active Rehab vs Passive Modalities | The Physio Shift",
                 "metaDescription": "Learn why and how to transition your practice from passive modalities to active, functional rehabilitation.",
@@ -342,7 +342,7 @@
                     "exercise therapy"
                 ],
                 "canonical": "https://atreusphysio.com/courses/beyond-passive-care",
-                "ogImage": "/images/course-pain-science.png"
+                "ogImage": "/images/course-pain-science.webp"
             },
             "details": {
                 "topics": [
@@ -379,7 +379,7 @@
             ],
             "seatsLeft": 40,
             "location": "Online",
-            "image": "/images/course-assessment.png",
+            "image": "/images/course-assessment.webp",
             "seo": {
                 "metaTitle": "Advanced Assessment & Clinical Reasoning | Physio Course",
                 "metaDescription": "Refine your assessment skills and develop robust clinical reasoning pathways. Identify flags and build accurate hypotheses.",
@@ -390,7 +390,7 @@
                     "diagnosis"
                 ],
                 "canonical": "https://atreusphysio.com/courses/physio-assessment-clinical-reasoning",
-                "ogImage": "/images/course-assessment.png"
+                "ogImage": "/images/course-assessment.webp"
             },
             "details": {
                 "topics": [

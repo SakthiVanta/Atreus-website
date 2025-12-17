@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -83,7 +84,17 @@ export function GlobalBookingDialog({ isOpen, onClose }: GlobalBookingDialogProp
         }
     };
 
-    return (
+    const [mounted, setMounted] = useState(false);
+
+    useEffect(() => {
+        setMounted(true);
+        return () => setMounted(false);
+    }, []);
+
+    if (!mounted) return null;
+
+    // Use pure component for portal to avoid hydration issues
+    const PortalContent = (
         <AnimatePresence>
             {isOpen && (
                 <>
@@ -93,7 +104,7 @@ export function GlobalBookingDialog({ isOpen, onClose }: GlobalBookingDialogProp
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                         onClick={onClose}
-                        className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+                        className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-[100] flex items-center justify-center p-4"
                     />
 
                     {/* Modal */}
@@ -101,8 +112,8 @@ export function GlobalBookingDialog({ isOpen, onClose }: GlobalBookingDialogProp
                         initial={{ opacity: 0, scale: 0.95, y: 20 }}
                         animate={{ opacity: 1, scale: 1, y: 0 }}
                         exit={{ opacity: 0, scale: 0.95, y: 20 }}
-                        className="fixed z-50 w-full max-w-md bg-white dark:bg-slate-900 rounded-2xl shadow-2xl overflow-hidden"
-                        style={{ left: "50%", top: "10%", x: "-50%", y: "-50%" }}
+                        className="fixed z-[100] w-full max-w-md bg-white dark:bg-slate-900 rounded-2xl shadow-2xl overflow-hidden"
+                        style={{ left: "50%", top: "15%", x: "-50%", y: "-50%" }}
                     >
                         {/* Header */}
                         <div className="bg-slate-50 dark:bg-slate-800/50 px-6 py-4 border-b border-slate-100 dark:border-slate-800 flex justify-between items-center">
@@ -190,4 +201,6 @@ export function GlobalBookingDialog({ isOpen, onClose }: GlobalBookingDialogProp
             )}
         </AnimatePresence>
     );
+
+    return createPortal(PortalContent, document.body);
 }

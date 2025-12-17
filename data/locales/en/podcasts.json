@@ -10,12 +10,12 @@
         "ogType": "video.other",
         "ogSiteName": "AtreusPhysio",
         "ogLocale": "en_IN",
-        "ogVideo": "https://www.youtube.com/@atreusphysio",
+        "ogVideo": "https://www.youtube.com/@Atreus_Physio",
         "twitterCard": "summary_large_image",
         "twitterTitle": "Physio Chronicles - Evidence-Based Physiotherapy Podcast",
         "twitterDescription": "Watch in-depth discussions on clinical reasoning, rehabilitation, and evidence-based practice.",
         "twitterImage": "/images/og-podcasts.jpg",
-        "twitterPlayer": "https://www.youtube.com/@atreusphysio",
+        "twitterPlayer": "https://www.youtube.com/@Atreus_Physio",
         "robots": "index,follow",
         "keywords": [
             "Physiotherapy podcast India",
@@ -43,7 +43,7 @@
                 "@type": "Person",
                 "name": "Dr. Swatheeshwaran"
             },
-            "webFeed": "https://www.youtube.com/@atreusphysio"
+            "webFeed": "https://www.youtube.com/@Atreus_Physio"
         }
     },
     "hero": {
@@ -82,6 +82,6 @@
         "title": "Never Miss an Episode",
         "description": "Subscribe to our YouTube channel for weekly episodes on evidence-based physiotherapy.",
         "buttonText": "Subscribe on YouTube",
-        "buttonLink": "https://www.youtube.com/@atreusphysio"
+        "buttonLink": "https://www.youtube.com/@Atreus_Physio"
     }
 }

@@ -76,15 +76,7 @@ export function ConditionCard({ condition, collapsible = true, isOpen = false, o
                                 </p>
                             </div>
 
-                            {/* Symptoms */}
-                            <div>
-                                <h4 className="text-xs font-bold text-[#06113d] dark:text-[#e3171e] uppercase tracking-wider mb-2">
-                                    Common Symptoms
-                                </h4>
-                                <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed line-clamp-2">
-                                    {condition.summary.symptoms}
-                                </p>
-                            </div>
+
 
                             {/* Action Area */}
                             <div className="pt-4 flex justify-end">

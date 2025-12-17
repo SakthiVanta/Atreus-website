@@ -110,21 +110,24 @@
             "image": "/images/005.webp",
             "title": "Reborn To Move Fearless",
             "subtitle": "Your path out of pain starts with science driven care.",
-            "cta": "Book Appointment"
+            "cta": "Book Appointment",
+            "link": "/contact"
         },
         {
             "id": "slide2",
             "image": "/images/003.webp",
             "title": "Science Driven Care",
             "subtitle": "Evidence-based reasoning and management for lasting recovery.",
-            "cta": "Our Services"
+            "cta": "Our Services",
+            "link": "/services"
         },
         {
             "id": "slide3",
             "image": "/images/004.webp",
             "title": "Expert Rehabilitation",
             "subtitle": "Helping you return to an active, confident, and pain-free life.",
-            "cta": "Meet The Team"
+            "cta": "Meet The Team",
+            "link": "/team"
         }
     ],
     "valueProps": [
@@ -448,6 +451,151 @@
                 "src": "/images/002.webp",
                 "alt": "Online Consultations"
             }
+        },
+        {
+            "id": "manual-therapy",
+            "slug": "manual-therapy",
+            "title": "Manual Therapy",
+            "excerpt": "Hands-on techniques to mobilize joints and reduce soft tissue restriction.",
+            "description": "Manual therapy involves skilled hand movements to improve tissue extensibility; increase range of motion; induce relaxation; mobilize or manipulate soft tissue and joints.",
+            "fullDescription": "Manual therapy is a core component of our practice. We use soft tissue mobilization, joint mobilization, and manipulation to reduce pain and restore movement. It is always combined with exercise to lock in the gains.",
+            "benefits": [
+                "Immediate pain relief",
+                "Improved joint mobility",
+                "Reduced muscle tension",
+                "Faster recovery"
+            ],
+            "process": [
+                "Assessment of joint play",
+                "Soft tissue release",
+                "Joint mobilization",
+                "Re-assessment"
+            ],
+            "details": {
+                "feels": "Stiff joints, tight muscles, or restricted movement.",
+                "expect": "Hands-on treatment followed by movement.",
+                "approach": "Maitland, Mulligan, and Soft Tissue Release techniques."
+            },
+            "image": {
+                "src": "/images/007.webp",
+                "alt": "Manual Therapy"
+            }
+        },
+        {
+            "id": "geriatric-physio",
+            "slug": "geriatric-physiotherapy",
+            "title": "Geriatric Physiotherapy",
+            "excerpt": "Improving mobility, balance, and independence for older adults.",
+            "description": "Aging is inevitable, but frailty is not. We specialize in helping seniors maintain their independence through strength and balance training.",
+            "fullDescription": "Our geriatric program focuses on fall prevention, osteoporosis management, and maintaining functional independence. We understand the unique physiology of aging and tailor our programs to be safe yet effective.",
+            "benefits": [
+                "Fall risk reduction",
+                "Improved balance and coordination",
+                "Osteoporosis management",
+                "Maintained independence"
+            ],
+            "process": [
+                "Fall risk assessment",
+                "Balance training",
+                "Functional strength training",
+                "Home safety modification advice"
+            ],
+            "details": {
+                "feels": "Unsteady on feet, fear of falling, or general weakness.",
+                "expect": "Gentle, progressive exercises to build confidence.",
+                "approach": "Functional training, balance challenges, and safety education."
+            },
+            "image": {
+                "src": "/images/001.webp",
+                "alt": "Geriatric Physiotherapy"
+            }
+        },
+        {
+            "id": "neurological-rehab",
+            "slug": "neurological-rehab",
+            "title": "Neurological Rehab",
+            "excerpt": "Expert care for Stroke, Parkinson's, and other neurological conditions.",
+            "description": "Neuroplasticity means the brain can change. We use task-specific training to help rewire the brain and restore function after neurological injury.",
+            "fullDescription": "Whether it's post-stroke recovery or managing Parkinson's, our neuro rehab is based on motor learning principles. We focus on high-repetition, task-oriented training to improve quality of life.",
+            "benefits": [
+                "Improved gait and walking",
+                "Better balance",
+                "Restored daily function",
+                "Spasticity management"
+            ],
+            "process": [
+                "Neuro-functional assessment",
+                "Goal setting",
+                "Task-specific training",
+                "Gait & Balance re-education"
+            ],
+            "details": {
+                "feels": "Loss of movement, stiffness, tremor, or balance issues.",
+                "expect": "Intensive, repetitive practice of meaningful tasks.",
+                "approach": "Motor learning, neuroplasticity, and functional training."
+            },
+            "image": {
+                "src": "/images/005.webp",
+                "alt": "Neurological Rehab"
+            }
+        },
+        {
+            "id": "dry-needling",
+            "slug": "dry-needling",
+            "title": "Dry Needling",
+            "excerpt": "Targeted release of trigger points to reduce pain and improve muscle function.",
+            "description": "Dry needling uses fine needles to deactivate trigger points (knots) in muscles, relieving pain and restoring range of motion.",
+            "fullDescription": "Dry needling is a powerful adjunct to exercise. By releasing tight myofascial trigger points, we can create a 'window of opportunity' where you can move with less pain, allowing for better strengthening.",
+            "benefits": [
+                "Rapid pain relief",
+                "Released muscle tension",
+                "Improved range of motion",
+                "Resetting muscle tone"
+            ],
+            "process": [
+                "Palpation of trigger points",
+                "Needle insertion",
+                "Eliciting twitch response",
+                "Post-needling stretch"
+            ],
+            "details": {
+                "feels": "Deep ache or twitch during treatment, followed by relief.",
+                "expect": "Some soreness for 24 hours, then improved movement.",
+                "approach": "Evidence-based trigger point release."
+            },
+            "image": {
+                "src": "/images/006.webp",
+                "alt": "Dry Needling"
+            }
+        },
+        {
+            "id": "pediatric-physio",
+            "slug": "pediatric-physiotherapy",
+            "title": "Pediatric Physiotherapy",
+            "excerpt": "Play-based therapy for developmental delays and childhood conditions.",
+            "description": "Children are not just small adults. We use play-based therapy to help children with developmental delays or orthopedic issues reach their milestones.",
+            "fullDescription": "From cerebral palsy to sports injuries in young athletes, our pediatric care is engaging and effective. We work closely with parents to ensure therapy continues at home through play.",
+            "benefits": [
+                "Achieving developmental milestones",
+                "Improved coordination",
+                "Post-fracture recovery for kids",
+                "Correction of gait abnormalities"
+            ],
+            "process": [
+                "Developmental screening",
+                "Play-based assessment",
+                "Fun exercise integration",
+                "Parent education"
+            ],
+            "details": {
+                "feels": "Fun and engaging for the child.",
+                "expect": "Therapy disguised as games.",
+                "approach": "Neuro-developmental treatment and play therapy."
+            },
+            "image": {
+                "src": "/images/003.webp",
+                "alt": "Pediatric Physiotherapy"
+            }
         }
     ],
     "conditions": [
@@ -746,6 +894,48 @@
             {
                 "label": "Knee & Shoulder",
                 "href": "/services/knee-shoulder-rehab"
+            }
+        ],
+        "links": [
+            {
+                "label": "Stroke Rehab",
+                "href": "/stroke-rehabilitation-center-trichy"
+            },
+            {
+                "label": "Home Visits",
+                "href": "/physiotherapist-home-visit-trichy"
+            },
+            {
+                "label": "Corporate Physio",
+                "href": "/corporate-physiotherapy-trichy"
+            },
+            {
+                "label": "Pregnancy Classes",
+                "href": "/pregnancy-exercise-classes-trichy"
+            },
+            {
+                "label": "Cupping Therapy",
+                "href": "/cupping-therapy-trichy"
+            },
+            {
+                "label": "Sciatica",
+                "href": "/sciatica-treatment-trichy"
+            },
+            {
+                "label": "Cervical Spondy",
+                "href": "/cervical-spondylosis-treatment-trichy"
+            },
+            {
+                "label": "Lumbar Spondy",
+                "href": "/lumbar-spondylosis-treatment-trichy"
+            },
+            {
+                "label": "ACL Injury",
+                "href": "/acl-tear-treatment-trichy"
+            },
+            {
+                "label": "Heel Pain",
+                "href": "/heel-pain-treatment-trichy"
             }
         ],
         "conditions": [
