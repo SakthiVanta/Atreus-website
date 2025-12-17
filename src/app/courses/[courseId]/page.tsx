@@ -46,7 +46,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         metaTitle: manualSeo.metaTitle || `${course.title} | ATREUS PHYSIO Academy`,
         metaDescription: manualSeo.metaDescription || course.description,
         keywords: manualSeo.keywords || [course.title, "physiotherapy course", "professional development", "CPD physiotherapy", ...(course.tags || [])],
-        canonical: manualSeo.canonical || `https://atreusphysio.com/courses/${course.slug || course.id}`,
+        canonical: manualSeo.canonical || `https://www.atreusphysio.com/courses/${course.slug || course.id}`,
         ogTitle: manualSeo.ogTitle || `${course.title} | ATREUS PHYSIO Academy`,
         ogDescription: manualSeo.ogDescription || course.description,
         ogImage: manualSeo.ogImage || course.image,
