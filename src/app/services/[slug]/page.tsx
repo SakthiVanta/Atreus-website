@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, CheckCircle2, ArrowRight, PlayCircle } from "lucide-react";
 import { Button } from "@/components/ui/Button";
+import { ServiceBookingAction } from "@/components/services/ServiceBookingAction";
 import { getPageContent } from "@/lib/content";
 
 interface Props {
@@ -56,7 +57,7 @@ export default async function ServiceDetailPage({ params }: Props) {
     }
 
     return (
-        <main className="min-h-screen bg-slate-50 dark:bg-slate-950 pt-24 pb-24">
+        <main className="min-h-screen bg-slate-50 dark:bg-slate-950 pt-24 md:pt-32 pb-24">
             <div className="max-w-7xl mx-auto px-4 md:px-8">
                 <Link
                     href="/services"
@@ -78,11 +79,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                             {service.description}
                         </p>
                         <div className="flex gap-4 pt-4">
-                            <Link href="/contact">
-                                <Button size="lg" className="bg-[#e3171e] hover:bg-[#b01217] text-white">
-                                    Book Consultation
-                                </Button>
-                            </Link>
+                            <ServiceBookingAction />
                         </div>
                     </div>
 

@@ -85,6 +85,22 @@
                     "Sports Physio Team",
                     "Best Physio Trichy"
                 ]
+            },
+            "successStories": {
+                "title": "Success Stories | Real Recovery & Rehabilitation in Trichy",
+                "description": "Read inspiring success stories from patients who overcame ACL injuries, back pain, and sports injuries at Atreus Physio. Real people, real recovery.",
+                "keywords": [
+                    "Physiotherapy success stories",
+                    "Patient testimonials Trichy",
+                    "ACL recovery stories",
+                    "Back pain success stories",
+                    "Sports injury recovery",
+                    "Atreus Physio reviews"
+                ],
+                "canonical": "https://atreusphysio.com/success-stories",
+                "robots": "index, follow",
+                "author": "Dr. Swatheeshwaran",
+                "publisher": "Atreus Physio"
             }
         }
     },
@@ -94,21 +110,24 @@
             "image": "/images/005.webp",
             "title": "Reborn To Move Fearless",
             "subtitle": "Your path out of pain starts with science driven care.",
-            "cta": "Book Appointment"
+            "cta": "Book Appointment",
+            "link": "/contact"
         },
         {
             "id": "slide2",
             "image": "/images/003.webp",
             "title": "Science Driven Care",
             "subtitle": "Evidence-based reasoning and management for lasting recovery.",
-            "cta": "Our Services"
+            "cta": "Our Services",
+            "link": "/services"
         },
         {
             "id": "slide3",
             "image": "/images/004.webp",
             "title": "Expert Rehabilitation",
             "subtitle": "Helping you return to an active, confident, and pain-free life.",
-            "cta": "Meet The Team"
+            "cta": "Meet The Team",
+            "link": "/team"
         }
     ],
     "valueProps": [
@@ -432,6 +451,151 @@
                 "src": "/images/002.webp",
                 "alt": "Online Consultations"
             }
+        },
+        {
+            "id": "manual-therapy",
+            "slug": "manual-therapy",
+            "title": "Manual Therapy",
+            "excerpt": "Hands-on techniques to mobilize joints and reduce soft tissue restriction.",
+            "description": "Manual therapy involves skilled hand movements to improve tissue extensibility; increase range of motion; induce relaxation; mobilize or manipulate soft tissue and joints.",
+            "fullDescription": "Manual therapy is a core component of our practice. We use soft tissue mobilization, joint mobilization, and manipulation to reduce pain and restore movement. It is always combined with exercise to lock in the gains.",
+            "benefits": [
+                "Immediate pain relief",
+                "Improved joint mobility",
+                "Reduced muscle tension",
+                "Faster recovery"
+            ],
+            "process": [
+                "Assessment of joint play",
+                "Soft tissue release",
+                "Joint mobilization",
+                "Re-assessment"
+            ],
+            "details": {
+                "feels": "Stiff joints, tight muscles, or restricted movement.",
+                "expect": "Hands-on treatment followed by movement.",
+                "approach": "Maitland, Mulligan, and Soft Tissue Release techniques."
+            },
+            "image": {
+                "src": "/images/007.webp",
+                "alt": "Manual Therapy"
+            }
+        },
+        {
+            "id": "geriatric-physio",
+            "slug": "geriatric-physiotherapy",
+            "title": "Geriatric Physiotherapy",
+            "excerpt": "Improving mobility, balance, and independence for older adults.",
+            "description": "Aging is inevitable, but frailty is not. We specialize in helping seniors maintain their independence through strength and balance training.",
+            "fullDescription": "Our geriatric program focuses on fall prevention, osteoporosis management, and maintaining functional independence. We understand the unique physiology of aging and tailor our programs to be safe yet effective.",
+            "benefits": [
+                "Fall risk reduction",
+                "Improved balance and coordination",
+                "Osteoporosis management",
+                "Maintained independence"
+            ],
+            "process": [
+                "Fall risk assessment",
+                "Balance training",
+                "Functional strength training",
+                "Home safety modification advice"
+            ],
+            "details": {
+                "feels": "Unsteady on feet, fear of falling, or general weakness.",
+                "expect": "Gentle, progressive exercises to build confidence.",
+                "approach": "Functional training, balance challenges, and safety education."
+            },
+            "image": {
+                "src": "/images/001.webp",
+                "alt": "Geriatric Physiotherapy"
+            }
+        },
+        {
+            "id": "neurological-rehab",
+            "slug": "neurological-rehab",
+            "title": "Neurological Rehab",
+            "excerpt": "Expert care for Stroke, Parkinson's, and other neurological conditions.",
+            "description": "Neuroplasticity means the brain can change. We use task-specific training to help rewire the brain and restore function after neurological injury.",
+            "fullDescription": "Whether it's post-stroke recovery or managing Parkinson's, our neuro rehab is based on motor learning principles. We focus on high-repetition, task-oriented training to improve quality of life.",
+            "benefits": [
+                "Improved gait and walking",
+                "Better balance",
+                "Restored daily function",
+                "Spasticity management"
+            ],
+            "process": [
+                "Neuro-functional assessment",
+                "Goal setting",
+                "Task-specific training",
+                "Gait & Balance re-education"
+            ],
+            "details": {
+                "feels": "Loss of movement, stiffness, tremor, or balance issues.",
+                "expect": "Intensive, repetitive practice of meaningful tasks.",
+                "approach": "Motor learning, neuroplasticity, and functional training."
+            },
+            "image": {
+                "src": "/images/005.webp",
+                "alt": "Neurological Rehab"
+            }
+        },
+        {
+            "id": "dry-needling",
+            "slug": "dry-needling",
+            "title": "Dry Needling",
+            "excerpt": "Targeted release of trigger points to reduce pain and improve muscle function.",
+            "description": "Dry needling uses fine needles to deactivate trigger points (knots) in muscles, relieving pain and restoring range of motion.",
+            "fullDescription": "Dry needling is a powerful adjunct to exercise. By releasing tight myofascial trigger points, we can create a 'window of opportunity' where you can move with less pain, allowing for better strengthening.",
+            "benefits": [
+                "Rapid pain relief",
+                "Released muscle tension",
+                "Improved range of motion",
+                "Resetting muscle tone"
+            ],
+            "process": [
+                "Palpation of trigger points",
+                "Needle insertion",
+                "Eliciting twitch response",
+                "Post-needling stretch"
+            ],
+            "details": {
+                "feels": "Deep ache or twitch during treatment, followed by relief.",
+                "expect": "Some soreness for 24 hours, then improved movement.",
+                "approach": "Evidence-based trigger point release."
+            },
+            "image": {
+                "src": "/images/006.webp",
+                "alt": "Dry Needling"
+            }
+        },
+        {
+            "id": "pediatric-physio",
+            "slug": "pediatric-physiotherapy",
+            "title": "Pediatric Physiotherapy",
+            "excerpt": "Play-based therapy for developmental delays and childhood conditions.",
+            "description": "Children are not just small adults. We use play-based therapy to help children with developmental delays or orthopedic issues reach their milestones.",
+            "fullDescription": "From cerebral palsy to sports injuries in young athletes, our pediatric care is engaging and effective. We work closely with parents to ensure therapy continues at home through play.",
+            "benefits": [
+                "Achieving developmental milestones",
+                "Improved coordination",
+                "Post-fracture recovery for kids",
+                "Correction of gait abnormalities"
+            ],
+            "process": [
+                "Developmental screening",
+                "Play-based assessment",
+                "Fun exercise integration",
+                "Parent education"
+            ],
+            "details": {
+                "feels": "Fun and engaging for the child.",
+                "expect": "Therapy disguised as games.",
+                "approach": "Neuro-developmental treatment and play therapy."
+            },
+            "image": {
+                "src": "/images/003.webp",
+                "alt": "Pediatric Physiotherapy"
+            }
         }
     ],
     "conditions": [
@@ -496,27 +660,118 @@
         "snapshots": [
             {
                 "id": "s1",
-                "title": "ACL Rehab Success",
-                "description": "Back on the football field after 6 months of guided rehabilitation.",
-                "image": "/images/aditi.webp"
+                "slug": "bavithra-basketball-acl-recovery",
+                "title": "Bavithra P - Basketball",
+                "short_description": "Professional basketball player Bavithra overcomes Grade 2 ACL injury without surgery through dedicated rehab.",
+                "article": "I am a professional basketball player since 2013. I’ve played in various tournaments, and I love my sport, but in 2021 I had a major injury. It was a Grade 2 ACL and Grade 1 Lateral Collateral Ligament injury. I didn’t go for surgery because I was scared it would cause more problems, so I relied completely on rehab. It worked for some time, but not for long, and I got injured again. I was honestly on the verge of giving up when I met Mr. Swatheeshwaran sir.\n\nMost physios will just say “eat this and do this exercise,” but he analysed everything — even small things like my sleeping pattern and eating habits — and everything he said actually made sense. That’s when I realised the minor things I ignored were bringing the biggest impact.\n\nHe started monitoring my improvements, my diet plan and the entire rehab process, and within just two months I saw massive improvement in my health and physique. Because of him, I was able to get up and play my favourite sport again. And the impact is still there.\n\nHe’s the one who made me understand what the word “proper diet” really means, and I’m still following it to stay healthy. I’m really thankful that he always made sure I improved. He never hesitated to help, always made time to interact with me and go through my progress.\n\nThank you for your wonderful efforts and insights, sir.",
+                "image": "/images/bavithra.webp",
+                "seo": {
+                    "title": "Bavithra P - Basketball ACL Recovery | Success Stories | Atreus Physio",
+                    "description": "Professional basketball player Bavithra P shares her journey of recovering from Grade 2 ACL injury without surgery at Atreus Physio.",
+                    "keywords": [
+                        "ACL Rehab Trichy",
+                        "Basketball injury recovery",
+                        "Non-surgical ACL treatment",
+                        "Sports Physio Success Story",
+                        "Bavithra Basketball"
+                    ],
+                    "canonical": "https://atreusphysio.com/success-stories/bavithra-basketball-acl-recovery",
+                    "robots": "index, follow",
+                    "author": "Dr. Swatheeshwaran",
+                    "publisher": "Atreus Physio"
+                }
             },
             {
                 "id": "s2",
-                "title": "ACL & LCL Recovery (Basketball)",
-                "description": "Returned to professional basketball after a Grade 2 ACL and Grade 1 LCL injury with a personalized rehab and nutrition plan.",
-                "image": "/images/bavithra.webp"
+                "slug": "marimuthu-kabaddi-mcl-injury",
+                "title": "Marimuthu N A - Pro Kabaddi",
+                "short_description": "Pro Kabaddi player Marimuthu returns to the mat after recovering from an MCL knee injury.",
+                "article": "Hi, I’m Marimuthu. I play for SRM University Chennai, and I’ve also played Pro Kabaddi S9. I’ve represented the Tamil Nadu team 6 times and have won All India Inter University medals too.\n\nDuring the 2024, I got injured in my left knee during a competition. They told me it was a knee issue, so I went to meet sir.\n\nSir treated me, gave me pain relief load management and strengthening exercises. I did everything properly, and my pain went away completely. He kept giving me daily strength exercises and that helped me get back to playing faster.\n\nSir told me injuries are common for sports players and also kept motivating me mentally. Because of that, I felt a lot of hope and I was able to return to play confidently.",
+                "image": "/images/marimuthu.webp",
+                "seo": {
+                    "title": "Marimuthu N A - Pro Kabaddi | Success Stories | Atreus Physio",
+                    "description": "Pro Kabaddi player Marimuthu returns to the mat after recovering from an MCL knee injury with expert physio care in Trichy.",
+                    "keywords": [
+                        "MCL Injury Recovery",
+                        "Kabaddi Physio Trichy",
+                        "Sports Injury Treatment",
+                        "Marimuthu Pro Kabaddi",
+                        "Knee Pain Relief"
+                    ],
+                    "canonical": "https://atreusphysio.com/success-stories/marimuthu-kabaddi-mcl-injury",
+                    "robots": "index, follow",
+                    "author": "Dr. Swatheeshwaran",
+                    "publisher": "Atreus Physio"
+                }
             },
             {
                 "id": "s3",
-                "title": "Shoulder Mobility Recovery",
-                "description": "Regained full shoulder movement and returned to competitive swimming.",
-                "image": "/images/marimuthu.webp"
+                "slug": "vimal-volleyball-shoulder-pain",
+                "title": "Vimal - Volleyball",
+                "short_description": "Volleyball player Vimal finds relief from 3 years of chronic shoulder pain in just 1 month.",
+                "article": "Hi, I’m Vimal, a volleyball player. I’m now appointed and working in Railways. I injured my shoulder back in school, and all through college for almost 3 years I had pain and disturbance while playing. I visited multiple physios and tried self-managing with ice, but nothing cured it. I couldn’t perform at 100 percent in games. Other physios just gave UST and basic treatments, so I eventually lost hope in going to physio at all.\n\nFinally, through a referral from my friend, I met Mr. Swatheeshwaran sir. I got confidence the moment I spoke with him. He understood my pain and my condition right away, analysed everything clearly and explained it to me in a way that made complete sense. I gained confidence through that and started attending regular rehab under his advice.\n\nAfter 2 years of struggling with pain, I finally got out of pain in just 1 month of physio sessions with sir. Until now, I’m functioning without pain or re-injury by following the advice he gave me. I’m still continuing the exercises he taught me. He also taught me how to prepare before games to avoid re-injury and how to warm up properly. I still follow those protocols in my routine.\n\nI’m really grateful for the help he gave me, because I had completely lost hope until I met him.",
+                "image": "/images/vimal.webp",
+                "seo": {
+                    "title": "Vimal - Volleyball Shoulder Pain Recovery | Success Stories",
+                    "description": "Volleyball player Vimal overcomes 3 years of chronic shoulder pain with specialized sports physiotherapy at Atreus Physio.",
+                    "keywords": [
+                        "Shoulder Pain Treatment",
+                        "Volleyball Injury Rehab",
+                        "Chronic Shoulder Pain",
+                        "Sports Physio Trichy",
+                        "Frozen Shoulder Relief"
+                    ],
+                    "canonical": "https://atreusphysio.com/success-stories/vimal-volleyball-shoulder-pain",
+                    "robots": "index, follow",
+                    "author": "Dr. Swatheeshwaran",
+                    "publisher": "Atreus Physio"
+                }
             },
             {
                 "id": "s4",
-                "title": "MCL Injury Recovery (Kabaddi)",
-                "description": "Returned to professional kabaddi pain-free with focused strengthening and mental wellness support.",
-                "image": "/images/vimal.webp"
+                "slug": "aditi-basketball-ankle-rehab",
+                "title": "Aditi - Basketball",
+                "short_description": "Basketball player Aditi overcomes chronic ankle pain with a structured strengthening program.",
+                "article": "I started playing basketball from 4th standard onwards. I played for long time but during my U16 states my left ankle got injured. And after 3 to 4 years my ankle pain got little severe and according to my coach I took advice and consulted to the sir and got my proper strengthening for ankle pain.\n\nThe exercise program they gave me was easy to follow, well structured, and really effective, I noticed improvement much faster than I expected. They checked in on my progress, adjusted exercises when needed and made sure I felt confident doing them on my own.\n\nI prefer everyone to consult with them for any pain and injury.",
+                "image": "/images/aditi.webp",
+                "seo": {
+                    "title": "Aditi - Basketball Ankle Rehab | Success Stories",
+                    "description": "Basketball player Aditi shares her experience of recovering from chronic ankle pain through strengthening exercises at Atreus Physio.",
+                    "keywords": [
+                        "Ankle Sprain Rehab",
+                        "Basketball Injurues",
+                        "Ankle Strengthening",
+                        "Sports Rehab Stories",
+                        "Aditi Basketball"
+                    ],
+                    "canonical": "https://atreusphysio.com/success-stories/aditi-basketball-ankle-rehab",
+                    "robots": "index, follow",
+                    "author": "Dr. Swatheeshwaran",
+                    "publisher": "Atreus Physio"
+                }
+            },
+            {
+                "id": "s5",
+                "slug": "ameena-knee-pain-relief",
+                "title": "Mrs. Ameena",
+                "short_description": "Mrs. Ameena finds effective pain management and long-term recovery for Chondromalacia Patella.",
+                "article": "I had been dealing with knee pain due to chondromalacia patella, and consulting Mr. Swatheswaran turned out to be one of the best decisions.\n\nHis approach to treatment was very well planned, focusing on effective pain management along with the right strengthening exercises for long-term recovery.\n\nHe explained the condition clearly, monitored my progress closely, and customized the exercises based on my comfort and improvement.\n\nThanks to his expertise and guidance, my knee pain has reduced significantly and my strength and mobility have improved a lot.\n\nI truly appreciate his dedication and professionalism and would highly recommend him to anyone looking for a knowledgeable and reliable physiotherapist.",
+                "image": "/images/ameena.webp",
+                "seo": {
+                    "title": "Mrs. Ameena - Knee Pain Relief | Success Stories",
+                    "description": "Mrs. Ameena finds relief from Chondromalacia Patella and knee pain through personalized physiotherapy and expert care.",
+                    "keywords": [
+                        "Chondromalacia Patella Treatment",
+                        "Knee Pain Relief for Seniors",
+                        "Physiotherapy for Knee Pain",
+                        "Dr Swatheeshwaran Review",
+                        "Ameena Success Story"
+                    ],
+                    "canonical": "https://atreusphysio.com/success-stories/ameena-knee-pain-relief",
+                    "robots": "index, follow",
+                    "author": "Dr. Swatheeshwaran",
+                    "publisher": "Atreus Physio"
+                }
             }
         ],
         "testimonials": [
@@ -639,6 +894,48 @@
             {
                 "label": "Knee & Shoulder",
                 "href": "/services/knee-shoulder-rehab"
+            }
+        ],
+        "links": [
+            {
+                "label": "Stroke Rehab",
+                "href": "/stroke-rehabilitation-center-trichy"
+            },
+            {
+                "label": "Home Visits",
+                "href": "/physiotherapist-home-visit-trichy"
+            },
+            {
+                "label": "Corporate Physio",
+                "href": "/corporate-physiotherapy-trichy"
+            },
+            {
+                "label": "Pregnancy Classes",
+                "href": "/pregnancy-exercise-classes-trichy"
+            },
+            {
+                "label": "Cupping Therapy",
+                "href": "/cupping-therapy-trichy"
+            },
+            {
+                "label": "Sciatica",
+                "href": "/sciatica-treatment-trichy"
+            },
+            {
+                "label": "Cervical Spondy",
+                "href": "/cervical-spondylosis-treatment-trichy"
+            },
+            {
+                "label": "Lumbar Spondy",
+                "href": "/lumbar-spondylosis-treatment-trichy"
+            },
+            {
+                "label": "ACL Injury",
+                "href": "/acl-tear-treatment-trichy"
+            },
+            {
+                "label": "Heel Pain",
+                "href": "/heel-pain-treatment-trichy"
             }
         ],
         "conditions": [

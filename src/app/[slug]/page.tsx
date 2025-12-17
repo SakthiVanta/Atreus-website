@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/Button";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import Link from "next/link";
 import { Phone, Calendar, ArrowRight } from "lucide-react";
+import { BookingTrigger } from "@/components/ui/BookingTrigger";
 
 type Props = {
     params: Promise<{ slug: string }>;
@@ -104,12 +105,10 @@ export default async function DynamicPage({ params }: Props) {
                                 {page.content.intro}
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4">
-                                <Link href="/contact">
-                                    <Button className="bg-[#e3171e] hover:bg-[#c41218] text-white px-8 py-6 text-lg">
-                                        <Calendar className="w-5 h-5 mr-2" />
-                                        Book Appointment
-                                    </Button>
-                                </Link>
+                                <BookingTrigger className="bg-[#e3171e] hover:bg-[#c41218] text-white px-8 py-6 text-lg">
+                                    <Calendar className="w-5 h-5 mr-2" />
+                                    Book Appointment
+                                </BookingTrigger>
                                 <a href="tel:+917010294784">
                                     <Button className="bg-white/10 hover:bg-white/20 text-white border border-white/20 px-8 py-6 text-lg">
                                         <Phone className="w-5 h-5 mr-2" />
@@ -156,11 +155,9 @@ export default async function DynamicPage({ params }: Props) {
                             Book your appointment today at ATREUS PHYSIO and take the first step towards a pain-free life.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Link href="/contact">
-                                <Button className="bg-[#e3171e] hover:bg-[#c41218] text-white px-8 py-4 text-lg">
-                                    Book Appointment
-                                </Button>
-                            </Link>
+                            <BookingTrigger className="bg-[#e3171e] hover:bg-[#c41218] text-white px-8 py-4 text-lg">
+                                Book Appointment
+                            </BookingTrigger>
                             <Link href="/about">
                                 <Button className="bg-white/10 hover:bg-white/20 text-white border border-white/20 px-8 py-4 text-lg">
                                     Learn About Us

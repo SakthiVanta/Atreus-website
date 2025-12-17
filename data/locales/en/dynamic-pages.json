@@ -141,7 +141,7 @@
                 "sections": [
                     {
                         "title": "Expert Shoulder Care",
-                        "content": "From frozen shoulder to rotator cuff injuries, shoulder impingement to post-surgical rehabilitation, we provide comprehensive shoulder care. Our treatment combines manual techniques with progressive strengthening exercises."
+                        "content": "From frozen shoulder to rotator cuff injuries, we provide comprehensive shoulder care. Our treatment combines manual techniques with progressive strengthening exercises."
                     },
                     {
                         "title": "Prevent Future Problems",
@@ -546,6 +546,606 @@
                     {
                         "title": "Nerve and Tendon Gliding",
                         "content": "Specialized mobilization techniques for nerves and tendons to reduce pain and prevent scar tissue adhesion after surgery or repetitive strain injuries."
+                    }
+                ]
+            }
+        },
+        {
+            "slug": "sciatica-treatment-trichy",
+            "title": "Sciatica Treatment in Trichy | Nerve Pain Relief",
+            "description": "Expert sciatica treatment in Trichy. Non-surgical relief for radiating leg pain, numbness, and disc issues at ATREUS PHYSIO.",
+            "h1": "Sciatica Pain Relief & Treatment",
+            "keywords": [
+                "sciatica treatment trichy",
+                "sciatic nerve pain",
+                "leg pain physio",
+                "disc bulge treatment"
+            ],
+            "content": {
+                "intro": "Get lasting relief from the shooting pain of sciatica. We target the root cause—whether it's a herniated disc or piriformis tightness—to relieve nerve pressure.",
+                "sections": [
+                    {
+                        "title": "Nerve Decompression",
+                        "content": "Our treatment focuses on reducing pressure on the sciatic nerve through specific positioning, traction, and manual therapy. We help centralize the pain and stop it from radiating down your leg."
+                    },
+                    {
+                        "title": "Core Stability",
+                        "content": "Building a strong core 'corset' protects your lower back and prevents future disc bulges. We teach you safe movement patterns to keep your spine healthy."
+                    }
+                ]
+            }
+        },
+        {
+            "slug": "cervical-spondylosis-treatment-trichy",
+            "title": "Cervical Spondylosis Treatment in Trichy | Neck Care",
+            "description": "Effective cervical spondylosis treatment in Trichy. Manage neck arthritis, stiffness, and pain with expert physiotherapy.",
+            "h1": "Cervical Spondylosis Rehabilitation",
+            "keywords": [
+                "cervical spondylosis trichy",
+                "neck arthritis treatment",
+                "neck stiffness physio",
+                "cervical pain relief"
+            ],
+            "content": {
+                "intro": "Don't let neck arthritis limit your life. Our specialized program for cervical spondylosis helps restore movement and reduce pain associated with wear and tear.",
+                "sections": [
+                    {
+                        "title": "Mobilize Stiff Joints",
+                        "content": "Gradual mobilization of the neck joints helps lubricate them and reduce stiffness. We also treat the surrounding muscles to prevent tension headaches."
+                    },
+                    {
+                        "title": "posture Correction",
+                        "content": "Poor posture accelerates spondylosis. We assess your daily habits and workspace to create an ergonomic plan that offloads your cervical spine."
+                    }
+                ]
+            }
+        },
+        {
+            "slug": "lumbar-spondylosis-treatment-trichy",
+            "title": "Lumbar Spondylosis Treatment Trichy | Back Care",
+            "description": "Lumbar spondylosis treatment in Trichy. Physiotherapy for lower back arthritis and degenerative disc disease at ATREUS PHYSIO.",
+            "h1": "Lumbar Spondylosis & Back Arthritis Care",
+            "keywords": [
+                "lumbar spondylosis trichy",
+                "lower back arthritis",
+                "spine degeneration physio",
+                "back stiffness treatment"
+            ],
+            "content": {
+                "intro": "Manage lower back degeneration effectively. Our evidence-based approach helps you stay active and pain-free despite lumbar spondylosis.",
+                "sections": [
+                    {
+                        "title": "Movement is Medicine",
+                        "content": "Specific exercises help nourish the spinal discs and joints. We design a safe exercise program that builds strength without aggravating your condition."
+                    },
+                    {
+                        "title": "Pain Management",
+                        "content": "We use modalities like IFT and Ultrasound combined with manual therapy to manage acute flare-ups, getting you back on your feet faster."
+                    }
+                ]
+            }
+        },
+        {
+            "slug": "frozen-shoulder-exercises-trichy",
+            "title": "Frozen Shoulder Treatment in Trichy | Stiffness Relief",
+            "description": "Specialized frozen shoulder treatment in Trichy. Restore range of motion and reduce pain with expert physiotherapy.",
+            "h1": "Frozen Shoulder (Adhesive Capsulitis) Treatment",
+            "keywords": [
+                "frozen shoulder trichy",
+                "adhesive capsulitis treatment",
+                "shoulder stiffness physio",
+                "shoulder mobility"
+            ],
+            "content": {
+                "intro": "Frozen shoulder can be debilitating. Our stage-specific treatment protocol helps manage pain in the early freezing stage and restores motion in the thawing stage.",
+                "sections": [
+                    {
+                        "title": "Gentle Mobilization",
+                        "content": "Forcing a frozen shoulder can be harmful. We use gentle, graded mobilization techniques to stretch the capsule without causing unnecessary pain."
+                    },
+                    {
+                        "title": "Home Exercise Program",
+                        "content": "Consistency is key. We provide a detailed home exercise program to maintain the gains made in the clinic and speed up your recovery."
+                    }
+                ]
+            }
+        },
+        {
+            "slug": "acl-tear-treatment-trichy",
+            "title": "ACL Tear Treatment in Trichy | Knee Ligament Rehab",
+            "description": "Expert ACL tear treatment and rehabilitation in Trichy. Pre-hab and post-op care for knee ligament injuries at ATREUS PHYSIO.",
+            "h1": "ACL Injury & Ligament Rehabilitation",
+            "keywords": [
+                "ACL treatment trichy",
+                "knee ligament injury",
+                "sports knee rehab",
+                "post op ACL physio"
+            ],
+            "content": {
+                "intro": "Whether you choose surgery or conservative management, our ACL rehabilitation program is designed to get you back to sport and daily life with a stable knee.",
+                "sections": [
+                    {
+                        "title": "Pre-Operative 'Pre-hab'",
+                        "content": "Going into surgery with a strong knee leads to better outcomes. We work on swelling reduction and quad strengthening before your operation."
+                    },
+                    {
+                        "title": "Return to Sport",
+                        "content": "Our criteria-based progression ensures you only return to running and cutting sports when your knee is truly ready, reducing the risk of re-injury."
+                    }
+                ]
+            }
+        },
+        {
+            "slug": "ankle-sprain-treatment-trichy",
+            "title": "Ankle Sprain Treatment in Trichy | Ligament Injury",
+            "description": "Fast recovery for ankle sprains in Trichy. Specialized treatment for twisted ankles and ligament tears at ATREUS PHYSIO.",
+            "h1": "Ankle Sprain & Ligament Injury Care",
+            "keywords": [
+                "ankle sprain trichy",
+                "twisted ankle treatment",
+                "ligament tear physio",
+                "ankle rehab"
+            ],
+            "content": {
+                "intro": "Ankle sprains are common but often poorly managed. We ensure comprehensive healing to prevent chronic instability and recurring sprains.",
+                "sections": [
+                    {
+                        "title": "Acute Injury Management",
+                        "content": "We follow the PRICE protocol coupled with early protected motion to reduce swelling and prevent stiffness immediately after injury."
+                    },
+                    {
+                        "title": "Proprioception Training",
+                        "content": "Retraining your balance and joint sense (proprioception) is crucial to prevent your ankle from giving way again in the future."
+                    }
+                ]
+            }
+        },
+        {
+            "slug": "heel-pain-treatment-trichy",
+            "title": "Heel Pain Treatment in Trichy | Plantar Fasciitis",
+            "description": "Effective heel pain treatment in Trichy. Relief for plantar fasciitis regarding heel spurs and foot pain at ATREUS PHYSIO.",
+            "h1": "Heel Pain & Plantar Fasciitis Relief",
+            "keywords": [
+                "heel pain trichy",
+                "plantar fasciitis clinic",
+                "calcaneal spur treatment",
+                "morning heel pain"
+            ],
+            "content": {
+                "intro": "Stop the sharp morning heel pain. We treat the biomechanical causes of plantar fasciitis for long-term relief.",
+                "sections": [
+                    {
+                        "title": "Taping and Insoles",
+                        "content": "We use taping techniques and advise on footwear/insoles to immediately offload the painful fascia and allow it to heal."
+                    },
+                    {
+                        "title": "Loading Protocol",
+                        "content": "Research shows that high-load strength training for the plantar fascia is effective. We guide you through this specific strengthening protocol."
+                    }
+                ]
+            }
+        },
+        {
+            "slug": "tennis-elbow-treatment-trichy",
+            "title": "Tennis Elbow Treatment in Trichy | Elbow Pain",
+            "description": "Specialized tennis elbow treatment in Trichy. Physiotherapy for lateral epicondylitis and forearm pain at ATREUS PHYSIO.",
+            "h1": "Tennis Elbow (Lateral Epicondylitis) Care",
+            "keywords": [
+                "tennis elbow trichy",
+                "elbow pain treatment",
+                "forearm pain physio",
+                "gripping pain relief"
+            ],
+            "content": {
+                "intro": "You don't have to play tennis to get it. We treat overuse injuries of the elbow caused by repetitive gripping, typing, or lifting.",
+                "sections": [
+                    {
+                        "title": "Tendon Loading",
+                        "content": "Tendons need load to heal. We use isometric and eccentric loading exercises to remodel the tendon and build its capacity."
+                    },
+                    {
+                        "title": "Ergonomic Advice",
+                        "content": "We review your work or sport technique to modify the activities that aggravate your pain, ensuring a pain-free return to function."
+                    }
+                ]
+            }
+        },
+        {
+            "slug": "stroke-rehabilitation-center-trichy",
+            "title": "Stroke Rehabilitation Center in Trichy | Paralysis Care",
+            "description": "Leading stroke rehabilitation center in Trichy. Comprehensive post-stroke care and paralysis treatment at ATREUS PHYSIO.",
+            "h1": "Advanced Stroke Rehabilitation Center",
+            "keywords": [
+                "stroke rehab center trichy",
+                "hemiplegia treatment",
+                "paralysis physiotherapy",
+                "neurological center"
+            ],
+            "content": {
+                "intro": "A dedicated center for stroke recovery. We offer intensive, task-oriented rehabilitation to help survivors regain their independence.",
+                "sections": [
+                    {
+                        "title": "Intensive Therapy",
+                        "content": "Recovery is dose-dependent. Our intensive programs provide the high repetitions needed to stimulate neuroplasticity and brain rewiring."
+                    },
+                    {
+                        "title": "Family Training",
+                        "content": "We train family members and caregivers on safe transfer techniques and home exercises to ensure rehabilitation continues 24/7."
+                    }
+                ]
+            }
+        },
+        {
+            "slug": "bell-palsy-treatment-trichy",
+            "title": "Bell's Palsy Treatment in Trichy | Facial Paralysis",
+            "description": "Expert Bell's Palsy treatment in Trichy. Facial physiotherapy and electrical stimulation for facial paralysis at ATREUS PHYSIO.",
+            "h1": "Bell's Palsy & Facial Paralysis Treatment",
+            "keywords": [
+                "bells palsy trichy",
+                "facial palsy physio",
+                "facial muscle exercise",
+                "electrical stimulation face"
+            ],
+            "content": {
+                "intro": "Early intervention is key for facial palsy. We use specialized facial exercises and stimulation to restore symmetry and function.",
+                "sections": [
+                    {
+                        "title": "Muscle Re-education",
+                        "content": "Mirror therapy and specific facial exercises help retrain the facial muscles to coordinate expressions and improve closing of the eye."
+                    },
+                    {
+                        "title": "Electrical Stimulation",
+                        "content": "When appropriate, we use specific electrical stimulation parameters to maintain muscle tone and promote nerve recovery."
+                    }
+                ]
+            }
+        },
+        {
+            "slug": "post-fracture-rehabilitation-trichy",
+            "title": "Post Fracture Rehabilitation in Trichy | Bone Healing",
+            "description": "Post-fracture rehabilitation in Trichy. Regain movement and strength after cast removal or surgery at ATREUS PHYSIO.",
+            "h1": "Post-Fracture Stiffness & Recovery",
+            "keywords": [
+                "fracture rehab trichy",
+                "broken bone physio",
+                "stiff joint treatment",
+                "cast removal rehab"
+            ],
+            "content": {
+                "intro": "Don't let stiffness become permanent. Our post-fracture rehab ensures you regain full range of motion and strength after the bone has healed.",
+                "sections": [
+                    {
+                        "title": "Joint Mobilization",
+                        "content": "We use skilled manual therapy to gently restore movement to stiff joints following weeks of immobilization in a cast."
+                    },
+                    {
+                        "title": "Functional Strengthening",
+                        "content": "Muscles waste away quickly in a cast. We rebuild your strength to support the healed bone and prevent future injuries."
+                    }
+                ]
+            }
+        },
+        {
+            "slug": "laser-therapy-physiotherapy-trichy",
+            "title": "Laser Therapy in Trichy | Advanced Pain Relief",
+            "description": "Advanced Laser Therapy (LLLT) in Trichy. Accelerate healing and reduce inflammation with Low Level Laser Therapy at ATREUS PHYSIO.",
+            "h1": "Low Level Laser Therapy (LLLT)",
+            "keywords": [
+                "laser therapy trichy",
+                "LLLT physiotherapy",
+                "pain relief laser",
+                "tissue healing"
+            ],
+            "content": {
+                "intro": "State-of-the-art Low Level Laser Therapy to accelerate tissue healing and reduce inflammation for acute and chronic conditions.",
+                "sections": [
+                    {
+                        "title": "Accelerated Healing",
+                        "content": "Laser therapy stimulates cellular repair, making it ideal for healing ligaments, tendons, and open wounds faster."
+                    },
+                    {
+                        "title": "Pain Reduction",
+                        "content": "It effectively facilitates pain relief by reducing inflammation and blocking pain signals, offering a non-invasive alternative to medication."
+                    }
+                ]
+            }
+        },
+        {
+            "slug": "ultrasound-therapy-trichy",
+            "title": "Ultrasound Therapy in Trichy | Deep Heat",
+            "description": "Therapeutic Ultrasound treatment in Trichy. deep heating for muscle spasms and soft tissue injuries at ATREUS PHYSIO.",
+            "h1": "Therapeutic Ultrasound Treatment",
+            "keywords": [
+                "ultrasound therapy trichy",
+                "muscle spasm treatment",
+                "soft tissue injury",
+                "physio ultrasound"
+            ],
+            "content": {
+                "intro": "Therapeutic ultrasound uses sound waves to generate deep heat and micro-massage, promoting healing in deep tissues.",
+                "sections": [
+                    {
+                        "title": "Scar Tissue Management",
+                        "content": "Ultrasound helps break down scar tissue and adhesions, improving the elasticity of healing muscles and ligaments."
+                    },
+                    {
+                        "title": "Reducing Swelling",
+                        "content": "It enhances blood flow and cellular metabolism, helping to reduce local swelling and chronic inflammation."
+                    }
+                ]
+            }
+        },
+        {
+            "slug": "ift-physiotherapy-trichy",
+            "title": "IFT Physiotherapy in Trichy | Electric Muscle Stimulation",
+            "description": "Interferential Therapy (IFT) in Trichy. Effective electrical stimulation for back pain and muscle relief at ATREUS PHYSIO.",
+            "h1": "Interferential Therapy (IFT)",
+            "keywords": [
+                "IFT treatment trichy",
+                "electrical stimulation physio",
+                "back pain IFT",
+                "muscle relief"
+            ],
+            "content": {
+                "intro": "Interferential Therapy (IFT) is a widely used modality for deep pain relief and muscle stimulation without the discomfort of lower frequency currents.",
+                "sections": [
+                    {
+                        "title": "Deep Pain Relief",
+                        "content": "IFT penetrates deeper into the tissue, making it highly effective for lower back pain and deep muscle spasms."
+                    },
+                    {
+                        "title": "Reduce Inflammation",
+                        "content": "By improving circulation to the affected area, IFT aids in flushing out inflammatory chemicals and reducing edema."
+                    }
+                ]
+            }
+        },
+        {
+            "slug": "traction-therapy-trichy",
+            "title": "Traction Therapy in Trichy | Spinal Decompression",
+            "description": "Spinal traction therapy in Trichy. Non-surgical decompression for slipped discs and nerve compression at ATREUS PHYSIO.",
+            "h1": "Cervical & Lumbar Traction Therapy",
+            "keywords": [
+                "traction therapy trichy",
+                "spinal decompression",
+                "neck traction",
+                "lumbar traction"
+            ],
+            "content": {
+                "intro": "Mechanical traction helps relieve pressure on spinal discs and nerves, offering relief for growing radiating pain from herniated discs.",
+                "sections": [
+                    {
+                        "title": "Disc Decompression",
+                        "content": "Traction creates negative pressure within the disc, encouraging the herniated material to retract and taking pressure off the nerve."
+                    },
+                    {
+                        "title": "Muscle Relaxation",
+                        "content": "Gentle stretching of the spinal muscles helps relax spasms and improves mobility in the neck and lower back."
+                    }
+                ]
+            }
+        },
+        {
+            "slug": "physiotherapist-home-visit-trichy",
+            "title": "Physiotherapist Home Visit in Trichy | Expert Care",
+            "description": "Find the best physiotherapist for home visits in Trichy. Comprehensive assessment and treatment in the comfort of your home.",
+            "h1": "Expert Physiotherapy Home Visits",
+            "keywords": [
+                "physiotherapist home visit trichy",
+                "lady physio home visit",
+                "home care physiotherapy",
+                "elderly home physio"
+            ],
+            "content": {
+                "intro": "We bring the clinic to you. Our qualified physiotherapists arrive equipped to provide comprehensive assessment and treatment at your home.",
+                "sections": [
+                    {
+                        "title": "Post-Surgical Convenience",
+                        "content": "Ideal for patients immediately after hip or knee replacement who find it difficult to travel to the clinic."
+                    },
+                    {
+                        "title": "Geriatric Care",
+                        "content": "We ensure continuity of care for elderly patients with mobility issues, helping them stay safe and independent at home."
+                    }
+                ]
+            }
+        },
+        {
+            "slug": "cupping-therapy-trichy",
+            "title": "Cupping Therapy in Trichy | Myofascial Decompression",
+            "description": "Cupping therapy in Trichy for muscle recovery and pain relief. Ancient technique with modern application at ATREUS PHYSIO.",
+            "h1": "Cupping Therapy Services",
+            "keywords": [
+                "cupping therapy trichy",
+                "hijama therapy",
+                "myofascial decompression",
+                "muscle recovery"
+            ],
+            "content": {
+                "intro": "Cupping increases local blood circulation and relieves muscle tension. It is excellent for sports recovery and chronic myofascial pain.",
+                "sections": [
+                    {
+                        "title": "Improved Circulation",
+                        "content": "The suction lifts the tissue, bringing fresh blood to the area and helping to clear out metabolic waste products."
+                    },
+                    {
+                        "title": "Myofascial Release",
+                        "content": "Cupping stretches the fascia and underlying muscle, effectively treating tight IT bands, back stiffness, and hamstring tightness."
+                    }
+                ]
+            }
+        },
+        {
+            "slug": "kinesio-taping-trichy",
+            "title": "Kinesio Taping in Trichy | Sports Taping",
+            "description": "Professional Kinesio Taping in Trichy. Support for sports injuries and edema reduction at ATREUS PHYSIO.",
+            "h1": "Kinesio Taping & Strapping",
+            "keywords": [
+                "kinesio taping trichy",
+                "sports taping",
+                "kt tape",
+                "injury support tape"
+            ],
+            "content": {
+                "intro": "K-Tape provides support and stability to joints and muscles without restricting range of motion. It facilitates the body's natural healing process.",
+                "sections": [
+                    {
+                        "title": "Pain Relief & Support",
+                        "content": "Taping lifts the skin microscopically to alleviate pain and facilitate lymphatic drainage. It also provides sensory feedback to improve posture."
+                    },
+                    {
+                        "title": "Sports Application",
+                        "content": "We use specific taping techniques to support injured ligaments and inhibit overactive muscles, allowing faster return to sport."
+                    }
+                ]
+            }
+        },
+        {
+            "slug": "posture-correction-clinic-trichy",
+            "title": "Posture Correction Clinic in Trichy | Align Spine",
+            "description": "Posture correction clinic in Trichy. Fix hunchback, text neck, and scoliosis with specialized exercises at ATREUS PHYSIO.",
+            "h1": "Posture Correction & Spine Alignment",
+            "keywords": [
+                "posture correction trichy",
+                "fix hunchback",
+                "scoliosis treatment",
+                "text neck physio"
+            ],
+            "content": {
+                "intro": "Good posture is the foundation of a healthy spine. We assess and correct muscle imbalances that cause poor posture.",
+                "sections": [
+                    {
+                        "title": "Ergonomic Alignment",
+                        "content": "We correct common issues like forward head posture, rounded shoulders, and anterior pelvic tilt through targeted strengthening and stretching."
+                    },
+                    {
+                        "title": "Awareness Training",
+                        "content": "We teach you how to feel and maintain neutral spine alignment during your daily activities to ensure long-term change."
+                    }
+                ]
+            }
+        },
+        {
+            "slug": "corporate-physiotherapy-trichy",
+            "title": "Corporate Physiotherapy in Trichy | Employee Wellness",
+            "description": "Corporate physiotherapy and wellness programs in Trichy. On-site ergonomic workshops and employee health checks by ATREUS PHYSIO.",
+            "h1": "Corporate Wellness & Physiotherapy",
+            "keywords": [
+                "corporate physio trichy",
+                "office ergonomics",
+                "employee wellness program",
+                "workplace injury prevention"
+            ],
+            "content": {
+                "intro": "Healthy employees are productive employees. We provide on-site physiotherapy and ergonomic workshops to prevent workplace injuries.",
+                "sections": [
+                    {
+                        "title": "Ergonomic Workshops",
+                        "content": "Group sessions teaching your team how to set up their desks and perform quick exercises to prevent back and neck pain."
+                    },
+                    {
+                        "title": "On-Site Consultations",
+                        "content": "We can set up a temporary clinic at your office to address acute aches and pains, preventing them from becoming lost-work-day injuries."
+                    }
+                ]
+            }
+        },
+        {
+            "slug": "pregnancy-exercise-classes-trichy",
+            "title": "Pregnancy Exercise Classes in Trichy | Antenatal",
+            "description": "Safe pregnancy exercises and antenatal classes in Trichy. Prepare for labor and manage pregnancy pain at ATREUS PHYSIO.",
+            "h1": "Antenatal & Pregnancy Exercise Classes",
+            "keywords": [
+                "pregnancy exercise trichy",
+                "antenatal classes",
+                "prenatal yoga physio",
+                "pregnancy back pain"
+            ],
+            "content": {
+                "intro": "Stay fit and prepare your body for labor with our physiotherapist-led pregnancy exercise classes.",
+                "sections": [
+                    {
+                        "title": "Safe Workouts",
+                        "content": " exercises tailored to each trimester, focusing on core stability, pelvic floor strength, and posture maintenance."
+                    },
+                    {
+                        "title": "Pain Management",
+                        "content": "Learn techniques to manage common pregnancy complaints like back pain, pelvic girdle pain, and leg cramps."
+                    }
+                ]
+            }
+        },
+        {
+            "slug": "spine-specialist-physio-trichy",
+            "title": "Spine Specialist Physio in Trichy | Back & Neck",
+            "description": "Consult a spine specialist physiotherapist in Trichy. Advanced care for complex back and neck conditions at ATREUS PHYSIO.",
+            "h1": "Spine Specialist Physiotherapy",
+            "keywords": [
+                "spine specialist trichy",
+                "back doctor physio",
+                "neck specialist",
+                "spine rehab center"
+            ],
+            "content": {
+                "intro": "Complex spine conditions require expert care. Our spine specialists use advanced assessment and treatment techniques for lasting results.",
+                "sections": [
+                    {
+                        "title": "Mechanical Diagnosis",
+                        "content": "We use the McKenzie method and other advanced diagnostics to classify your spine problem and determine the most effective treatment direction."
+                    },
+                    {
+                        "title": "Non-Surgical Solutions",
+                        "content": "Our goal is to prevent spine surgery whenever possible through aggressive conservative management and rehabilitation."
+                    }
+                ]
+            }
+        },
+        {
+            "slug": "best-physiotherapy-clinic-in-thillai-nagar",
+            "title": "Best Physiotherapy Clinic in Thillai Nagar | ATREUS",
+            "description": "Looking for the best physiotherapy clinic in Thillai Nagar? ATREUS PHYSIO offers top-rated care near Thillai Nagar, Trichy.",
+            "h1": "Physiotherapy Services near Thillai Nagar",
+            "keywords": [
+                "physiotherapy thillai nagar",
+                "clinic near thillai nagar",
+                "physio trichy cantonment",
+                "best physio trichy"
+            ],
+            "content": {
+                "intro": "Conveniently located to serve Thillai Nagar and surrounding areas, ATREUS PHYSIO provides world-class rehabilitation services.",
+                "sections": [
+                    {
+                        "title": "Expert Team",
+                        "content": "Our team of specialized physiotherapists brings the best of global practices to Trichy, ensuring you get the highest standard of care."
+                    },
+                    {
+                        "title": "Advanced Facilities",
+                        "content": "Equipped with modern modalities and rehabilitation tools to support your recovery journey from pain to performance."
+                    }
+                ]
+            }
+        },
+        {
+            "slug": "physiotherapy-center-cantonment-trichy",
+            "title": "Physiotherapy Center in Cantonment Trichy | ATREUS",
+            "description": "Leading physiotherapy center in Cantonment, Trichy. Accessible, professional, and results-driven care at ATREUS PHYSIO.",
+            "h1": "Physiotherapy Center - Cantonment, Trichy",
+            "keywords": [
+                "physiotherapy cantonment trichy",
+                "physio clinics cantonment",
+                "central bus stand physio",
+                "trichy physio rehab"
+            ],
+            "content": {
+                "intro": "Located in the heart of Trichy, our Cantonment center offers easy accessibility and a calm healing environment for all your rehabilitation needs.",
+                "sections": [
+                    {
+                        "title": "Comprehensive Care",
+                        "content": "From Orthopedic to Neurological rehabilitation, we offer a wide range of services under one roof in Cantonment."
+                    },
+                    {
+                        "title": "Patient-Centric Approach",
+                        "content": "We prioritize your comfort and convenience, offering flexible appointment slots and personalized attention at our Cantonment facility."
                     }
                 ]
             }

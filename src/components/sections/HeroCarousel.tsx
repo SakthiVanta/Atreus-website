@@ -7,6 +7,7 @@ import Autoplay from "embla-carousel-autoplay";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/Button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import Link from "next/link";
 
 type CarouselProps = {
     slides: {
@@ -15,6 +16,7 @@ type CarouselProps = {
         title: string;
         subtitle: string;
         cta: string;
+        link?: string;
     }[];
 };
 
@@ -60,11 +62,13 @@ export function HeroCarousel({ slides }: CarouselProps) {
                                 <p className="text-xl md:text-2xl mb-8 max-w-2xl text-slate-100">
                                     {slide.subtitle}
                                 </p>
-                                <Button
-                                    className="bg-white text-slate-900 hover:bg-slate-100 text-lg px-8 py-6 rounded-full transition-transform hover:scale-105"
-                                >
-                                    {slide.cta}
-                                </Button>
+                                <Link href={slide.link || "/contact"}>
+                                    <Button
+                                        className="bg-white text-slate-900 hover:bg-slate-100 text-lg px-8 py-6 rounded-full transition-transform hover:scale-105"
+                                    >
+                                        {slide.cta}
+                                    </Button>
+                                </Link>
                             </div>
                         </div>
                     ))}

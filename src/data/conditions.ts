@@ -4,14 +4,10 @@ export interface Condition {
     title: string;
     summary: {
         whatItIs: string;
-        symptoms: string;
         whenToSeekHelp: string;
     };
     content: {
         overview: string;
-        causes: string[];
-        riskFactors: string[];
-        prevention: string;
         treatmentApproach: string;
     };
     seo: {
@@ -27,27 +23,12 @@ export const conditions: Condition[] = [
         slug: "knee-pain",
         title: "Knee Pain",
         summary: {
-            whatItIs: "Pain arising from the joint, soft tissues or loading mechanics around the knee.",
-            symptoms: "Pain during walking, squatting, stairs or sport activities.",
-            whenToSeekHelp: "If pain limits daily activity or keeps recurring."
+            whatItIs: "Knee pain refers to discomfort arising from the knee region that may be influenced by loading patterns, movement behaviour, strength capacity and tissue tolerance rather than a single structure alone.",
+            whenToSeekHelp: "Persistent swelling, episodes of giving way, locking sensations, or pain that does not improve with activity modification may require detailed clinical assessment."
         },
         content: {
-            overview: "Knee pain is one of the most common musculoskeletal complaints that brings people to us. Whether it's a sharp pain while running, a dull ache after sitting, or instability during sports, knee issues often stem from a mismatch between the load you place on the joint and its current capacity to handle it. At Atreus Physio, we look beyond just the knee—examining your hip, ankle, and movement mechanics to find the root cause.",
-            causes: [
-                "Patellofemoral Pain Syndrome (Runner's Knee)",
-                "Meniscal Tears or Irritation",
-                "Ligament Sprains (ACL, MCL, LCL)",
-                "Quadriceps or Hamstring Tendinopathy",
-                "Osteoarthritis and joint wear"
-            ],
-            riskFactors: [
-                "Sudden increase in training volume",
-                "Poor biomechanics or movement control",
-                "Muscle imbalances (weak hips/quads)",
-                "Previous injury history"
-            ],
-            prevention: "Building strong quadriceps and glutes is your best defense against knee pain. Equally important is managing your training load—avoiding 'too much, too soon' allows your tissues to adapt safely.",
-            treatmentApproach: "We don't just treat the pain; we rebuild the knee's capacity. Our approach involves acute symptom management followed by progressive loading. We use video analysis to correct squat and running mechanics, ensuring you return to your activities stronger than before."
+            overview: "Knee pain is common in daily activities and sports. Symptoms may fluctuate with activity levels, training load or movement demands. In many cases, pain reflects reduced load tolerance or altered movement strategies rather than ongoing tissue damage.",
+            treatmentApproach: "ATREUS PHYSIO uses an individualised assessment to identify load tolerance, movement patterns and strength deficits around the knee. Treatment focuses on progressive strengthening, movement retraining and graded load exposure to improve function and reduce symptoms. Rehabilitation is progressed based on response and activity demands rather than pain alone."
         },
         seo: {
             title: "Knee Pain Treatment in Trichy | Atreus Physio",
@@ -60,27 +41,12 @@ export const conditions: Condition[] = [
         slug: "back-pain",
         title: "Back Pain",
         summary: {
-            whatItIs: "Pain from spinal joints, discs or soft tissue sensitivity influenced by load and movement.",
-            symptoms: "Stiffness, tightness, sharp episodes or discomfort with bending and lifting.",
-            whenToSeekHelp: "If pain affects work, sleep or daily function."
+            whatItIs: "Back pain refers to pain or discomfort experienced in the lumbar or thoracic region and is often influenced by movement tolerance, loading patterns, and nervous system sensitivity rather than a single anatomical structure.",
+            whenToSeekHelp: "Pain associated with significant weakness, unexplained weight loss, progressive neurological symptoms or severe night pain should be assessed promptly."
         },
         content: {
-            overview: "Back pain can be debilitating, but it is rarely dangerous. Most back pain is 'mechanical,' meaning it's related to how your spine moves and bears load. Fear of movement often makes it worse. Our goal is to demystify your pain, helping you understand that 'hurt' doesn't always mean 'harm,' and guiding you back to confident movement.",
-            causes: [
-                "Disc Herniation or Bulges",
-                "Muscle Strains and Spasms",
-                "Postural Load Intolerance",
-                "Sciatica (Nerve Root Irritation)",
-                "Facet Joint Irritation"
-            ],
-            riskFactors: [
-                "Prolonged static postures (sitting/standing)",
-                "Heavy lifting with poor mechanics",
-                "High stress and poor sleep quality",
-                "Lack of physical activity"
-            ],
-            prevention: "Motion is lotion. Breaking up long periods of sitting with movement is crucial. Strengthening your 'core' isn't just about abs—it's about building a robust trunk that can handle life's demands.",
-            treatmentApproach: "We move away from passive treatments like bed rest. Instead, we use graded exposure to movement, manual therapy for improved mobility, and specific strengthening exercises to build a resilient spine that you can trust."
+            overview: "Most back pain is non-specific and varies from person to person. Symptoms can fluctuate with activity, posture, stress and fatigue levels. Structural findings on scans often do not correlate directly with pain intensity.",
+            treatmentApproach: "Back pain is managed through movement-based assessment, education and graded exposure to activity. Treatment focuses on improving movement tolerance, trunk strength and functional capacity while addressing fear and activity limitations. Plans are adapted based on irritability, response to loading and individual presentation."
         },
         seo: {
             title: "Back Pain Relief & Physio Trichy | Atreus Physio",
@@ -93,27 +59,12 @@ export const conditions: Condition[] = [
         slug: "neck-pain",
         title: "Neck Pain",
         summary: {
-            whatItIs: "Pain arising from cervical joints, muscles or load intolerance.",
-            symptoms: "Difficulty turning, tightness, headaches or radiating discomfort.",
-            whenToSeekHelp: "If symptoms persist or limit movement."
+            whatItIs: "Neck pain involves discomfort arising from the cervical region and may be influenced by movement demands, muscle endurance, load tolerance and task-specific stress rather than isolated joint or muscle injury.",
+            whenToSeekHelp: "Symptoms such as progressive arm weakness, numbness, coordination difficulties or unexplained neurological changes require further clinical assessment."
         },
         content: {
-            overview: "In our digital age, neck pain is increasingly common. 'Tech neck' or posture-related strain plays a role, but it's often about the duration of the posture rather than the posture itself. Neck pain can also lead to cervicogenic headaches or radiating arm pain.",
-            causes: [
-                "Cervical Spondylosis",
-                "Muscle Tension & Trigger Points",
-                "Whiplash or Trauma",
-                "Disc Issues",
-                "Stress-related tension"
-            ],
-            riskFactors: [
-                "Prolonged screen time",
-                "High stress levels",
-                "Poor ergonomic setup",
-                "Weak upper back and neck muscles"
-            ],
-            prevention: "Ergonomics matters, but variability matters more. Change your position often. Strengthening the deep neck flexors and upper back muscles provides the support your head needs.",
-            treatmentApproach: "We combine gentle manual therapy to restore movement with targeted strengthening for the neck and shoulders. We also address thoracic (upper back) mobility, which is often the silent culprit behind neck issues."
+            overview: "Neck pain can affect daily activities such as driving, desk work or sports. Symptoms often fluctuate and may include stiffness or associated upper neck discomfort depending on activity and load exposure.",
+            treatmentApproach: "Management includes assessment of cervical movement, load tolerance and task demands. Treatment involves graded mobility and strengthening exercises along with motor control training to improve function. Progression is guided by symptom response and daily or sport-specific requirements."
         },
         seo: {
             title: "Neck Pain & Headache Physiotherapy Trichy | Atreus Physio",
@@ -126,27 +77,12 @@ export const conditions: Condition[] = [
         slug: "shoulder-pain",
         title: "Shoulder Pain",
         summary: {
-            whatItIs: "Pain from rotator cuff tissues, joint structures or movement coordination issues.",
-            symptoms: "Pain during lifting, reaching, overhead tasks or sleep.",
-            whenToSeekHelp: "If arm use becomes limited."
+            whatItIs: "Shoulder pain refers to discomfort around the shoulder complex influenced by loading capacity, movement coordination and tissue tolerance rather than a single tendon or structure in isolation.",
+            whenToSeekHelp: "Sudden loss of strength, inability to lift the arm, significant trauma or pain that does not improve with activity modification should be assessed further."
         },
         content: {
-            overview: "The shoulder is the most mobile joint in the body, which ironically makes it susceptible to injury. From swimmers to office workers, shoulder pain can affect anyone. It's often a balance issue—between mobility and stability.",
-            causes: [
-                "Rotator Cuff Tendinopathy",
-                "Shoulder Impingement",
-                "Frozen Shoulder (Adhesive Capsulitis)",
-                "Labral Tears",
-                "AC Joint Issues"
-            ],
-            riskFactors: [
-                "Repetitive overhead activity",
-                "Poor scapular (shoulder blade) control",
-                "Diabetes (increases risk of Frozen Shoulder)",
-                "Age-related changes"
-            ],
-            prevention: "Scapular stability is key. Exercises that strengthen the muscles around your shoulder blade provide a stable base for your arm to move. Managing overhead volume in sports is also critical.",
-            treatmentApproach: "We meticulously assess your shoulder rhythm. Treatment involves restoring range of motion (especially for frozen shoulder) and progressively loading the rotator cuff to handle the demands of your life and sport."
+            overview: "Shoulder pain is common in overhead activities, lifting and sports. Many cases are related to how the shoulder manages load and movement demands rather than structural damage alone.",
+            treatmentApproach: "Shoulder rehabilitation is guided by diagnosis-specific assessment of strength, coordination and loading capacity. Treatment focuses on progressive strengthening, movement coordination and functional loading to support daily activities and sport demands. Progression is individualised based on tolerance and task requirements."
         },
         seo: {
             title: "Shoulder Pain & Frozen Shoulder Physio Trichy | Atreus Physio",
@@ -159,27 +95,12 @@ export const conditions: Condition[] = [
         slug: "ankle-injuries",
         title: "Ankle Injuries",
         summary: {
-            whatItIs: "Sprains or load related issues affecting ankle stability and movement control.",
-            symptoms: "Swelling, instability or pain during walking or sport.",
-            whenToSeekHelp: "If weight bearing remains difficult."
+            whatItIs: "Ankle injuries include pain or instability around the ankle joint that may occur due to ligament stress, altered movement control or reduced load tolerance.",
+            whenToSeekHelp: "Persistent swelling, repeated giving-way episodes or inability to bear weight comfortably may require detailed assessment."
         },
         content: {
-            overview: "An ankle sprain is often dismissed as a minor injury, but without proper rehab, it can lead to chronic instability. Whether it's a rolled ankle on the basketball court or a misstep on uneven ground, getting stability back is crucial.",
-            causes: [
-                "Lateral Ankle Sprains (Inversion)",
-                "High Ankle Sprains",
-                "Achilles Tendinopathy",
-                "Plantar Fasciitis",
-                "Stress Fractures"
-            ],
-            riskFactors: [
-                "Previous ankle sprains",
-                "Poor balance/proprioception",
-                "Inappropriate footwear",
-                "Weak calf muscles"
-            ],
-            prevention: "Balance training is non-negotiable. Proprioceptive exercises train your brain to catch the ankle before it rolls. Calf strengthening also protects the joint.",
-            treatmentApproach: "We move quickly from protection (reducing swelling) to restoration. Our rehab focuses heavily on balance, hopping, and landing mechanics to ensure your ankle can handle the dynamic forces of sport and life."
+            overview: "Ankle symptoms can persist even after initial healing. Recurrent pain or instability is often related to strength, balance and neuromuscular control rather than ongoing ligament damage.",
+            treatmentApproach: "Treatment focuses on restoring strength, movement control and load tolerance through progressive exercises. Proprioceptive training and graded return to activity are used to improve stability and function. Rehabilitation timelines are adjusted based on severity and response to loading."
         },
         seo: {
             title: "Ankle Sprain & Foot Pain Physio Trichy | Atreus Physio",
@@ -192,26 +113,12 @@ export const conditions: Condition[] = [
         slug: "ligament-injuries",
         title: "Ligament Injuries",
         summary: {
-            whatItIs: "Injury to stabilizing ligaments in joints like the knee or ankle.",
-            symptoms: "Instability, swelling or difficulty with weight bearing and sport.",
-            whenToSeekHelp: "If the joint feels unstable or recovery slows."
+            whatItIs: "Ligament injuries involve stress or damage to stabilising ligaments of a joint, affecting movement confidence and load tolerance.",
+            whenToSeekHelp: "Marked instability, recurrent giving way, or lack of progress with rehabilitation may require additional investigation or referral."
         },
         content: {
-            overview: "Ligaments are the passive stabilizers of your joints. When they are injured (like an ACL tear), your muscles must work overtime to provide stability. Rehab is about training your dynamic stabilizers (muscles) to compensate and eventually protect the healing ligament.",
-            causes: [
-                "ACL/PCL Tears (Knee)",
-                "ATFL Sprains (Ankle)",
-                "UCL Injuries (Elbow)",
-                "Trauma or non-contact twisting"
-            ],
-            riskFactors: [
-                "High-impact change of direction sports",
-                "Fatigue",
-                "Poor landing mechanics",
-                "Muscle weakness"
-            ],
-            prevention: "Neuromuscular training—teaching your nerves and muscles to work together—is the gold standard for prevention. Jump landing training and plyometrics are essential.",
-            treatmentApproach: "Whether pre-surgery, post-surgery, or non-operative management, our protocol is strict and criteria-based. We don't guess; we test strength, hop distance, and movement quality before clearing you for the next level."
+            overview: "Ligament injuries vary widely in severity. Some recover well with rehabilitation, while others may require modified approaches depending on joint stability and functional demands.",
+            treatmentApproach: "Management begins with assessment of injury severity and functional stability. Non-operative rehabilitation focuses on strength, neuromuscular control and progressive loading to improve joint stability and function. Referral or modification is considered when recovery does not progress as expected."
         },
         seo: {
             title: "Ligament Injury & ACL Rehab Trichy | Atreus Physio",
@@ -224,26 +131,12 @@ export const conditions: Condition[] = [
         slug: "muscle-strains",
         title: "Muscle Strains",
         summary: {
-            whatItIs: "Injury to muscle fibers due to sudden effort or excessive load.",
-            symptoms: "Local pain, tightness, reduced strength or discomfort on stretch.",
-            whenToSeekHelp: "If pain limits movement or sport performance."
+            whatItIs: "Muscle strains refer to muscle pain or injury that occurs when load exceeds the muscle’s current capacity, which may or may not involve fibre disruption.",
+            whenToSeekHelp: "Severe pain, visible deformity or inability to use the muscle normally should be assessed further."
         },
         content: {
-            overview: "A 'pulled muscle' or strain happens when the demand on the muscle exceeds its capacity, often during lengthening (eccentric) movements. Hamstrings and calves are frequent victims.",
-            causes: [
-                "Hamstring Strains",
-                "Calf Strains (Tennis Leg)",
-                "Quadriceps Strains",
-                "Groin Strains"
-            ],
-            riskFactors: [
-                "Fatigue",
-                "Previous injury (biggest risk factor)",
-                "Age",
-                "Insufficient warm-up"
-            ],
-            prevention: "Eccentric strength training (lengthening under load) makes muscles longer and stronger, effectively 'immunizing' them against strains. Sprinting regularly (at controlled doses) also prepares the hamstrings.",
-            treatmentApproach: "We manage the acute phase to minimize scar tissue, then progressively load the healing muscle. We emphasize lengthening exercises to ensure the new muscle fibers are laid down correctly and prevent re-injury."
+            overview: "Many muscle strains result from fatigue, sudden load spikes or inadequate preparation rather than a single traumatic event. Recovery depends on how loading is managed during rehabilitation.",
+            treatmentApproach: "Muscle strain rehabilitation uses controlled loading followed by progressive strengthening to restore capacity. Exercises are advanced gradually to match functional and sport demands. Progression is based on tissue response rather than fixed timelines."
         },
         seo: {
             title: "Muscle Strain Treatment Trichy | Atreus Physio",
@@ -256,26 +149,12 @@ export const conditions: Condition[] = [
         slug: "sciatica",
         title: "Sciatica",
         summary: {
-            whatItIs: "Radiating leg pain due to neural sensitivity or spinal mechanics.",
-            symptoms: "Leg pain, numbness, tingling or difficulty with prolonged standing or walking.",
-            whenToSeekHelp: "If symptoms persist or worsen over time."
+            whatItIs: "Sciatica refers to radiating leg pain associated with neural sensitivity or load intolerance along the nerve pathway, rather than compression alone.",
+            whenToSeekHelp: "Progressive weakness, bowel or bladder changes, or worsening neurological symptoms require urgent assessment."
         },
         content: {
-            overview: "Sciatica describes the symptom of leg pain originating from the back, not the diagnosis itself. It's often caused by a disc pressing on the nerve or chemical inflammation. It can be intense, but the prognosis is generally good with time and right management.",
-            causes: [
-                "Lumbar Disc Herniation",
-                "Spinal Stenosis",
-                "Piriformis Syndrome",
-                "Spondylolisthesis"
-            ],
-            riskFactors: [
-                "Age related changes",
-                "Obesity",
-                "Occupations with heavy twisting/load",
-                "Prolonged sitting"
-            ],
-            prevention: "maintaining a healthy weight and staying active are key. Avoiding prolonged static positions allows the nerve to get blood flow and stay healthy.",
-            treatmentApproach: "We focus on 'centralization'—moving the pain out of the leg and back to the spine, which is a sign of healing. Neural flossing (nerve glides) and unloading techniques provide relief, while core work ensures long-term stability."
+            overview: "Symptoms can vary widely in intensity and location. Pain behaviour often changes with movement, posture and activity levels, reflecting nervous system sensitivity and mechanical tolerance.",
+            treatmentApproach: "Management involves differentiating neural sensitivity from mechanical contributors through assessment. Treatment includes graded movement exposure, strength training and functional conditioning to improve tolerance and reduce symptoms. Programs are adapted based on symptom behaviour and response to activity."
         },
         seo: {
             title: "Sciatica & Nerve Pain Treatment Trichy | Atreus Physio",

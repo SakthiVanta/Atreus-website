@@ -2,11 +2,14 @@
 
 import { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 interface Snapshot {
     id: string;
+    slug: string;
     title: string;
-    description: string;
+    short_description: string;
     image: string;
 }
 
@@ -68,7 +71,7 @@ export function SuccessStories({ data }: SuccessStoriesProps) {
             </div>
 
             {/* Infinite Scroll Container */}
-            <div ref={ref} className="relative">
+            <div ref={ref} className="relative mb-16">
                 <motion.div
                     className="flex gap-6"
                     animate={controls}
@@ -77,25 +80,41 @@ export function SuccessStories({ data }: SuccessStoriesProps) {
                     {allSnapshots.map((snapshot, index) => (
                         <div
                             key={`${snapshot.id}-${index}`}
-                            className="relative rounded-2xl overflow-hidden aspect-[4/5] shadow-2xl flex-shrink-0"
+                            className="relative rounded-2xl overflow-hidden aspect-[4/5] shadow-2xl flex-shrink-0 group bg-slate-900"
                             style={{ width: "350px" }}
                         >
                             <img
                                 src={snapshot.image}
                                 alt={snapshot.title}
-                                className="object-cover w-full h-full"
+                                className="object-cover object-top w-full h-full transition-transform duration-700 group-hover:scale-105"
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-6 flex flex-col justify-end">
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-6 flex flex-col justify-end">
                                 <h3 className="text-xl font-bold mb-2 text-white">
                                     {snapshot.title}
                                 </h3>
-                                <p className="text-slate-300 text-sm leading-relaxed">
-                                    {snapshot.description}
+                                <p className="text-slate-300 text-sm leading-relaxed mb-4 line-clamp-3">
+                                    {snapshot.short_description}
                                 </p>
+                                <Link
+                                    href={`/success-stories/${snapshot.slug}`}
+                                    className="inline-flex items-center text-white text-sm font-semibold hover:text-[#e3171e] transition-colors"
+                                >
+                                    Read Full Story <ArrowRight className="w-4 h-4 ml-1" />
+                                </Link>
                             </div>
                         </div>
                     ))}
                 </motion.div>
+            </div>
+
+            {/* View All Button */}
+            <div className="flex justify-center relative z-10 text-center">
+                <Link
+                    href="/success-stories"
+                    className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white transition-all duration-200 bg-[#e3171e] border border-transparent rounded-full hover:bg-[#c4121b] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#e3171e] shadow-lg hover:shadow-xl hover:-translate-y-1"
+                >
+                    View All Success Stories
+                </Link>
             </div>
         </section>
     );

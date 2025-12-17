@@ -16,8 +16,8 @@ const contactInfo = {
         line1: "Kamaraj Complex, 46A",
         line2: "EVR Rd, Mahalakshmi Nagar, Sathanur",
         city: "Tiruchirappalli, Tamil Nadu 620021",
-        mapUrl: "https://www.google.com/maps/place/ATREUS+Physio/@10.8165088,78.6899661,17z",
-        embedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.0!2d78.6899661!3d10.8165088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDQ4JzU5LjQiTiA3OMKwNDEnMjMuOSJF!5e0!3m2!1sen!2sin!4v1701700000000!5m2!1sen!2sin"
+        mapUrl: "https://maps.app.goo.gl/fuP51EhNhBJtypPx5?g_st=iwb",
+        embedUrl: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3919.7566776960334!2d78.68985247504156!3d10.753226789394194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDQ1JzExLjYiTiA3OMKwNDEnMzIuNyJF!5e0!3m2!1sen!2sin!4v1765862445754!5m2!1sen!2sin"
     },
     phone: "+91 7010294784",
     whatsapp: "+917010294784",
@@ -176,7 +176,7 @@ export default function ContactPage() {
     return (
         <main className="min-h-screen bg-slate-50 dark:bg-slate-900">
             {/* Hero Section */}
-            <section className="relative bg-gradient-to-br from-[#06113d] via-[#06113d] to-[#0a1a5c] text-white py-32 overflow-hidden">
+            <section className="relative bg-gradient-to-br from-[#06113d] via-[#06113d] to-[#0a1a5c] text-white pt-20 pb-28 md:py-32 overflow-hidden">
                 {/* Decorative Elements */}
                 <div className="absolute inset-0 overflow-hidden">
                     <div className="absolute -top-40 -right-40 w-80 h-80 bg-[#e3171e]/20 rounded-full blur-3xl" />
@@ -190,19 +190,19 @@ export default function ContactPage() {
                         transition={{ duration: 0.6 }}
                         className="text-center"
                     >
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium mb-6">
-                            <Sparkles className="w-4 h-4 text-[#e3171e]" />
+                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-xs md:text-sm font-medium mb-6">
+                            <Sparkles className="w-3 h-3 md:w-4 md:h-4 text-[#e3171e]" />
                             Get in Touch
                         </div>
-                        <h1 className="text-4xl md:text-6xl font-bold mb-6">
+                        <h1 className="text-3xl md:text-6xl font-bold mb-6 leading-tight">
                             Contact <span className="text-[#e3171e]">ATREUS PHYSIO</span>
                         </h1>
-                        <p className="text-xl text-slate-300 max-w-2xl mx-auto mb-8">
+                        <p className="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto mb-8">
                             Ready to start your recovery journey? Reach out to us today and take the first step towards better health.
                         </p>
 
                         {/* Status Badge */}
-                        <div className={`inline-flex items-center gap-2 px-4 py-2 rounded-full ${isCurrentlyOpen
+                        <div className={`inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm ${isCurrentlyOpen
                             ? 'bg-green-500/20 text-green-300 border border-green-500/30'
                             : 'bg-red-500/20 text-red-300 border border-red-500/30'
                             }`}>
@@ -251,9 +251,9 @@ export default function ContactPage() {
             </section>
 
             {/* Main Content */}
-            <section className="py-16 px-4 md:px-8">
+            <section className="py-12 md:py-16 px-4 md:px-8">
                 <div className="max-w-7xl mx-auto">
-                    <div className="grid lg:grid-cols-2 gap-12">
+                    <div className="grid lg:grid-cols-2 gap-8 md:gap-12">
                         {/* Left Column - Contact Info */}
                         <div className="space-y-6">
                             {/* Address Card */}
@@ -277,7 +277,7 @@ export default function ContactPage() {
                             <ContactCard icon={Phone} title="Call Us" delay={0.1}>
                                 <a
                                     href={`tel:${contactInfo.phone}`}
-                                    className="text-2xl font-bold text-slate-900 dark:text-white hover:text-[#e3171e] transition-colors"
+                                    className="text-xl md:text-2xl font-bold text-slate-900 dark:text-white hover:text-[#e3171e] transition-colors"
                                 >
                                     {contactInfo.phone}
                                 </a>
@@ -288,26 +288,34 @@ export default function ContactPage() {
 
                             {/* Hours Card */}
                             <ContactCard icon={Clock} title="Working Hours" delay={0.2}>
-                                <div className="space-y-2">
-                                    {contactInfo.hours.map((item) => (
-                                        <div
-                                            key={item.day}
-                                            className={`flex justify-between text-sm ${item.day === today
-                                                ? 'text-[#e3171e] font-semibold'
-                                                : 'text-slate-600 dark:text-slate-400'
-                                                }`}
-                                        >
-                                            <span className="flex items-center gap-2">
-                                                {item.day === today && (
-                                                    <span className="w-1.5 h-1.5 rounded-full bg-[#e3171e]" />
-                                                )}
-                                                {item.day}
-                                            </span>
-                                            <span className={!item.isOpen ? 'text-slate-400' : ''}>
-                                                {item.time}
-                                            </span>
-                                        </div>
-                                    ))}
+                                <div className="space-y-3">
+                                    {contactInfo.hours.map((item) => {
+                                        const isToday = item.day === today;
+                                        return (
+                                            <div
+                                                key={item.day}
+                                                className={`flex items-center justify-between p-3 rounded-xl transition-all ${isToday
+                                                    ? 'bg-[#e3171e]/5 border border-[#e3171e]/10 shadow-sm'
+                                                    : 'bg-slate-50 dark:bg-slate-700/30 hover:bg-slate-100 dark:hover:bg-slate-700'
+                                                    }`}
+                                            >
+                                                <div className={`flex items-center gap-3 font-medium text-sm ${isToday ? 'text-[#e3171e]' : 'text-slate-700 dark:text-slate-300'}`}>
+                                                    <span className={`w-2 h-2 rounded-full shrink-0 ${isToday ? 'bg-[#e3171e] animate-pulse' : 'bg-slate-300 dark:bg-slate-600'}`} />
+                                                    {/* Mobile: Short Day */}
+                                                    <span className="sm:hidden">
+                                                        {item.day.slice(0, 3)}
+                                                    </span>
+                                                    {/* Desktop: Full Day */}
+                                                    <span className="hidden sm:inline">
+                                                        {item.day}
+                                                    </span>
+                                                </div>
+                                                <span className={`text-xs sm:text-sm font-medium text-right whitespace-nowrap ${isToday ? 'text-[#e3171e]' : 'text-slate-500 dark:text-slate-400'} ${!item.isOpen && 'opacity-70'}`}>
+                                                    {item.time}
+                                                </span>
+                                            </div>
+                                        );
+                                    })}
                                 </div>
                             </ContactCard>
 
@@ -352,7 +360,7 @@ export default function ContactPage() {
                             >
                                 <div className="aspect-[4/3] bg-slate-200 dark:bg-slate-700">
                                     <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.7566001275804!2d78.68984727451698!3d10.75323275962215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baa8b2850f31351%3A0xac60c888c73e8f0!2sATREUS%20Physio!5e0!3m2!1sen!2sin!4v1764861031771!5m2!1sen!2sin"
+                                        src={contactInfo.address.embedUrl}
                                         width="100%"
                                         height="100%"
                                         style={{ border: 0 }}

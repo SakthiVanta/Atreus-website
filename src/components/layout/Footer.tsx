@@ -21,16 +21,17 @@ export async function Footer() {
         quickLinks: [],
         services: [],
         conditions: [],
+        links: [],
         legal: []
     };
 
     return (
         <footer className="bg-slate-100 dark:bg-[#06113d] text-slate-900 dark:text-white">
             {/* Main Footer */}
-            <div className="container px-4 md:px-8 mx-auto max-w-7xl py-16">
+            <div className="container px-4 md:px-8 mx-auto max-w-8xl py-16">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12">
                     {/* Brand */}
-                    <div className="space-y-6 lg:col-span-2">
+                    <div className="space-y-6 lg:col-span-1">
                         <Image
                             src="/images/logo.webp"
                             alt="AtreusPhysio Logo"
@@ -107,6 +108,20 @@ export async function Footer() {
                         <h3 className="font-semibold mb-6 text-slate-900 dark:text-white">Conditions</h3>
                         <ul className="space-y-3 text-sm text-slate-600 dark:text-slate-200">
                             {footerLinks.conditions.map((link: any, i: number) => (
+                                <li key={i}>
+                                    <Link href={link.href} className="hover:text-[#e3171e] transition-colors">
+                                        {link.label}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+
+                    {/* Links */}
+                    <div>
+                        <h3 className="font-semibold mb-6 text-slate-900 dark:text-white">Quick Links</h3>
+                        <ul className="space-y-3 text-sm text-slate-600 dark:text-slate-200">
+                            {footerLinks.links.map((link: any, i: number) => (
                                 <li key={i}>
                                     <Link href={link.href} className="hover:text-[#e3171e] transition-colors">
                                         {link.label}

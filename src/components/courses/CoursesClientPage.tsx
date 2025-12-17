@@ -7,6 +7,7 @@ import {
     Clock, MapPin, Tag, Users, MoreVertical, ChevronDown, ChevronUp,
     BookOpen, Target, Brain, Sparkles, Bell, Calendar, X, CheckCircle2, Filter
 } from "lucide-react";
+import Link from "next/link";
 import { BookNowModal } from "@/components/courses/BookNowModal";
 import { EnquiryModal } from "@/components/courses/EnquiryModal";
 import { FilterCourses } from "@/components/courses/FilterCourses";
@@ -379,8 +380,15 @@ function CourseGrid({
                             `}
                         >
                             {/* Card Header / Image Area */}
-                            <div className={`h-48 relative ${isComingSoon ? "bg-slate-200 dark:bg-slate-800 grayscale opacity-80" : "bg-gradient-to-br from-[#06113d] to-[#0a1a5c]"}`}>
+                            <Link href={`/courses/${course.slug || course.id}`} className={`block h-48 relative ${isComingSoon ? "bg-slate-200 dark:bg-slate-800 grayscale opacity-80" : "bg-gradient-to-br from-[#06113d] to-[#0a1a5c]"}`}>
                                 <div className="absolute inset-0 bg-[url('/images/grid-pattern.svg')] opacity-10"></div>
+                                {course.image && (
+                                    <img
+                                        src={course.image}
+                                        alt={course.title}
+                                        className="absolute inset-0 w-full h-full object-cover opacity-60 hover:opacity-100 transition-opacity duration-500"
+                                    />
+                                )}
 
                                 {/* 
                                     Header Flex Container
@@ -414,13 +422,15 @@ function CourseGrid({
                                         )}
                                     </div>
                                 </div>
-                            </div>
+                            </Link>
 
                             {/* Card Body */}
                             <div className="p-6">
-                                <h3 className={`text-xl font-bold mb-2 ${isComingSoon ? "text-slate-600 dark:text-slate-400" : "text-slate-900 dark:text-white"}`}>
-                                    {course.title}
-                                </h3>
+                                <Link href={`/courses/${course.slug || course.id}`} className="block">
+                                    <h3 className={`text-xl font-bold mb-2 hover:text-[#e3171e] transition-colors ${isComingSoon ? "text-slate-600 dark:text-slate-400" : "text-slate-900 dark:text-white"}`}>
+                                        {course.title}
+                                    </h3>
+                                </Link>
 
                                 <div className="flex items-center gap-4 text-sm text-slate-500 dark:text-slate-400 mb-4">
                                     <div className="flex items-center gap-1.5">

@@ -50,8 +50,8 @@
             },
             "geo": {
                 "@type": "GeoCoordinates",
-                "latitude": "10.8165088",
-                "longitude": "78.6899661"
+                "latitude": "10.7532268",
+                "longitude": "78.6898525"
             },
             "openingHoursSpecification": [
                 {
@@ -79,7 +79,7 @@
                 "https://www.instagram.com/atreus_physio",
                 "https://www.linkedin.com/in/swatheeshwaran-mpt-sports-018566274?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
             ],
-            "hasMap": "https://www.google.com/maps/place/ATREUS+Physio/@10.8165088,78.6899661,17z"
+            "hasMap": "https://maps.app.goo.gl/fuP51EhNhBJtypPx5?g_st=iwb"
         }
     },
     "info": {
@@ -99,7 +99,7 @@
             {
                 "label": "Address",
                 "value": "Kamaraj Complex, 46A, EVR Rd, Mahalakshmi Nagar, Sathanur, Tiruchirappalli, Tamil Nadu 620021",
-                "href": "https://www.google.com/maps/place/ATREUS+Physio/@10.8165088,78.6899661,17z"
+                "href": "https://maps.app.goo.gl/fuP51EhNhBJtypPx5?g_st=iwb"
             }
         ]
     },
