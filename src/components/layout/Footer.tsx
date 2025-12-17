@@ -28,60 +28,69 @@ export async function Footer() {
     return (
         <footer className="bg-slate-100 dark:bg-[#06113d] text-slate-900 dark:text-white">
             {/* Main Footer */}
-            <div className="container px-4 md:px-8 mx-auto max-w-8xl py-16">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12">
-                    {/* Brand */}
-                    <div className="space-y-6 lg:col-span-1">
-                        <Image
-                            src="/images/logo.webp"
-                            alt="AtreusPhysio Logo"
-                            width={200}
-                            height={80}
-                            className="h-16 w-auto object-contain bg-white px-3 py-2 rounded-full"
-                        />
-                        <p className="text-slate-600 dark:text-slate-300 max-w-sm">
+            {/* Main Footer */}
+            <div className="container px-4 md:px-8 mx-auto max-w-7xl py-12 md:py-16">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 lg:gap-12">
+                    {/* Brand & Contact - Spans full width on mobile, 1 col on others */}
+                    <div className="space-y-6 md:col-span-2 lg:col-span-1 xl:col-span-1">
+                        <Link href="/" className="block">
+                            <Image
+                                src="/images/logo.webp"
+                                alt="AtreusPhysio Logo"
+                                width={200}
+                                height={80}
+                                className="h-12 md:h-14 w-auto object-contain bg-white px-3 py-2 rounded-lg shadow-sm"
+                            />
+                        </Link>
+                        <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed max-w-xs">
                             Reborn to move fearless. Science-driven rehabilitation and performance training in Trichy.
                         </p>
 
-                        {/* Social Links */}
-                        <div className="flex gap-3">
-                            <a
-                                href={contactInfo.social.instagram}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-gradient-to-br hover:from-purple-500 hover:to-pink-500 transition-all duration-300"
-                                aria-label="Instagram"
-                            >
-                                <Instagram className="w-5 h-5" />
-                            </a>
-                            <a
-                                href={contactInfo.social.linkedin}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-[#0077b5] transition-all duration-300"
-                                aria-label="LinkedIn"
-                            >
-                                <Linkedin className="w-5 h-5" />
-                            </a>
-                            <a
-                                href={`https://wa.me/${contactInfo.whatsapp}`}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-green-500 transition-all duration-300"
-                                aria-label="WhatsApp"
-                            >
-                                <FaWhatsapp className="w-5 h-5" />
-                            </a>
+                        <div className="space-y-4">
+                            <div className="flex items-start gap-3 text-sm text-slate-600 dark:text-slate-300">
+                                <MapPin className="w-5 h-5 text-[#e3171e] shrink-0 mt-0.5" />
+                                <span>{contactInfo.address}</span>
+                            </div>
+
+                            <div className="flex gap-3 pt-2">
+                                <a
+                                    href={contactInfo.social.instagram}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="w-9 h-9 rounded-full bg-slate-200 dark:bg-white/10 flex items-center justify-center hover:bg-gradient-to-br hover:text-white hover:from-purple-500 hover:to-pink-500 transition-all duration-300"
+                                    aria-label="Instagram"
+                                >
+                                    <Instagram className="w-4 h-4" />
+                                </a>
+                                <a
+                                    href={contactInfo.social.linkedin}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="w-9 h-9 rounded-full bg-slate-200 dark:bg-white/10 flex items-center justify-center hover:bg-[#0077b5] hover:text-white transition-all duration-300"
+                                    aria-label="LinkedIn"
+                                >
+                                    <Linkedin className="w-4 h-4" />
+                                </a>
+                                <a
+                                    href={`https://wa.me/${contactInfo.whatsapp}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="w-9 h-9 rounded-full bg-slate-200 dark:bg-white/10 flex items-center justify-center hover:bg-green-500 hover:text-white transition-all duration-300"
+                                    aria-label="WhatsApp"
+                                >
+                                    <FaWhatsapp className="w-4 h-4" />
+                                </a>
+                            </div>
                         </div>
                     </div>
 
-                    {/* Quick Links */}
+                    {/* Site Navigation */}
                     <div>
-                        <h3 className="font-semibold mb-6 text-slate-900 dark:text-white">Explore</h3>
-                        <ul className="space-y-3 text-sm text-slate-600 dark:text-slate-200">
+                        <h3 className="font-bold text-lg mb-4 md:mb-6 text-slate-900 dark:text-white">Explore</h3>
+                        <ul className="space-y-3 text-sm text-slate-600 dark:text-slate-300">
                             {footerLinks.quickLinks.map((link: any, i: number) => (
                                 <li key={i}>
-                                    <Link href={link.href} className="hover:text-[#e3171e] transition-colors">
+                                    <Link href={link.href} className="hover:text-[#e3171e] hover:translate-x-1 transition-all duration-200 inline-block">
                                         {link.label}
                                     </Link>
                                 </li>
@@ -91,11 +100,11 @@ export async function Footer() {
 
                     {/* Services */}
                     <div>
-                        <h3 className="font-semibold mb-6 text-slate-900 dark:text-white">Services</h3>
-                        <ul className="space-y-3 text-sm text-slate-600 dark:text-slate-200">
-                            {footerLinks.services.map((link: any, i: number) => (
+                        <h3 className="font-bold text-lg mb-4 md:mb-6 text-slate-900 dark:text-white">Services</h3>
+                        <ul className="space-y-3 text-sm text-slate-600 dark:text-slate-300">
+                            {footerLinks.services.slice(0, 8).map((link: any, i: number) => (
                                 <li key={i}>
-                                    <Link href={link.href} className="hover:text-[#e3171e] transition-colors">
+                                    <Link href={link.href} className="hover:text-[#e3171e] hover:translate-x-1 transition-all duration-200 inline-block">
                                         {link.label}
                                     </Link>
                                 </li>
@@ -105,11 +114,11 @@ export async function Footer() {
 
                     {/* Conditions */}
                     <div>
-                        <h3 className="font-semibold mb-6 text-slate-900 dark:text-white">Conditions</h3>
-                        <ul className="space-y-3 text-sm text-slate-600 dark:text-slate-200">
-                            {footerLinks.conditions.map((link: any, i: number) => (
+                        <h3 className="font-bold text-lg mb-4 md:mb-6 text-slate-900 dark:text-white">Conditions</h3>
+                        <ul className="space-y-3 text-sm text-slate-600 dark:text-slate-300">
+                            {footerLinks.conditions.slice(0, 8).map((link: any, i: number) => (
                                 <li key={i}>
-                                    <Link href={link.href} className="hover:text-[#e3171e] transition-colors">
+                                    <Link href={link.href} className="hover:text-[#e3171e] hover:translate-x-1 transition-all duration-200 inline-block">
                                         {link.label}
                                     </Link>
                                 </li>
@@ -117,56 +126,41 @@ export async function Footer() {
                         </ul>
                     </div>
 
-                    {/* Links */}
+                    {/* Quick Access / More Links */}
                     <div>
-                        <h3 className="font-semibold mb-6 text-slate-900 dark:text-white">Quick Links</h3>
-                        <ul className="space-y-3 text-sm text-slate-600 dark:text-slate-200">
-                            {footerLinks.links.map((link: any, i: number) => (
+                        <h3 className="font-bold text-lg mb-4 md:mb-6 text-slate-900 dark:text-white">Quick Links</h3>
+                        <ul className="space-y-3 text-sm text-slate-600 dark:text-slate-300 mb-6">
+                            {footerLinks.links?.slice(0, 5).map((link: any, i: number) => (
                                 <li key={i}>
-                                    <Link href={link.href} className="hover:text-[#e3171e] transition-colors">
+                                    <Link href={link.href} className="hover:text-[#e3171e] hover:translate-x-1 transition-all duration-200 inline-block">
                                         {link.label}
                                     </Link>
                                 </li>
                             ))}
                         </ul>
-                    </div>
 
-                    {/* Contact Info */}
-                    <div>
-                        <h3 className="font-semibold mb-6 text-slate-900 dark:text-white">Contact Us</h3>
-                        <ul className="space-y-4 text-sm text-slate-600 dark:text-slate-200">
-                            <li className="flex items-start gap-3">
-                                <MapPin className="w-5 h-5 text-[#e3171e] shrink-0 mt-0.5" />
-                                <span>{contactInfo.address}</span>
-                            </li>
-                            <li className="flex items-center gap-3">
-                                <Phone className="w-5 h-5 text-[#e3171e] shrink-0" />
-                                <a href={`tel:${contactInfo.phone}`} className="text-slate-600 dark:text-slate-200 hover:text-slate-900 dark:hover:text-white transition-colors">
+                        <div className="bg-slate-50 dark:bg-white/5 p-5 rounded-2xl border border-slate-100 dark:border-white/10">
+                            <p className="text-xs font-medium text-slate-500 dark:text-slate-400 mb-3 uppercase tracking-wider">Book Now</p>
+                            <div className="space-y-3">
+                                <a
+                                    href={`tel:${contactInfo.phone}`}
+                                    className="flex items-center gap-2 text-sm font-semibold text-slate-900 dark:text-white hover:text-[#e3171e] transition-colors"
+                                >
+                                    <Phone className="w-4 h-4 text-[#e3171e]" />
                                     {contactInfo.phone}
                                 </a>
-                            </li>
-                            <li className="flex items-center gap-3">
-                                <Mail className="w-5 h-5 text-[#e3171e] shrink-0" />
-                                <a href={`mailto:${contactInfo.email}`} className="text-slate-600 dark:text-slate-200 hover:text-slate-900 dark:hover:text-white transition-colors">
-                                    {contactInfo.email}
+                                <a
+                                    href={`mailto:${contactInfo.email}`}
+                                    className="flex items-center gap-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-[#e3171e] transition-colors"
+                                >
+                                    <Mail className="w-4 h-4 text-[#e3171e]" />
+                                    Email Us
                                 </a>
-                            </li>
-                        </ul>
-
-                        <div className="mt-6">
-                            <a
-                                href={`https://wa.me/${contactInfo.whatsapp}?text=Hi, I'd like to book an appointment.`}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 px-4 py-2 bg-[#e3171e] hover:bg-[#c41218] rounded-lg text-white text-sm font-medium transition-colors"
-                            >
-                                <FaWhatsapp className="w-4 h-4" />
-                                Book Appointment
-                            </a>
+                            </div>
                         </div>
                     </div>
-                </div >
-            </div >
+                </div>
+            </div>
 
             {/* Bottom Bar */}
             <div className="border-t border-slate-300 dark:border-white/10">
