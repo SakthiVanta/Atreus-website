@@ -134,8 +134,7 @@ export const conditions: Condition[] = [
             overview: "The shoulder is the most mobile joint in the body, which ironically makes it susceptible to injury. From swimmers to office workers, shoulder pain can affect anyone. It's often a balance issue—between mobility and stability.",
             causes: [
                 "Rotator Cuff Tendinopathy",
-                "Shoulder Impingement",
-                "Frozen Shoulder (Adhesive Capsulitis)",
+                "Frozen Shoulder",
                 "Labral Tears",
                 "AC Joint Issues"
             ],

@@ -40,22 +40,25 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     }
 
     // Convert course data to SEO format for consistency
+    // Convert course data to SEO format for consistency
+    const manualSeo = course.seo || {};
     const seoData = {
-        metaTitle: `${course.title} | ATREUS PHYSIO Academy`,
-        metaDescription: course.description,
-        keywords: [course.title, "physiotherapy course", "professional development", "CPD physiotherapy", ...course.tags],
-        canonical: `https://atreusphysio.com/courses/${course.id}`,
-        ogTitle: `${course.title} | ATREUS PHYSIO Academy`,
-        ogDescription: course.description,
-        ogImage: course.image,
+        metaTitle: manualSeo.metaTitle || `${course.title} | ATREUS PHYSIO Academy`,
+        metaDescription: manualSeo.metaDescription || course.description,
+        keywords: manualSeo.keywords || [course.title, "physiotherapy course", "professional development", "CPD physiotherapy", ...(course.tags || [])],
+        canonical: manualSeo.canonical || `https://atreusphysio.com/courses/${course.slug || course.id}`,
+        ogTitle: manualSeo.ogTitle || `${course.title} | ATREUS PHYSIO Academy`,
+        ogDescription: manualSeo.ogDescription || course.description,
+        ogImage: manualSeo.ogImage || course.image,
         ogType: "website",
         ogSiteName: "AtreusPhysio Academy",
         ogLocale: "en_IN",
         twitterCard: "summary_large_image",
-        twitterTitle: `${course.title} | ATREUS PHYSIO Academy`,
-        twitterDescription: course.description,
-        twitterImage: course.image,
-        robots: "index,follow",
+        twitterTitle: manualSeo.twitterTitle || `${course.title} | ATREUS PHYSIO Academy`,
+        twitterDescription: manualSeo.twitterDescription || course.description,
+        twitterImage: manualSeo.twitterImage || manualSeo.ogImage || course.image,
+        robots: manualSeo.robots || "index,follow",
+        structuredData: manualSeo.structuredData || null
     };
 
     return generateStandardMetadata(seoData);

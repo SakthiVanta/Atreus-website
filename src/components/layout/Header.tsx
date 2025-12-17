@@ -96,7 +96,7 @@ export function Header() {
                             </Link>
 
                             {/* Desktop Nav with enhanced styling */}
-                            <nav className="hidden md:flex items-center gap-1">
+                            <nav className="hidden lg:flex items-center gap-1">
                                 {navItems.map((item) => {
                                     const isActive = pathname === item.href || (pathname.startsWith(item.href) && item.href !== '/');
 
@@ -145,7 +145,7 @@ export function Header() {
                             {/* CTA Button & Controls */}
                             <div className="flex items-center gap-3 shrink-0 z-50">
                                 {/* Theme Toggle - Hidden on mobile, shown in mobile menu */}
-                                <div className="relative hidden md:flex">
+                                <div className="relative hidden lg:flex">
                                     <ThemeToggle />
                                 </div>
 
@@ -154,7 +154,7 @@ export function Header() {
                                     onClick={() => setIsBookingOpen(true)}
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
-                                    className="hidden md:flex relative group cursor-pointer"
+                                    className="hidden lg:flex relative group cursor-pointer"
                                 >
                                     {/* Animated gradient border */}
                                     <div className="absolute -inset-0.5 bg-gradient-to-r from-[#06113d] to-[#e3171e] rounded-full blur opacity-60 group-hover:opacity-100 transition duration-300 animate-pulse"></div>
@@ -176,7 +176,7 @@ export function Header() {
                                 <motion.button
                                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                                     whileTap={{ scale: 0.9 }}
-                                    className="md:hidden p-2.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-slate-100 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors cursor-pointer"
+                                    className="lg:hidden p-2.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-slate-100 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors cursor-pointer"
                                     aria-label="Toggle menu"
                                 >
                                     <AnimatePresence mode="wait">

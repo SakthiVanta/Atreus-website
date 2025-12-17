@@ -116,29 +116,29 @@ export default async function Home() {
 
                         <div className="max-w-6xl mx-auto mt-12">
                             {data.founders.map((founder: any, i: number) => (
-                                <div key={i} className="flex flex-col lg:flex-row gap-16 items-start">
-                                    <AnimatedSection delay={0.2} className="w-full lg:w-1/3 shrink-0">
-                                        <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-xl relative group">
+                                <div key={i} className="flex flex-col md:flex-row gap-8 lg:gap-16 items-start">
+                                    <AnimatedSection delay={0.2} className="w-full md:w-5/12 lg:w-1/3 shrink-0">
+                                        <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-xl relative group mx-auto md:mx-0 max-w-sm md:max-w-none">
                                             {/* Image placeholder */}
                                             <Image
                                                 src={founder.image}
                                                 alt={founder.name}
                                                 width={400}
                                                 height={400}
-                                                className="object-cover"
+                                                className="object-cover w-full h-full"
                                             />
                                             {/* <div className="absolute inset-0 bg-slate-300 dark:bg-slate-600 group-hover:scale-105 transition-transform duration-700" /> */}
-                                            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-slate-900/90 to-transparent p-6 text-white">
+                                            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-slate-900/90 to-transparent p-6 text-white min-h-[40%] flex flex-col justify-end">
                                                 <h3 className="text-xl font-bold">{founder.name}</h3>
-                                                <p className="text-[#e3171e] text-sm">{founder.role}</p>
-                                                <p className="text-slate-300 dark:text-slate-200 text-xs mt-1">{founder.qualifications}</p>
+                                                <p className="text-[#e3171e] text-sm font-medium">{founder.role}</p>
+                                                <p className="text-slate-300 dark:text-slate-200 text-xs mt-2 leading-relaxed opacity-90">{founder.qualifications}</p>
                                             </div>
                                         </div>
                                     </AnimatedSection>
 
-                                    <div className="w-full lg:w-2/3">
+                                    <div className="w-full md:w-7/12 lg:w-2/3">
                                         <AnimatedSection delay={0.3}>
-                                            <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">Experience & Clinical Interests</h3>
+                                            <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-4 mt-4 md:mt-0">Experience & Clinical Interests</h3>
                                             <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-lg">
                                                 {founder.shortBio || founder.bio}
                                             </p>
