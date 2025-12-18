@@ -20,6 +20,7 @@ const contactInfo = {
         embedUrl: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3919.7566776960334!2d78.68985247504156!3d10.753226789394194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDQ1JzExLjYiTiA3OMKwNDEnMzIuNyJF!5e0!3m2!1sen!2sin!4v1765862445754!5m2!1sen!2sin"
     },
     phone: "+91 7010294784",
+    secondaryPhone: "+91 63793 30661",
     whatsapp: "+917010294784",
     email: "contact@atreusphysio.com",
     hours: [
@@ -280,6 +281,12 @@ export default function ContactPage() {
                                     className="text-xl md:text-2xl font-bold text-slate-900 dark:text-white hover:text-[#e3171e] transition-colors"
                                 >
                                     {contactInfo.phone}
+                                </a>
+                                <a
+                                    href={`tel:${contactInfo.secondaryPhone}`}
+                                    className="text-xl md:text-2xl font-bold text-slate-900 dark:text-white hover:text-[#e3171e] transition-colors block mt-1"
+                                >
+                                    {contactInfo.secondaryPhone}
                                 </a>
                                 <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">
                                     Available during business hours

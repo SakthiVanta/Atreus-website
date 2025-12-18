@@ -42,6 +42,7 @@ export function FloatingCTA() {
                                 <button
                                     onClick={() => setIsBookingOpen(true)}
                                     className="flex items-center gap-3 pl-1 pr-2 py-1"
+                                    suppressHydrationWarning
                                 >
                                     <div className="flex items-center justify-center w-10 h-10 bg-[#e3171e] text-white rounded-full">
                                         <Calendar size={20} />
@@ -59,6 +60,7 @@ export function FloatingCTA() {
                                     onClick={() => setShowBooking(false)}
                                     className="ml-2 p-1.5 text-slate-400 hover:text-slate-600 hover:bg-slate-100 rounded-full transition-colors"
                                     aria-label="Close"
+                                    suppressHydrationWarning
                                 >
                                     <X size={14} />
                                 </button>
