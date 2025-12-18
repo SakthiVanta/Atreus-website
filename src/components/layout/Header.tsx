@@ -14,6 +14,7 @@ import { ThemeToggle } from "@/components/ui/ThemeToggle";
 // Contact Information
 const contactInfo = {
     phone: "+91 7010294784",
+    secondaryPhone: "+91 63793 30661",
     email: "contact@atreusphysio.com",
     social: {
         instagram: "https://www.instagram.com/atreus_physio",
@@ -155,6 +156,7 @@ export function Header() {
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
                                     className="hidden lg:flex relative group cursor-pointer"
+                                    suppressHydrationWarning
                                 >
                                     {/* Animated gradient border */}
                                     <div className="absolute -inset-0.5 bg-gradient-to-r from-[#06113d] to-[#e3171e] rounded-full blur opacity-60 group-hover:opacity-100 transition duration-300 animate-pulse"></div>
@@ -270,6 +272,10 @@ export function Header() {
                                         <a href={`tel:${contactInfo.phone}`} className="text-slate-600 dark:text-slate-400 text-sm font-medium hover:text-[#e3171e] transition-colors flex items-center justify-center gap-1">
                                             <Phone className="w-4 h-4" />
                                             {contactInfo.phone}
+                                        </a>
+                                        <a href={`tel:${contactInfo.secondaryPhone}`} className="text-slate-600 dark:text-slate-400 text-sm font-medium hover:text-[#e3171e] transition-colors flex items-center justify-center gap-1">
+                                            <Phone className="w-4 h-4" />
+                                            {contactInfo.secondaryPhone}
                                         </a>
                                         <a href={`mailto:${contactInfo.email}`} className="text-slate-600 dark:text-slate-400 text-sm font-medium hover:text-[#e3171e] transition-colors flex items-center justify-center gap-1">
                                             <Mail className="w-4 h-4" />

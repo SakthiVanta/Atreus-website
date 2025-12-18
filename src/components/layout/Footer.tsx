@@ -6,6 +6,7 @@ import { getPageContent } from "@/lib/content";
 
 const contactInfo = {
     phone: "+91 7010294784",
+    secondaryPhone: "+91 63793 30661",
     whatsapp: "+917010294784",
     email: "contact@atreusphysio.com",
     address: "Kamaraj Complex, 46A, EVR Rd, Tiruchirappalli",
@@ -157,6 +158,13 @@ export async function Footer() {
                                     {contactInfo.phone}
                                 </a>
                                 <a
+                                    href={`tel:${contactInfo.secondaryPhone}`}
+                                    className="flex items-center gap-2 text-sm font-semibold text-slate-900 dark:text-white hover:text-[#e3171e] transition-colors"
+                                >
+                                    <Phone className="w-4 h-4 text-[#e3171e]" />
+                                    {contactInfo.secondaryPhone}
+                                </a>
+                                <a
                                     href={`mailto:${contactInfo.email}`}
                                     className="flex items-center gap-2 text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-[#e3171e] transition-colors"
                                 >
@@ -175,6 +183,17 @@ export async function Footer() {
                     <div className="flex flex-col md:flex-row justify-between items-center gap-4">
                         <p className="text-sm text-slate-600 dark:text-slate-400">
                             © {new Date().getFullYear()} ATREUS PHYSIO. All rights reserved.
+                        </p>
+                        <p className="text-sm text-slate-600 dark:text-slate-400">
+                            Designed by{" "}
+                            <a
+                                href="https://www.vantaverse.site/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="font-medium text-slate-900 dark:text-white hover:text-[#e3171e] transition-colors"
+                            >
+                                Vantaverse
+                            </a>
                         </p>
                         <div className="flex gap-6 text-sm text-slate-600 dark:text-slate-400">
                             {footerLinks.legal && footerLinks.legal.map((link: any, i: number) => (

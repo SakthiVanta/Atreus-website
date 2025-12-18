@@ -9,9 +9,6 @@ export function ConditionBookingCard() {
 
     return (
         <div className="bg-slate-50 dark:bg-slate-900 p-6 rounded-2xl border border-slate-100 dark:border-slate-800 sticky top-24">
-            <h3 className="font-bold text-slate-900 dark:text-white mb-4 uppercase tracking-wider text-sm">
-                At a Glance
-            </h3>
 
             <div className="space-y-6">
                 <div>
