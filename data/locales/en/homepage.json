@@ -255,7 +255,7 @@
             "title": "Pain Management",
             "excerpt": "Assessment first, movement correction, and progressive exercises to restore confidence.",
             "description": "Chronic pain isn't just about tissues; it's about the nervous system, movement habits, and lifestyle. We use a multi-modal approach to desensitize painful structures and build long-term resilience.",
-            "fullDescription": "Pain is complex, often persisting long after tissues have healed. Our Pain Management program goes beyond temporary relief. We combine manual therapy to reduce immediate symptoms with graded exposure therapy and education to retrain your pain system. By addressing fear-avoidance behaviors and correcting maladaptive movement patterns, we help you regain control over your body.",
+            "fullDescription": "Pain is complex, often persisting long after tissues have healed. Our Pain Management program goes beyond temporary relief. We combine targeted therapeutic techniques to reduce immediate symptoms with graded exposure therapy and education to retrain your pain system. By addressing fear-avoidance behaviors and correcting maladaptive movement patterns, we help you regain control over your body.",
             "benefits": [
                 "Scientific explanation of your pain triggers",
                 "Reduced reliance on painkillers",
@@ -265,7 +265,7 @@
             "process": [
                 "Detailed pain history and trigger analysis",
                 "Movement screen to identify guarding patterns",
-                "Manual therapy for symptom modification",
+                "Targeted symptom modification techniques",
                 "Graded exercise exposure"
             ],
             "details": {
@@ -373,7 +373,7 @@
             "description": "The knee and shoulder are complex joints relying heavily on muscle function. We address the entire kinetic chain to offload the painful joint and restore smooth mechanics.",
             "fullDescription": "Knee and shoulder pain often result from issues elsewhere—weak hips affecting the knee, or poor thoracic mobility affecting the shoulder. We treat the joint but look at the whole body. Our approach involves isolating the weak link, strengthening it, and then integrating it back into complex movements.",
             "benefits": [
-                "Joint-specific manual therapy",
+                "Joint-specific therapeutic techniques",
                 "Kinetic chain assessment",
                 "Rotator cuff & Scapular control",
                 "Lower limb alignment correction"
@@ -453,35 +453,6 @@
             }
         },
         {
-            "id": "manual-therapy",
-            "slug": "manual-therapy",
-            "title": "Manual Therapy",
-            "excerpt": "Hands-on techniques to mobilize joints and reduce soft tissue restriction.",
-            "description": "Manual therapy involves skilled hand movements to improve tissue extensibility; increase range of motion; induce relaxation; mobilize or manipulate soft tissue and joints.",
-            "fullDescription": "Manual therapy is a core component of our practice. We use soft tissue mobilization, joint mobilization, and manipulation to reduce pain and restore movement. It is always combined with exercise to lock in the gains.",
-            "benefits": [
-                "Immediate pain relief",
-                "Improved joint mobility",
-                "Reduced muscle tension",
-                "Faster recovery"
-            ],
-            "process": [
-                "Assessment of joint play",
-                "Soft tissue release",
-                "Joint mobilization",
-                "Re-assessment"
-            ],
-            "details": {
-                "feels": "Stiff joints, tight muscles, or restricted movement.",
-                "expect": "Hands-on treatment followed by movement.",
-                "approach": "Maitland, Mulligan, and Soft Tissue Release techniques."
-            },
-            "image": {
-                "src": "/images/007.webp",
-                "alt": "Manual Therapy"
-            }
-        },
-        {
             "id": "geriatric-physio",
             "slug": "geriatric-physiotherapy",
             "title": "Geriatric Physiotherapy",
@@ -537,35 +508,6 @@
             "image": {
                 "src": "/images/005.webp",
                 "alt": "Neurological Rehab"
-            }
-        },
-        {
-            "id": "dry-needling",
-            "slug": "dry-needling",
-            "title": "Dry Needling",
-            "excerpt": "Targeted release of trigger points to reduce pain and improve muscle function.",
-            "description": "Dry needling uses fine needles to deactivate trigger points (knots) in muscles, relieving pain and restoring range of motion.",
-            "fullDescription": "Dry needling is a powerful adjunct to exercise. By releasing tight myofascial trigger points, we can create a 'window of opportunity' where you can move with less pain, allowing for better strengthening.",
-            "benefits": [
-                "Rapid pain relief",
-                "Released muscle tension",
-                "Improved range of motion",
-                "Resetting muscle tone"
-            ],
-            "process": [
-                "Palpation of trigger points",
-                "Needle insertion",
-                "Eliciting twitch response",
-                "Post-needling stretch"
-            ],
-            "details": {
-                "feels": "Deep ache or twitch during treatment, followed by relief.",
-                "expect": "Some soreness for 24 hours, then improved movement.",
-                "approach": "Evidence-based trigger point release."
-            },
-            "image": {
-                "src": "/images/006.webp",
-                "alt": "Dry Needling"
             }
         },
         {
@@ -912,10 +854,6 @@
             {
                 "label": "Pregnancy Classes",
                 "href": "/pregnancy-exercise-classes-trichy"
-            },
-            {
-                "label": "Cupping Therapy",
-                "href": "/cupping-therapy-trichy"
             },
             {
                 "label": "Sciatica",
