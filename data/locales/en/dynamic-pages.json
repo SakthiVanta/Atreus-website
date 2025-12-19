@@ -66,7 +66,7 @@
                 "sections": [
                     {
                         "title": "Advanced Back Pain Solutions",
-                        "content": "We treat all types of back pain including lower back pain, sciatica, disc problems, and chronic spine conditions. Our approach combines manual therapy, targeted exercises, and education to help you understand and manage your condition effectively."
+                        "content": "We treat all types of back pain including lower back pain, sciatica, disc problems, and chronic spine conditions. Our approach combines targeted exercises and education to help you understand and manage your condition effectively."
                     },
                     {
                         "title": "Long-Term Spine Health",
@@ -91,7 +91,7 @@
                 "sections": [
                     {
                         "title": "Comprehensive Knee Care",
-                        "content": "From sports injuries like ACL tears and meniscus problems to degenerative conditions like osteoarthritis, we provide complete knee rehabilitation services. Our programs include strengthening exercises, manual therapy, and functional training."
+                        "content": "From sports injuries like ACL tears and meniscus problems to degenerative conditions like osteoarthritis, we provide complete knee rehabilitation services. Our programs include strengthening exercises and functional training."
                     },
                     {
                         "title": "Return to Activity Programs",
@@ -216,7 +216,7 @@
                 "sections": [
                     {
                         "title": "Comprehensive Neck Care",
-                        "content": "Treatment for cervical spondylosis, whiplash injuries, disc herniation, muscle strain, and chronic neck pain. Our approach combines manual therapy, therapeutic exercises, and ergonomic education."
+                        "content": "Treatment for cervical spondylosis, whiplash injuries, disc herniation, muscle strain, and chronic neck pain. Our approach combines therapeutic exercises and ergonomic education."
                     },
                     {
                         "title": "Headache and Migraine Relief",
@@ -271,31 +271,6 @@
                     {
                         "title": "Personalized Home Programs",
                         "content": "We design exercise programs using equipment available at your home and train family members to assist with your rehabilitation for better outcomes."
-                    }
-                ]
-            }
-        },
-        {
-            "slug": "manual-therapy-trichy",
-            "title": "Manual Therapy in Trichy | Hands-On Treatment",
-            "description": "Expert manual therapy and hands-on treatment in Trichy. Joint mobilization, soft tissue work, and manipulation at ATREUS PHYSIO.",
-            "h1": "Manual Therapy & Hands-On Treatment",
-            "keywords": [
-                "manual therapy trichy",
-                "joint mobilization",
-                "soft tissue therapy",
-                "manipulation treatment"
-            ],
-            "content": {
-                "intro": "Advanced manual therapy techniques including joint mobilization, manipulation, and soft tissue release for pain relief and improved function.",
-                "sections": [
-                    {
-                        "title": "Skilled Manual Techniques",
-                        "content": "Our therapists are trained in various manual therapy approaches including Maitland mobilization, Mulligan techniques, myofascial release, and trigger point therapy for comprehensive hands-on care."
-                    },
-                    {
-                        "title": "Combined Treatment Approach",
-                        "content": "Manual therapy works best when combined with exercise and education. We integrate hands-on techniques with active rehabilitation for optimal, lasting results."
                     }
                 ]
             }
@@ -376,31 +351,6 @@
             }
         },
         {
-            "slug": "dry-needling-therapy-trichy",
-            "title": "Dry Needling Therapy in Trichy | Myofascial Pain Relief",
-            "description": "Advanced dry needling therapy in Trichy for chronic pain and muscle knots. Evidence-based myofascial trigger point treatment at ATREUS PHYSIO.",
-            "h1": "Dry Needling & Trigger Point Therapy",
-            "keywords": [
-                "dry needling trichy",
-                "trigger point therapy",
-                "myofascial release",
-                "muscle knot treatment"
-            ],
-            "content": {
-                "intro": "A specialized technique using thin filiform needles to release tight muscle bands (trigger points) and relieve chronic pain, improving flexibility and function immediately.",
-                "sections": [
-                    {
-                        "title": "Targeted Pain Relief",
-                        "content": "Dry needling effectively treats chronic back pain, tennis elbow, tension headaches, and sports injuries by resetting the muscle's resting length and reducing chemical irritation at the injury site."
-                    },
-                    {
-                        "title": "Integrated Treatment",
-                        "content": "We often combine dry needling with electrical stimulation (IMS) and corrective exercises. This multimodal approach ensures that once the pain is relieved, the muscle function is restored permanently."
-                    }
-                ]
-            }
-        },
-        {
             "slug": "vertigo-balance-rehabilitation-trichy",
             "title": "Vertigo & Balance Treatment in Trichy | Vestibular Rehab",
             "description": "Expert vestibular rehabilitation in Trichy. Treatment for BPPV, vertigo, dizziness, and balance disorders at ATREUS PHYSIO.",
@@ -465,8 +415,8 @@
                 "intro": "Specialized treatment for Temporomandibular Joint (TMJ) disorders. We address jaw clicking, locking, bruxism (grinding), and associated headaches.",
                 "sections": [
                     {
-                        "title": "Manual Therapy for the Jaw",
-                        "content": "Intra-oral and extra-oral manual therapy techniques to release tight chewing muscles and mobilize the jaw joint. This reduces pain and restores normal mouth opening range."
+                        "title": "Therapeutic Techniques for the Jaw",
+                        "content": "Specialized therapeutic techniques to release tight chewing muscles and mobilize the jaw joint. This reduces pain and restores normal mouth opening range."
                     },
                     {
                         "title": "Posture and Neck Connection",
@@ -566,7 +516,7 @@
                 "sections": [
                     {
                         "title": "Nerve Decompression",
-                        "content": "Our treatment focuses on reducing pressure on the sciatic nerve through specific positioning, traction, and manual therapy. We help centralize the pain and stop it from radiating down your leg."
+                        "content": "Our treatment focuses on reducing pressure on the sciatic nerve through specific positioning and traction. We help centralize the pain and stop it from radiating down your leg."
                     },
                     {
                         "title": "Core Stability",
@@ -620,7 +570,7 @@
                     },
                     {
                         "title": "Pain Management",
-                        "content": "We use modalities like IFT and Ultrasound combined with manual therapy to manage acute flare-ups, getting you back on your feet faster."
+                        "content": "We use modalities like IFT and Ultrasound to manage acute flare-ups, getting you back on your feet faster."
                     }
                 ]
             }
@@ -816,7 +766,7 @@
                 "sections": [
                     {
                         "title": "Joint Mobilization",
-                        "content": "We use skilled manual therapy to gently restore movement to stiff joints following weeks of immobilization in a cast."
+                        "content": "We use skilled therapeutic techniques to gently restore movement to stiff joints following weeks of immobilization in a cast."
                     },
                     {
                         "title": "Functional Strengthening",
@@ -946,31 +896,6 @@
                     {
                         "title": "Geriatric Care",
                         "content": "We ensure continuity of care for elderly patients with mobility issues, helping them stay safe and independent at home."
-                    }
-                ]
-            }
-        },
-        {
-            "slug": "cupping-therapy-trichy",
-            "title": "Cupping Therapy in Trichy | Myofascial Decompression",
-            "description": "Cupping therapy in Trichy for muscle recovery and pain relief. Ancient technique with modern application at ATREUS PHYSIO.",
-            "h1": "Cupping Therapy Services",
-            "keywords": [
-                "cupping therapy trichy",
-                "hijama therapy",
-                "myofascial decompression",
-                "muscle recovery"
-            ],
-            "content": {
-                "intro": "Cupping increases local blood circulation and relieves muscle tension. It is excellent for sports recovery and chronic myofascial pain.",
-                "sections": [
-                    {
-                        "title": "Improved Circulation",
-                        "content": "The suction lifts the tissue, bringing fresh blood to the area and helping to clear out metabolic waste products."
-                    },
-                    {
-                        "title": "Myofascial Release",
-                        "content": "Cupping stretches the fascia and underlying muscle, effectively treating tight IT bands, back stiffness, and hamstring tightness."
                     }
                 ]
             }
