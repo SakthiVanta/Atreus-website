@@ -1,9 +1,10 @@
 {
     "seo": {
-        "metaTitle": "About Us | AtreusPhysio",
-        "metaDescription": "Learn about AtreusPhysio, founded by Dr. Swatheeshwaran. Science driven assessment, movement based rehabilitation and structured loading.",
+        "metaTitle": "About Us | Best Physiotherapy in Trichy | AtreusPhysio",
+        "metaDescription": "Learn about AtreusPhysio, the leading clinic for physiotherapy in Trichy. science-driven assessment, movement-based rehab, and expert care by Dr. Swatheeshwaran.",
         "keywords": [
-            "Physiotherapy Trichy",
+            "physiotherapy in trichy",
+            "Best Physio Trichy",
             "Dr. Swatheeshwaran",
             "Sports Rehab",
             "About Atreus Physio"
@@ -24,25 +25,10 @@
     },
     "founder": {
         "name": "Dr. Swatheeshwaran",
-        "role": "Founder & Sports Physiotherapist",
         "qualifications": "MPT Sports",
-        "bio": "I'm Swatheeshwaran, and I started ATREUS PHYSIO because I wanted to create something different, a clinic where patients don't just get treated, but truly understand what's happening in their bodies. My journey began in sports physiotherapy, where I learned that recovery is as much about mindset as it is about exercises. Over the years, I've had the privilege of working with everyone from professional athletes to people dealing with everyday aches and pains, and each person has taught me something new about resilience and healing.",
-        "experience": "I spent three years as an Assistant Professor, which shaped how I communicate complex medical concepts in ways that actually make sense. Teaching forced me to think from the student's perspective, and I carry that same approach into patient care today. I've also been fortunate to work on the sidelines of major sporting events, national championships, state tournaments, and university competitions, where split-second decisions and rapid recovery protocols are part of the job. Those high-pressure environments taught me to stay calm, think clearly, and always put the athlete's long-term health first.",
+        "role": "Founder & Lead Clinician — ATREUS PHYSIO",
         "image": "/images/profileImage.webp",
-        "linkedin": "https://www.linkedin.com/in/swatheeshwaran-mpt-sports-018566274?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-        "achievements": {
-            "national": [
-                "All India Aquatics, Beach Volleyball, Badminton, Basketball Championships (2023-2024)"
-            ],
-            "state": [
-                "SDAT CM Trophy (2021-2022)",
-                "TNBA Basketball Championships: Junior, Senior and State categories (2021-2022)"
-            ],
-            "university": [
-                "South Zone Football, Volleyball, Tennis, Basketball Tournaments (2021-2023)"
-            ]
-        },
-        "approach": "I believe rehabilitation works best when it feels like a partnership, not a prescription. My approach starts with asking questions and really listening to your answers. From there, we build a plan that's grounded in evidence but flexible enough to adapt as you progress. I focus on movement quality, gradual strength building, and helping you understand why each exercise matters. The goal isn't just to make the pain go away, it's to give you the tools and confidence to prevent it from coming back. Every session, we're working together toward you being able to move, play, and live exactly how you want to."
+        "bio": "Dr. Swatheeshwaran is an evidence-aligned physiotherapist specialising in movement-based rehabilitation, capacity building and clinical reasoning for musculoskeletal and sport-related conditions. His approach is assessment-first and exercise-centred, focusing on progressive loading, movement tolerance and functional recovery rather than passive symptom relief."
     },
     "philosophy": {
         "title": "About Us",

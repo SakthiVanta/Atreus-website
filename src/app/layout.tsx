@@ -5,7 +5,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import Providers from "@/components/providers/Providers";
 import { FloatingCTA } from "@/components/ui/FloatingCTA";
-
+import { Analytics } from "@vercel/analytics/next"
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
 
@@ -69,6 +69,7 @@ export default function RootLayout({
                 suppressHydrationWarning
             >
                 <Providers>
+                    <Analytics />
                     <Header />
                     <div className="">
                         {children}

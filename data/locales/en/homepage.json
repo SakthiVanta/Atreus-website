@@ -8,17 +8,19 @@
         ]
     },
     "seo": {
-        "metaTitle": "AtreusPhysio | Reborn To Move Fearless",
-        "metaDescription": "Your path out of pain starts with science driven care. Assessment first approach, patient centred personalised treatment, and exercise science centred rehabilitation.",
+        "metaTitle": "Physiotherapy in Trichy | Best Physio Clinic | Atreus Physio",
+        "metaDescription": "Looking for the best physiotherapy in Trichy? Atreus Physio provides expert, science-driven care for back pain, sports injuries, and rehabilitation. Book now!",
         "canonical": "https://www.atreusphysio.com/",
-        "ogTitle": "AtreusPhysio - Reborn To Move Fearless",
-        "ogDescription": "Science driven care for pain relief and performance. Expert physiotherapy in Trichy.",
+        "ogTitle": "Best Physiotherapy in Trichy - Atreus Physio",
+        "ogDescription": "Expert physiotherapy in Trichy for pain relief and sports rehabilitation. Science-driven, assessment-first care by Dr. Swatheeshwaran.",
         "ogImage": "/images/og-home.jpg",
         "twitterCard": "summary_large_image",
         "robots": "index,follow",
         "keywords": [
-            "Physiotherapy Trichy",
-            "Sports Rehab",
+            "Physiotherapy in Trichy",
+            "Best Physiotherapist in Trichy",
+            "Physio Clinic Trichy",
+            "Sports Injury Treatment Trichy",
             "Back Pain Treatment",
             "Knee Pain Treatment",
             "Dr. Swatheeshwaran",
@@ -209,334 +211,251 @@
             "id": "dr-swatheeshwaran",
             "slug": "dr-swatheeshwaran",
             "name": "Dr. Swatheeshwaran",
-            "role": "Founder & Sports Physiotherapist",
+            "role": "Founder & Lead Clinician — ATREUS PHYSIO",
             "qualifications": "MPT Sports",
-            "bio": "Dr. Swatheeshwaran is a dedicated Sports Physiotherapist with a vision to redefine how pain and performance are managed in Trichy. With a Master's degree in Sports Physiotherapy, he combines academic rigor with on-field practical experience. \n\nHe has worked as an Assistant Professor for three years, training the next generation of physiotherapists while simultaneously managing high-performance athletes. His approach is deeply rooted in biomechanics—understanding how the body moves to fix how it feels.",
-            "shortBio": "Dr. Swatheeshwaran, MPT Sports, is the founder of ATREUS PHYSIO and a clinician who believes in science driven, movement centred rehabilitation. His practice focuses on helping people return to an active, confident and pain free life.",
-            "experience": "He has worked as an Assistant Professor for three years, trained institutional and professional athletes, and delivered rehabilitation for high performance sport environments. His on field experience includes serving as physiotherapist for multiple major national, state and inter university events.",
+            "bio": "Dr. Swatheeshwaran is an evidence-aligned physiotherapist specialising in movement-based rehabilitation, capacity building and clinical reasoning for musculoskeletal and sport-related conditions. His approach is assessment-first and exercise-centred, focusing on progressive loading, movement tolerance and functional recovery rather than passive symptom relief.",
+            "subBio": "With experience as an Assistant Professor in physiotherapy and as a clinician working with athletes across competitive levels, he integrates academic rigour with real-world sports rehabilitation. His work supports patients and athletes in understanding their condition, adapting to load and returning to meaningful activity with confidence.",
             "image": "/images/profileImage.webp",
             "specialties": [
-                "Sports Injury Rehabilitation",
-                "ACL & Knee Rehabilitation",
-                "Biomechanics Analysis",
-                "Strength & Conditioning"
+                "Pain-Informed Physiotherapy",
+                "Sports Physiotherapy and Return-to-Sport Rehabilitation",
+                "Spine, Knee and Shoulder Rehabilitation",
+                "Strength, Endurance and Performance Conditioning",
+                "Movement Analysis and Load Management"
             ],
             "social": {
                 "linkedin": "https://www.linkedin.com/in/swatheeshwaran-mpt-sports-018566274"
             },
-            "achievements": [
-                {
-                    "category": "National Level",
-                    "items": [
-                        "All India Aquatics, Beach Volleyball, Badminton, Basketball Championships (2023-2024)"
-                    ]
-                },
-                {
-                    "category": "State Level",
-                    "items": [
-                        "SDAT CM Trophy (2021-2022)",
-                        "TNBA Basketball Championships (Junior, Senior, State - 2021-2022)"
-                    ]
-                },
-                {
-                    "category": "University Level",
-                    "items": [
-                        "South Zone tournaments: Football, Volleyball, Tennis, Basketball (2021-2023)"
-                    ]
-                }
-            ],
-            "philosophy": "I don't believe in 'fixing' patients. I believe in educating them, empowering them, and building their capacity so they don't need to come back. Rehabilitation shouldn't be a mystery; it should be a clear, progressive journey."
+            "award": {
+                "title": "Award & Recognition",
+                "content": "Awarded the Young Achiever Alumni Award 2025 by SRM College of Physiotherapy, SRM Institute of Science and Technology (SRMIST), in recognition of contributions to physiotherapy practice and sports rehabilitation."
+            },
+            "clinicalBackground": {
+                "title": "Clinical Background",
+                "intro": "Dr. Swatheeshwaran has worked as an On-Field Physiotherapist and Rehabilitation Provider for Major Sporting Events between 2021 and 2024, including:",
+                "events": [
+                    "All India Aquatics Championships",
+                    "Beach Volleyball Championships",
+                    "Badminton Championships",
+                    "Basketball Championships",
+                    "SDAT CM Trophy",
+                    "TNBA Basketball Championships (Junior, Senior and State Levels)",
+                    "South Zone Inter-University Football, Volleyball, Tennis and Basketball Tournaments"
+                ],
+                "academic": "His academic role as an Assistant Professor strengthened his expertise in biomechanics, exercise physiology, evidence-based assessment and clinical reasoning."
+            },
+            "philosophy": {
+                "title": "Clinical Philosophy",
+                "content": "Recovery and performance are built through physical capacity, not passive care. Dr. Swatheeshwaran emphasises assessment-first evaluation, clear clinical reasoning, exercise-centred rehabilitation and progressive load exposure. Passive modalities such as manual therapy, dry needling and cupping are not used as primary treatment."
+            },
+            "approach": {
+                "title": "Approach With Patients",
+                "content": "Care is collaborative, clear and goal-oriented. Each plan is tailored to individual needs, focusing on building strength, endurance and confidence in movement, and supporting safe return to sport, work and daily activities based on readiness and tolerance."
+            }
         }
     ],
     "services": [
         {
-            "id": "pain-management",
-            "slug": "pain-management",
-            "title": "Pain Management",
-            "excerpt": "Assessment first, movement correction, and progressive exercises to restore confidence.",
-            "description": "Chronic pain isn't just about tissues; it's about the nervous system, movement habits, and lifestyle. We use a multi-modal approach to desensitize painful structures and build long-term resilience.",
-            "fullDescription": "Pain is complex, often persisting long after tissues have healed. Our Pain Management program goes beyond temporary relief. We combine targeted therapeutic techniques to reduce immediate symptoms with graded exposure therapy and education to retrain your pain system. By addressing fear-avoidance behaviors and correcting maladaptive movement patterns, we help you regain control over your body.",
+            "id": "pain-informed-physio",
+            "slug": "pain-informed-physiotherapy",
+            "title": "Pain-Informed Physiotherapy",
+            "excerpt": "Understanding pain behaviour and movement tolerance to restore confidence and functional capacity.",
+            "description": "Pain is complex and does not always reflect tissue damage. It is influenced by movement tolerance, loading patterns, previous experiences and activity demands.",
+            "fullDescription": "Addressing pain effectively requires understanding how the body responds to movement and load rather than focusing only on symptoms. Our care begins with a detailed assessment of pain behaviour, activity limitations and movement tolerance. Treatment focuses on education, progressive exercise and graded exposure to movement to improve confidence and functional capacity. Rehabilitation is adapted based on individual response rather than pain alone.",
             "benefits": [
-                "Scientific explanation of your pain triggers",
-                "Reduced reliance on painkillers",
-                "Restored movement confidence",
+                "Clear understanding of pain behaviour",
+                "Reduced dependence on medication and passive care",
+                "Improved movement confidence",
                 "Strategies to manage flare-ups independently"
             ],
             "process": [
-                "Detailed pain history and trigger analysis",
-                "Movement screen to identify guarding patterns",
-                "Targeted symptom modification techniques",
-                "Graded exercise exposure"
+                "Pain and activity history to understand symptom behaviour",
+                "Movement assessment to identify tolerance and protective strategies",
+                "Education to clarify pain mechanisms and reduce uncertainty",
+                "Graded exercise exposure to restore movement confidence"
             ],
             "details": {
-                "feels": "Localised pain, stiffness, reduced movement or recurring flare ups.",
-                "expect": "A clear explanation of why the pain is happening and a structured plan to reduce symptoms.",
-                "approach": "Assessment first, movement correction, progressive exercises and load planning to restore confidence."
+                "feels": "Complex pain patterns, movement fear, or persistent symptoms.",
+                "expect": "A science-backed explanation of your pain and a clear path to movement confidence.",
+                "approach": "Care begins with a detailed assessment of pain behaviour, activity limitations and movement tolerance. Treatment focuses on education, progressive exercise and graded exposure to movement."
             },
             "image": {
                 "src": "/images/007.webp",
-                "alt": "Pain Management"
+                "alt": "Pain-Informed Physiotherapy"
             }
         },
         {
-            "id": "sports-rehab",
-            "slug": "sports-rehab",
-            "title": "Sports Rehab",
-            "excerpt": "Biomechanics based rehab, sport specific loading, and return to sport steps.",
-            "description": "Athletes need more than just pain relief; they need performance restoration. Our sports rehab is data-driven, sport-specific, and focuses on optimizing biomechanics to prevent re-injury.",
-            "fullDescription": "Whether you're a professional athlete or a weekend warrior, our Sports Rehab program bridges the gap between healthcare and performance. We analyze the specific demands of your sport and replicate them in the clinic. Using video analysis and force (load) management, we rebuild your capacity to sprint, jump, cut, and lift, ensuring you return to the field stronger than before.",
+            "id": "sports-physio",
+            "slug": "sports-physiotherapy-rehab",
+            "title": "Sports Physiotherapy & Rehabilitation",
+            "excerpt": "Sport-specific conditioning and capacity profiling to ensure a safe return to competition.",
+            "description": "Sports injuries require more than symptom resolution. Athletes need sufficient strength, endurance and load tolerance to safely return to training.",
+            "fullDescription": "Inadequate preparation increases the risk of recurrence. Our rehabilitation is guided by the physical demands of the sport. Assessment focuses on movement patterns, strength capacity and load tolerance. Training is progressed through sport-specific conditioning based on readiness rather than timelines.",
             "benefits": [
-                "Sport-specific movement analysis",
-                "Objective return-to-sport testing & criteria",
-                "Strength & Conditioning integration",
-                "Performance enhancement post-injury"
+                "Improved readiness for sport",
+                "Reduced risk of reinjury",
+                "Better confidence during training",
+                "Structured progression based on capacity"
             ],
             "process": [
-                "Acute injury management & protection",
-                "Restoration of range of motion & activation",
-                "Strength & neuromuscular control",
-                "Sport-specific drills & plyometrics"
+                "Sport and injury-specific assessment",
+                "Strength and movement capacity profiling",
+                "Progressive loading and conditioning",
+                "Sport-specific movement and return-to-play preparation"
             ],
             "details": {
-                "feels": "Injury during training, reduced performance, difficulty returning to sport or repeated setbacks.",
-                "expect": "A plan that matches the demands of your sport with clear return to sport steps.",
-                "approach": "Biomechanics based rehab, sport specific loading, movement retraining and strength progressions."
+                "feels": "Reduced performance, fear of re-injury, or need for sport-specific loading.",
+                "expect": "A return-to-play plan based on objective readiness metrics.",
+                "approach": "Rehabilitation is guided by the physical demands of the sport. Assessment focuses on movement patterns, strength capacity and load tolerance."
             },
             "image": {
                 "src": "/images/005.webp",
-                "alt": "Sports Rehab"
+                "alt": "Sports Physiotherapy & Rehabilitation"
             }
         },
         {
-            "id": "post-surgical",
+            "id": "post-surgical-physio",
             "slug": "post-surgical-rehab",
-            "title": "Post Surgical Rehab",
-            "excerpt": "Guided recovery with structured milestones and safe progression.",
-            "description": "Surgery is just the first step. The rehabilitation that follows dictates your long-term outcome. We follow evidence-based protocols while tailoring progression to your specific healing rate.",
-            "fullDescription": "Post-operative recovery matches the surgeon's skill with the therapist's guidance. We communicate directly with your surgeon to ensure protocol compliance while optimizing recovery. From initial swelling management and graft protection to regaining full function and strength, we are with you at every milestone.",
+            "title": "Post-Surgical Physiotherapy Rehabilitation",
+            "excerpt": "Guided recovery focused on restoring movement, strength, and functional tolerance post-surgery.",
+            "description": "Surgery addresses structural issues but does not automatically restore movement or function. Rehab is essential to regain capacity safely.",
+            "fullDescription": "Post-surgical rehabilitation focuses on restoring movement, strength and functional tolerance. Progression is guided by tissue healing, individual response and activity demands rather than fixed milestones. We bridge the gap between clinical healing and return to full life.",
             "benefits": [
-                "Strict protocol adherence & safety",
-                "Accelerated yet safe recovery timelines",
-                "Scar tissue & swelling management",
-                "Regaining full independence"
+                "Safer recovery progression",
+                "Improved strength and confidence",
+                "Better functional outcomes",
+                "Reduced risk of complications"
             ],
             "process": [
-                "Protection & inflammatory control",
-                "Mobility & muscle activation",
-                "Functional strengthening",
-                "Return to full activity"
+                "Post-surgical assessment and goal setting",
+                "Gradual restoration of movement and control",
+                "Progressive strengthening and loading",
+                "Functional and activity-specific conditioning"
             ],
             "details": {
-                "feels": "Weakness, restricted mobility, swelling or difficulty regaining function after surgery.",
-                "expect": "Guided recovery with structured milestones and safe progression.",
-                "approach": "Controlled mobility, gradual strengthening, gait and movement retraining, and long term function building."
+                "feels": "Post-operative stiffness, weakness, or uncertainty about movement limits.",
+                "expect": "Structured phases of recovery that respect tissue healing timelines.",
+                "approach": "Post-surgical rehabilitation focuses on restoring movement, strength and functional tolerance. Progression is guided by tissue healing."
             },
             "image": {
                 "src": "/images/003.webp",
-                "alt": "Post Surgical Rehab"
+                "alt": "Post-Surgical Physiotherapy Rehabilitation"
             }
         },
         {
-            "id": "spine-care",
-            "slug": "spine-care",
-            "title": "Spine Care",
-            "excerpt": "Movement analysis, spinal mechanics, targeted exercise and strength conditioning.",
-            "description": "Back and neck pain are often driven by fear and stiffness. We demystify spine problems and build a robust, resilient back through movement and graded loading.",
-            "fullDescription": "Most spine issues are mechanical in nature, accumulating from sustained postures or poor load management. We move away from passive treatments like traction and focus on active spinal rehabilitation. By improving core coordination, spinal mobility, and global strength, we build a 'buffer' against daily stressors.",
+            "id": "spine-care-physio",
+            "slug": "spine-care-physiotherapy",
+            "title": "Spine Care Physiotherapy",
+            "excerpt": "Movement-based spine care focusing on improving tolerance, trunk strength and functional capacity.",
+            "description": "Neck and back pain are often influenced by movement tolerance and activity confidence rather than structural damage alone.",
+            "fullDescription": "Avoiding movement can prolong symptoms. Our spine care is movement-based and focuses on improving tolerance, trunk strength and functional capacity. Education and graded exposure help restore confidence and reduce fear associated with movement.",
             "benefits": [
-                "Understanding directional preference for relief",
-                "Improved posture & ergonomics",
-                "Core & spinal extensor strengthening",
-                "Fear-free movement restoration"
+                "Improved confidence with movement",
+                "Reduced activity limitations",
+                "Better tolerance to daily loads",
+                "Long-term functional improvement"
             ],
             "process": [
-                "Mechanical diagnosis (MDT concepts)",
-                "Symptom centralization techniques",
-                "Postural re-education",
-                "Functional loading & lifting mechanics"
+                "Assessment of movement, tolerance and daily demands",
+                "Education to reduce fear and uncertainty",
+                "Progressive strengthening and movement exposure",
+                "Functional integration into daily or sport activities"
             ],
             "details": {
-                "feels": "Neck pain, low back pain, radiating symptoms or stiffness.",
-                "expect": "Understanding of triggers, relief strategies and long term movement confidence.",
-                "approach": "Movement analysis, spinal mechanics, targeted exercise and strength conditioning."
+                "feels": "Back or neck stiffness, difficulty lifting, or fear of bending.",
+                "expect": "Strategies to manage daily loads and rebuild spinal resilience.",
+                "approach": "Spine care is movement-based and focuses on improving tolerance, trunk strength and functional capacity."
             },
             "image": {
                 "src": "/images/008.webp",
-                "alt": "Spine Care"
+                "alt": "Spine Care Physiotherapy"
             }
         },
         {
-            "id": "knee-shoulder",
-            "slug": "knee-shoulder-rehab",
-            "title": "Knee & Shoulder",
-            "excerpt": "Joint loading strategies, mobility needs, strength profiling and functional progression.",
-            "description": "The knee and shoulder are complex joints relying heavily on muscle function. We address the entire kinetic chain to offload the painful joint and restore smooth mechanics.",
-            "fullDescription": "Knee and shoulder pain often result from issues elsewhere—weak hips affecting the knee, or poor thoracic mobility affecting the shoulder. We treat the joint but look at the whole body. Our approach involves isolating the weak link, strengthening it, and then integrating it back into complex movements.",
+            "id": "knee-shoulder-physio",
+            "slug": "knee-shoulder-physiotherapy",
+            "title": "Knee & Shoulder Physiotherapy",
+            "excerpt": "Individualised rehabilitation for load-dependent joints, focusing on progressive strengthening.",
+            "description": "The knee and shoulder are highly load-dependent joints. Pain often reflects reduced tolerance to strength and activity demands.",
+            "fullDescription": "Pain often reflects reduced tolerance to strength and activity demands rather than isolated structural damage. Rehabilitation focuses on progressive strengthening, movement control and functional loading. Programs are individualised based on tolerance and task demands.",
             "benefits": [
-                "Joint-specific therapeutic techniques",
-                "Kinetic chain assessment",
-                "Rotator cuff & Scapular control",
-                "Lower limb alignment correction"
+                "Improved joint confidence",
+                "Better strength and control",
+                "Reduced recurrence of symptoms",
+                "Improved performance in daily tasks and sport"
             ],
             "process": [
-                "Pain modulation & load modification",
-                "Local joint mobility & strength",
-                "Kinetic chain integration",
-                "Functional movement patterns"
+                "Joint-specific assessment and capacity profiling",
+                "Movement control and basic strength development",
+                "Progressive loading and functional exercises",
+                "Task-specific and sport-specific progression"
             ],
             "details": {
-                "feels": "Pain with activity, instability, difficulty lifting, walking or playing sports.",
-                "expect": "A joint specific plan that focuses on mechanics, stability and performance.",
-                "approach": "Joint loading strategies, mobility needs, strength profiling and functional progression."
+                "feels": "Instability, overhead pain, or knee discomfort during stairs/squats.",
+                "expect": "A clear progression of loading tailored to your joint's capacity.",
+                "approach": "Rehabilitation focuses on progressive strengthening, movement control and functional loading."
             },
             "image": {
                 "src": "/images/006.webp",
-                "alt": "Knee & Shoulder"
+                "alt": "Knee & Shoulder Physiotherapy"
             }
         },
         {
-            "id": "performance",
-            "slug": "performance-training",
-            "title": "Performance Training",
-            "excerpt": "Strength and conditioning, movement efficiency, load progression and performance metrics.",
-            "description": "For those who are pain-free but want to move better, run faster, or lift heavier. We apply clinical biomechanics to sports performance.",
-            "fullDescription": "Performance isn't just about effort; it's about efficiency. We analyze your technique to find energy leaks and potential injury risks. Our conditioning programs are scientifically periodized to peak you for your specific events, whether it's a marathon, a tournament, or simply life.",
+            "id": "performance-support",
+            "slug": "performance-support-conditioning",
+            "title": "Performance Support & Conditioning",
+            "excerpt": "Strength, endurance and cardiac capacity development to support long-term performance resilience.",
+            "description": "Performance depends on strength, endurance and the ability to tolerate training loads. Poor conditioning increases breakdown.",
+            "fullDescription": "Our performance support focuses on developing strength, endurance and cardiac capacity to support training demands. Programs complement sport training and are adapted based on response and recovery to ensure long-term resilience.",
             "benefits": [
-                "Biomechanical efficiency",
-                "Injury risk reduction",
-                "Scientifically periodized programming",
-                "Objective performance metrics"
+                "Improved physical capacity",
+                "Better training tolerance",
+                "Reduced overload-related issues",
+                "Long-term performance resilience"
             ],
             "process": [
-                "Performance testing battery",
-                "Power & Explosiveness training",
-                "Energy system development",
-                "Recovery & workload monitoring"
+                "Capacity and workload assessment",
+                "Strength and endurance development",
+                "Progressive load exposure",
+                "Integration with sport or activity demands"
             ],
             "details": {
-                "feels": "Need for better strength, speed, endurance or sport specific performance.",
-                "expect": "A tailored program designed to enhance capacity, skill and resilience.",
-                "approach": "Strength and conditioning, movement efficiency, load progression and performance metrics."
+                "feels": "Plateaued progress, frequent fatigue, or desire to reach next level capacity.",
+                "expect": "Scientifically periodized training that respects your primary sport demands.",
+                "approach": "Performance support focuses on developing strength, endurance and cardiac capacity to support training demands."
             },
             "image": {
                 "src": "/images/001.webp",
-                "alt": "Performance Training"
+                "alt": "Performance Support & Conditioning"
             }
         },
         {
-            "id": "online",
-            "slug": "online-consultations",
-            "title": "Online Consultations",
-            "excerpt": "Movement review through video, personalised exercise plan and load management advice.",
-            "description": "Expert physiotherapy is no longer bound by geography. We provide comprehensive assessment and guided rehab globally through high-quality video consultations.",
-            "fullDescription": "Many musculoskeletal issues can be effectively managed with the right advice and exercise program. Our online consultations involve a thorough history and video movement assessment. We then deliver a custom app-based exercise program with video demonstrations and provide continuous support via WhatsApp.",
+            "id": "online-consultations",
+            "slug": "online-physiotherapy",
+            "title": "Online Physiotherapy Consultations",
+            "excerpt": "Remote assessment, education and guided exercise planning for convenient expert care.",
+            "description": "Some conditions can be effectively managed through remote assessment, education and guided exercise.",
+            "fullDescription": "Online care improves access when in-clinic visits are not immediately required. Online consultations focus on history taking, movement review, education and exercise planning. We ensure a seamless transition to in-clinic care if required.",
             "benefits": [
-                "Access to expert care from anywhere",
-                "Video-guided exercise app",
-                "Convenient & flexible",
-                "Continuous feedback loop"
+                "Convenient access to care",
+                "Clear guidance and planning",
+                "Continued progress when travel is limited",
+                "Seamless transition to in-clinic care if required"
             ],
             "process": [
-                "Video call assessment",
-                "Movement pattern analysis via video",
-                "Custom program delivery via App",
-                "Regular check-ins & progression"
+                "Detailed symptom and activity discussion",
+                "Guided movement assessment via video",
+                "Personalised exercise and progression plan",
+                "Follow-up and progression support"
             ],
             "details": {
-                "feels": "Pain, movement issues or uncertainty without immediate access to a clinic.",
-                "expect": "A complete online assessment with clear exercises, guidance and follow up support.",
-                "approach": "Movement review through video, personalised exercise plan and load management advice."
+                "feels": "Need for expert advice but unable to travel or live far from the clinic.",
+                "expect": "The same clinical reasoning and exercise science, delivered digitally.",
+                "approach": "Online consultations focus on history taking, movement review, education and exercise planning."
             },
             "image": {
                 "src": "/images/002.webp",
-                "alt": "Online Consultations"
-            }
-        },
-        {
-            "id": "geriatric-physio",
-            "slug": "geriatric-physiotherapy",
-            "title": "Geriatric Physiotherapy",
-            "excerpt": "Improving mobility, balance, and independence for older adults.",
-            "description": "Aging is inevitable, but frailty is not. We specialize in helping seniors maintain their independence through strength and balance training.",
-            "fullDescription": "Our geriatric program focuses on fall prevention, osteoporosis management, and maintaining functional independence. We understand the unique physiology of aging and tailor our programs to be safe yet effective.",
-            "benefits": [
-                "Fall risk reduction",
-                "Improved balance and coordination",
-                "Osteoporosis management",
-                "Maintained independence"
-            ],
-            "process": [
-                "Fall risk assessment",
-                "Balance training",
-                "Functional strength training",
-                "Home safety modification advice"
-            ],
-            "details": {
-                "feels": "Unsteady on feet, fear of falling, or general weakness.",
-                "expect": "Gentle, progressive exercises to build confidence.",
-                "approach": "Functional training, balance challenges, and safety education."
-            },
-            "image": {
-                "src": "/images/001.webp",
-                "alt": "Geriatric Physiotherapy"
-            }
-        },
-        {
-            "id": "neurological-rehab",
-            "slug": "neurological-rehab",
-            "title": "Neurological Rehab",
-            "excerpt": "Expert care for Stroke, Parkinson's, and other neurological conditions.",
-            "description": "Neuroplasticity means the brain can change. We use task-specific training to help rewire the brain and restore function after neurological injury.",
-            "fullDescription": "Whether it's post-stroke recovery or managing Parkinson's, our neuro rehab is based on motor learning principles. We focus on high-repetition, task-oriented training to improve quality of life.",
-            "benefits": [
-                "Improved gait and walking",
-                "Better balance",
-                "Restored daily function",
-                "Spasticity management"
-            ],
-            "process": [
-                "Neuro-functional assessment",
-                "Goal setting",
-                "Task-specific training",
-                "Gait & Balance re-education"
-            ],
-            "details": {
-                "feels": "Loss of movement, stiffness, tremor, or balance issues.",
-                "expect": "Intensive, repetitive practice of meaningful tasks.",
-                "approach": "Motor learning, neuroplasticity, and functional training."
-            },
-            "image": {
-                "src": "/images/005.webp",
-                "alt": "Neurological Rehab"
-            }
-        },
-        {
-            "id": "pediatric-physio",
-            "slug": "pediatric-physiotherapy",
-            "title": "Pediatric Physiotherapy",
-            "excerpt": "Play-based therapy for developmental delays and childhood conditions.",
-            "description": "Children are not just small adults. We use play-based therapy to help children with developmental delays or orthopedic issues reach their milestones.",
-            "fullDescription": "From cerebral palsy to sports injuries in young athletes, our pediatric care is engaging and effective. We work closely with parents to ensure therapy continues at home through play.",
-            "benefits": [
-                "Achieving developmental milestones",
-                "Improved coordination",
-                "Post-fracture recovery for kids",
-                "Correction of gait abnormalities"
-            ],
-            "process": [
-                "Developmental screening",
-                "Play-based assessment",
-                "Fun exercise integration",
-                "Parent education"
-            ],
-            "details": {
-                "feels": "Fun and engaging for the child.",
-                "expect": "Therapy disguised as games.",
-                "approach": "Neuro-developmental treatment and play therapy."
-            },
-            "image": {
-                "src": "/images/003.webp",
-                "alt": "Pediatric Physiotherapy"
+                "alt": "Online Physiotherapy Consultations"
             }
         }
     ],
@@ -818,24 +737,24 @@
         ],
         "services": [
             {
-                "label": "Pain Management",
-                "href": "/services/pain-management"
+                "label": "Pain-Informed Physiotherapy",
+                "href": "/services/pain-informed-physiotherapy"
             },
             {
-                "label": "Sports Rehab",
-                "href": "/services/sports-rehab"
+                "label": "Sports Physiotherapy",
+                "href": "/services/sports-physiotherapy-rehab"
             },
             {
-                "label": "Post Surgical Rehab",
+                "label": "Post-Surgical Rehab",
                 "href": "/services/post-surgical-rehab"
             },
             {
                 "label": "Spine Care",
-                "href": "/services/spine-care"
+                "href": "/services/spine-care-physiotherapy"
             },
             {
                 "label": "Knee & Shoulder",
-                "href": "/services/knee-shoulder-rehab"
+                "href": "/services/knee-shoulder-physiotherapy"
             }
         ],
         "links": [

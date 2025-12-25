@@ -1,9 +1,11 @@
 "use client";
 
+import { useState } from "react";
 import { ImageOptim } from "@/components/ui/ImageOptim";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { SectionHeader } from "@/components/ui/SectionHeader";
+import { ChevronDown } from "lucide-react";
 
 type Service = {
     id: string;
@@ -16,29 +18,54 @@ type Service = {
     };
 };
 
-export function ServicesGrid({ services, limit }: { services: Service[]; limit?: number }) {
-    const displayedServices = limit ? services.slice(0, limit) : services;
+interface ServicesGridProps {
+    services: Service[];
+    limit?: number;
+    showHeader?: boolean;
+    initialDisplayCount?: number;
+}
+
+export function ServicesGrid({
+    services,
+    limit,
+    showHeader = true,
+    initialDisplayCount = 6
+}: ServicesGridProps) {
+    const [displayCount, setDisplayCount] = useState(limit || initialDisplayCount);
+
+    // If limit is provided, we don't show pagination
+    const hasMore = !limit && displayCount < services.length;
+    const displayedServices = services.slice(0, displayCount);
+
+    const loadMore = () => {
+        setDisplayCount(prev => Math.min(prev + initialDisplayCount, services.length));
+    };
 
     return (
-        <section className="py-20 bg-white dark:bg-slate-900">
+        <section className={`${showHeader ? 'py-20' : 'py-10'} bg-white dark:bg-slate-900`}>
             <div className="max-w-7xl mx-auto px-4 md:px-8">
-                <SectionHeader
-                    title="Our Services"
-                    description="Comprehensive care tailored to your specific recovery needs."
-                    linkText="View All Services"
-                    linkHref="/services"
-                />
+                {showHeader && (
+                    <SectionHeader
+                        title="Our Services"
+                        description="Comprehensive care tailored to your specific recovery needs."
+                        linkText="View All Services"
+                        linkHref="/services"
+                    />
+                )}
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <AnimatePresence mode="popLayout">
-                        {displayedServices.map((service) => (
+                        {displayedServices.map((service, index) => (
                             <motion.div
                                 key={service.id}
                                 layout
-                                initial={{ opacity: 0, scale: 0.9 }}
-                                animate={{ opacity: 1, scale: 1 }}
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
                                 exit={{ opacity: 0, scale: 0.9 }}
-                                transition={{ duration: 0.3 }}
+                                transition={{
+                                    duration: 0.4,
+                                    delay: (index % initialDisplayCount) * 0.1
+                                }}
                             >
                                 <Link
                                     href={`/services/${service.slug || service.id}`}
@@ -66,6 +93,18 @@ export function ServicesGrid({ services, limit }: { services: Service[]; limit?:
                         ))}
                     </AnimatePresence>
                 </div>
+
+                {hasMore && (
+                    <div className="mt-16 text-center">
+                        <button
+                            onClick={loadMore}
+                            className="inline-flex items-center gap-2 px-8 py-4 bg-[#e3171e] text-white rounded-full font-bold hover:bg-[#06113d] transition-colors group shadow-lg hover:shadow-xl"
+                        >
+                            Load More Services
+                            <ChevronDown className="w-5 h-5 group-hover:translate-y-1 transition-transform" />
+                        </button>
+                    </div>
+                )}
             </div>
         </section>
     );

@@ -128,7 +128,7 @@ export default async function AboutPage() {
                 <div className="max-w-7xl mx-auto px-4 md:px-8">
                     <AnimatedSection className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-slate-100 mb-4">
-                            Meet Our Founder
+                            Meet our therapist
                         </h2>
                         <div className="w-20 h-1 bg-blue-600 dark:bg-blue-500 mx-auto rounded-full"></div>
                     </AnimatedSection>
@@ -154,73 +154,23 @@ export default async function AboutPage() {
 
                         <div className="w-full lg:w-2/3 space-y-10">
                             <AnimatedSection delay={0.2}>
-                                <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-6">Experience & Clinical Interests</h3>
-                                <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-lg mb-6">
-                                    {data.founder.bio}
+                                <h3 className="text-3xl font-bold text-slate-900 dark:text-slate-100 mb-2">
+                                    {data.founder.name} <span className="text-lg font-medium text-slate-500 ml-2">{data.founder.qualifications}</span>
+                                </h3>
+                                <p className="text-[#e3171e] font-medium mb-6 uppercase tracking-wider text-sm">
+                                    {data.founder.role}
                                 </p>
-                                <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
-                                    {data.founder.experience}
-                                </p>
-                            </AnimatedSection>
-
-                            {data.founder.achievements && (
-                                <AnimatedSection delay={0.3} className="bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-200 dark:border-slate-700">
-                                    <h4 className="font-bold text-slate-900 dark:text-slate-100 mb-6 flex items-center gap-2 text-lg">
-                                        <span className="w-1.5 h-8 bg-blue-600 dark:bg-blue-500 rounded-full"></span>
-                                        Key Achievements
-                                    </h4>
-
-                                    <div className="space-y-6">
-                                        {data.founder.achievements.national && (
-                                            <div>
-                                                <h5 className="font-bold text-slate-800 dark:text-slate-200 mb-2 text-sm uppercase tracking-wider">National Level Events</h5>
-                                                <ul className="space-y-2">
-                                                    {data.founder.achievements.national.map((item: string, j: number) => (
-                                                        <li key={j} className="text-slate-600 dark:text-slate-400 text-sm flex items-start gap-2">
-                                                            <span className="w-1 h-1 bg-blue-500 rounded-full mt-2 shrink-0"></span>
-                                                            {item}
-                                                        </li>
-                                                    ))}
-                                                </ul>
-                                            </div>
-                                        )}
-
-                                        {data.founder.achievements.state && (
-                                            <div>
-                                                <h5 className="font-bold text-slate-800 dark:text-slate-200 mb-2 text-sm uppercase tracking-wider">State Level Events</h5>
-                                                <ul className="space-y-2">
-                                                    {data.founder.achievements.state.map((item: string, j: number) => (
-                                                        <li key={j} className="text-slate-600 dark:text-slate-400 text-sm flex items-start gap-2">
-                                                            <span className="w-1 h-1 bg-blue-500 rounded-full mt-2 shrink-0"></span>
-                                                            {item}
-                                                        </li>
-                                                    ))}
-                                                </ul>
-                                            </div>
-                                        )}
-
-                                        {data.founder.achievements.university && (
-                                            <div>
-                                                <h5 className="font-bold text-slate-800 dark:text-slate-200 mb-2 text-sm uppercase tracking-wider">Inter University Events</h5>
-                                                <ul className="space-y-2">
-                                                    {data.founder.achievements.university.map((item: string, j: number) => (
-                                                        <li key={j} className="text-slate-600 dark:text-slate-400 text-sm flex items-start gap-2">
-                                                            <span className="w-1 h-1 bg-blue-500 rounded-full mt-2 shrink-0"></span>
-                                                            {item}
-                                                        </li>
-                                                    ))}
-                                                </ul>
-                                            </div>
-                                        )}
-                                    </div>
-                                </AnimatedSection>
-                            )}
-
-                            <AnimatedSection delay={0.4}>
-                                <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4">Approach to Treatment</h3>
-                                <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
-                                    {data.founder.approach}
-                                </p>
+                                <div className="space-y-4 text-slate-600 dark:text-slate-400 leading-relaxed text-lg">
+                                    <p>{data.founder.bio}</p>
+                                </div>
+                                <div className="mt-8">
+                                    <a
+                                        href={`/team/dr-swatheeshwaran`}
+                                        className="inline-flex items-center gap-2 text-[#e3171e] font-semibold hover:gap-3 transition-all"
+                                    >
+                                        View Full Profile <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+                                    </a>
+                                </div>
                             </AnimatedSection>
                         </div>
                     </div>

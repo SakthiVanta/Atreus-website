@@ -1,64 +1,19 @@
-# Allow all search engines and AI crawlers
+
+# Allow all search engines
 User-agent: *
 Allow: /
+
+# Ensure Googlebot can render the page (access to JS/CSS/Images)
+User-agent: Googlebot
+Allow: /
+Allow: /_next/
+Allow: /public/
+Allow: /images/
 
 # Sitemap location
 Sitemap: https://www.atreusphysio.com/sitemap.xml
 
-# === AI Search Engine Crawlers (2024-2025) ===
-
-# OpenAI (ChatGPT, SearchGPT)
-User-agent: GPTBot
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
-# Google AI (Gemini, Bard)
-User-agent: Google-Extended
-Allow: /
-
-# Anthropic (Claude)
-User-agent: anthropic-ai
-Allow: /
-
-User-agent: Claude-Web
-Allow: /
-
-# Meta AI (Llama models)
-User-agent: FacebookBot
-Allow: /
-
-User-agent: Meta-ExternalAgent
-Allow: /
-
-# Perplexity AI
-User-agent: PerplexityBot
-Allow: /
-
-# Bing AI (Copilot)
-User-agent: Bingbot
-Allow: /
-
-# Common AI Training Bots
-User-agent: CCBot
-Allow: /
-
-User-agent: Applebot-Extended
-Allow: /
-
-# === Traditional Search Engines ===
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-# === What to Block (if needed) ===
-# Block admin and API routes from all crawlers
+# Block sensitive or irrelevant paths
 Disallow: /api/
-Disallow: /_next/static/
 Disallow: /admin/
-
-# === Crawl Rate Optimization ===
-# Request crawl-delay: 1  # Uncomment if server load is high
+Disallow: /private/
