@@ -62,8 +62,25 @@ export default function RootLayout({
 }: Readonly<{
     children: React.ReactNode;
 }>) {
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Atreus Physio",
+        "url": "https://www.atreusphysio.com",
+        "logo": "https://www.atreusphysio.com/images/google-logo-square.png",
+        "sameAs": [
+            "https://www.linkedin.com/in/swatheeshwaran-mpt-sports-018566274"
+        ]
+    };
+
     return (
         <html lang="en" suppressHydrationWarning>
+            <head>
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+                />
+            </head>
             <body
                 className={`${inter.variable} ${outfit.variable} font-sans antialiased`}
                 suppressHydrationWarning
