@@ -1,3 +1,6 @@
+import fs from 'fs';
+import path from 'path';
+import { conditions } from '@/data/conditions';
 import { google } from 'googleapis';
 
 /**
@@ -61,9 +64,11 @@ export async function requestIndexing(url: string) {
  * Batch update all key pages
  */
 
-import fs from 'fs';
-import path from 'path';
-import { conditions } from '@/data/conditions';
+
+/**
+ * Batch update all key pages
+ * Dynamically crawls project data to find all valid URLs
+ */
 
 /**
  * Batch update all key pages
