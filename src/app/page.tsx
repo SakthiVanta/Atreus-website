@@ -72,7 +72,7 @@ export default async function Home() {
                     <AnimatedSection>
                         <SectionHeader
                             title="What Makes ATREUS PHYSIO Different"
-                            description="Combining clinical expertise with patient education for lasting results. We believe in a science-driven, assessment-first approach that puts you in control of your recovery."
+                            description="As a leading provider of physiotherapy in Trichy, we combine clinical expertise with patient education for lasting results. We believe in a science-driven, assessment-first approach that puts you in control of your recovery."
                             linkText="Learn More About Us"
                             linkHref="/methodology"
                         />
